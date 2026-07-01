@@ -1,18 +1,10 @@
-QUIZ - JSON + LOKALNY POSTĘP, POPRAWIONY CSS
+QUIZ - DZIAŁY POD PYTANIEM NA DESKTOPIE
 
-Pliki:
-- index.html
-- questions.json
-- README.txt
-
-Działa:
-- pytania w questions.json
-- lokalny postęp w przeglądarce
-- błędne/poprawne/nieodpowiedziane
-- błędne pytania do powtórki
-- dark mode
-- krótsze wyjaśnienia tylko dla odpowiedzi zaznaczonej i poprawnej
-- poprawiony CSS, żeby układ się nie rozjeżdżał
+Zmienione:
+- na desktopie pytanie jest szerokie,
+- panel działów nie jest już z boku,
+- działy są pod pytaniem jako kompaktowa lista,
+- mobile zostaje bez zmian.
 
 Liczba pytań: 421
 

@@ -1916,6 +1916,151 @@ html.dark-mode .progress-memory{
 }
 </style>
 
+
+
+<style id="desktop-sections-under-question-fix">
+/* Desktop: działy pod pytaniem, pytanie szerokie.
+   Mobile zostaje bez zmian - zaczynamy dopiero od 901px. */
+@media(min-width:901px){
+  main,
+  .main,
+  .container,
+  .wrapper,
+  .app,
+  .quiz-app,
+  header,
+  .hero,
+  .top,
+  .app-header,
+  .local-progress-info,
+  .progress-memory,
+  .wrong-review-box{
+    width:min(1320px, calc(100% - 48px)) !important;
+    max-width:1320px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  .layout{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:14px !important;
+    align-items:start !important;
+  }
+
+  .layout > *,
+  .quiz,
+  .qcard,
+  .quiz-card,
+  .question-card,
+  .side{
+    min-width:0 !important;
+    max-width:100% !important;
+    width:100% !important;
+  }
+
+  .quiz,
+  .qcard,
+  .quiz-card,
+  .question-card{
+    grid-column:1 !important;
+  }
+
+  .side{
+    grid-column:1 !important;
+    order:2 !important;
+    position:static !important;
+    width:100% !important;
+    max-width:100% !important;
+    margin:0 !important;
+    padding:12px 14px !important;
+    border-radius:16px !important;
+  }
+
+  .side h2,
+  .side h3,
+  .side .side-title{
+    font-size:14px !important;
+    margin:0 0 8px 0 !important;
+  }
+
+  .categories,
+  .cat-list,
+  #catList,
+  .category-list{
+    display:flex !important;
+    flex-wrap:wrap !important;
+    gap:7px !important;
+    max-height:118px !important;
+    overflow:auto !important;
+    padding:2px 2px 4px 2px !important;
+  }
+
+  .cat,
+  .category,
+  .pill{
+    font-size:12px !important;
+    line-height:1.2 !important;
+    padding:6px 9px !important;
+    border-radius:999px !important;
+    min-height:0 !important;
+    max-width:260px !important;
+    white-space:nowrap !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+  }
+
+  .question,
+  .question-text,
+  #question,
+  .q{
+    font-size:28px !important;
+    line-height:1.25 !important;
+    max-width:100% !important;
+  }
+
+  .answers button,
+  #answers button,
+  .answer,
+  .option{
+    font-size:16px !important;
+    padding:14px 16px !important;
+  }
+
+  .answer-breakdown,
+  .answer-breakdown-list,
+  .answer-explain-row{
+    max-width:100% !important;
+  }
+}
+
+@media(min-width:1400px){
+  main,
+  .main,
+  .container,
+  .wrapper,
+  .app,
+  .quiz-app,
+  header,
+  .hero,
+  .top,
+  .app-header,
+  .local-progress-info,
+  .progress-memory,
+  .wrong-review-box{
+    width:min(1480px, calc(100% - 72px)) !important;
+    max-width:1480px !important;
+  }
+
+  .question,
+  .question-text,
+  #question,
+  .q{
+    font-size:30px !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <header><div class="wrap"><h1>Quiz z matematyki do egzaminu</h1><p class="lead">Pytania teoretyczne i praktyczne z logiki, zbiorów, macierzy, ciągów, funkcji, granic, pochodnych, całek i funkcji dwóch zmiennych. Klikasz odpowiedź i od razu widzisz, co jest dobrze albo źle.</p><div class="topgrid"><div class="panel"><b>Jak używać?</b><br>Najpierw wybierz zakres albo zostaw „wszystko”, potem kliknij „Losuj quiz 421 pytań”. Po każdej odpowiedzi dostajesz wyjaśnienie. Na końcu masz wynik i listę błędów.</div><div class="stats"><div class="stat"><b id="totalQ">0</b><span>pytań w bazie</span></div><div class="stat"><b>10</b><span>pytań w quizie</span></div><div class="stat"><b id="doneQ">0</b><span>rozwiązanych</span></div></div></div></div></header>
