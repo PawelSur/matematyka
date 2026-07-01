@@ -1918,145 +1918,242 @@ html.dark-mode .progress-memory{
 
 
 
-<style id="desktop-sections-under-question-fix">
-/* Desktop: działy pod pytaniem, pytanie szerokie.
-   Mobile zostaje bez zmian - zaczynamy dopiero od 901px. */
+
+<style id="desktop-equal-width-final-fix">
+/* Desktop only. Mobile zostaje tak jak było. */
 @media(min-width:901px){
-  main,
-  .main,
-  .container,
-  .wrapper,
-  .app,
-  .quiz-app,
-  header,
-  .hero,
-  .top,
-  .app-header,
-  .local-progress-info,
-  .progress-memory,
-  .wrong-review-box{
-    width:min(1320px, calc(100% - 48px)) !important;
-    max-width:1320px !important;
+  :root{
+    --desktopQuizWidth: min(1240px, calc(100vw - 64px));
+  }
+
+  body{
+    overflow-x:hidden !important;
+  }
+
+  /* Header ma tło na całą szerokość, ale treść taką samą szerokość jak quiz */
+  body > header{
+    width:100% !important;
+    max-width:none !important;
+    margin:0 !important;
+    padding:34px 0 24px !important;
+    border-radius:0 !important;
+  }
+
+  body > header .wrap{
+    width:var(--desktopQuizWidth) !important;
+    max-width:1240px !important;
     margin-left:auto !important;
     margin-right:auto !important;
+    padding:0 !important;
+    box-sizing:border-box !important;
   }
 
-  .layout{
-    display:grid !important;
-    grid-template-columns:1fr !important;
-    gap:14px !important;
-    align-items:start !important;
+  /* Każdy główny blok ma identyczną szerokość */
+  main.main,
+  main,
+  .local-progress-info,
+  .wrong-review-box{
+    width:var(--desktopQuizWidth) !important;
+    max-width:1240px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    box-sizing:border-box !important;
   }
 
-  .layout > *,
+  main.main,
+  main{
+    padding-left:0 !important;
+    padding-right:0 !important;
+  }
+
+  .local-progress-info{
+    margin-top:14px !important;
+    margin-bottom:14px !important;
+  }
+
+  /* Wszystko w main trzyma tę samą szerokość */
+  .toolbar,
+  .progress-memory,
+  .layout,
   .quiz,
-  .qcard,
-  .quiz-card,
-  .question-card,
-  .side{
-    min-width:0 !important;
-    max-width:100% !important;
+  .side,
+  #quizArea,
+  #resultBox{
     width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    box-sizing:border-box !important;
   }
 
-  .quiz,
-  .qcard,
-  .quiz-card,
-  .question-card{
-    grid-column:1 !important;
+  /* Koniec z bocznym panelem i różnymi szerokościami */
+  .layout{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:14px !important;
+    align-items:stretch !important;
+  }
+
+  .quiz{
+    order:1 !important;
   }
 
   .side{
-    grid-column:1 !important;
     order:2 !important;
     position:static !important;
+    margin:0 !important;
+    padding:16px 18px !important;
+    border-radius:20px !important;
+  }
+
+  .side h2{
+    margin:0 0 8px 0 !important;
+    font-size:16px !important;
+  }
+
+  .side .small,
+  .side .note{
+    font-size:12px !important;
+    line-height:1.4 !important;
+  }
+
+  .side .note{
+    margin-top:10px !important;
+    padding:10px 12px !important;
+  }
+
+  /* Działy jako równa, kompaktowa siatka pod pytaniem */
+  .category-list,
+  #catList,
+  .categories,
+  .cat-list{
     width:100% !important;
     max-width:100% !important;
-    margin:0 !important;
-    padding:12px 14px !important;
-    border-radius:16px !important;
-  }
-
-  .side h2,
-  .side h3,
-  .side .side-title{
-    font-size:14px !important;
-    margin:0 0 8px 0 !important;
-  }
-
-  .categories,
-  .cat-list,
-  #catList,
-  .category-list{
-    display:flex !important;
-    flex-wrap:wrap !important;
-    gap:7px !important;
-    max-height:118px !important;
+    display:grid !important;
+    grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)) !important;
+    gap:8px !important;
+    max-height:178px !important;
     overflow:auto !important;
-    padding:2px 2px 4px 2px !important;
+    padding:2px 2px 4px !important;
+    box-sizing:border-box !important;
   }
 
   .cat,
   .category,
   .pill{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    padding:8px 10px !important;
     font-size:12px !important;
-    line-height:1.2 !important;
-    padding:6px 9px !important;
-    border-radius:999px !important;
-    min-height:0 !important;
-    max-width:260px !important;
-    white-space:nowrap !important;
+    line-height:1.25 !important;
+    border-radius:12px !important;
+    box-sizing:border-box !important;
+    white-space:normal !important;
+    overflow-wrap:anywhere !important;
+  }
+
+  .cat{
+    display:flex !important;
+    justify-content:space-between !important;
+    gap:8px !important;
+    align-items:center !important;
+  }
+
+  .cat span:first-child{
+    min-width:0 !important;
     overflow:hidden !important;
     text-overflow:ellipsis !important;
   }
 
+  .cat span:last-child{
+    flex:0 0 auto !important;
+  }
+
+  /* Pytanie i odpowiedzi pełna szerokość */
+  .qcard,
+  .quiz-card,
+  .question-card{
+    width:100% !important;
+    max-width:100% !important;
+    padding:24px !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    box-sizing:border-box !important;
+  }
+
+  .qtext,
   .question,
   .question-text,
   #question,
   .q{
+    width:100% !important;
+    max-width:100% !important;
     font-size:28px !important;
     line-height:1.25 !important;
+    box-sizing:border-box !important;
+  }
+
+  .answers,
+  #answers{
+    width:100% !important;
     max-width:100% !important;
   }
 
-  .answers button,
-  #answers button,
   .answer,
-  .option{
-    font-size:16px !important;
+  .answers button,
+  #answers button{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
     padding:14px 16px !important;
+    font-size:16px !important;
+    box-sizing:border-box !important;
   }
 
   .answer-breakdown,
   .answer-breakdown-list,
-  .answer-explain-row{
+  .answer-explain-row,
+  .explain,
+  .result{
+    width:100% !important;
     max-width:100% !important;
+    box-sizing:border-box !important;
+  }
+
+  .topgrid{
+    grid-template-columns:minmax(0,1fr) 340px !important;
+    width:100% !important;
+    max-width:100% !important;
+  }
+
+  .stats{
+    min-width:0 !important;
+  }
+
+  .toolbar{
+    justify-content:flex-start !important;
+    align-items:center !important;
   }
 }
 
 @media(min-width:1400px){
-  main,
-  .main,
-  .container,
-  .wrapper,
-  .app,
-  .quiz-app,
-  header,
-  .hero,
-  .top,
-  .app-header,
-  .local-progress-info,
-  .progress-memory,
-  .wrong-review-box{
-    width:min(1480px, calc(100% - 72px)) !important;
-    max-width:1480px !important;
+  :root{
+    --desktopQuizWidth: min(1360px, calc(100vw - 80px));
   }
 
-  .question,
-  .question-text,
-  #question,
-  .q{
-    font-size:30px !important;
+  body > header .wrap,
+  main.main,
+  main,
+  .local-progress-info,
+  .wrong-review-box{
+    max-width:1360px !important;
+  }
+
+  .category-list,
+  #catList,
+  .categories,
+  .cat-list{
+    grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)) !important;
   }
 }
 </style>

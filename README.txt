@@ -1,9 +1,10 @@
-QUIZ - DZIAŁY POD PYTANIEM NA DESKTOPIE
+QUIZ - RÓWNY DESKTOP LAYOUT
 
-Zmienione:
-- na desktopie pytanie jest szerokie,
-- panel działów nie jest już z boku,
-- działy są pod pytaniem jako kompaktowa lista,
+Poprawione:
+- desktop ma jeden wspólny kontener szerokości,
+- header, pasek postępu, toolbar, pytanie, działy i wynik są równo,
+- działy są pod pytaniem,
+- pytanie ma pełną szerokość,
 - mobile zostaje bez zmian.
 
 Liczba pytań: 421
