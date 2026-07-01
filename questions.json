@@ -5729,12 +5729,12 @@
       "istnieje liczba rzeczywista x taka, dla której zachodzi x^2 < 0"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: dla każdej liczby rzeczywistej x zachodzi x^2 ≥ 0.",
+    "explain": "Kwadrat liczby rzeczywistej nigdy nie jest ujemny, dlatego dla każdego x zachodzi x^2 ≥ 0.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: dla każdej liczby rzeczywistej x zachodzi x^2 ≥ 0.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: dla każdej liczby rzeczywistej x zachodzi x^2 ≥ 0.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: dla każdej liczby rzeczywistej x zachodzi x^2 ≥ 0.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: dla każdej liczby rzeczywistej x zachodzi x^2 ≥ 0."
+      "Ta odpowiedź jest błędna. Poprawna jest B: dla każdej liczby rzeczywistej x zachodzi x^2 ≥ 0. Kwadrat liczby rzeczywistej nigdy nie jest ujemny, dlatego dla każdego x zachodzi x^2 ≥ 0.",
+      "Poprawna odpowiedź. Kwadrat liczby rzeczywistej nigdy nie jest ujemny, dlatego dla każdego x zachodzi x^2 ≥ 0.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: dla każdej liczby rzeczywistej x zachodzi x^2 ≥ 0. Kwadrat liczby rzeczywistej nigdy nie jest ujemny, dlatego dla każdego x zachodzi x^2 ≥ 0.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: dla każdej liczby rzeczywistej x zachodzi x^2 ≥ 0. Kwadrat liczby rzeczywistej nigdy nie jest ujemny, dlatego dla każdego x zachodzi x^2 ≥ 0."
     ]
   },
   {
@@ -5748,12 +5748,12 @@
       "p i q"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: p lub q.",
+    "explain": "Alternatywa oznacza spójnik 'lub'. Zdanie p ∨ q jest prawdziwe, gdy prawdziwe jest przynajmniej jedno ze zdań.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: p lub q.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: p lub q.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: p lub q.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: p lub q."
+      "Poprawna odpowiedź. Alternatywa oznacza spójnik 'lub'. Zdanie p ∨ q jest prawdziwe, gdy prawdziwe jest przynajmniej jedno ze zdań.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: p lub q. Alternatywa oznacza spójnik 'lub'. Zdanie p ∨ q jest prawdziwe, gdy prawdziwe jest przynajmniej jedno ze zdań.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: p lub q. Alternatywa oznacza spójnik 'lub'. Zdanie p ∨ q jest prawdziwe, gdy prawdziwe jest przynajmniej jedno ze zdań.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: p lub q. Alternatywa oznacza spójnik 'lub'. Zdanie p ∨ q jest prawdziwe, gdy prawdziwe jest przynajmniej jedno ze zdań."
     ]
   },
   {
@@ -5767,12 +5767,12 @@
       "prawo de Morgana"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: prawo de Morgana.",
+    "explain": "To prawo de Morgana: zaprzeczenie alternatywy zamienia się na koniunkcję zaprzeczeń.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: prawo de Morgana.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: prawo de Morgana.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: prawo de Morgana.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: prawo de Morgana."
+      "Ta odpowiedź jest błędna. Poprawna jest D: prawo de Morgana. To prawo de Morgana: zaprzeczenie alternatywy zamienia się na koniunkcję zaprzeczeń.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: prawo de Morgana. To prawo de Morgana: zaprzeczenie alternatywy zamienia się na koniunkcję zaprzeczeń.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: prawo de Morgana. To prawo de Morgana: zaprzeczenie alternatywy zamienia się na koniunkcję zaprzeczeń.",
+      "Poprawna odpowiedź. To prawo de Morgana: zaprzeczenie alternatywy zamienia się na koniunkcję zaprzeczeń."
     ]
   },
   {
@@ -5786,12 +5786,12 @@
       "obydwa zdania p oraz q są fałszywe"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: obydwa zdania p oraz q są prawdziwe.",
+    "explain": "Koniunkcja p ∧ q jest prawdziwa tylko wtedy, gdy oba zdania p i q są prawdziwe.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: obydwa zdania p oraz q są prawdziwe.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: obydwa zdania p oraz q są prawdziwe.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: obydwa zdania p oraz q są prawdziwe.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: obydwa zdania p oraz q są prawdziwe."
+      "Ta odpowiedź jest błędna. Poprawna jest C: obydwa zdania p oraz q są prawdziwe. Koniunkcja p ∧ q jest prawdziwa tylko wtedy, gdy oba zdania p i q są prawdziwe.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: obydwa zdania p oraz q są prawdziwe. Koniunkcja p ∧ q jest prawdziwa tylko wtedy, gdy oba zdania p i q są prawdziwe.",
+      "Poprawna odpowiedź. Koniunkcja p ∧ q jest prawdziwa tylko wtedy, gdy oba zdania p i q są prawdziwe.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: obydwa zdania p oraz q są prawdziwe. Koniunkcja p ∧ q jest prawdziwa tylko wtedy, gdy oba zdania p i q są prawdziwe."
     ]
   },
   {
@@ -5803,10 +5803,10 @@
       "fałsz"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: fałsz.",
+    "explain": "W klasycznym zapisie logicznym 1 oznacza prawdę, a 0 oznacza fałsz.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: fałsz.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: fałsz."
+      "Ta odpowiedź jest błędna. Poprawna jest B: fałsz. W klasycznym zapisie logicznym 1 oznacza prawdę, a 0 oznacza fałsz.",
+      "Poprawna odpowiedź. W klasycznym zapisie logicznym 1 oznacza prawdę, a 0 oznacza fałsz."
     ]
   },
   {
@@ -5820,12 +5820,12 @@
       "obydwa zdania p i q są prawdziwe"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: zdanie p jest prawdziwe i zdanie q jest fałszywe.",
+    "explain": "Implikacja p → q jest fałszywa tylko w jednym przypadku: gdy p jest prawdziwe, a q fałszywe.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: zdanie p jest prawdziwe i zdanie q jest fałszywe.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: zdanie p jest prawdziwe i zdanie q jest fałszywe.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: zdanie p jest prawdziwe i zdanie q jest fałszywe.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: zdanie p jest prawdziwe i zdanie q jest fałszywe."
+      "Ta odpowiedź jest błędna. Poprawna jest C: zdanie p jest prawdziwe i zdanie q jest fałszywe. Implikacja p → q jest fałszywa tylko w jednym przypadku: gdy p jest prawdziwe, a q fałszywe.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: zdanie p jest prawdziwe i zdanie q jest fałszywe. Implikacja p → q jest fałszywa tylko w jednym przypadku: gdy p jest prawdziwe, a q fałszywe.",
+      "Poprawna odpowiedź. Implikacja p → q jest fałszywa tylko w jednym przypadku: gdy p jest prawdziwe, a q fałszywe.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: zdanie p jest prawdziwe i zdanie q jest fałszywe. Implikacja p → q jest fałszywa tylko w jednym przypadku: gdy p jest prawdziwe, a q fałszywe."
     ]
   },
   {
@@ -5837,10 +5837,10 @@
       "jest fałszywe"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: jest prawdziwe.",
+    "explain": "Wystarczy wybrać x=0. Wtedy dla każdej liczby y mamy 0·y=0, więc zdanie z kwantyfikatorem istnieje jest prawdziwe.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: jest prawdziwe.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: jest prawdziwe."
+      "Poprawna odpowiedź. Wystarczy wybrać x=0. Wtedy dla każdej liczby y mamy 0·y=0, więc zdanie z kwantyfikatorem istnieje jest prawdziwe.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: jest prawdziwe. Wystarczy wybrać x=0. Wtedy dla każdej liczby y mamy 0·y=0, więc zdanie z kwantyfikatorem istnieje jest prawdziwe."
     ]
   },
   {
@@ -5854,12 +5854,12 @@
       "dla każdej liczby naturalnej n zachodzi n^2 < 10"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: dla każdej liczby naturalnej n zachodzi n^2 < 10.",
+    "explain": "Negując zdanie 'istnieje n takie, że n^2 ≥ 10', zmieniamy 'istnieje' na 'dla każdego' oraz ≥ na <.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: dla każdej liczby naturalnej n zachodzi n^2 < 10.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: dla każdej liczby naturalnej n zachodzi n^2 < 10.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: dla każdej liczby naturalnej n zachodzi n^2 < 10.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: dla każdej liczby naturalnej n zachodzi n^2 < 10."
+      "Ta odpowiedź jest błędna. Poprawna jest D: dla każdej liczby naturalnej n zachodzi n^2 < 10. Negując zdanie 'istnieje n takie, że n^2 ≥ 10', zmieniamy 'istnieje' na 'dla każdego' oraz ≥ na <.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: dla każdej liczby naturalnej n zachodzi n^2 < 10. Negując zdanie 'istnieje n takie, że n^2 ≥ 10', zmieniamy 'istnieje' na 'dla każdego' oraz ≥ na <.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: dla każdej liczby naturalnej n zachodzi n^2 < 10. Negując zdanie 'istnieje n takie, że n^2 ≥ 10', zmieniamy 'istnieje' na 'dla każdego' oraz ≥ na <.",
+      "Poprawna odpowiedź. Negując zdanie 'istnieje n takie, że n^2 ≥ 10', zmieniamy 'istnieje' na 'dla każdego' oraz ≥ na <."
     ]
   },
   {
@@ -5873,12 +5873,12 @@
       "Suma liczb 7 i 13 wynosi 20"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Czy liczba 6 jest dzielnikiem liczby 18?.",
+    "explain": "Pytanie nie jest zdaniem logicznym, bo nie jest zdaniem oznajmującym i nie można mu przypisać wartości prawda/fałsz.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: Czy liczba 6 jest dzielnikiem liczby 18?.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: Czy liczba 6 jest dzielnikiem liczby 18?.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: Czy liczba 6 jest dzielnikiem liczby 18?.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: Czy liczba 6 jest dzielnikiem liczby 18?."
+      "Ta odpowiedź jest błędna. Poprawna jest B: Czy liczba 6 jest dzielnikiem liczby 18?. Pytanie nie jest zdaniem logicznym, bo nie jest zdaniem oznajmującym i nie można mu przypisać wartości prawda/fałsz.",
+      "Poprawna odpowiedź. Pytanie nie jest zdaniem logicznym, bo nie jest zdaniem oznajmującym i nie można mu przypisać wartości prawda/fałsz.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: Czy liczba 6 jest dzielnikiem liczby 18?. Pytanie nie jest zdaniem logicznym, bo nie jest zdaniem oznajmującym i nie można mu przypisać wartości prawda/fałsz.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: Czy liczba 6 jest dzielnikiem liczby 18?. Pytanie nie jest zdaniem logicznym, bo nie jest zdaniem oznajmującym i nie można mu przypisać wartości prawda/fałsz."
     ]
   },
   {
@@ -5892,12 +5892,12 @@
       "p ∨ ¬ p"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: p ∨ ¬ p.",
+    "explain": "Zdanie p ∨ ¬p jest zawsze prawdziwe, bo dla każdego p prawdziwe jest albo p, albo jego zaprzeczenie.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: p ∨ ¬ p.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: p ∨ ¬ p.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: p ∨ ¬ p.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: p ∨ ¬ p."
+      "Ta odpowiedź jest błędna. Poprawna jest D: p ∨ ¬ p. Zdanie p ∨ ¬p jest zawsze prawdziwe, bo dla każdego p prawdziwe jest albo p, albo jego zaprzeczenie.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: p ∨ ¬ p. Zdanie p ∨ ¬p jest zawsze prawdziwe, bo dla każdego p prawdziwe jest albo p, albo jego zaprzeczenie.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: p ∨ ¬ p. Zdanie p ∨ ¬p jest zawsze prawdziwe, bo dla każdego p prawdziwe jest albo p, albo jego zaprzeczenie.",
+      "Poprawna odpowiedź. Zdanie p ∨ ¬p jest zawsze prawdziwe, bo dla każdego p prawdziwe jest albo p, albo jego zaprzeczenie."
     ]
   },
   {
@@ -5911,12 +5911,12 @@
       "ℕ ⊂ ℚ"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: ℝ ⊂ ℕ.",
+    "explain": "Liczby rzeczywiste zawierają liczby naturalne, wymierne i niewymierne, więc ℝ nie jest podzbiorem ℕ.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: ℝ ⊂ ℕ.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: ℝ ⊂ ℕ.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: ℝ ⊂ ℕ.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: ℝ ⊂ ℕ."
+      "Ta odpowiedź jest błędna. Poprawna jest B: ℝ ⊂ ℕ. Liczby rzeczywiste zawierają liczby naturalne, wymierne i niewymierne, więc ℝ nie jest podzbiorem ℕ.",
+      "Poprawna odpowiedź. Liczby rzeczywiste zawierają liczby naturalne, wymierne i niewymierne, więc ℝ nie jest podzbiorem ℕ.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: ℝ ⊂ ℕ. Liczby rzeczywiste zawierają liczby naturalne, wymierne i niewymierne, więc ℝ nie jest podzbiorem ℕ.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: ℝ ⊂ ℕ. Liczby rzeczywiste zawierają liczby naturalne, wymierne i niewymierne, więc ℝ nie jest podzbiorem ℕ."
     ]
   },
   {
@@ -5928,10 +5928,10 @@
       "Fałsz"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Fałsz.",
+    "explain": "Iloczyn kartezjański nie jest przemienny, bo A×B składa się z par (a,b), a B×A z par (b,a). Kolejność ma znaczenie.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: Fałsz.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: Fałsz."
+      "Ta odpowiedź jest błędna. Poprawna jest B: Fałsz. Iloczyn kartezjański nie jest przemienny, bo A×B składa się z par (a,b), a B×A z par (b,a). Kolejność ma znaczenie.",
+      "Poprawna odpowiedź. Iloczyn kartezjański nie jest przemienny, bo A×B składa się z par (a,b), a B×A z par (b,a). Kolejność ma znaczenie."
     ]
   },
   {
@@ -5945,12 +5945,12 @@
       "{5}"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: {(2, 3)}.",
+    "explain": "W iloczynie A×B pierwsza współrzędna pochodzi z A, a druga z B, więc dostajemy parę (2,3).",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: {(2, 3)}.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: {(2, 3)}.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: {(2, 3)}.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: {(2, 3)}."
+      "Ta odpowiedź jest błędna. Poprawna jest B: {(2, 3)}. W iloczynie A×B pierwsza współrzędna pochodzi z A, a druga z B, więc dostajemy parę (2,3).",
+      "Poprawna odpowiedź. W iloczynie A×B pierwsza współrzędna pochodzi z A, a druga z B, więc dostajemy parę (2,3).",
+      "Ta odpowiedź jest błędna. Poprawna jest B: {(2, 3)}. W iloczynie A×B pierwsza współrzędna pochodzi z A, a druga z B, więc dostajemy parę (2,3).",
+      "Ta odpowiedź jest błędna. Poprawna jest B: {(2, 3)}. W iloczynie A×B pierwsza współrzędna pochodzi z A, a druga z B, więc dostajemy parę (2,3)."
     ]
   },
   {
@@ -5964,12 +5964,12 @@
       "(-4, 0)"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: (-4, 0).",
+    "explain": "Różnica A∖B to elementy z A, które nie należą do B. Z przedziału (-4,5) po usunięciu [0,9] zostaje (-4,0).",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: (-4, 0).",
-      "Ta odpowiedź jest błędna. Poprawna jest D: (-4, 0).",
-      "Ta odpowiedź jest błędna. Poprawna jest D: (-4, 0).",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: (-4, 0)."
+      "Ta odpowiedź jest błędna. Poprawna jest D: (-4, 0). Różnica A∖B to elementy z A, które nie należą do B. Z przedziału (-4,5) po usunięciu [0,9] zostaje (-4,0).",
+      "Ta odpowiedź jest błędna. Poprawna jest D: (-4, 0). Różnica A∖B to elementy z A, które nie należą do B. Z przedziału (-4,5) po usunięciu [0,9] zostaje (-4,0).",
+      "Ta odpowiedź jest błędna. Poprawna jest D: (-4, 0). Różnica A∖B to elementy z A, które nie należą do B. Z przedziału (-4,5) po usunięciu [0,9] zostaje (-4,0).",
+      "Poprawna odpowiedź. Różnica A∖B to elementy z A, które nie należą do B. Z przedziału (-4,5) po usunięciu [0,9] zostaje (-4,0)."
     ]
   },
   {
@@ -5984,13 +5984,13 @@
       "prawo podwójnego dopełnienia"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: prawo de Morgana.",
+    "explain": "To prawo de Morgana: zaprzeczenie alternatywy zamienia się na koniunkcję zaprzeczeń.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: prawo de Morgana.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: prawo de Morgana.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: prawo de Morgana.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: prawo de Morgana.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: prawo de Morgana."
+      "Poprawna odpowiedź. To prawo de Morgana: zaprzeczenie alternatywy zamienia się na koniunkcję zaprzeczeń.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: prawo de Morgana. To prawo de Morgana: zaprzeczenie alternatywy zamienia się na koniunkcję zaprzeczeń.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: prawo de Morgana. To prawo de Morgana: zaprzeczenie alternatywy zamienia się na koniunkcję zaprzeczeń.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: prawo de Morgana. To prawo de Morgana: zaprzeczenie alternatywy zamienia się na koniunkcję zaprzeczeń.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: prawo de Morgana. To prawo de Morgana: zaprzeczenie alternatywy zamienia się na koniunkcję zaprzeczeń."
     ]
   },
   {
@@ -6004,12 +6004,12 @@
       "A ∪ B"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: A ∪ B.",
+    "explain": "Suma zbiorów A i B to zbiór elementów należących do A lub do B. Oznaczamy ją A ∪ B.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: A ∪ B.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: A ∪ B.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: A ∪ B.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: A ∪ B."
+      "Ta odpowiedź jest błędna. Poprawna jest D: A ∪ B. Suma zbiorów A i B to zbiór elementów należących do A lub do B. Oznaczamy ją A ∪ B.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: A ∪ B. Suma zbiorów A i B to zbiór elementów należących do A lub do B. Oznaczamy ją A ∪ B.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: A ∪ B. Suma zbiorów A i B to zbiór elementów należących do A lub do B. Oznaczamy ją A ∪ B.",
+      "Poprawna odpowiedź. Suma zbiorów A i B to zbiór elementów należących do A lub do B. Oznaczamy ją A ∪ B."
     ]
   },
   {
@@ -6023,12 +6023,12 @@
       "12"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 32.",
+    "explain": "Liczba elementów A×B to iloczyn liczności zbiorów: 4·8=32.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: 32.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: 32.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: 32.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: 32."
+      "Ta odpowiedź jest błędna. Poprawna jest C: 32. Liczba elementów A×B to iloczyn liczności zbiorów: 4·8=32.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: 32. Liczba elementów A×B to iloczyn liczności zbiorów: 4·8=32.",
+      "Poprawna odpowiedź. Liczba elementów A×B to iloczyn liczności zbiorów: 4·8=32.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: 32. Liczba elementów A×B to iloczyn liczności zbiorów: 4·8=32."
     ]
   },
   {
@@ -6042,12 +6042,12 @@
       "ℕ"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: ℕ.",
+    "explain": "Zbiór liczb naturalnych oznacza się symbolem ℕ.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: ℕ.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: ℕ.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: ℕ.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: ℕ."
+      "Ta odpowiedź jest błędna. Poprawna jest D: ℕ. Zbiór liczb naturalnych oznacza się symbolem ℕ.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: ℕ. Zbiór liczb naturalnych oznacza się symbolem ℕ.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: ℕ. Zbiór liczb naturalnych oznacza się symbolem ℕ.",
+      "Poprawna odpowiedź. Zbiór liczb naturalnych oznacza się symbolem ℕ."
     ]
   },
   {
@@ -6061,12 +6061,12 @@
       "(0, 8)"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: ∅.",
+    "explain": "Przedziały (-∞,0] i [8,∞) nie mają wspólnych elementów, więc ich część wspólna jest pusta.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: ∅.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: ∅.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: ∅.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: ∅."
+      "Ta odpowiedź jest błędna. Poprawna jest C: ∅. Przedziały (-∞,0] i [8,∞) nie mają wspólnych elementów, więc ich część wspólna jest pusta.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: ∅. Przedziały (-∞,0] i [8,∞) nie mają wspólnych elementów, więc ich część wspólna jest pusta.",
+      "Poprawna odpowiedź. Przedziały (-∞,0] i [8,∞) nie mają wspólnych elementów, więc ich część wspólna jest pusta.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: ∅. Przedziały (-∞,0] i [8,∞) nie mają wspólnych elementów, więc ich część wspólna jest pusta."
     ]
   },
   {
@@ -6080,12 +6080,12 @@
       "prosta"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: płaszczyzna.",
+    "explain": "ℝ^2 oznacza zbiór par liczb rzeczywistych, czyli geometrycznie płaszczyznę.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: płaszczyzna.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: płaszczyzna.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: płaszczyzna.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: płaszczyzna."
+      "Ta odpowiedź jest błędna. Poprawna jest C: płaszczyzna. ℝ^2 oznacza zbiór par liczb rzeczywistych, czyli geometrycznie płaszczyznę.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: płaszczyzna. ℝ^2 oznacza zbiór par liczb rzeczywistych, czyli geometrycznie płaszczyznę.",
+      "Poprawna odpowiedź. ℝ^2 oznacza zbiór par liczb rzeczywistych, czyli geometrycznie płaszczyznę.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: płaszczyzna. ℝ^2 oznacza zbiór par liczb rzeczywistych, czyli geometrycznie płaszczyznę."
     ]
   },
   {
@@ -6101,14 +6101,14 @@
       "C(n,k) = (n!)/(k!(n-k)!)"
     ],
     "correct": 5,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: C(n,k) = (n!)/(k!(n-k)!).",
+    "explain": "Symbol Newtona liczy wybór k elementów z n bez kolejności i ma wzór n!/(k!(n-k)!).",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest F: C(n,k) = (n!)/(k!(n-k)!).",
-      "Ta odpowiedź jest błędna. Poprawna jest F: C(n,k) = (n!)/(k!(n-k)!).",
-      "Ta odpowiedź jest błędna. Poprawna jest F: C(n,k) = (n!)/(k!(n-k)!).",
-      "Ta odpowiedź jest błędna. Poprawna jest F: C(n,k) = (n!)/(k!(n-k)!).",
-      "Ta odpowiedź jest błędna. Poprawna jest F: C(n,k) = (n!)/(k!(n-k)!).",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: C(n,k) = (n!)/(k!(n-k)!)."
+      "Ta odpowiedź jest błędna. Poprawna jest F: C(n,k) = (n!)/(k!(n-k)!). Symbol Newtona liczy wybór k elementów z n bez kolejności i ma wzór n!/(k!(n-k)!).",
+      "Ta odpowiedź jest błędna. Poprawna jest F: C(n,k) = (n!)/(k!(n-k)!). Symbol Newtona liczy wybór k elementów z n bez kolejności i ma wzór n!/(k!(n-k)!).",
+      "Ta odpowiedź jest błędna. Poprawna jest F: C(n,k) = (n!)/(k!(n-k)!). Symbol Newtona liczy wybór k elementów z n bez kolejności i ma wzór n!/(k!(n-k)!).",
+      "Ta odpowiedź jest błędna. Poprawna jest F: C(n,k) = (n!)/(k!(n-k)!). Symbol Newtona liczy wybór k elementów z n bez kolejności i ma wzór n!/(k!(n-k)!).",
+      "Ta odpowiedź jest błędna. Poprawna jest F: C(n,k) = (n!)/(k!(n-k)!). Symbol Newtona liczy wybór k elementów z n bez kolejności i ma wzór n!/(k!(n-k)!).",
+      "Poprawna odpowiedź. Symbol Newtona liczy wybór k elementów z n bez kolejności i ma wzór n!/(k!(n-k)!)."
     ]
   },
   {
@@ -6125,15 +6125,15 @@
       "12"
     ],
     "correct": 4,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 1.",
+    "explain": "C(6,0)=1, bo z 6 elementów można wybrać 0 elementów dokładnie na jeden sposób: nie wybierając nic.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest E: 1.",
-      "Ta odpowiedź jest błędna. Poprawna jest E: 1.",
-      "Ta odpowiedź jest błędna. Poprawna jest E: 1.",
-      "Ta odpowiedź jest błędna. Poprawna jest E: 1.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: 1.",
-      "Ta odpowiedź jest błędna. Poprawna jest E: 1.",
-      "Ta odpowiedź jest błędna. Poprawna jest E: 1."
+      "Ta odpowiedź jest błędna. Poprawna jest E: 1. C(6,0)=1, bo z 6 elementów można wybrać 0 elementów dokładnie na jeden sposób: nie wybierając nic.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: 1. C(6,0)=1, bo z 6 elementów można wybrać 0 elementów dokładnie na jeden sposób: nie wybierając nic.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: 1. C(6,0)=1, bo z 6 elementów można wybrać 0 elementów dokładnie na jeden sposób: nie wybierając nic.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: 1. C(6,0)=1, bo z 6 elementów można wybrać 0 elementów dokładnie na jeden sposób: nie wybierając nic.",
+      "Poprawna odpowiedź. C(6,0)=1, bo z 6 elementów można wybrać 0 elementów dokładnie na jeden sposób: nie wybierając nic.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: 1. C(6,0)=1, bo z 6 elementów można wybrać 0 elementów dokładnie na jeden sposób: nie wybierając nic.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: 1. C(6,0)=1, bo z 6 elementów można wybrać 0 elementów dokładnie na jeden sposób: nie wybierając nic."
     ]
   },
   {
@@ -6147,12 +6147,12 @@
       "n"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 1.",
+    "explain": "Każdy wiersz trójkąta Pascala zaczyna się i kończy jedynką.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: 1.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 1.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 1.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 1."
+      "Poprawna odpowiedź. Każdy wiersz trójkąta Pascala zaczyna się i kończy jedynką.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 1. Każdy wiersz trójkąta Pascala zaczyna się i kończy jedynką.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 1. Każdy wiersz trójkąta Pascala zaczyna się i kończy jedynką.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 1. Każdy wiersz trójkąta Pascala zaczyna się i kończy jedynką."
     ]
   },
   {
@@ -6167,13 +6167,13 @@
       "n^2"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: n!.",
+    "explain": "Permutacje to wszystkie ustawienia n elementów w kolejności, a ich liczba wynosi n!.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: n!.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: n!.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: n!.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: n!.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: n!."
+      "Ta odpowiedź jest błędna. Poprawna jest C: n!. Permutacje to wszystkie ustawienia n elementów w kolejności, a ich liczba wynosi n!.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: n!. Permutacje to wszystkie ustawienia n elementów w kolejności, a ich liczba wynosi n!.",
+      "Poprawna odpowiedź. Permutacje to wszystkie ustawienia n elementów w kolejności, a ich liczba wynosi n!.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: n!. Permutacje to wszystkie ustawienia n elementów w kolejności, a ich liczba wynosi n!.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: n!. Permutacje to wszystkie ustawienia n elementów w kolejności, a ich liczba wynosi n!."
     ]
   },
   {
@@ -6187,12 +6187,12 @@
       "liczbie stojącej wiersz wyżej pomiędzy nimi"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: liczbie stojącej wiersz niżej pomiędzy nimi.",
+    "explain": "W trójkącie Pascala suma dwóch sąsiednich liczb daje liczbę stojącą niżej pomiędzy nimi.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: liczbie stojącej wiersz niżej pomiędzy nimi.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: liczbie stojącej wiersz niżej pomiędzy nimi.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: liczbie stojącej wiersz niżej pomiędzy nimi.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: liczbie stojącej wiersz niżej pomiędzy nimi."
+      "Ta odpowiedź jest błędna. Poprawna jest B: liczbie stojącej wiersz niżej pomiędzy nimi. W trójkącie Pascala suma dwóch sąsiednich liczb daje liczbę stojącą niżej pomiędzy nimi.",
+      "Poprawna odpowiedź. W trójkącie Pascala suma dwóch sąsiednich liczb daje liczbę stojącą niżej pomiędzy nimi.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: liczbie stojącej wiersz niżej pomiędzy nimi. W trójkącie Pascala suma dwóch sąsiednich liczb daje liczbę stojącą niżej pomiędzy nimi.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: liczbie stojącej wiersz niżej pomiędzy nimi. W trójkącie Pascala suma dwóch sąsiednich liczb daje liczbę stojącą niżej pomiędzy nimi."
     ]
   },
   {
@@ -6206,12 +6206,12 @@
       "32"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 32.",
+    "explain": "Zbiór 5-elementowy ma 2^5 podzbiorów, czyli 32.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: 32.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: 32.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: 32.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: 32."
+      "Ta odpowiedź jest błędna. Poprawna jest D: 32. Zbiór 5-elementowy ma 2^5 podzbiorów, czyli 32.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: 32. Zbiór 5-elementowy ma 2^5 podzbiorów, czyli 32.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: 32. Zbiór 5-elementowy ma 2^5 podzbiorów, czyli 32.",
+      "Poprawna odpowiedź. Zbiór 5-elementowy ma 2^5 podzbiorów, czyli 32."
     ]
   },
   {
@@ -6225,12 +6225,12 @@
       "36"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 35.",
+    "explain": "Liczymy sumę: (-1)^3+0^3+1^3+2^3+3^3 = -1+0+1+8+27 = 35.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: 35.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: 35.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: 35.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: 35."
+      "Ta odpowiedź jest błędna. Poprawna jest C: 35. Liczymy sumę: (-1)^3+0^3+1^3+2^3+3^3 = -1+0+1+8+27 = 35.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: 35. Liczymy sumę: (-1)^3+0^3+1^3+2^3+3^3 = -1+0+1+8+27 = 35.",
+      "Poprawna odpowiedź. Liczymy sumę: (-1)^3+0^3+1^3+2^3+3^3 = -1+0+1+8+27 = 35.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: 35. Liczymy sumę: (-1)^3+0^3+1^3+2^3+3^3 = -1+0+1+8+27 = 35."
     ]
   },
   {
@@ -6244,12 +6244,12 @@
       "4"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 24.",
+    "explain": "Silnia 4! to iloczyn 4·3·2·1, czyli 24.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: 24.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: 24.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: 24.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: 24."
+      "Ta odpowiedź jest błędna. Poprawna jest C: 24. Silnia 4! to iloczyn 4·3·2·1, czyli 24.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: 24. Silnia 4! to iloczyn 4·3·2·1, czyli 24.",
+      "Poprawna odpowiedź. Silnia 4! to iloczyn 4·3·2·1, czyli 24.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: 24. Silnia 4! to iloczyn 4·3·2·1, czyli 24."
     ]
   },
   {
@@ -6264,13 +6264,13 @@
       "dwumian Pascala"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: dwumian Newtona.",
+    "explain": "Podany wzór rozwija potęgę sumy (a+b)^n za pomocą symboli Newtona, więc jest to dwumian Newtona.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: dwumian Newtona.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: dwumian Newtona.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: dwumian Newtona.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: dwumian Newtona.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: dwumian Newtona."
+      "Ta odpowiedź jest błędna. Poprawna jest B: dwumian Newtona. Podany wzór rozwija potęgę sumy (a+b)^n za pomocą symboli Newtona, więc jest to dwumian Newtona.",
+      "Poprawna odpowiedź. Podany wzór rozwija potęgę sumy (a+b)^n za pomocą symboli Newtona, więc jest to dwumian Newtona.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: dwumian Newtona. Podany wzór rozwija potęgę sumy (a+b)^n za pomocą symboli Newtona, więc jest to dwumian Newtona.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: dwumian Newtona. Podany wzór rozwija potęgę sumy (a+b)^n za pomocą symboli Newtona, więc jest to dwumian Newtona.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: dwumian Newtona. Podany wzór rozwija potęgę sumy (a+b)^n za pomocą symboli Newtona, więc jest to dwumian Newtona."
     ]
   },
   {
@@ -6284,12 +6284,12 @@
       "70"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 28.",
+    "explain": "C(8,2)=8!/(2!·6!)=(8·7)/2=28.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: 28.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: 28.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: 28.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: 28."
+      "Ta odpowiedź jest błędna. Poprawna jest C: 28. C(8,2)=8!/(2!·6!)=(8·7)/2=28.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: 28. C(8,2)=8!/(2!·6!)=(8·7)/2=28.",
+      "Poprawna odpowiedź. C(8,2)=8!/(2!·6!)=(8·7)/2=28.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: 28. C(8,2)=8!/(2!·6!)=(8·7)/2=28."
     ]
   },
   {
@@ -6303,12 +6303,12 @@
       "[[0, 0], [0, 1]]"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: [[1, 0], [0, 1]].",
+    "explain": "Macierz jednostkowa ma jedynki na przekątnej głównej i zera poza przekątną.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: [[1, 0], [0, 1]].",
-      "Ta odpowiedź jest błędna. Poprawna jest C: [[1, 0], [0, 1]].",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: [[1, 0], [0, 1]].",
-      "Ta odpowiedź jest błędna. Poprawna jest C: [[1, 0], [0, 1]]."
+      "Ta odpowiedź jest błędna. Poprawna jest C: [[1, 0], [0, 1]]. Macierz jednostkowa ma jedynki na przekątnej głównej i zera poza przekątną.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: [[1, 0], [0, 1]]. Macierz jednostkowa ma jedynki na przekątnej głównej i zera poza przekątną.",
+      "Poprawna odpowiedź. Macierz jednostkowa ma jedynki na przekątnej głównej i zera poza przekątną.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: [[1, 0], [0, 1]]. Macierz jednostkowa ma jedynki na przekątnej głównej i zera poza przekątną."
     ]
   },
   {
@@ -6322,12 +6322,12 @@
       "det A ≠ 0"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: det A = 0.",
+    "explain": "Macierz kwadratowa jest osobliwa wtedy i tylko wtedy, gdy jej wyznacznik jest równy 0.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: det A = 0.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: det A = 0.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: det A = 0.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: det A = 0."
+      "Poprawna odpowiedź. Macierz kwadratowa jest osobliwa wtedy i tylko wtedy, gdy jej wyznacznik jest równy 0.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: det A = 0. Macierz kwadratowa jest osobliwa wtedy i tylko wtedy, gdy jej wyznacznik jest równy 0.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: det A = 0. Macierz kwadratowa jest osobliwa wtedy i tylko wtedy, gdy jej wyznacznik jest równy 0.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: det A = 0. Macierz kwadratowa jest osobliwa wtedy i tylko wtedy, gdy jej wyznacznik jest równy 0."
     ]
   },
   {
@@ -6341,12 +6341,12 @@
       "[[0, 4], [5, 0]]"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: [[0, 4], [5, 0]].",
+    "explain": "Macierz diagonalna może mieć niezerowe elementy tylko na przekątnej. Tu niezerowe elementy leżą poza przekątną.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: [[0, 4], [5, 0]].",
-      "Ta odpowiedź jest błędna. Poprawna jest D: [[0, 4], [5, 0]].",
-      "Ta odpowiedź jest błędna. Poprawna jest D: [[0, 4], [5, 0]].",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: [[0, 4], [5, 0]]."
+      "Ta odpowiedź jest błędna. Poprawna jest D: [[0, 4], [5, 0]]. Macierz diagonalna może mieć niezerowe elementy tylko na przekątnej. Tu niezerowe elementy leżą poza przekątną.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: [[0, 4], [5, 0]]. Macierz diagonalna może mieć niezerowe elementy tylko na przekątnej. Tu niezerowe elementy leżą poza przekątną.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: [[0, 4], [5, 0]]. Macierz diagonalna może mieć niezerowe elementy tylko na przekątnej. Tu niezerowe elementy leżą poza przekątną.",
+      "Poprawna odpowiedź. Macierz diagonalna może mieć niezerowe elementy tylko na przekątnej. Tu niezerowe elementy leżą poza przekątną."
     ]
   },
   {
@@ -6360,12 +6360,12 @@
       "B · A"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: A - B.",
+    "explain": "Odejmować można tylko macierze o tych samych wymiarach. A jest 2×2, a B jest 1×2, więc A-B nie ma sensu.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: A - B.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: A - B.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: A - B.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: A - B."
+      "Ta odpowiedź jest błędna. Poprawna jest C: A - B. Odejmować można tylko macierze o tych samych wymiarach. A jest 2×2, a B jest 1×2, więc A-B nie ma sensu.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: A - B. Odejmować można tylko macierze o tych samych wymiarach. A jest 2×2, a B jest 1×2, więc A-B nie ma sensu.",
+      "Poprawna odpowiedź. Odejmować można tylko macierze o tych samych wymiarach. A jest 2×2, a B jest 1×2, więc A-B nie ma sensu.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: A - B. Odejmować można tylko macierze o tych samych wymiarach. A jest 2×2, a B jest 1×2, więc A-B nie ma sensu."
     ]
   },
   {
@@ -6379,12 +6379,12 @@
       "0"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 0.",
+    "explain": "Wyznacznik jest równy 0, bo cała druga kolumna macierzy składa się z zer.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: 0.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: 0.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: 0.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: 0."
+      "Ta odpowiedź jest błędna. Poprawna jest D: 0. Wyznacznik jest równy 0, bo cała druga kolumna macierzy składa się z zer.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: 0. Wyznacznik jest równy 0, bo cała druga kolumna macierzy składa się z zer.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: 0. Wyznacznik jest równy 0, bo cała druga kolumna macierzy składa się z zer.",
+      "Poprawna odpowiedź. Wyznacznik jest równy 0, bo cała druga kolumna macierzy składa się z zer."
     ]
   },
   {
@@ -6398,12 +6398,12 @@
       "[[5, 2]]"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: [[20]].",
+    "explain": "Mnożymy wiersz przez kolumnę: 2·5 + 5·2 = 10+10 = 20.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: [[20]].",
-      "Ta odpowiedź jest błędna. Poprawna jest A: [[20]].",
-      "Ta odpowiedź jest błędna. Poprawna jest A: [[20]].",
-      "Ta odpowiedź jest błędna. Poprawna jest A: [[20]]."
+      "Poprawna odpowiedź. Mnożymy wiersz przez kolumnę: 2·5 + 5·2 = 10+10 = 20.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: [[20]]. Mnożymy wiersz przez kolumnę: 2·5 + 5·2 = 10+10 = 20.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: [[20]]. Mnożymy wiersz przez kolumnę: 2·5 + 5·2 = 10+10 = 20.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: [[20]]. Mnożymy wiersz przez kolumnę: 2·5 + 5·2 = 10+10 = 20."
     ]
   },
   {
@@ -6417,12 +6417,12 @@
       "3"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 1.",
+    "explain": "Drugi wiersz jest wielokrotnością pierwszego, więc wiersze są liniowo zależne i rząd macierzy wynosi 1.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: 1.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 1.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 1.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 1."
+      "Poprawna odpowiedź. Drugi wiersz jest wielokrotnością pierwszego, więc wiersze są liniowo zależne i rząd macierzy wynosi 1.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 1. Drugi wiersz jest wielokrotnością pierwszego, więc wiersze są liniowo zależne i rząd macierzy wynosi 1.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 1. Drugi wiersz jest wielokrotnością pierwszego, więc wiersze są liniowo zależne i rząd macierzy wynosi 1.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 1. Drugi wiersz jest wielokrotnością pierwszego, więc wiersze są liniowo zależne i rząd macierzy wynosi 1."
     ]
   },
   {
@@ -6436,12 +6436,12 @@
       "A + B = B + A"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: A · B = B · A.",
+    "explain": "Mnożenie macierzy zazwyczaj nie jest przemienne, więc z A·B nie musi wynikać B·A.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: A · B = B · A.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: A · B = B · A.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: A · B = B · A.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: A · B = B · A."
+      "Ta odpowiedź jest błędna. Poprawna jest B: A · B = B · A. Mnożenie macierzy zazwyczaj nie jest przemienne, więc z A·B nie musi wynikać B·A.",
+      "Poprawna odpowiedź. Mnożenie macierzy zazwyczaj nie jest przemienne, więc z A·B nie musi wynikać B·A.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: A · B = B · A. Mnożenie macierzy zazwyczaj nie jest przemienne, więc z A·B nie musi wynikać B·A.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: A · B = B · A. Mnożenie macierzy zazwyczaj nie jest przemienne, więc z A·B nie musi wynikać B·A."
     ]
   },
   {
@@ -6455,12 +6455,12 @@
       "A^{-1} = [[-10]]"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: A^{-1} = [[0,1]].",
+    "explain": "Dla macierzy jednoelementowej [[10]] odwrotność to [[1/10]], czyli [[0,1]].",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: A^{-1} = [[0,1]].",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: A^{-1} = [[0,1]].",
-      "Ta odpowiedź jest błędna. Poprawna jest B: A^{-1} = [[0,1]].",
-      "Ta odpowiedź jest błędna. Poprawna jest B: A^{-1} = [[0,1]]."
+      "Ta odpowiedź jest błędna. Poprawna jest B: A^{-1} = [[0,1]]. Dla macierzy jednoelementowej [[10]] odwrotność to [[1/10]], czyli [[0,1]].",
+      "Poprawna odpowiedź. Dla macierzy jednoelementowej [[10]] odwrotność to [[1/10]], czyli [[0,1]].",
+      "Ta odpowiedź jest błędna. Poprawna jest B: A^{-1} = [[0,1]]. Dla macierzy jednoelementowej [[10]] odwrotność to [[1/10]], czyli [[0,1]].",
+      "Ta odpowiedź jest błędna. Poprawna jest B: A^{-1} = [[0,1]]. Dla macierzy jednoelementowej [[10]] odwrotność to [[1/10]], czyli [[0,1]]."
     ]
   },
   {
@@ -6474,12 +6474,12 @@
       "22"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 22.",
+    "explain": "Dla macierzy 2×2 wyznacznik to ad-bc, więc 2·5 - (-3)·4 = 10+12 = 22.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: 22.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: 22.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: 22.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: 22."
+      "Ta odpowiedź jest błędna. Poprawna jest D: 22. Dla macierzy 2×2 wyznacznik to ad-bc, więc 2·5 - (-3)·4 = 10+12 = 22.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: 22. Dla macierzy 2×2 wyznacznik to ad-bc, więc 2·5 - (-3)·4 = 10+12 = 22.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: 22. Dla macierzy 2×2 wyznacznik to ad-bc, więc 2·5 - (-3)·4 = 10+12 = 22.",
+      "Poprawna odpowiedź. Dla macierzy 2×2 wyznacznik to ad-bc, więc 2·5 - (-3)·4 = 10+12 = 22."
     ]
   },
   {
@@ -6493,12 +6493,12 @@
       "macierz główna układu jest kwadratowa nieosobliwa"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: macierz główna układu jest kwadratowa nieosobliwa.",
+    "explain": "Układ Cramera ma kwadratową nieosobliwą macierz główną, czyli det A ≠ 0.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: macierz główna układu jest kwadratowa nieosobliwa.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: macierz główna układu jest kwadratowa nieosobliwa.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: macierz główna układu jest kwadratowa nieosobliwa.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: macierz główna układu jest kwadratowa nieosobliwa."
+      "Ta odpowiedź jest błędna. Poprawna jest D: macierz główna układu jest kwadratowa nieosobliwa. Układ Cramera ma kwadratową nieosobliwą macierz główną, czyli det A ≠ 0.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: macierz główna układu jest kwadratowa nieosobliwa. Układ Cramera ma kwadratową nieosobliwą macierz główną, czyli det A ≠ 0.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: macierz główna układu jest kwadratowa nieosobliwa. Układ Cramera ma kwadratową nieosobliwą macierz główną, czyli det A ≠ 0.",
+      "Poprawna odpowiedź. Układ Cramera ma kwadratową nieosobliwą macierz główną, czyli det A ≠ 0."
     ]
   },
   {
@@ -6510,10 +6510,10 @@
       "Fałsz"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Prawda.",
+    "explain": "Macierz główna ma wyznacznik 2·3 - (-6)·1 = 12, więc jest nieosobliwa i układ jest Cramera.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: Prawda.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: Prawda."
+      "Poprawna odpowiedź. Macierz główna ma wyznacznik 2·3 - (-6)·1 = 12, więc jest nieosobliwa i układ jest Cramera.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: Prawda. Macierz główna ma wyznacznik 2·3 - (-6)·1 = 12, więc jest nieosobliwa i układ jest Cramera."
     ]
   },
   {
@@ -6529,14 +6529,14 @@
       "0"
     ],
     "correct": 4,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 1.",
+    "explain": "Układ Cramera ma dokładnie jedno rozwiązanie.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest E: 1.",
-      "Ta odpowiedź jest błędna. Poprawna jest E: 1.",
-      "Ta odpowiedź jest błędna. Poprawna jest E: 1.",
-      "Ta odpowiedź jest błędna. Poprawna jest E: 1.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: 1.",
-      "Ta odpowiedź jest błędna. Poprawna jest E: 1."
+      "Ta odpowiedź jest błędna. Poprawna jest E: 1. Układ Cramera ma dokładnie jedno rozwiązanie.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: 1. Układ Cramera ma dokładnie jedno rozwiązanie.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: 1. Układ Cramera ma dokładnie jedno rozwiązanie.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: 1. Układ Cramera ma dokładnie jedno rozwiązanie.",
+      "Poprawna odpowiedź. Układ Cramera ma dokładnie jedno rozwiązanie.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: 1. Układ Cramera ma dokładnie jedno rozwiązanie."
     ]
   },
   {
@@ -6550,12 +6550,12 @@
       "0"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 2.",
+    "explain": "Układ równań liniowych może mieć 0, 1 albo nieskończenie wiele rozwiązań, ale nie dokładnie 2.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: 2.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: 2.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: 2.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: 2."
+      "Ta odpowiedź jest błędna. Poprawna jest B: 2. Układ równań liniowych może mieć 0, 1 albo nieskończenie wiele rozwiązań, ale nie dokładnie 2.",
+      "Poprawna odpowiedź. Układ równań liniowych może mieć 0, 1 albo nieskończenie wiele rozwiązań, ale nie dokładnie 2.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: 2. Układ równań liniowych może mieć 0, 1 albo nieskończenie wiele rozwiązań, ale nie dokładnie 2.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: 2. Układ równań liniowych może mieć 0, 1 albo nieskończenie wiele rozwiązań, ale nie dokładnie 2."
     ]
   },
   {
@@ -6568,11 +6568,11 @@
       "rz(A) = rz(U)"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: rz(A) = rz(U).",
+    "explain": "Poprawna odpowiedź to rz(A) = rz(U). Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: rz(A) = rz(U).",
-      "Ta odpowiedź jest błędna. Poprawna jest C: rz(A) = rz(U).",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: rz(A) = rz(U)."
+      "Ta odpowiedź jest błędna. Poprawna jest C: rz(A) = rz(U). Poprawna odpowiedź to rz(A) = rz(U). Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: rz(A) = rz(U). Poprawna odpowiedź to rz(A) = rz(U). Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu.",
+      "Poprawna odpowiedź. Poprawna odpowiedź to rz(A) = rz(U). Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu."
     ]
   },
   {
@@ -6588,14 +6588,14 @@
       "[[-1, 8, 5], [2, -6, -4]]"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: [[2, -6], [-1, 8]].",
+    "explain": "Macierz główna zawiera tylko współczynniki przy niewiadomych, bez kolumny wyrazów wolnych.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6], [-1, 8]].",
-      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6], [-1, 8]].",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: [[2, -6], [-1, 8]].",
-      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6], [-1, 8]].",
-      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6], [-1, 8]].",
-      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6], [-1, 8]]."
+      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6], [-1, 8]]. Macierz główna zawiera tylko współczynniki przy niewiadomych, bez kolumny wyrazów wolnych.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6], [-1, 8]]. Macierz główna zawiera tylko współczynniki przy niewiadomych, bez kolumny wyrazów wolnych.",
+      "Poprawna odpowiedź. Macierz główna zawiera tylko współczynniki przy niewiadomych, bez kolumny wyrazów wolnych.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6], [-1, 8]]. Macierz główna zawiera tylko współczynniki przy niewiadomych, bez kolumny wyrazów wolnych.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6], [-1, 8]]. Macierz główna zawiera tylko współczynniki przy niewiadomych, bez kolumny wyrazów wolnych.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6], [-1, 8]]. Macierz główna zawiera tylko współczynniki przy niewiadomych, bez kolumny wyrazów wolnych."
     ]
   },
   {
@@ -6607,10 +6607,10 @@
       "Fałsz"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Fałsz.",
+    "explain": "Wyznacznik macierzy głównej wynosi 2·3 - (-6)·(-1)=6-6=0, więc układ nie jest Cramera.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: Fałsz.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: Fałsz."
+      "Ta odpowiedź jest błędna. Poprawna jest B: Fałsz. Wyznacznik macierzy głównej wynosi 2·3 - (-6)·(-1)=6-6=0, więc układ nie jest Cramera.",
+      "Poprawna odpowiedź. Wyznacznik macierzy głównej wynosi 2·3 - (-6)·(-1)=6-6=0, więc układ nie jest Cramera."
     ]
   },
   {
@@ -6624,12 +6624,12 @@
       "dodanie do wiersza innego wiersza"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: dodanie do wiersza liczby różnej od zera.",
+    "explain": "Operacje elementarne dotyczą wierszy: zamiany wierszy, mnożenia wiersza przez liczbę różną od zera albo dodania wielokrotności innego wiersza. Samo dodanie liczby do wiersza nie jest operacją elementarną.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: dodanie do wiersza liczby różnej od zera.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: dodanie do wiersza liczby różnej od zera.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: dodanie do wiersza liczby różnej od zera.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: dodanie do wiersza liczby różnej od zera."
+      "Ta odpowiedź jest błędna. Poprawna jest C: dodanie do wiersza liczby różnej od zera. Operacje elementarne dotyczą wierszy: zamiany wierszy, mnożenia wiersza przez liczbę różną od zera albo dodania wielokrotności innego wiersza. Samo dodanie liczby do wiersza nie jest operacją elementarną.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: dodanie do wiersza liczby różnej od zera. Operacje elementarne dotyczą wierszy: zamiany wierszy, mnożenia wiersza przez liczbę różną od zera albo dodania wielokrotności innego wiersza. Samo dodanie liczby do wiersza nie jest operacją elementarną.",
+      "Poprawna odpowiedź. Operacje elementarne dotyczą wierszy: zamiany wierszy, mnożenia wiersza przez liczbę różną od zera albo dodania wielokrotności innego wiersza. Samo dodanie liczby do wiersza nie jest operacją elementarną.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: dodanie do wiersza liczby różnej od zera. Operacje elementarne dotyczą wierszy: zamiany wierszy, mnożenia wiersza przez liczbę różną od zera albo dodania wielokrotności innego wiersza. Samo dodanie liczby do wiersza nie jest operacją elementarną."
     ]
   },
   {
@@ -6645,14 +6645,14 @@
       "[[-1, 8], [2, -6]]"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: [[2, -6, -4], [-1, 8, 5]].",
+    "explain": "Macierz uzupełniona zawiera współczynniki przy niewiadomych oraz dodatkową kolumnę wyrazów wolnych.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6, -4], [-1, 8, 5]].",
-      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6, -4], [-1, 8, 5]].",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: [[2, -6, -4], [-1, 8, 5]].",
-      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6, -4], [-1, 8, 5]].",
-      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6, -4], [-1, 8, 5]].",
-      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6, -4], [-1, 8, 5]]."
+      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6, -4], [-1, 8, 5]]. Macierz uzupełniona zawiera współczynniki przy niewiadomych oraz dodatkową kolumnę wyrazów wolnych.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6, -4], [-1, 8, 5]]. Macierz uzupełniona zawiera współczynniki przy niewiadomych oraz dodatkową kolumnę wyrazów wolnych.",
+      "Poprawna odpowiedź. Macierz uzupełniona zawiera współczynniki przy niewiadomych oraz dodatkową kolumnę wyrazów wolnych.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6, -4], [-1, 8, 5]]. Macierz uzupełniona zawiera współczynniki przy niewiadomych oraz dodatkową kolumnę wyrazów wolnych.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6, -4], [-1, 8, 5]]. Macierz uzupełniona zawiera współczynniki przy niewiadomych oraz dodatkową kolumnę wyrazów wolnych.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: [[2, -6, -4], [-1, 8, 5]]. Macierz uzupełniona zawiera współczynniki przy niewiadomych oraz dodatkową kolumnę wyrazów wolnych."
     ]
   },
   {
@@ -6667,13 +6667,13 @@
       "Cramera"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: sprzeczny.",
+    "explain": "W ostatnim wierszu macierzy uzupełnionej mamy równanie 0=9, co jest sprzeczne, więc układ jest sprzeczny.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: sprzeczny.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: sprzeczny.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: sprzeczny.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: sprzeczny.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: sprzeczny."
+      "Ta odpowiedź jest błędna. Poprawna jest D: sprzeczny. W ostatnim wierszu macierzy uzupełnionej mamy równanie 0=9, co jest sprzeczne, więc układ jest sprzeczny.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: sprzeczny. W ostatnim wierszu macierzy uzupełnionej mamy równanie 0=9, co jest sprzeczne, więc układ jest sprzeczny.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: sprzeczny. W ostatnim wierszu macierzy uzupełnionej mamy równanie 0=9, co jest sprzeczne, więc układ jest sprzeczny.",
+      "Poprawna odpowiedź. W ostatnim wierszu macierzy uzupełnionej mamy równanie 0=9, co jest sprzeczne, więc układ jest sprzeczny.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: sprzeczny. W ostatnim wierszu macierzy uzupełnionej mamy równanie 0=9, co jest sprzeczne, więc układ jest sprzeczny."
     ]
   },
   {
@@ -6690,15 +6690,15 @@
       "e^{-π}"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: +∞.",
+    "explain": "Dla n dążącego do nieskończoności wartości n^3 rosną bez ograniczenia, więc granica to +∞.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: +∞.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: +∞.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: +∞.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: +∞.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: +∞.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: +∞.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: +∞."
+      "Ta odpowiedź jest błędna. Poprawna jest C: +∞. Dla n dążącego do nieskończoności wartości n^3 rosną bez ograniczenia, więc granica to +∞.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: +∞. Dla n dążącego do nieskończoności wartości n^3 rosną bez ograniczenia, więc granica to +∞.",
+      "Poprawna odpowiedź. Dla n dążącego do nieskończoności wartości n^3 rosną bez ograniczenia, więc granica to +∞.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: +∞. Dla n dążącego do nieskończoności wartości n^3 rosną bez ograniczenia, więc granica to +∞.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: +∞. Dla n dążącego do nieskończoności wartości n^3 rosną bez ograniczenia, więc granica to +∞.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: +∞. Dla n dążącego do nieskończoności wartości n^3 rosną bez ograniczenia, więc granica to +∞.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: +∞. Dla n dążącego do nieskończoności wartości n^3 rosną bez ograniczenia, więc granica to +∞."
     ]
   },
   {
@@ -6710,10 +6710,10 @@
       "Fałsz"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Prawda.",
+    "explain": "Ciąg stały ma wszystkie wyrazy równe tej samej liczbie, więc jego granicą jest ta liczba.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: Prawda.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: Prawda."
+      "Poprawna odpowiedź. Ciąg stały ma wszystkie wyrazy równe tej samej liczbie, więc jego granicą jest ta liczba.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: Prawda. Ciąg stały ma wszystkie wyrazy równe tej samej liczbie, więc jego granicą jest ta liczba."
     ]
   },
   {
@@ -6727,12 +6727,12 @@
       "dla każdego M∈ℝ istnieje n∈ℕ takie, że zachodzi warunek a_n≤ M"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: istnieje M∈ℝ takie, że dla każdego n∈ℕ zachodzi warunek a_n≥ M.",
+    "explain": "Ograniczenie z dołu oznacza istnienie liczby M, której żaden wyraz ciągu nie jest mniejszy: a_n ≥ M.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: istnieje M∈ℝ takie, że dla każdego n∈ℕ zachodzi warunek a_n≥ M.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: istnieje M∈ℝ takie, że dla każdego n∈ℕ zachodzi warunek a_n≥ M.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: istnieje M∈ℝ takie, że dla każdego n∈ℕ zachodzi warunek a_n≥ M.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: istnieje M∈ℝ takie, że dla każdego n∈ℕ zachodzi warunek a_n≥ M."
+      "Poprawna odpowiedź. Ograniczenie z dołu oznacza istnienie liczby M, której żaden wyraz ciągu nie jest mniejszy: a_n ≥ M.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: istnieje M∈ℝ takie, że dla każdego n∈ℕ zachodzi warunek a_n≥ M. Ograniczenie z dołu oznacza istnienie liczby M, której żaden wyraz ciągu nie jest mniejszy: a_n ≥ M.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: istnieje M∈ℝ takie, że dla każdego n∈ℕ zachodzi warunek a_n≥ M. Ograniczenie z dołu oznacza istnienie liczby M, której żaden wyraz ciągu nie jest mniejszy: a_n ≥ M.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: istnieje M∈ℝ takie, że dla każdego n∈ℕ zachodzi warunek a_n≥ M. Ograniczenie z dołu oznacza istnienie liczby M, której żaden wyraz ciągu nie jest mniejszy: a_n ≥ M."
     ]
   },
   {
@@ -6746,12 +6746,12 @@
       "naprzemienny"
     ],
     "correct": 0,
-    "explain": "Dla n∈ℕ ciąg c_n=n^4 rośnie, bo kolejne potęgi czwarte są coraz większe.",
+    "explain": "Dla dodatnich n kolejne wartości n^4 są coraz większe, więc ciąg jest rosnący.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Dla n∈ℕ ciąg c_n=n^4 rośnie, bo kolejne potęgi czwarte są coraz większe.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: rosnący.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: rosnący.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: rosnący."
+      "Poprawna odpowiedź. Dla dodatnich n kolejne wartości n^4 są coraz większe, więc ciąg jest rosnący.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: rosnący. Dla dodatnich n kolejne wartości n^4 są coraz większe, więc ciąg jest rosnący.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: rosnący. Dla dodatnich n kolejne wartości n^4 są coraz większe, więc ciąg jest rosnący.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: rosnący. Dla dodatnich n kolejne wartości n^4 są coraz większe, więc ciąg jest rosnący."
     ]
   },
   {
@@ -6765,12 +6765,12 @@
       "ograniczony z dołu"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: ograniczony z góry i ograniczony z dołu.",
+    "explain": "Ciąg ograniczony musi być ograniczony jednocześnie z góry i z dołu.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: ograniczony z góry i ograniczony z dołu.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: ograniczony z góry i ograniczony z dołu.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: ograniczony z góry i ograniczony z dołu.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: ograniczony z góry i ograniczony z dołu."
+      "Ta odpowiedź jest błędna. Poprawna jest C: ograniczony z góry i ograniczony z dołu. Ciąg ograniczony musi być ograniczony jednocześnie z góry i z dołu.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: ograniczony z góry i ograniczony z dołu. Ciąg ograniczony musi być ograniczony jednocześnie z góry i z dołu.",
+      "Poprawna odpowiedź. Ciąg ograniczony musi być ograniczony jednocześnie z góry i z dołu.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: ograniczony z góry i ograniczony z dołu. Ciąg ograniczony musi być ograniczony jednocześnie z góry i z dołu."
     ]
   },
   {
@@ -6784,12 +6784,12 @@
       "0"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: e.",
+    "explain": "To klasyczna granica definiująca liczbę e: (1+1/n)^n dąży do e.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: e.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: e.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: e.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: e."
+      "Poprawna odpowiedź. To klasyczna granica definiująca liczbę e: (1+1/n)^n dąży do e.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: e. To klasyczna granica definiująca liczbę e: (1+1/n)^n dąży do e.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: e. To klasyczna granica definiująca liczbę e: (1+1/n)^n dąży do e.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: e. To klasyczna granica definiująca liczbę e: (1+1/n)^n dąży do e."
     ]
   },
   {
@@ -6803,12 +6803,12 @@
       "stały zawsze"
     ],
     "correct": 0,
-    "explain": "Każdy ciąg monotoniczny i ograniczony jest zbieżny.",
+    "explain": "Twierdzenie o ciągach mówi, że każdy ciąg monotoniczny i ograniczony jest zbieżny.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Każdy ciąg monotoniczny i ograniczony jest zbieżny.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: zbieżny.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: zbieżny.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: zbieżny."
+      "Poprawna odpowiedź. Twierdzenie o ciągach mówi, że każdy ciąg monotoniczny i ograniczony jest zbieżny.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: zbieżny. Twierdzenie o ciągach mówi, że każdy ciąg monotoniczny i ograniczony jest zbieżny.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: zbieżny. Twierdzenie o ciągach mówi, że każdy ciąg monotoniczny i ograniczony jest zbieżny.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: zbieżny. Twierdzenie o ciągach mówi, że każdy ciąg monotoniczny i ograniczony jest zbieżny."
     ]
   },
   {
@@ -6821,11 +6821,11 @@
       "a_{n+1}<a_n"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: a_{n+1}>a_n.",
+    "explain": "Poprawna odpowiedź to a_{n+1}>a_n. Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: a_{n+1}>a_n.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: a_{n+1}>a_n.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: a_{n+1}>a_n."
+      "Ta odpowiedź jest błędna. Poprawna jest B: a_{n+1}>a_n. Poprawna odpowiedź to a_{n+1}>a_n. Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu.",
+      "Poprawna odpowiedź. Poprawna odpowiedź to a_{n+1}>a_n. Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: a_{n+1}>a_n. Poprawna odpowiedź to a_{n+1}>a_n. Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu."
     ]
   },
   {
@@ -6839,12 +6839,12 @@
       "nieograniczony"
     ],
     "correct": 0,
-    "explain": "Ciąg (-1)^n przyjmuje tylko wartości -1 i 1, więc jest ograniczony, ale nie jest zbieżny.",
+    "explain": "Ciąg (-1)^n przyjmuje tylko wartości -1 i 1, więc jest ograniczony, choć nie jest zbieżny.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Ciąg (-1)^n przyjmuje tylko wartości -1 i 1, więc jest ograniczony, ale nie jest zbieżny.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: ograniczony.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: ograniczony.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: ograniczony."
+      "Poprawna odpowiedź. Ciąg (-1)^n przyjmuje tylko wartości -1 i 1, więc jest ograniczony, choć nie jest zbieżny.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: ograniczony. Ciąg (-1)^n przyjmuje tylko wartości -1 i 1, więc jest ograniczony, choć nie jest zbieżny.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: ograniczony. Ciąg (-1)^n przyjmuje tylko wartości -1 i 1, więc jest ograniczony, choć nie jest zbieżny.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: ograniczony. Ciąg (-1)^n przyjmuje tylko wartości -1 i 1, więc jest ograniczony, choć nie jest zbieżny."
     ]
   },
   {
@@ -6858,12 +6858,12 @@
       "0,33"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 2,71.",
+    "explain": "Liczba e wynosi około 2,718..., więc najlepsze przybliżenie z podanych to 2,71.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: 2,71.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: 2,71.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: 2,71.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: 2,71."
+      "Ta odpowiedź jest błędna. Poprawna jest B: 2,71. Liczba e wynosi około 2,718..., więc najlepsze przybliżenie z podanych to 2,71.",
+      "Poprawna odpowiedź. Liczba e wynosi około 2,718..., więc najlepsze przybliżenie z podanych to 2,71.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: 2,71. Liczba e wynosi około 2,718..., więc najlepsze przybliżenie z podanych to 2,71.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: 2,71. Liczba e wynosi około 2,718..., więc najlepsze przybliżenie z podanych to 2,71."
     ]
   },
   {
@@ -6877,12 +6877,12 @@
       "istnieją x_1, x_2 ∈ D takie, że jeżeli x_1 < x_2, to zachodzi warunek f(x_1) > f(x_2)"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: dla każdego x_1, x_2 ∈ D takiego, że x_1 < x_2 zachodzi warunek f(x_1) > f(x_2).",
+    "explain": "Funkcja malejąca odwraca porządek: gdy x_1<x_2, to f(x_1)>f(x_2).",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: dla każdego x_1, x_2 ∈ D takiego, że x_1 < x_2 zachodzi warunek f(x_1) > f(x_2).",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: dla każdego x_1, x_2 ∈ D takiego, że x_1 < x_2 zachodzi warunek f(x_1) > f(x_2).",
-      "Ta odpowiedź jest błędna. Poprawna jest B: dla każdego x_1, x_2 ∈ D takiego, że x_1 < x_2 zachodzi warunek f(x_1) > f(x_2).",
-      "Ta odpowiedź jest błędna. Poprawna jest B: dla każdego x_1, x_2 ∈ D takiego, że x_1 < x_2 zachodzi warunek f(x_1) > f(x_2)."
+      "Ta odpowiedź jest błędna. Poprawna jest B: dla każdego x_1, x_2 ∈ D takiego, że x_1 < x_2 zachodzi warunek f(x_1) > f(x_2). Funkcja malejąca odwraca porządek: gdy x_1<x_2, to f(x_1)>f(x_2).",
+      "Poprawna odpowiedź. Funkcja malejąca odwraca porządek: gdy x_1<x_2, to f(x_1)>f(x_2).",
+      "Ta odpowiedź jest błędna. Poprawna jest B: dla każdego x_1, x_2 ∈ D takiego, że x_1 < x_2 zachodzi warunek f(x_1) > f(x_2). Funkcja malejąca odwraca porządek: gdy x_1<x_2, to f(x_1)>f(x_2).",
+      "Ta odpowiedź jest błędna. Poprawna jest B: dla każdego x_1, x_2 ∈ D takiego, że x_1 < x_2 zachodzi warunek f(x_1) > f(x_2). Funkcja malejąca odwraca porządek: gdy x_1<x_2, to f(x_1)>f(x_2)."
     ]
   },
   {
@@ -6897,13 +6897,13 @@
       "f^{-1}(x)=(x)/(1), x ∈ ℝ∖{0}"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f^{-1}(x)=(1)/(x), x ∈ ℝ∖{0}.",
+    "explain": "Funkcja 1/x jest swoją własną odwrotnością, bo zastosowana dwa razy daje z powrotem x.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: f^{-1}(x)=(1)/(x), x ∈ ℝ∖{0}.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: f^{-1}(x)=(1)/(x), x ∈ ℝ∖{0}.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: f^{-1}(x)=(1)/(x), x ∈ ℝ∖{0}.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: f^{-1}(x)=(1)/(x), x ∈ ℝ∖{0}.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: f^{-1}(x)=(1)/(x), x ∈ ℝ∖{0}."
+      "Poprawna odpowiedź. Funkcja 1/x jest swoją własną odwrotnością, bo zastosowana dwa razy daje z powrotem x.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: f^{-1}(x)=(1)/(x), x ∈ ℝ∖{0}. Funkcja 1/x jest swoją własną odwrotnością, bo zastosowana dwa razy daje z powrotem x.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: f^{-1}(x)=(1)/(x), x ∈ ℝ∖{0}. Funkcja 1/x jest swoją własną odwrotnością, bo zastosowana dwa razy daje z powrotem x.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: f^{-1}(x)=(1)/(x), x ∈ ℝ∖{0}. Funkcja 1/x jest swoją własną odwrotnością, bo zastosowana dwa razy daje z powrotem x.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: f^{-1}(x)=(1)/(x), x ∈ ℝ∖{0}. Funkcja 1/x jest swoją własną odwrotnością, bo zastosowana dwa razy daje z powrotem x."
     ]
   },
   {
@@ -6921,16 +6921,16 @@
       "(-∞,-5]"
     ],
     "correct": 4,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: [-5,∞).",
+    "explain": "Pod pierwiastkiem parzystego stopnia musi być liczba nieujemna: x+5 ≥ 0, więc x ≥ -5.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest E: [-5,∞).",
-      "Ta odpowiedź jest błędna. Poprawna jest E: [-5,∞).",
-      "Ta odpowiedź jest błędna. Poprawna jest E: [-5,∞).",
-      "Ta odpowiedź jest błędna. Poprawna jest E: [-5,∞).",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: [-5,∞).",
-      "Ta odpowiedź jest błędna. Poprawna jest E: [-5,∞).",
-      "Ta odpowiedź jest błędna. Poprawna jest E: [-5,∞).",
-      "Ta odpowiedź jest błędna. Poprawna jest E: [-5,∞)."
+      "Ta odpowiedź jest błędna. Poprawna jest E: [-5,∞). Pod pierwiastkiem parzystego stopnia musi być liczba nieujemna: x+5 ≥ 0, więc x ≥ -5.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: [-5,∞). Pod pierwiastkiem parzystego stopnia musi być liczba nieujemna: x+5 ≥ 0, więc x ≥ -5.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: [-5,∞). Pod pierwiastkiem parzystego stopnia musi być liczba nieujemna: x+5 ≥ 0, więc x ≥ -5.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: [-5,∞). Pod pierwiastkiem parzystego stopnia musi być liczba nieujemna: x+5 ≥ 0, więc x ≥ -5.",
+      "Poprawna odpowiedź. Pod pierwiastkiem parzystego stopnia musi być liczba nieujemna: x+5 ≥ 0, więc x ≥ -5.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: [-5,∞). Pod pierwiastkiem parzystego stopnia musi być liczba nieujemna: x+5 ≥ 0, więc x ≥ -5.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: [-5,∞). Pod pierwiastkiem parzystego stopnia musi być liczba nieujemna: x+5 ≥ 0, więc x ≥ -5.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: [-5,∞). Pod pierwiastkiem parzystego stopnia musi być liczba nieujemna: x+5 ≥ 0, więc x ≥ -5."
     ]
   },
   {
@@ -6945,13 +6945,13 @@
       "f^{-1}(x)=10^{x}"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f^{-1}(x)=e^{x}.",
+    "explain": "Logarytm naturalny ln x i funkcja wykładnicza e^x są funkcjami odwrotnymi.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: f^{-1}(x)=e^{x}.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: f^{-1}(x)=e^{x}.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: f^{-1}(x)=e^{x}.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: f^{-1}(x)=e^{x}.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: f^{-1}(x)=e^{x}."
+      "Ta odpowiedź jest błędna. Poprawna jest C: f^{-1}(x)=e^{x}. Logarytm naturalny ln x i funkcja wykładnicza e^x są funkcjami odwrotnymi.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: f^{-1}(x)=e^{x}. Logarytm naturalny ln x i funkcja wykładnicza e^x są funkcjami odwrotnymi.",
+      "Poprawna odpowiedź. Logarytm naturalny ln x i funkcja wykładnicza e^x są funkcjami odwrotnymi.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: f^{-1}(x)=e^{x}. Logarytm naturalny ln x i funkcja wykładnicza e^x są funkcjami odwrotnymi.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: f^{-1}(x)=e^{x}. Logarytm naturalny ln x i funkcja wykładnicza e^x są funkcjami odwrotnymi."
     ]
   },
   {
@@ -6965,12 +6965,12 @@
       "1"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: e.",
+    "explain": "Logarytm naturalny ma podstawę e.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: e.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: e.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: e.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: e."
+      "Ta odpowiedź jest błędna. Poprawna jest C: e. Logarytm naturalny ma podstawę e.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: e. Logarytm naturalny ma podstawę e.",
+      "Poprawna odpowiedź. Logarytm naturalny ma podstawę e.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: e. Logarytm naturalny ma podstawę e."
     ]
   },
   {
@@ -6982,10 +6982,10 @@
       "Fałsz"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Prawda.",
+    "explain": "Funkcje elementarne powstają z podstawowych funkcji przez skończoną liczbę działań, składania i odwracania.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: Prawda.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: Prawda."
+      "Poprawna odpowiedź. Funkcje elementarne powstają z podstawowych funkcji przez skończoną liczbę działań, składania i odwracania.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: Prawda. Funkcje elementarne powstają z podstawowych funkcji przez skończoną liczbę działań, składania i odwracania."
     ]
   },
   {
@@ -7000,13 +7000,13 @@
       "f(x)=ln x"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f(x)=x.",
+    "explain": "Funkcja identycznościowa f(x)=x należy do podstawowych funkcji elementarnych.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: f(x)=x.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: f(x)=x.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: f(x)=x.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: f(x)=x.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: f(x)=x."
+      "Ta odpowiedź jest błędna. Poprawna jest D: f(x)=x. Funkcja identycznościowa f(x)=x należy do podstawowych funkcji elementarnych.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: f(x)=x. Funkcja identycznościowa f(x)=x należy do podstawowych funkcji elementarnych.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: f(x)=x. Funkcja identycznościowa f(x)=x należy do podstawowych funkcji elementarnych.",
+      "Poprawna odpowiedź. Funkcja identycznościowa f(x)=x należy do podstawowych funkcji elementarnych.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: f(x)=x. Funkcja identycznościowa f(x)=x należy do podstawowych funkcji elementarnych."
     ]
   },
   {
@@ -7021,13 +7021,13 @@
       "f^{-1}(x)=e^{-x}"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f^{-1}(x)=log x.",
+    "explain": "Funkcją odwrotną do 10^x jest logarytm dziesiętny, czyli log x.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: f^{-1}(x)=log x.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: f^{-1}(x)=log x.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: f^{-1}(x)=log x.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: f^{-1}(x)=log x.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: f^{-1}(x)=log x."
+      "Ta odpowiedź jest błędna. Poprawna jest D: f^{-1}(x)=log x. Funkcją odwrotną do 10^x jest logarytm dziesiętny, czyli log x.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: f^{-1}(x)=log x. Funkcją odwrotną do 10^x jest logarytm dziesiętny, czyli log x.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: f^{-1}(x)=log x. Funkcją odwrotną do 10^x jest logarytm dziesiętny, czyli log x.",
+      "Poprawna odpowiedź. Funkcją odwrotną do 10^x jest logarytm dziesiętny, czyli log x.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: f^{-1}(x)=log x. Funkcją odwrotną do 10^x jest logarytm dziesiętny, czyli log x."
     ]
   },
   {
@@ -7041,12 +7041,12 @@
       "na zbiór Y, ale niekoniecznie różnowartościowa"
     ],
     "correct": 0,
-    "explain": "Bijekcja to funkcja jednocześnie surjektywna i iniektywna.",
+    "explain": "Bijekcja musi być jednocześnie iniekcją i surjekcją: różne argumenty dają różne wartości i cały zbiór Y jest osiągany.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Bijekcja to funkcja jednocześnie surjektywna i iniektywna.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: surjekcją i iniekcją.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: surjekcją i iniekcją.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: surjekcją i iniekcją."
+      "Poprawna odpowiedź. Bijekcja musi być jednocześnie iniekcją i surjekcją: różne argumenty dają różne wartości i cały zbiór Y jest osiągany.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: surjekcją i iniekcją. Bijekcja musi być jednocześnie iniekcją i surjekcją: różne argumenty dają różne wartości i cały zbiór Y jest osiągany.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: surjekcją i iniekcją. Bijekcja musi być jednocześnie iniekcją i surjekcją: różne argumenty dają różne wartości i cały zbiór Y jest osiągany.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: surjekcją i iniekcją. Bijekcja musi być jednocześnie iniekcją i surjekcją: różne argumenty dają różne wartości i cały zbiór Y jest osiągany."
     ]
   },
   {
@@ -7060,12 +7060,12 @@
       "ograniczona z góry lub ograniczona z dołu"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: ograniczona z góry i ograniczona z dołu.",
+    "explain": "Funkcja ograniczona musi mieć zarówno ograniczenie z góry, jak i z dołu.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: ograniczona z góry i ograniczona z dołu.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: ograniczona z góry i ograniczona z dołu.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: ograniczona z góry i ograniczona z dołu.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: ograniczona z góry i ograniczona z dołu."
+      "Ta odpowiedź jest błędna. Poprawna jest B: ograniczona z góry i ograniczona z dołu. Funkcja ograniczona musi mieć zarówno ograniczenie z góry, jak i z dołu.",
+      "Poprawna odpowiedź. Funkcja ograniczona musi mieć zarówno ograniczenie z góry, jak i z dołu.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: ograniczona z góry i ograniczona z dołu. Funkcja ograniczona musi mieć zarówno ograniczenie z góry, jak i z dołu.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: ograniczona z góry i ograniczona z dołu. Funkcja ograniczona musi mieć zarówno ograniczenie z góry, jak i z dołu."
     ]
   },
   {
@@ -7077,10 +7077,10 @@
       "prawdziwe"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: prawdziwe.",
+    "explain": "Funkcje elementarne są ciągłe w punktach należących do ich dziedzin naturalnych.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: prawdziwe.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: prawdziwe."
+      "Ta odpowiedź jest błędna. Poprawna jest B: prawdziwe. Funkcje elementarne są ciągłe w punktach należących do ich dziedzin naturalnych.",
+      "Poprawna odpowiedź. Funkcje elementarne są ciągłe w punktach należących do ich dziedzin naturalnych."
     ]
   },
   {
@@ -7092,10 +7092,10 @@
       "fałszywe"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: prawdziwe.",
+    "explain": "Suma, różnica, iloczyn i iloraz funkcji ciągłych są ciągłe, o ile w ilorazie mianownik nie jest zerem.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: prawdziwe.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: prawdziwe."
+      "Poprawna odpowiedź. Suma, różnica, iloczyn i iloraz funkcji ciągłych są ciągłe, o ile w ilorazie mianownik nie jest zerem.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: prawdziwe. Suma, różnica, iloczyn i iloraz funkcji ciągłych są ciągłe, o ile w ilorazie mianownik nie jest zerem."
     ]
   },
   {
@@ -7109,12 +7109,12 @@
       "-4"
     ],
     "correct": 0,
-    "explain": "Podstawiamy x=0: 2^{0+3}-4 = 8-4 = 4.",
+    "explain": "Funkcja jest ciągła, więc podstawiamy x=0: 2^(0+3)-4 = 8-4 = 4.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Podstawiamy x=0: 2^{0+3}-4 = 8-4 = 4.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 4.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 4.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 4."
+      "Poprawna odpowiedź. Funkcja jest ciągła, więc podstawiamy x=0: 2^(0+3)-4 = 8-4 = 4.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 4. Funkcja jest ciągła, więc podstawiamy x=0: 2^(0+3)-4 = 8-4 = 4.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 4. Funkcja jest ciągła, więc podstawiamy x=0: 2^(0+3)-4 = 8-4 = 4.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 4. Funkcja jest ciągła, więc podstawiamy x=0: 2^(0+3)-4 = 8-4 = 4."
     ]
   },
   {
@@ -7128,12 +7128,12 @@
       "brak punktu nieciągłości"
     ],
     "correct": 0,
-    "explain": "Funkcja signum ma w 0 nieciągłość skokową.",
+    "explain": "Funkcja signum ma w zerze skok z wartości ujemnych do dodatnich, więc jest to nieciągłość skokowa.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Funkcja signum ma w 0 nieciągłość skokową.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: skok.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: skok.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: skok."
+      "Poprawna odpowiedź. Funkcja signum ma w zerze skok z wartości ujemnych do dodatnich, więc jest to nieciągłość skokowa.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: skok. Funkcja signum ma w zerze skok z wartości ujemnych do dodatnich, więc jest to nieciągłość skokowa.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: skok. Funkcja signum ma w zerze skok z wartości ujemnych do dodatnich, więc jest to nieciągłość skokowa.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: skok. Funkcja signum ma w zerze skok z wartości ujemnych do dodatnich, więc jest to nieciągłość skokowa."
     ]
   },
   {
@@ -7147,12 +7147,12 @@
       "dla każdego ciągu x_n∈D∖{x_0}, x_n→x_0, zachodzi f(x_n)→g"
     ],
     "correct": 3,
-    "explain": "W definicji Heinego trzeba wymagać, żeby x_n dążył do x_0. Wtedy dla każdego takiego ciągu wartości f(x_n) muszą dążyć do g.",
+    "explain": "W definicji Heinego bierzemy każdy ciąg x_n z dziedziny, różny od x_0 i zbieżny do x_0. Wtedy f(x_n) musi dążyć do g.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: dla każdego ciągu x_n∈D∖{x_0}, x_n→x_0, zachodzi f(x_n)→g.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: dla każdego ciągu x_n∈D∖{x_0}, x_n→x_0, zachodzi f(x_n)→g.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: dla każdego ciągu x_n∈D∖{x_0}, x_n→x_0, zachodzi f(x_n)→g.",
-      "Poprawna odpowiedź. W definicji Heinego trzeba wymagać, żeby x_n dążył do x_0. Wtedy dla każdego takiego ciągu wartości f(x_n) muszą dążyć do g."
+      "Ta odpowiedź jest błędna. Poprawna jest D: dla każdego ciągu x_n∈D∖{x_0}, x_n→x_0, zachodzi f(x_n)→g. W definicji Heinego bierzemy każdy ciąg x_n z dziedziny, różny od x_0 i zbieżny do x_0. Wtedy f(x_n) musi dążyć do g.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: dla każdego ciągu x_n∈D∖{x_0}, x_n→x_0, zachodzi f(x_n)→g. W definicji Heinego bierzemy każdy ciąg x_n z dziedziny, różny od x_0 i zbieżny do x_0. Wtedy f(x_n) musi dążyć do g.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: dla każdego ciągu x_n∈D∖{x_0}, x_n→x_0, zachodzi f(x_n)→g. W definicji Heinego bierzemy każdy ciąg x_n z dziedziny, różny od x_0 i zbieżny do x_0. Wtedy f(x_n) musi dążyć do g.",
+      "Poprawna odpowiedź. W definicji Heinego bierzemy każdy ciąg x_n z dziedziny, różny od x_0 i zbieżny do x_0. Wtedy f(x_n) musi dążyć do g."
     ]
   },
   {
@@ -7167,13 +7167,13 @@
       "własność Weierstrassa funkcji ciągłej"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: własność Darboux funkcji ciągłej.",
+    "explain": "Własność Darboux mówi, że funkcja ciągła przyjmuje wszystkie wartości pośrednie między f(a) i f(b).",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: własność Darboux funkcji ciągłej.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: własność Darboux funkcji ciągłej.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: własność Darboux funkcji ciągłej.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: własność Darboux funkcji ciągłej.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: własność Darboux funkcji ciągłej."
+      "Ta odpowiedź jest błędna. Poprawna jest C: własność Darboux funkcji ciągłej. Własność Darboux mówi, że funkcja ciągła przyjmuje wszystkie wartości pośrednie między f(a) i f(b).",
+      "Ta odpowiedź jest błędna. Poprawna jest C: własność Darboux funkcji ciągłej. Własność Darboux mówi, że funkcja ciągła przyjmuje wszystkie wartości pośrednie między f(a) i f(b).",
+      "Poprawna odpowiedź. Własność Darboux mówi, że funkcja ciągła przyjmuje wszystkie wartości pośrednie między f(a) i f(b).",
+      "Ta odpowiedź jest błędna. Poprawna jest C: własność Darboux funkcji ciągłej. Własność Darboux mówi, że funkcja ciągła przyjmuje wszystkie wartości pośrednie między f(a) i f(b).",
+      "Ta odpowiedź jest błędna. Poprawna jest C: własność Darboux funkcji ciągłej. Własność Darboux mówi, że funkcja ciągła przyjmuje wszystkie wartości pośrednie między f(a) i f(b)."
     ]
   },
   {
@@ -7187,12 +7187,12 @@
       "0"
     ],
     "correct": 0,
-    "explain": "Podstawiamy x=3: 2·3^3-4 = 2·27-4 = 50.",
+    "explain": "Podstawiamy x=3: 2·3^3 - 4 = 2·27 - 4 = 50.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Podstawiamy x=3: 2·3^3-4 = 2·27-4 = 50.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 50.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 50.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 50."
+      "Poprawna odpowiedź. Podstawiamy x=3: 2·3^3 - 4 = 2·27 - 4 = 50.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 50. Podstawiamy x=3: 2·3^3 - 4 = 2·27 - 4 = 50.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 50. Podstawiamy x=3: 2·3^3 - 4 = 2·27 - 4 = 50.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 50. Podstawiamy x=3: 2·3^3 - 4 = 2·27 - 4 = 50."
     ]
   },
   {
@@ -7207,13 +7207,13 @@
       "nie ma punktów nieciągłości"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: ma nieskończenie wiele punktów nieciągłości.",
+    "explain": "Funkcja część całkowita [x] ma skoki w każdym punkcie całkowitym, więc ma nieskończenie wiele punktów nieciągłości.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: ma nieskończenie wiele punktów nieciągłości.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: ma nieskończenie wiele punktów nieciągłości.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: ma nieskończenie wiele punktów nieciągłości.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: ma nieskończenie wiele punktów nieciągłości.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: ma nieskończenie wiele punktów nieciągłości."
+      "Ta odpowiedź jest błędna. Poprawna jest B: ma nieskończenie wiele punktów nieciągłości. Funkcja część całkowita [x] ma skoki w każdym punkcie całkowitym, więc ma nieskończenie wiele punktów nieciągłości.",
+      "Poprawna odpowiedź. Funkcja część całkowita [x] ma skoki w każdym punkcie całkowitym, więc ma nieskończenie wiele punktów nieciągłości.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: ma nieskończenie wiele punktów nieciągłości. Funkcja część całkowita [x] ma skoki w każdym punkcie całkowitym, więc ma nieskończenie wiele punktów nieciągłości.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: ma nieskończenie wiele punktów nieciągłości. Funkcja część całkowita [x] ma skoki w każdym punkcie całkowitym, więc ma nieskończenie wiele punktów nieciągłości.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: ma nieskończenie wiele punktów nieciągłości. Funkcja część całkowita [x] ma skoki w każdym punkcie całkowitym, więc ma nieskończenie wiele punktów nieciągłości."
     ]
   },
   {
@@ -7225,10 +7225,10 @@
       "Fałsz"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Prawda.",
+    "explain": "Funkcja jest ciągła na przedziale, gdy jest ciągła w każdym punkcie tego przedziału.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: Prawda.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: Prawda."
+      "Poprawna odpowiedź. Funkcja jest ciągła na przedziale, gdy jest ciągła w każdym punkcie tego przedziału.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: Prawda. Funkcja jest ciągła na przedziale, gdy jest ciągła w każdym punkcie tego przedziału."
     ]
   },
   {
@@ -7244,14 +7244,14 @@
       "f(a)f(b)>0"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f(a)f(b)<0.",
+    "explain": "Jeśli f(a) i f(b) mają przeciwne znaki, to przez ciągłość funkcja musi przeciąć oś OX, więc istnieje rozwiązanie f(x)=0.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: f(a)f(b)<0.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: f(a)f(b)<0.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: f(a)f(b)<0.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: f(a)f(b)<0.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: f(a)f(b)<0.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: f(a)f(b)<0."
+      "Ta odpowiedź jest błędna. Poprawna jest C: f(a)f(b)<0. Jeśli f(a) i f(b) mają przeciwne znaki, to przez ciągłość funkcja musi przeciąć oś OX, więc istnieje rozwiązanie f(x)=0.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: f(a)f(b)<0. Jeśli f(a) i f(b) mają przeciwne znaki, to przez ciągłość funkcja musi przeciąć oś OX, więc istnieje rozwiązanie f(x)=0.",
+      "Poprawna odpowiedź. Jeśli f(a) i f(b) mają przeciwne znaki, to przez ciągłość funkcja musi przeciąć oś OX, więc istnieje rozwiązanie f(x)=0.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: f(a)f(b)<0. Jeśli f(a) i f(b) mają przeciwne znaki, to przez ciągłość funkcja musi przeciąć oś OX, więc istnieje rozwiązanie f(x)=0.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: f(a)f(b)<0. Jeśli f(a) i f(b) mają przeciwne znaki, to przez ciągłość funkcja musi przeciąć oś OX, więc istnieje rozwiązanie f(x)=0.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: f(a)f(b)<0. Jeśli f(a) i f(b) mają przeciwne znaki, to przez ciągłość funkcja musi przeciąć oś OX, więc istnieje rozwiązanie f(x)=0."
     ]
   },
   {
@@ -7265,12 +7265,12 @@
       "funkcja f ma różnicę w punkcie x_0"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: istnieje pochodna funkcji f w punkcie x_0.",
+    "explain": "Różniczkowalność w punkcie oznacza dokładnie istnienie pochodnej w tym punkcie.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: istnieje pochodna funkcji f w punkcie x_0.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: istnieje pochodna funkcji f w punkcie x_0.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: istnieje pochodna funkcji f w punkcie x_0.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: istnieje pochodna funkcji f w punkcie x_0."
+      "Ta odpowiedź jest błędna. Poprawna jest C: istnieje pochodna funkcji f w punkcie x_0. Różniczkowalność w punkcie oznacza dokładnie istnienie pochodnej w tym punkcie.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: istnieje pochodna funkcji f w punkcie x_0. Różniczkowalność w punkcie oznacza dokładnie istnienie pochodnej w tym punkcie.",
+      "Poprawna odpowiedź. Różniczkowalność w punkcie oznacza dokładnie istnienie pochodnej w tym punkcie.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: istnieje pochodna funkcji f w punkcie x_0. Różniczkowalność w punkcie oznacza dokładnie istnienie pochodnej w tym punkcie."
     ]
   },
   {
@@ -7282,10 +7282,10 @@
       "Fałsz"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Fałsz.",
+    "explain": "Ciągłość nie wystarcza do różniczkowalności; przykładem jest |x| w punkcie 0.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: Fałsz.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: Fałsz."
+      "Ta odpowiedź jest błędna. Poprawna jest B: Fałsz. Ciągłość nie wystarcza do różniczkowalności; przykładem jest |x| w punkcie 0.",
+      "Poprawna odpowiedź. Ciągłość nie wystarcza do różniczkowalności; przykładem jest |x| w punkcie 0."
     ]
   },
   {
@@ -7299,12 +7299,12 @@
       "stała"
     ],
     "correct": 0,
-    "explain": "Różniczkowalność w punkcie implikuje ciągłość w tym punkcie.",
+    "explain": "Różniczkowalność implikuje ciągłość, ale nie odwrotnie.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Różniczkowalność w punkcie implikuje ciągłość w tym punkcie.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: ciągła.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: ciągła.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: ciągła."
+      "Poprawna odpowiedź. Różniczkowalność implikuje ciągłość, ale nie odwrotnie.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: ciągła. Różniczkowalność implikuje ciągłość, ale nie odwrotnie.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: ciągła. Różniczkowalność implikuje ciągłość, ale nie odwrotnie.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: ciągła. Różniczkowalność implikuje ciągłość, ale nie odwrotnie."
     ]
   },
   {
@@ -7318,12 +7318,12 @@
       "160"
     ],
     "correct": 0,
-    "explain": "f'(x)=5x^4, więc f'(2)=5·2^4=5·16=80.",
+    "explain": "Pochodna x^5 to 5x^4, więc f'(2)=5·2^4=80.",
     "answerExplanations": [
-      "Poprawna odpowiedź. f'(x)=5x^4, więc f'(2)=5·2^4=5·16=80.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 80.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 80.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 80."
+      "Poprawna odpowiedź. Pochodna x^5 to 5x^4, więc f'(2)=5·2^4=80.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 80. Pochodna x^5 to 5x^4, więc f'(2)=5·2^4=80.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 80. Pochodna x^5 to 5x^4, więc f'(2)=5·2^4=80.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 80. Pochodna x^5 to 5x^4, więc f'(2)=5·2^4=80."
     ]
   },
   {
@@ -7337,12 +7337,12 @@
       "h'(x)=f'(x)g'(x)"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: h'(x)=f'(x)g(x)+f(x)g'(x).",
+    "explain": "Dla iloczynu funkcji używamy wzoru: (fg)' = f'g + fg'.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: h'(x)=f'(x)g(x)+f(x)g'(x).",
-      "Ta odpowiedź jest błędna. Poprawna jest A: h'(x)=f'(x)g(x)+f(x)g'(x).",
-      "Ta odpowiedź jest błędna. Poprawna jest A: h'(x)=f'(x)g(x)+f(x)g'(x).",
-      "Ta odpowiedź jest błędna. Poprawna jest A: h'(x)=f'(x)g(x)+f(x)g'(x)."
+      "Poprawna odpowiedź. Dla iloczynu funkcji używamy wzoru: (fg)' = f'g + fg'.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: h'(x)=f'(x)g(x)+f(x)g'(x). Dla iloczynu funkcji używamy wzoru: (fg)' = f'g + fg'.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: h'(x)=f'(x)g(x)+f(x)g'(x). Dla iloczynu funkcji używamy wzoru: (fg)' = f'g + fg'.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: h'(x)=f'(x)g(x)+f(x)g'(x). Dla iloczynu funkcji używamy wzoru: (fg)' = f'g + fg'."
     ]
   },
   {
@@ -7357,13 +7357,13 @@
       "f'(x_0)=lim_{x→ x_0}f(x)"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0).",
+    "explain": "Poprawna odpowiedź to f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0). Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0).",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0).",
-      "Ta odpowiedź jest błędna. Poprawna jest B: f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0).",
-      "Ta odpowiedź jest błędna. Poprawna jest B: f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0).",
-      "Ta odpowiedź jest błędna. Poprawna jest B: f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0)."
+      "Ta odpowiedź jest błędna. Poprawna jest B: f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0). Poprawna odpowiedź to f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0). Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu.",
+      "Poprawna odpowiedź. Poprawna odpowiedź to f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0). Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0). Poprawna odpowiedź to f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0). Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0). Poprawna odpowiedź to f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0). Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0). Poprawna odpowiedź to f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0). Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu."
     ]
   },
   {
@@ -7377,12 +7377,12 @@
       "długości stycznej"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: współczynnikowi kierunkowemu stycznej.",
+    "explain": "Pochodna w punkcie jest współczynnikiem kierunkowym stycznej do wykresu w tym punkcie.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: współczynnikowi kierunkowemu stycznej.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: współczynnikowi kierunkowemu stycznej.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: współczynnikowi kierunkowemu stycznej.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: współczynnikowi kierunkowemu stycznej."
+      "Ta odpowiedź jest błędna. Poprawna jest B: współczynnikowi kierunkowemu stycznej. Pochodna w punkcie jest współczynnikiem kierunkowym stycznej do wykresu w tym punkcie.",
+      "Poprawna odpowiedź. Pochodna w punkcie jest współczynnikiem kierunkowym stycznej do wykresu w tym punkcie.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: współczynnikowi kierunkowemu stycznej. Pochodna w punkcie jest współczynnikiem kierunkowym stycznej do wykresu w tym punkcie.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: współczynnikowi kierunkowemu stycznej. Pochodna w punkcie jest współczynnikiem kierunkowym stycznej do wykresu w tym punkcie."
     ]
   },
   {
@@ -7394,10 +7394,10 @@
       "Fałsz"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Prawda.",
+    "explain": "Jeżeli pochodna funkcji elementarnej istnieje, to nadal jest funkcją elementarną.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: Prawda.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: Prawda."
+      "Poprawna odpowiedź. Jeżeli pochodna funkcji elementarnej istnieje, to nadal jest funkcją elementarną.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: Prawda. Jeżeli pochodna funkcji elementarnej istnieje, to nadal jest funkcją elementarną."
     ]
   },
   {
@@ -7412,13 +7412,13 @@
       "f'(x)=x^{e}"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f'(x)=e^{x}.",
+    "explain": "Funkcja e^x jest wyjątkowa: jej pochodna jest równa e^x.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: f'(x)=e^{x}.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: f'(x)=e^{x}.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: f'(x)=e^{x}.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: f'(x)=e^{x}.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: f'(x)=e^{x}."
+      "Ta odpowiedź jest błędna. Poprawna jest C: f'(x)=e^{x}. Funkcja e^x jest wyjątkowa: jej pochodna jest równa e^x.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: f'(x)=e^{x}. Funkcja e^x jest wyjątkowa: jej pochodna jest równa e^x.",
+      "Poprawna odpowiedź. Funkcja e^x jest wyjątkowa: jej pochodna jest równa e^x.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: f'(x)=e^{x}. Funkcja e^x jest wyjątkowa: jej pochodna jest równa e^x.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: f'(x)=e^{x}. Funkcja e^x jest wyjątkowa: jej pochodna jest równa e^x."
     ]
   },
   {
@@ -7432,12 +7432,12 @@
       "Joseph Louis Lagrange i Blaise Pascal"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Gottfried Wilhelm Leibniz i Izaak Newton.",
+    "explain": "Rachunek różniczkowy powstał niezależnie w pracach Newtona i Leibniza.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: Gottfried Wilhelm Leibniz i Izaak Newton.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: Gottfried Wilhelm Leibniz i Izaak Newton.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: Gottfried Wilhelm Leibniz i Izaak Newton.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: Gottfried Wilhelm Leibniz i Izaak Newton."
+      "Poprawna odpowiedź. Rachunek różniczkowy powstał niezależnie w pracach Newtona i Leibniza.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: Gottfried Wilhelm Leibniz i Izaak Newton. Rachunek różniczkowy powstał niezależnie w pracach Newtona i Leibniza.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: Gottfried Wilhelm Leibniz i Izaak Newton. Rachunek różniczkowy powstał niezależnie w pracach Newtona i Leibniza.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: Gottfried Wilhelm Leibniz i Izaak Newton. Rachunek różniczkowy powstał niezależnie w pracach Newtona i Leibniza."
     ]
   },
   {
@@ -7451,12 +7451,12 @@
       "rosnąca"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: malejąca.",
+    "explain": "Ujemna pochodna na przedziale oznacza, że funkcja jest malejąca.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: malejąca.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: malejąca.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: malejąca.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: malejąca."
+      "Ta odpowiedź jest błędna. Poprawna jest C: malejąca. Ujemna pochodna na przedziale oznacza, że funkcja jest malejąca.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: malejąca. Ujemna pochodna na przedziale oznacza, że funkcja jest malejąca.",
+      "Poprawna odpowiedź. Ujemna pochodna na przedziale oznacza, że funkcja jest malejąca.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: malejąca. Ujemna pochodna na przedziale oznacza, że funkcja jest malejąca."
     ]
   },
   {
@@ -7470,12 +7470,12 @@
       "wypukła"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: malejąca.",
+    "explain": "Pochodna wynosi -10-5x^4, czyli jest zawsze ujemna, więc funkcja jest malejąca.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: malejąca.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: malejąca.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: malejąca.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: malejąca."
+      "Ta odpowiedź jest błędna. Poprawna jest C: malejąca. Pochodna wynosi -10-5x^4, czyli jest zawsze ujemna, więc funkcja jest malejąca.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: malejąca. Pochodna wynosi -10-5x^4, czyli jest zawsze ujemna, więc funkcja jest malejąca.",
+      "Poprawna odpowiedź. Pochodna wynosi -10-5x^4, czyli jest zawsze ujemna, więc funkcja jest malejąca.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: malejąca. Pochodna wynosi -10-5x^4, czyli jest zawsze ujemna, więc funkcja jest malejąca."
     ]
   },
   {
@@ -7489,12 +7489,12 @@
       "Twierdzenie Lagrange'a"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Twierdzenie Rolle'a.",
+    "explain": "To twierdzenie Rolle'a: przy tych warunkach istnieje punkt, w którym pochodna jest równa 0.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Rolle'a.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Rolle'a.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: Twierdzenie Rolle'a.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Rolle'a."
+      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Rolle'a. To twierdzenie Rolle'a: przy tych warunkach istnieje punkt, w którym pochodna jest równa 0.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Rolle'a. To twierdzenie Rolle'a: przy tych warunkach istnieje punkt, w którym pochodna jest równa 0.",
+      "Poprawna odpowiedź. To twierdzenie Rolle'a: przy tych warunkach istnieje punkt, w którym pochodna jest równa 0.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Rolle'a. To twierdzenie Rolle'a: przy tych warunkach istnieje punkt, w którym pochodna jest równa 0."
     ]
   },
   {
@@ -7507,11 +7507,11 @@
       "ma maksimum lokalne"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: nie ma ekstremum lokalnego.",
+    "explain": "Dla x^3 w zerze pochodna jest 0, ale funkcja dalej rośnie i nie ma tam maksimum ani minimum lokalnego.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: nie ma ekstremum lokalnego.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: nie ma ekstremum lokalnego.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: nie ma ekstremum lokalnego."
+      "Poprawna odpowiedź. Dla x^3 w zerze pochodna jest 0, ale funkcja dalej rośnie i nie ma tam maksimum ani minimum lokalnego.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: nie ma ekstremum lokalnego. Dla x^3 w zerze pochodna jest 0, ale funkcja dalej rośnie i nie ma tam maksimum ani minimum lokalnego.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: nie ma ekstremum lokalnego. Dla x^3 w zerze pochodna jest 0, ale funkcja dalej rośnie i nie ma tam maksimum ani minimum lokalnego."
     ]
   },
   {
@@ -7525,12 +7525,12 @@
       "f'(x_0)<0"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f'(x_0)=0.",
+    "explain": "Warunek konieczny ekstremum dla funkcji różniczkowalnej to zerowanie pochodnej w tym punkcie.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: f'(x_0)=0.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: f'(x_0)=0.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: f'(x_0)=0.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: f'(x_0)=0."
+      "Ta odpowiedź jest błędna. Poprawna jest C: f'(x_0)=0. Warunek konieczny ekstremum dla funkcji różniczkowalnej to zerowanie pochodnej w tym punkcie.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: f'(x_0)=0. Warunek konieczny ekstremum dla funkcji różniczkowalnej to zerowanie pochodnej w tym punkcie.",
+      "Poprawna odpowiedź. Warunek konieczny ekstremum dla funkcji różniczkowalnej to zerowanie pochodnej w tym punkcie.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: f'(x_0)=0. Warunek konieczny ekstremum dla funkcji różniczkowalnej to zerowanie pochodnej w tym punkcie."
     ]
   },
   {
@@ -7544,12 +7544,12 @@
       "60x^4"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 24x.",
+    "explain": "Najpierw f'(x)=12x^2, a potem f''(x)=24x.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: 24x.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 24x.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 24x.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 24x."
+      "Poprawna odpowiedź. Najpierw f'(x)=12x^2, a potem f''(x)=24x.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 24x. Najpierw f'(x)=12x^2, a potem f''(x)=24x.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 24x. Najpierw f'(x)=12x^2, a potem f''(x)=24x.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 24x. Najpierw f'(x)=12x^2, a potem f''(x)=24x."
     ]
   },
   {
@@ -7561,10 +7561,10 @@
       "prawdziwe"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: fałszywe.",
+    "explain": "Sama równość f'(x_0)=0 nie wystarcza do ekstremum; x^3 w zerze jest kontrprzykładem.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: fałszywe.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: fałszywe."
+      "Poprawna odpowiedź. Sama równość f'(x_0)=0 nie wystarcza do ekstremum; x^3 w zerze jest kontrprzykładem.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: fałszywe. Sama równość f'(x_0)=0 nie wystarcza do ekstremum; x^3 w zerze jest kontrprzykładem."
     ]
   },
   {
@@ -7578,12 +7578,12 @@
       "Twierdzenie Laplace'a"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Twierdzenie Lagrange'a.",
+    "explain": "To twierdzenie Lagrange'a o wartości średniej: pochodna w pewnym punkcie równa się średniemu nachyleniu na odcinku.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Lagrange'a.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Lagrange'a.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: Twierdzenie Lagrange'a.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Lagrange'a."
+      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Lagrange'a. To twierdzenie Lagrange'a o wartości średniej: pochodna w pewnym punkcie równa się średniemu nachyleniu na odcinku.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Lagrange'a. To twierdzenie Lagrange'a o wartości średniej: pochodna w pewnym punkcie równa się średniemu nachyleniu na odcinku.",
+      "Poprawna odpowiedź. To twierdzenie Lagrange'a o wartości średniej: pochodna w pewnym punkcie równa się średniemu nachyleniu na odcinku.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Lagrange'a. To twierdzenie Lagrange'a o wartości średniej: pochodna w pewnym punkcie równa się średniemu nachyleniu na odcinku."
     ]
   },
   {
@@ -7597,12 +7597,12 @@
       "wypukła"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: wypukła.",
+    "explain": "Dodatnia druga pochodna oznacza wypukłość funkcji na przedziale.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: wypukła.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: wypukła.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: wypukła.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: wypukła."
+      "Ta odpowiedź jest błędna. Poprawna jest D: wypukła. Dodatnia druga pochodna oznacza wypukłość funkcji na przedziale.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: wypukła. Dodatnia druga pochodna oznacza wypukłość funkcji na przedziale.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: wypukła. Dodatnia druga pochodna oznacza wypukłość funkcji na przedziale.",
+      "Poprawna odpowiedź. Dodatnia druga pochodna oznacza wypukłość funkcji na przedziale."
     ]
   },
   {
@@ -7616,12 +7616,12 @@
       "wypukła"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: wypukła.",
+    "explain": "Druga pochodna to 90x^8+2, czyli jest dodatnia dla każdego x, więc funkcja jest wypukła.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: wypukła.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: wypukła.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: wypukła.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: wypukła."
+      "Ta odpowiedź jest błędna. Poprawna jest D: wypukła. Druga pochodna to 90x^8+2, czyli jest dodatnia dla każdego x, więc funkcja jest wypukła.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: wypukła. Druga pochodna to 90x^8+2, czyli jest dodatnia dla każdego x, więc funkcja jest wypukła.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: wypukła. Druga pochodna to 90x^8+2, czyli jest dodatnia dla każdego x, więc funkcja jest wypukła.",
+      "Poprawna odpowiedź. Druga pochodna to 90x^8+2, czyli jest dodatnia dla każdego x, więc funkcja jest wypukła."
     ]
   },
   {
@@ -7635,12 +7635,12 @@
       "e^{x}-1"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: e^{x}-1.",
+    "explain": "Funkcja e^x-1 ma pochodną e^x, więc jest funkcją pierwotną dla e^x.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: e^{x}-1.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: e^{x}-1.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: e^{x}-1.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: e^{x}-1."
+      "Ta odpowiedź jest błędna. Poprawna jest D: e^{x}-1. Funkcja e^x-1 ma pochodną e^x, więc jest funkcją pierwotną dla e^x.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: e^{x}-1. Funkcja e^x-1 ma pochodną e^x, więc jest funkcją pierwotną dla e^x.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: e^{x}-1. Funkcja e^x-1 ma pochodną e^x, więc jest funkcją pierwotną dla e^x.",
+      "Poprawna odpowiedź. Funkcja e^x-1 ma pochodną e^x, więc jest funkcją pierwotną dla e^x."
     ]
   },
   {
@@ -7654,12 +7654,12 @@
       "zbiór wszystkich funkcji pierwotnych dla f"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: zbiór wszystkich funkcji pierwotnych dla f.",
+    "explain": "Całka nieoznaczona to cała rodzina funkcji pierwotnych, różniących się stałą C.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: zbiór wszystkich funkcji pierwotnych dla f.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: zbiór wszystkich funkcji pierwotnych dla f.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: zbiór wszystkich funkcji pierwotnych dla f.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: zbiór wszystkich funkcji pierwotnych dla f."
+      "Ta odpowiedź jest błędna. Poprawna jest D: zbiór wszystkich funkcji pierwotnych dla f. Całka nieoznaczona to cała rodzina funkcji pierwotnych, różniących się stałą C.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: zbiór wszystkich funkcji pierwotnych dla f. Całka nieoznaczona to cała rodzina funkcji pierwotnych, różniących się stałą C.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: zbiór wszystkich funkcji pierwotnych dla f. Całka nieoznaczona to cała rodzina funkcji pierwotnych, różniących się stałą C.",
+      "Poprawna odpowiedź. Całka nieoznaczona to cała rodzina funkcji pierwotnych, różniących się stałą C."
     ]
   },
   {
@@ -7673,12 +7673,12 @@
       "wartość średnia funkcji f w przedziale"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: pole figury ograniczonej wykresem funkcji f i osią OX.",
+    "explain": "Dla funkcji nieujemnej całka oznaczona daje pole obszaru pod wykresem nad osią OX.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: pole figury ograniczonej wykresem funkcji f i osią OX.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: pole figury ograniczonej wykresem funkcji f i osią OX.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: pole figury ograniczonej wykresem funkcji f i osią OX.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: pole figury ograniczonej wykresem funkcji f i osią OX."
+      "Ta odpowiedź jest błędna. Poprawna jest C: pole figury ograniczonej wykresem funkcji f i osią OX. Dla funkcji nieujemnej całka oznaczona daje pole obszaru pod wykresem nad osią OX.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: pole figury ograniczonej wykresem funkcji f i osią OX. Dla funkcji nieujemnej całka oznaczona daje pole obszaru pod wykresem nad osią OX.",
+      "Poprawna odpowiedź. Dla funkcji nieujemnej całka oznaczona daje pole obszaru pod wykresem nad osią OX.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: pole figury ograniczonej wykresem funkcji f i osią OX. Dla funkcji nieujemnej całka oznaczona daje pole obszaru pod wykresem nad osią OX."
     ]
   },
   {
@@ -7692,12 +7692,12 @@
       "całka Leibniza"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: całka Riemanna.",
+    "explain": "Całka oznaczona w tym ujęciu to całka Riemanna.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: całka Riemanna.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: całka Riemanna.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: całka Riemanna.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: całka Riemanna."
+      "Poprawna odpowiedź. Całka oznaczona w tym ujęciu to całka Riemanna.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: całka Riemanna. Całka oznaczona w tym ujęciu to całka Riemanna.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: całka Riemanna. Całka oznaczona w tym ujęciu to całka Riemanna.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: całka Riemanna. Całka oznaczona w tym ujęciu to całka Riemanna."
     ]
   },
   {
@@ -7711,12 +7711,12 @@
       "twierdzenie Newtona-Leibniza"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: twierdzenie Newtona-Leibniza.",
+    "explain": "Wzór ∫_a^b f(x)dx = φ(b)-φ(a) to twierdzenie Newtona-Leibniza.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: twierdzenie Newtona-Leibniza.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: twierdzenie Newtona-Leibniza.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: twierdzenie Newtona-Leibniza.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: twierdzenie Newtona-Leibniza."
+      "Ta odpowiedź jest błędna. Poprawna jest D: twierdzenie Newtona-Leibniza. Wzór ∫_a^b f(x)dx = φ(b)-φ(a) to twierdzenie Newtona-Leibniza.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: twierdzenie Newtona-Leibniza. Wzór ∫_a^b f(x)dx = φ(b)-φ(a) to twierdzenie Newtona-Leibniza.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: twierdzenie Newtona-Leibniza. Wzór ∫_a^b f(x)dx = φ(b)-φ(a) to twierdzenie Newtona-Leibniza.",
+      "Poprawna odpowiedź. Wzór ∫_a^b f(x)dx = φ(b)-φ(a) to twierdzenie Newtona-Leibniza."
     ]
   },
   {
@@ -7730,12 +7730,12 @@
       "-cos x+C"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: -cos x+C.",
+    "explain": "Pochodna -cos x to sin x, więc całka z sin x wynosi -cos x + C.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: -cos x+C.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: -cos x+C.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: -cos x+C.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: -cos x+C."
+      "Ta odpowiedź jest błędna. Poprawna jest D: -cos x+C. Pochodna -cos x to sin x, więc całka z sin x wynosi -cos x + C.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: -cos x+C. Pochodna -cos x to sin x, więc całka z sin x wynosi -cos x + C.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: -cos x+C. Pochodna -cos x to sin x, więc całka z sin x wynosi -cos x + C.",
+      "Poprawna odpowiedź. Pochodna -cos x to sin x, więc całka z sin x wynosi -cos x + C."
     ]
   },
   {
@@ -7747,10 +7747,10 @@
       "nie"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: tak.",
+    "explain": "Każda funkcja ciągła ma funkcję pierwotną lokalnie na przedziale, więc posiada całkę nieoznaczoną.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: tak.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: tak."
+      "Poprawna odpowiedź. Każda funkcja ciągła ma funkcję pierwotną lokalnie na przedziale, więc posiada całkę nieoznaczoną.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: tak. Każda funkcja ciągła ma funkcję pierwotną lokalnie na przedziale, więc posiada całkę nieoznaczoną."
     ]
   },
   {
@@ -7764,12 +7764,12 @@
       "F(x) jest funkcją odwrotną dla f(x)"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: F(x) jest funkcją pierwotną dla f(x).",
+    "explain": "Jeśli F'(x)=f(x), to F jest funkcją pierwotną dla f.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: F(x) jest funkcją pierwotną dla f(x).",
-      "Ta odpowiedź jest błędna. Poprawna jest A: F(x) jest funkcją pierwotną dla f(x).",
-      "Ta odpowiedź jest błędna. Poprawna jest A: F(x) jest funkcją pierwotną dla f(x).",
-      "Ta odpowiedź jest błędna. Poprawna jest A: F(x) jest funkcją pierwotną dla f(x)."
+      "Poprawna odpowiedź. Jeśli F'(x)=f(x), to F jest funkcją pierwotną dla f.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: F(x) jest funkcją pierwotną dla f(x). Jeśli F'(x)=f(x), to F jest funkcją pierwotną dla f.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: F(x) jest funkcją pierwotną dla f(x). Jeśli F'(x)=f(x), to F jest funkcją pierwotną dla f.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: F(x) jest funkcją pierwotną dla f(x). Jeśli F'(x)=f(x), to F jest funkcją pierwotną dla f."
     ]
   },
   {
@@ -7783,12 +7783,12 @@
       "Isaaka Newtona"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: niezależnie przez Isaaka Newtona i Gottfrieda Wilhelma Leibniza.",
+    "explain": "To pytanie historyczne: w tym kluczu chodzi o Newtona i Leibniza, którzy rozwijali rachunek całkowy pod koniec XVII wieku.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: niezależnie przez Isaaka Newtona i Gottfrieda Wilhelma Leibniza.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: niezależnie przez Isaaka Newtona i Gottfrieda Wilhelma Leibniza.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: niezależnie przez Isaaka Newtona i Gottfrieda Wilhelma Leibniza.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: niezależnie przez Isaaka Newtona i Gottfrieda Wilhelma Leibniza."
+      "Ta odpowiedź jest błędna. Poprawna jest B: niezależnie przez Isaaka Newtona i Gottfrieda Wilhelma Leibniza. To pytanie historyczne: w tym kluczu chodzi o Newtona i Leibniza, którzy rozwijali rachunek całkowy pod koniec XVII wieku.",
+      "Poprawna odpowiedź. To pytanie historyczne: w tym kluczu chodzi o Newtona i Leibniza, którzy rozwijali rachunek całkowy pod koniec XVII wieku.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: niezależnie przez Isaaka Newtona i Gottfrieda Wilhelma Leibniza. To pytanie historyczne: w tym kluczu chodzi o Newtona i Leibniza, którzy rozwijali rachunek całkowy pod koniec XVII wieku.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: niezależnie przez Isaaka Newtona i Gottfrieda Wilhelma Leibniza. To pytanie historyczne: w tym kluczu chodzi o Newtona i Leibniza, którzy rozwijali rachunek całkowy pod koniec XVII wieku."
     ]
   },
   {
@@ -7802,12 +7802,12 @@
       "0,99"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 0,01.",
+    "explain": "∫_0^1 x^99 dx = [x^100/100]_0^1 = 1/100 = 0,01.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: 0,01.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: 0,01.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: 0,01.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: 0,01."
+      "Ta odpowiedź jest błędna. Poprawna jest B: 0,01. ∫_0^1 x^99 dx = [x^100/100]_0^1 = 1/100 = 0,01.",
+      "Poprawna odpowiedź. ∫_0^1 x^99 dx = [x^100/100]_0^1 = 1/100 = 0,01.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: 0,01. ∫_0^1 x^99 dx = [x^100/100]_0^1 = 1/100 = 0,01.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: 0,01. ∫_0^1 x^99 dx = [x^100/100]_0^1 = 1/100 = 0,01."
     ]
   },
   {
@@ -7821,12 +7821,12 @@
       "Twierdzenie Sylvestera"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Twierdzenie Schwarza.",
+    "explain": "Twierdzenie Schwarza mówi, że przy ciągłości pochodnych mieszanych mamy f''_{xy}=f''_{yx}.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Schwarza.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Schwarza.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: Twierdzenie Schwarza.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Schwarza."
+      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Schwarza. Twierdzenie Schwarza mówi, że przy ciągłości pochodnych mieszanych mamy f''_{xy}=f''_{yx}.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Schwarza. Twierdzenie Schwarza mówi, że przy ciągłości pochodnych mieszanych mamy f''_{xy}=f''_{yx}.",
+      "Poprawna odpowiedź. Twierdzenie Schwarza mówi, że przy ciągłości pochodnych mieszanych mamy f''_{xy}=f''_{yx}.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: Twierdzenie Schwarza. Twierdzenie Schwarza mówi, że przy ciągłości pochodnych mieszanych mamy f''_{xy}=f''_{yx}."
     ]
   },
   {
@@ -7839,11 +7839,11 @@
       "zmienną y traktujemy jak zmienną, a zmienną x jak stałą"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: zmienną y traktujemy jak zmienną, a zmienną x jak stałą.",
+    "explain": "Przy pochodnej cząstkowej po y traktujemy y jako zmienną, a x jako stałą.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: zmienną y traktujemy jak zmienną, a zmienną x jak stałą.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: zmienną y traktujemy jak zmienną, a zmienną x jak stałą.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: zmienną y traktujemy jak zmienną, a zmienną x jak stałą."
+      "Ta odpowiedź jest błędna. Poprawna jest C: zmienną y traktujemy jak zmienną, a zmienną x jak stałą. Przy pochodnej cząstkowej po y traktujemy y jako zmienną, a x jako stałą.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: zmienną y traktujemy jak zmienną, a zmienną x jak stałą. Przy pochodnej cząstkowej po y traktujemy y jako zmienną, a x jako stałą.",
+      "Poprawna odpowiedź. Przy pochodnej cząstkowej po y traktujemy y jako zmienną, a x jako stałą."
     ]
   },
   {
@@ -7857,12 +7857,12 @@
       "7x^6y^3z^{-2}"
     ],
     "correct": 3,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 7x^6y^3z^{-2}.",
+    "explain": "Różniczkujemy tylko x^7, a y^3z^{-2} traktujemy jak stałą. Pochodna x^7 to 7x^6.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest D: 7x^6y^3z^{-2}.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: 7x^6y^3z^{-2}.",
-      "Ta odpowiedź jest błędna. Poprawna jest D: 7x^6y^3z^{-2}.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: 7x^6y^3z^{-2}."
+      "Ta odpowiedź jest błędna. Poprawna jest D: 7x^6y^3z^{-2}. Różniczkujemy tylko x^7, a y^3z^{-2} traktujemy jak stałą. Pochodna x^7 to 7x^6.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: 7x^6y^3z^{-2}. Różniczkujemy tylko x^7, a y^3z^{-2} traktujemy jak stałą. Pochodna x^7 to 7x^6.",
+      "Ta odpowiedź jest błędna. Poprawna jest D: 7x^6y^3z^{-2}. Różniczkujemy tylko x^7, a y^3z^{-2} traktujemy jak stałą. Pochodna x^7 to 7x^6.",
+      "Poprawna odpowiedź. Różniczkujemy tylko x^7, a y^3z^{-2} traktujemy jak stałą. Pochodna x^7 to 7x^6."
     ]
   },
   {
@@ -7876,12 +7876,12 @@
       "maksimum lokalne"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: minimum lokalne.",
+    "explain": "x^4 i y^2 są zawsze nieujemne i w punkcie (0,0) dają 0, więc tam jest minimum lokalne.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: minimum lokalne.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: minimum lokalne.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: minimum lokalne.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: minimum lokalne."
+      "Ta odpowiedź jest błędna. Poprawna jest B: minimum lokalne. x^4 i y^2 są zawsze nieujemne i w punkcie (0,0) dają 0, więc tam jest minimum lokalne.",
+      "Poprawna odpowiedź. x^4 i y^2 są zawsze nieujemne i w punkcie (0,0) dają 0, więc tam jest minimum lokalne.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: minimum lokalne. x^4 i y^2 są zawsze nieujemne i w punkcie (0,0) dają 0, więc tam jest minimum lokalne.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: minimum lokalne. x^4 i y^2 są zawsze nieujemne i w punkcie (0,0) dają 0, więc tam jest minimum lokalne."
     ]
   },
   {
@@ -7896,13 +7896,13 @@
       "f'_y=0"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f'_x=0 i f'_y=0.",
+    "explain": "W punkcie ekstremum wewnętrznego obie pochodne cząstkowe pierwszego rzędu muszą być równe 0.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: f'_x=0 i f'_y=0.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: f'_x=0 i f'_y=0.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: f'_x=0 i f'_y=0.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: f'_x=0 i f'_y=0.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: f'_x=0 i f'_y=0."
+      "Poprawna odpowiedź. W punkcie ekstremum wewnętrznego obie pochodne cząstkowe pierwszego rzędu muszą być równe 0.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: f'_x=0 i f'_y=0. W punkcie ekstremum wewnętrznego obie pochodne cząstkowe pierwszego rzędu muszą być równe 0.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: f'_x=0 i f'_y=0. W punkcie ekstremum wewnętrznego obie pochodne cząstkowe pierwszego rzędu muszą być równe 0.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: f'_x=0 i f'_y=0. W punkcie ekstremum wewnętrznego obie pochodne cząstkowe pierwszego rzędu muszą być równe 0.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: f'_x=0 i f'_y=0. W punkcie ekstremum wewnętrznego obie pochodne cząstkowe pierwszego rzędu muszą być równe 0."
     ]
   },
   {
@@ -7916,12 +7916,12 @@
       "f''_{xx}(P)f''_{yy}(P)-(f''_{xy}(P))^2<0"
     ],
     "correct": 2,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f''_{xx}(P)f''_{yy}(P)-(f''_{xy}(P))^2>0.",
+    "explain": "Poprawna odpowiedź to f''_{xx}(P)f''_{yy}(P)-(f''_{xy}(P))^2>0. Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest C: f''_{xx}(P)f''_{yy}(P)-(f''_{xy}(P))^2>0.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: f''_{xx}(P)f''_{yy}(P)-(f''_{xy}(P))^2>0.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: f''_{xx}(P)f''_{yy}(P)-(f''_{xy}(P))^2>0.",
-      "Ta odpowiedź jest błędna. Poprawna jest C: f''_{xx}(P)f''_{yy}(P)-(f''_{xy}(P))^2>0."
+      "Ta odpowiedź jest błędna. Poprawna jest C: f''_{xx}(P)f''_{yy}(P)-(f''_{xy}(P))^2>0. Poprawna odpowiedź to f''_{xx}(P)f''_{yy}(P)-(f''_{xy}(P))^2>0. Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: f''_{xx}(P)f''_{yy}(P)-(f''_{xy}(P))^2>0. Poprawna odpowiedź to f''_{xx}(P)f''_{yy}(P)-(f''_{xy}(P))^2>0. Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu.",
+      "Poprawna odpowiedź. Poprawna odpowiedź to f''_{xx}(P)f''_{yy}(P)-(f''_{xy}(P))^2>0. Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu.",
+      "Ta odpowiedź jest błędna. Poprawna jest C: f''_{xx}(P)f''_{yy}(P)-(f''_{xy}(P))^2>0. Poprawna odpowiedź to f''_{xx}(P)f''_{yy}(P)-(f''_{xy}(P))^2>0. Wynika to bezpośrednio z definicji albo podstawowego wzoru z tego działu."
     ]
   },
   {
@@ -7936,13 +7936,13 @@
       "f'_x(P)=0 i f'_y(P)=0"
     ],
     "correct": 4,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f'_x(P)=0 i f'_y(P)=0.",
+    "explain": "Punkt stacjonarny to punkt, w którym gradient znika, czyli f'_x(P)=0 i f'_y(P)=0.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest E: f'_x(P)=0 i f'_y(P)=0.",
-      "Ta odpowiedź jest błędna. Poprawna jest E: f'_x(P)=0 i f'_y(P)=0.",
-      "Ta odpowiedź jest błędna. Poprawna jest E: f'_x(P)=0 i f'_y(P)=0.",
-      "Ta odpowiedź jest błędna. Poprawna jest E: f'_x(P)=0 i f'_y(P)=0.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: f'_x(P)=0 i f'_y(P)=0."
+      "Ta odpowiedź jest błędna. Poprawna jest E: f'_x(P)=0 i f'_y(P)=0. Punkt stacjonarny to punkt, w którym gradient znika, czyli f'_x(P)=0 i f'_y(P)=0.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: f'_x(P)=0 i f'_y(P)=0. Punkt stacjonarny to punkt, w którym gradient znika, czyli f'_x(P)=0 i f'_y(P)=0.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: f'_x(P)=0 i f'_y(P)=0. Punkt stacjonarny to punkt, w którym gradient znika, czyli f'_x(P)=0 i f'_y(P)=0.",
+      "Ta odpowiedź jest błędna. Poprawna jest E: f'_x(P)=0 i f'_y(P)=0. Punkt stacjonarny to punkt, w którym gradient znika, czyli f'_x(P)=0 i f'_y(P)=0.",
+      "Poprawna odpowiedź. Punkt stacjonarny to punkt, w którym gradient znika, czyli f'_x(P)=0 i f'_y(P)=0."
     ]
   },
   {
@@ -7956,12 +7956,12 @@
       "7x^6y^3z^{-2}"
     ],
     "correct": 0,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 3x^7y^2z^{-2}.",
+    "explain": "Różniczkujemy tylko y^3, a x^7z^{-2} traktujemy jak stałą. Pochodna y^3 to 3y^2.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: 3x^7y^2z^{-2}.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 3x^7y^2z^{-2}.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 3x^7y^2z^{-2}.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: 3x^7y^2z^{-2}."
+      "Poprawna odpowiedź. Różniczkujemy tylko y^3, a x^7z^{-2} traktujemy jak stałą. Pochodna y^3 to 3y^2.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 3x^7y^2z^{-2}. Różniczkujemy tylko y^3, a x^7z^{-2} traktujemy jak stałą. Pochodna y^3 to 3y^2.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 3x^7y^2z^{-2}. Różniczkujemy tylko y^3, a x^7z^{-2} traktujemy jak stałą. Pochodna y^3 to 3y^2.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: 3x^7y^2z^{-2}. Różniczkujemy tylko y^3, a x^7z^{-2} traktujemy jak stałą. Pochodna y^3 to 3y^2."
     ]
   },
   {
@@ -7975,12 +7975,12 @@
       "-2x^7y^3z^{-1}"
     ],
     "correct": 1,
-    "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: -2x^7y^3z^{-3}.",
+    "explain": "Różniczkujemy tylko z^{-2}. Pochodna z^{-2} to -2z^{-3}, więc zostaje -2x^7y^3z^{-3}.",
     "answerExplanations": [
-      "Ta odpowiedź jest błędna. Poprawna jest B: -2x^7y^3z^{-3}.",
-      "Poprawna odpowiedź. Poprawna odpowiedź z pliku MD T. Kulpy: -2x^7y^3z^{-3}.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: -2x^7y^3z^{-3}.",
-      "Ta odpowiedź jest błędna. Poprawna jest B: -2x^7y^3z^{-3}."
+      "Ta odpowiedź jest błędna. Poprawna jest B: -2x^7y^3z^{-3}. Różniczkujemy tylko z^{-2}. Pochodna z^{-2} to -2z^{-3}, więc zostaje -2x^7y^3z^{-3}.",
+      "Poprawna odpowiedź. Różniczkujemy tylko z^{-2}. Pochodna z^{-2} to -2z^{-3}, więc zostaje -2x^7y^3z^{-3}.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: -2x^7y^3z^{-3}. Różniczkujemy tylko z^{-2}. Pochodna z^{-2} to -2z^{-3}, więc zostaje -2x^7y^3z^{-3}.",
+      "Ta odpowiedź jest błędna. Poprawna jest B: -2x^7y^3z^{-3}. Różniczkujemy tylko z^{-2}. Pochodna z^{-2} to -2z^{-3}, więc zostaje -2x^7y^3z^{-3}."
     ]
   },
   {
@@ -7994,12 +7994,12 @@
       "brak ekstremum"
     ],
     "correct": 0,
-    "explain": "Jeśli w otoczeniu punktu P_0 wszystkie inne wartości funkcji są większe od f(P_0), to w P_0 jest ścisłe minimum lokalne.",
+    "explain": "Jeśli w otoczeniu punktu wszystkie inne wartości są większe od f(P_0), to w P_0 jest minimum lokalne.",
     "answerExplanations": [
-      "Poprawna odpowiedź. Jeśli w otoczeniu punktu P_0 wszystkie inne wartości funkcji są większe od f(P_0), to w P_0 jest ścisłe minimum lokalne.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: minimum lokalne.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: minimum lokalne.",
-      "Ta odpowiedź jest błędna. Poprawna jest A: minimum lokalne."
+      "Poprawna odpowiedź. Jeśli w otoczeniu punktu wszystkie inne wartości są większe od f(P_0), to w P_0 jest minimum lokalne.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: minimum lokalne. Jeśli w otoczeniu punktu wszystkie inne wartości są większe od f(P_0), to w P_0 jest minimum lokalne.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: minimum lokalne. Jeśli w otoczeniu punktu wszystkie inne wartości są większe od f(P_0), to w P_0 jest minimum lokalne.",
+      "Ta odpowiedź jest błędna. Poprawna jest A: minimum lokalne. Jeśli w otoczeniu punktu wszystkie inne wartości są większe od f(P_0), to w P_0 jest minimum lokalne."
     ]
   }
 ]

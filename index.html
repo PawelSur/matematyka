@@ -1539,6 +1539,383 @@ html.dark-mode .local-progress-info b{color:#f8fafc !important}
 }
 </style>
 
+
+<style id="layout-css-hard-fix">
+/* Globalne zabezpieczenie przed rozjeżdżaniem */
+*,
+*::before,
+*::after{
+  box-sizing:border-box !important;
+}
+
+html,
+body{
+  width:100% !important;
+  max-width:100% !important;
+  overflow-x:hidden !important;
+}
+
+body{
+  margin:0 !important;
+}
+
+img,
+svg,
+canvas,
+video{
+  max-width:100% !important;
+  height:auto !important;
+}
+
+/* Główne kontenery */
+main,
+.main,
+.container,
+.wrapper,
+.app,
+.quiz-app{
+  width:min(1120px, calc(100% - 24px)) !important;
+  max-width:1120px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+header,
+.hero,
+.top,
+.app-header,
+.local-progress-info,
+.progress-memory,
+.wrong-review-box{
+  width:min(1120px, calc(100% - 24px)) !important;
+  max-width:1120px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+/* Toolbar i przyciski */
+.toolbar,
+.controls,
+.actions,
+.quiz-controls,
+.wrong-actions{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:10px !important;
+  align-items:center !important;
+}
+
+.toolbar > *,
+.controls > *,
+.actions > *,
+.quiz-controls > *{
+  min-width:0 !important;
+}
+
+button,
+.btn,
+select,
+input{
+  max-width:100% !important;
+  white-space:normal !important;
+}
+
+select,
+input{
+  min-width:160px !important;
+}
+
+/* Karty i sekcje */
+.card,
+.panel,
+.quiz-card,
+.question-card,
+.qcard,
+.side,
+.result,
+.feedback,
+.explanation,
+.answer-breakdown,
+.answer-explain-row,
+.wrong-review-box,
+.wrong-practice-card,
+.progress-memory,
+.local-progress-info{
+  max-width:100% !important;
+  overflow-wrap:anywhere !important;
+  word-break:normal !important;
+}
+
+/* Układ quizu */
+.layout{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) minmax(240px,320px) !important;
+  gap:18px !important;
+  align-items:start !important;
+}
+
+.layout > *,
+.quiz,
+.side,
+.qcard{
+  min-width:0 !important;
+}
+
+/* Odpowiedzi */
+.answers,
+#answers{
+  display:grid !important;
+  gap:10px !important;
+  width:100% !important;
+}
+
+.answers button,
+#answers button,
+.answer,
+.option,
+.wrong-answer-btn{
+  width:100% !important;
+  text-align:left !important;
+  min-width:0 !important;
+  overflow-wrap:anywhere !important;
+  line-height:1.45 !important;
+}
+
+/* Wzory i długie wyrażenia */
+.math,
+.answer-explain-head b,
+.question,
+.question-text,
+#question,
+.q,
+.explain,
+.explanation,
+.answer-explain-text{
+  max-width:100% !important;
+  overflow-wrap:anywhere !important;
+  word-break:normal !important;
+}
+
+.math{
+  white-space:normal !important;
+}
+
+.question,
+.question-text,
+#question,
+.q{
+  overflow-x:auto !important;
+  padding-bottom:2px !important;
+}
+
+/* Tabele/macierzowe rzeczy */
+table{
+  max-width:100% !important;
+  display:block !important;
+  overflow-x:auto !important;
+  border-collapse:collapse !important;
+}
+
+pre,
+code{
+  max-width:100% !important;
+  overflow-x:auto !important;
+  white-space:pre-wrap !important;
+}
+
+/* Wyjaśnienia */
+.answer-breakdown{
+  width:100% !important;
+}
+
+.answer-breakdown-list{
+  width:100% !important;
+  min-width:0 !important;
+}
+
+.answer-explain-head{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) auto !important;
+  gap:8px !important;
+  align-items:start !important;
+}
+
+.answer-explain-head b{
+  min-width:0 !important;
+}
+
+.answer-explain-head span{
+  white-space:nowrap !important;
+}
+
+/* Lista błędnych pytań */
+.wrong-list{
+  width:100% !important;
+  max-width:100% !important;
+  padding-left:0 !important;
+  list-style:none !important;
+}
+
+.wrong-list li{
+  max-width:100% !important;
+  min-width:0 !important;
+  display:grid !important;
+  gap:4px !important;
+  overflow-wrap:anywhere !important;
+}
+
+.wrong-list li span,
+.wrong-list li em{
+  min-width:0 !important;
+  max-width:100% !important;
+  overflow-wrap:anywhere !important;
+}
+
+/* Pasek postępu/liczniki */
+.progress-memory{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:10px !important;
+  justify-content:space-between !important;
+  align-items:center !important;
+}
+
+.progress-memory > *{
+  min-width:0 !important;
+}
+
+/* Mobile */
+@media(max-width:900px){
+  .layout{
+    grid-template-columns:1fr !important;
+  }
+
+  .side{
+    order:-1 !important;
+  }
+}
+
+@media(max-width:760px){
+  main,
+  .main,
+  .container,
+  .wrapper,
+  .app,
+  .quiz-app,
+  header,
+  .hero,
+  .top,
+  .app-header,
+  .local-progress-info,
+  .progress-memory,
+  .wrong-review-box{
+    width:calc(100% - 16px) !important;
+  }
+
+  .toolbar,
+  .controls,
+  .actions,
+  .quiz-controls,
+  .wrong-actions{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:8px !important;
+  }
+
+  .toolbar button,
+  .toolbar select,
+  .controls button,
+  .controls select,
+  .actions button,
+  .quiz-controls button,
+  .quiz-controls select,
+  .wrong-actions button,
+  button.btn,
+  select,
+  input{
+    width:100% !important;
+    min-width:0 !important;
+  }
+
+  .answer-explain-head{
+    grid-template-columns:1fr !important;
+  }
+
+  .answer-explain-head span{
+    width:max-content !important;
+    max-width:100% !important;
+  }
+
+  .wrong-list{
+    max-height:260px !important;
+    overflow:auto !important;
+  }
+
+  h1{
+    font-size:clamp(26px, 8vw, 40px) !important;
+    line-height:1.08 !important;
+  }
+
+  h2{
+    font-size:clamp(20px, 6vw, 28px) !important;
+  }
+
+  .question,
+  .question-text,
+  #question,
+  .q{
+    font-size:clamp(18px, 5vw, 22px) !important;
+  }
+}
+
+/* Bardzo wąskie ekrany */
+@media(max-width:420px){
+  main,
+  .main,
+  header,
+  .hero,
+  .top,
+  .app-header,
+  .local-progress-info,
+  .progress-memory,
+  .wrong-review-box{
+    width:calc(100% - 10px) !important;
+  }
+
+  .card,
+  .panel,
+  .quiz-card,
+  .question-card,
+  .qcard,
+  .side,
+  .result,
+  .feedback,
+  .explanation{
+    padding-left:10px !important;
+    padding-right:10px !important;
+  }
+
+  .answer-breakdown-list{
+    padding:8px !important;
+  }
+
+  .answer-explain-head,
+  .answer-explain-text{
+    padding-left:9px !important;
+    padding-right:9px !important;
+  }
+}
+
+/* Dark mode - nie rozjaśniać białymi kartami */
+html.dark-mode .answer-breakdown,
+html.dark-mode .answer-explain-row,
+html.dark-mode .wrong-list li,
+html.dark-mode .local-progress-info,
+html.dark-mode .progress-memory{
+  box-shadow:none !important;
+}
+</style>
+
 </head>
 <body>
 <header><div class="wrap"><h1>Quiz z matematyki do egzaminu</h1><p class="lead">Pytania teoretyczne i praktyczne z logiki, zbiorów, macierzy, ciągów, funkcji, granic, pochodnych, całek i funkcji dwóch zmiennych. Klikasz odpowiedź i od razu widzisz, co jest dobrze albo źle.</p><div class="topgrid"><div class="panel"><b>Jak używać?</b><br>Najpierw wybierz zakres albo zostaw „wszystko”, potem kliknij „Losuj quiz 421 pytań”. Po każdej odpowiedzi dostajesz wyjaśnienie. Na końcu masz wynik i listę błędów.</div><div class="stats"><div class="stat"><b id="totalQ">0</b><span>pytań w bazie</span></div><div class="stat"><b>10</b><span>pytań w quizie</span></div><div class="stat"><b id="doneQ">0</b><span>rozwiązanych</span></div></div></div></div></header>
@@ -2474,6 +2851,22 @@ else injectWrongPanel();
   setTimeout(refresh,300);
   setTimeout(refresh,1000);
   setTimeout(refresh,1800);
+})();
+</script>
+
+
+<script id="layout-counter-refresh-fix">
+(function(){
+  function refresh(){
+    if(typeof updateProgressMemory === 'function') updateProgressMemory();
+    if(typeof updateWrongPanel === 'function') updateWrongPanel();
+  }
+  window.addEventListener('resize', function(){
+    document.body.style.overflowX='hidden';
+  });
+  setTimeout(refresh,250);
+  setTimeout(refresh,900);
+  setTimeout(refresh,1600);
 })();
 </script>
 
