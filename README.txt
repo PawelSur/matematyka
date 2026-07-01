@@ -1,49 +1,33 @@
-# Quiz matematyka - wersja z kontami
+QUIZ - JSON + LOKALNY POSTĘP, BEZ KONT
 
-## Wrzucenie na serwer
+Pliki:
+- index.html
+- questions.json
 
-1. Wgraj wszystkie pliki z tej paczki do jednego katalogu na serwerze, np.:
-   `/quiz-matematyka/`
+Zostaje:
+- pytania w questions.json
+- szybki quiz 10 pytań
+- tryb nauki z całej bazy
+- tryb nauki z nieodpowiedzianych
+- lokalny postęp w localStorage
+- poprawne/błędne/nieodpowiedziane
+- błędne pytania do powtórki
+- dark mode
+- wyjaśnienia do każdej odpowiedzi
 
-2. Struktura ma wyglądać tak:
+Nie ma:
+- kont
+- users.json
+- PHP
+- importu/eksportu postępu
+- synchronizacji między urządzeniami
 
-   - index.html
-   - api.php
-   - data/
-     - .htaccess
+Postęp działa tylko lokalnie w tej jednej przeglądarce.
 
-3. Ustaw zapisywanie do katalogu `data`:
+Liczba pytań: 421
 
-   chmod 775 data
+Uruchomienie lokalnie:
+python3 -m http.server 8000
 
-   Jeśli serwer nadal nie może zapisywać:
-
-   chmod 777 data
-
-4. Otwórz w przeglądarce:
-
-   https://twojadomena.pl/quiz-matematyka/index.html
-
-## Jak działa konto
-
-- użytkownik tworzy konto przez email + hasło,
-- hasło jest hashowane przez `password_hash()`,
-- postęp jest trzymany w plikach JSON w katalogu `data`,
-- po zalogowaniu na innym urządzeniu quiz pobiera i scala postęp z serwera,
-- synchronizowane są:
-  - poprawne odpowiedzi,
-  - błędne odpowiedzi,
-  - liczba poprawnych/błędnych,
-  - lista błędnych pytań do powtórki,
-  - pytania nieodpowiedziane.
-
-## Wymagania
-
-- PHP 7.4+ albo PHP 8.x
-- włączone sesje PHP
-- możliwość zapisu do katalogu `data`
-
-## Ważne
-
-To jest prosta wersja kont pod naukę, nie panel bankowy. Do prywatnego quizu wystarczy.
-Na publiczny serwer warto używać HTTPS.
+Potem:
+http://localhost:8000

@@ -1,0 +1,1961 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quiz z matematyki - egzamin</title>
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--ink:#132033;--muted:#667085;--blue:#2563eb;--blue2:#dbeafe;--green:#16a34a;--green2:#dcfce7;--red:#dc2626;--red2:#fee2e2;--amber:#f59e0b;--line:#e5e7eb;--violet:#7c3aed;--shadow:0 18px 50px rgba(15,23,42,.09)}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,sans-serif;background:linear-gradient(135deg,#eef4ff,#fff 35%,#f7fbff);color:var(--ink)}
+header{padding:34px 20px 24px;background:linear-gradient(135deg,#1d4ed8,#7c3aed);color:white} .wrap{max-width:1120px;margin:0 auto} h1{margin:0 0 8px;font-size:34px} .lead{margin:0;color:#eaf0ff;font-size:16px;line-height:1.55}.topgrid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:20px}.panel{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:18px;padding:16px;backdrop-filter:blur(8px)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{background:white;color:var(--ink);border-radius:14px;padding:12px}.stat b{font-size:22px;display:block}.stat span{color:var(--muted);font-size:12px}.main{max-width:1120px;margin:22px auto;padding:0 20px 60px}.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:18px}.btn{border:0;border-radius:12px;padding:11px 14px;background:var(--blue);color:white;font-weight:700;cursor:pointer;box-shadow:0 8px 20px rgba(37,99,235,.18)}.btn.secondary{background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:none}.btn.green{background:var(--green)}.btn.red{background:var(--red)}select,input{border:1px solid var(--line);border-radius:12px;padding:11px 12px;background:white;color:var(--ink)}.layout{display:grid;grid-template-columns:300px 1fr;gap:18px}.side,.quiz{background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:18px}.side h2,.quiz h2{margin:0 0 12px;font-size:20px}.small{font-size:13px;color:var(--muted);line-height:1.5}.category-list{display:grid;gap:8px;margin-top:12px}.cat{display:flex;justify-content:space-between;border:1px solid var(--line);padding:9px 10px;border-radius:12px;background:#fafafa;font-size:13px}.progress{height:12px;background:#eef2f7;border-radius:20px;overflow:hidden;margin:12px 0}.bar{height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--violet));transition:.25s}.qcard{border:1px solid var(--line);border-radius:18px;padding:18px;background:#fff;margin-top:14px}.badge{display:inline-flex;gap:6px;align-items:center;border-radius:999px;padding:6px 10px;background:var(--blue2);color:#1e40af;font-size:12px;font-weight:800;margin-bottom:10px}.qtext{font-size:22px;line-height:1.35;margin:4px 0 14px;font-weight:800}.math{font-family:Georgia,'Times New Roman',serif;font-weight:700;white-space:nowrap}sup,sub{font-size:.72em;line-height:0;position:relative;vertical-align:baseline}sup{top:-.45em}sub{bottom:-.18em}.answers{display:grid;gap:10px}.answer{border:2px solid var(--line);background:#fff;border-radius:14px;padding:13px 14px;text-align:left;cursor:pointer;font-size:16px;line-height:1.35}.answer:hover{border-color:#93c5fd;background:#f8fbff}.answer.correct{border-color:var(--green);background:var(--green2)}.answer.wrong{border-color:var(--red);background:var(--red2)}.explain{display:none;margin-top:14px;border-radius:14px;padding:14px;line-height:1.55}.explain.good{display:block;background:var(--green2);border:1px solid #86efac}.explain.bad{display:block;background:var(--red2);border:1px solid #fca5a5}.navrow{display:flex;gap:10px;justify-content:space-between;margin-top:14px;flex-wrap:wrap}.result{display:none;background:white;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:22px}.result.show{display:block}.scorebig{font-size:44px;font-weight:900;margin:4px 0}.review{display:grid;gap:10px;margin-top:14px}.reviewItem{border:1px solid var(--line);border-radius:14px;padding:12px;background:#fff}.reviewItem.ok{border-left:6px solid var(--green)}.reviewItem.no{border-left:6px solid var(--red)}.hidden{display:none!important}.modebox{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}.pill{border:1px solid var(--line);background:white;border-radius:999px;padding:8px 10px;font-size:13px;cursor:pointer}.pill.active{background:var(--blue);color:white;border-color:var(--blue)}.note{background:#fffbeb;border:1px solid #fde68a;border-radius:14px;padding:12px;margin-top:12px;font-size:13px;line-height:1.45}@media(max-width:850px){.topgrid,.layout{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}h1{font-size:28px}.qtext{font-size:19px}}
+</style>
+
+<style id="minimal-mobile-design">
+:root{
+  --bg:#f6f7f9;
+  --card:#ffffff;
+  --text:#111827;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --primary:#111827;
+  --good:#16a34a;
+  --bad:#dc2626;
+}
+
+*{box-sizing:border-box}
+
+html{
+  -webkit-text-size-adjust:100%;
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:var(--bg) !important;
+  color:var(--text) !important;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif !important;
+  line-height:1.45;
+}
+
+main,.main,.container,.wrapper{
+  width:min(920px,calc(100% - 28px)) !important;
+  margin:0 auto !important;
+  padding:18px 0 40px !important;
+}
+
+header,.hero,.top,.app-header{
+  width:min(920px,calc(100% - 28px)) !important;
+  margin:14px auto 12px !important;
+  padding:18px 20px !important;
+  background:var(--card) !important;
+  color:var(--text) !important;
+  border:1px solid var(--border) !important;
+  border-radius:14px !important;
+  box-shadow:none !important;
+}
+
+header h1,.hero h1,.top h1,.app-header h1{
+  margin:0 !important;
+  color:var(--text) !important;
+  font-size:clamp(24px,4vw,36px) !important;
+  line-height:1.1 !important;
+  letter-spacing:-.03em !important;
+}
+
+header p,.hero p,.top p,.app-header p{
+  color:var(--muted) !important;
+  font-size:15px !important;
+  margin:8px 0 0 !important;
+}
+
+.card,.panel,.quiz-card,.question-card,section{
+  background:var(--card) !important;
+  border:1px solid var(--border) !important;
+  border-radius:14px !important;
+  box-shadow:none !important;
+}
+
+.controls,.filters,.toolbar,.actions,.quiz-controls{
+  position:static !important;
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:8px !important;
+  margin:10px 0 !important;
+  padding:10px !important;
+  background:var(--card) !important;
+  border:1px solid var(--border) !important;
+  border-radius:14px !important;
+  box-shadow:none !important;
+  backdrop-filter:none !important;
+}
+
+button,.btn,select,input{
+  min-height:42px !important;
+  border-radius:10px !important;
+  font-size:15px !important;
+  font-family:inherit !important;
+}
+
+button,.btn{
+  border:1px solid var(--border) !important;
+  background:#fff !important;
+  color:var(--text) !important;
+  cursor:pointer !important;
+  box-shadow:none !important;
+  transition:none !important;
+}
+
+button.primary,.btn.primary,
+button[data-action="start"],
+#startBtn,#startQuiz,#startWrongPracticeBtn{
+  background:var(--primary) !important;
+  color:white !important;
+  border-color:var(--primary) !important;
+}
+
+select,input{
+  border:1px solid var(--border) !important;
+  background:#fff !important;
+  color:var(--text) !important;
+  padding:9px 10px !important;
+}
+
+.question,.question-text,#question,.q{
+  font-size:clamp(21px,3vw,28px) !important;
+  line-height:1.28 !important;
+  letter-spacing:-.02em !important;
+  color:var(--text) !important;
+  overflow-wrap:anywhere !important;
+}
+
+.answers,.options,.answer-list,#answers{
+  display:grid !important;
+  grid-template-columns:1fr !important;
+  gap:8px !important;
+  margin-top:14px !important;
+}
+
+.answer,.option,.answers button,#answers button{
+  width:100% !important;
+  min-height:50px !important;
+  padding:13px 14px !important;
+  text-align:left !important;
+  white-space:normal !important;
+  line-height:1.35 !important;
+  border:1px solid var(--border) !important;
+  border-radius:12px !important;
+  background:#fff !important;
+  color:var(--text) !important;
+  box-shadow:none !important;
+  overflow-wrap:anywhere !important;
+}
+
+.answer.good,.option.good,.answers button.good,#answers button.good,
+.good{
+  background:#ecfdf5 !important;
+  border-color:#86efac !important;
+  color:#14532d !important;
+}
+
+.answer.bad,.option.bad,.answers button.bad,#answers button.bad,
+.bad{
+  background:#fef2f2 !important;
+  border-color:#fecaca !important;
+  color:#7f1d1d !important;
+}
+
+.feedback,.result,.explanation,#feedback{
+  margin-top:10px !important;
+  padding:12px 14px !important;
+  border-radius:12px !important;
+  border:1px solid var(--border) !important;
+  background:#fff !important;
+  box-shadow:none !important;
+  overflow-wrap:anywhere !important;
+}
+
+.wrong-review-box{
+  width:100% !important;
+  max-width:920px !important;
+  margin:10px auto !important;
+  padding:14px !important;
+  background:var(--card) !important;
+  border:1px solid var(--border) !important;
+  border-radius:14px !important;
+  box-shadow:none !important;
+}
+
+.wrong-review-head{
+  display:flex !important;
+  align-items:flex-start !important;
+  justify-content:space-between !important;
+  gap:12px !important;
+}
+
+.wrong-review-title{
+  margin:0 0 4px !important;
+  font-size:22px !important;
+  line-height:1.15 !important;
+  color:var(--text) !important;
+}
+
+.wrong-review-desc{
+  margin:0 !important;
+  color:var(--muted) !important;
+  font-size:14px !important;
+}
+
+.wrong-badge{
+  min-height:36px !important;
+  padding:8px 10px !important;
+  border-radius:999px !important;
+  background:#f3f4f6 !important;
+  color:var(--text) !important;
+  border:1px solid var(--border) !important;
+  font-weight:700 !important;
+  white-space:nowrap !important;
+}
+
+.wrong-actions{
+  display:flex !important;
+  gap:8px !important;
+  flex-wrap:wrap !important;
+  margin-top:12px !important;
+}
+
+.wrong-actions button,.wrong-next{
+  min-height:42px !important;
+  padding:10px 12px !important;
+  border-radius:10px !important;
+}
+
+.wrong-list{
+  margin:12px 0 0 !important;
+  padding:0 !important;
+  display:grid !important;
+  gap:8px !important;
+}
+
+.wrong-list li{
+  list-style:none !important;
+  background:#fff !important;
+  border:1px solid var(--border) !important;
+  border-radius:10px !important;
+  padding:9px 10px !important;
+  color:var(--text) !important;
+}
+
+.wrong-list li span{
+  display:block !important;
+  font-weight:600 !important;
+}
+
+.wrong-list li em{
+  display:block !important;
+  margin-top:2px !important;
+  font-size:12px !important;
+  color:var(--muted) !important;
+  font-style:normal !important;
+}
+
+.wrong-practice-area{
+  margin-top:12px !important;
+}
+
+.wrong-practice-card{
+  padding:14px !important;
+  border:1px solid var(--border) !important;
+  border-radius:14px !important;
+  background:#fff !important;
+  box-shadow:none !important;
+}
+
+.wrong-question{
+  font-size:clamp(20px,3vw,27px) !important;
+  line-height:1.28 !important;
+  color:var(--text) !important;
+  overflow-wrap:anywhere !important;
+}
+
+.wrong-answers{
+  display:grid !important;
+  gap:8px !important;
+  margin-top:12px !important;
+}
+
+.wrong-answer-btn{
+  width:100% !important;
+  min-height:50px !important;
+  padding:13px 14px !important;
+  text-align:left !important;
+  border:1px solid var(--border) !important;
+  border-radius:12px !important;
+  background:#fff !important;
+  color:var(--text) !important;
+  font-size:15px !important;
+  line-height:1.35 !important;
+  box-shadow:none !important;
+  overflow-wrap:anywhere !important;
+}
+
+.wrong-answer-btn.good{
+  background:#ecfdf5 !important;
+  border-color:#86efac !important;
+  color:#14532d !important;
+}
+
+.wrong-answer-btn.bad{
+  background:#fef2f2 !important;
+  border-color:#fecaca !important;
+  color:#7f1d1d !important;
+}
+
+.wrong-feedback{
+  margin-top:10px !important;
+  padding:12px 14px !important;
+  border-radius:12px !important;
+  line-height:1.45 !important;
+}
+
+.wrong-feedback.good{
+  background:#ecfdf5 !important;
+  color:#14532d !important;
+  border:1px solid #86efac !important;
+}
+
+.wrong-feedback.bad{
+  background:#fef2f2 !important;
+  color:#7f1d1d !important;
+  border:1px solid #fecaca !important;
+}
+
+sup,sub{line-height:0}
+
+@media (min-width:760px){
+  .answers,.options,.answer-list,#answers{
+    grid-template-columns:1fr 1fr !important;
+  }
+}
+
+@media (max-width:760px){
+  main,.main,.container,.wrapper,
+  header,.hero,.top,.app-header{
+    width:calc(100% - 16px) !important;
+  }
+
+  main,.main,.container,.wrapper{
+    padding-top:8px !important;
+  }
+
+  header,.hero,.top,.app-header{
+    margin:8px auto !important;
+    padding:14px !important;
+  }
+
+  header p,.hero p,.top p,.app-header p{
+    display:none !important;
+  }
+
+  .controls,.filters,.toolbar,.actions,.quiz-controls{
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
+    gap:8px !important;
+    padding:8px !important;
+  }
+
+  .controls select,
+  .filters select,
+  .toolbar select,
+  .quiz-controls select,
+  select[id*="category" i],
+  select[name*="category" i],
+  select[id*="kategoria" i],
+  select[name*="kategoria" i],
+  label:has(select[id*="category" i]),
+  label:has(select[name*="category" i]),
+  label:has(select[id*="kategoria" i]),
+  label:has(select[name*="kategoria" i]){
+    display:none !important;
+  }
+
+  button,.btn,select,input{
+    width:100% !important;
+  }
+
+  .category,
+  .categories,
+  .cat,
+  .tag,
+  .badge,
+  .meta,
+  .question-meta,
+  .quiz-meta,
+  .wrong-meta,
+  [class*="category"],
+  [class*="kategoria"]{
+    display:none !important;
+  }
+
+  .wrong-review-box{
+    padding:12px !important;
+  }
+
+  .wrong-review-head{
+    display:block !important;
+  }
+
+  .wrong-review-title{
+    font-size:19px !important;
+  }
+
+  .wrong-review-desc{
+    font-size:13px !important;
+  }
+
+  .wrong-badge{
+    display:inline-flex !important;
+    margin-top:10px !important;
+    width:auto !important;
+  }
+
+  .wrong-actions{
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
+  }
+
+  .wrong-list{
+    display:none !important;
+  }
+
+  .question,.question-text,#question,.q,
+  .wrong-question{
+    font-size:20px !important;
+  }
+
+  .answer,.option,.answers button,#answers button,
+  .wrong-answer-btn{
+    min-height:48px !important;
+    padding:12px !important;
+    font-size:15px !important;
+  }
+}
+
+@media (max-width:420px){
+  .controls,.filters,.toolbar,.actions,.quiz-controls,
+  .wrong-actions{
+    grid-template-columns:1fr !important;
+  }
+
+  .question,.question-text,#question,.q,
+  .wrong-question{
+    font-size:19px !important;
+  }
+}
+</style>
+
+
+<style id="minimal-color-polish">
+:root{
+  --bg:#f4f7fb;
+  --card:#ffffff;
+  --text:#111827;
+  --muted:#64748b;
+  --border:#dbe4ef;
+  --primary:#2563eb;
+  --primary-soft:#eff6ff;
+  --primary-border:#bfdbfe;
+  --accent:#f59e0b;
+  --accent-soft:#fffbeb;
+  --green:#16a34a;
+  --green-soft:#ecfdf5;
+  --green-border:#86efac;
+  --red:#dc2626;
+  --red-soft:#fef2f2;
+  --red-border:#fecaca;
+  --violet-soft:#f5f3ff;
+  --cyan-soft:#ecfeff;
+}
+
+body{
+  background:
+    radial-gradient(circle at 12% 0%, rgba(37,99,235,.10), transparent 24rem),
+    radial-gradient(circle at 88% 10%, rgba(245,158,11,.10), transparent 22rem),
+    var(--bg) !important;
+}
+
+header,.hero,.top,.app-header{
+  background:linear-gradient(135deg,#ffffff 0%,#eff6ff 68%,#fffbeb 100%) !important;
+  border-color:#cfe0f5 !important;
+}
+
+header h1,.hero h1,.top h1,.app-header h1{
+  color:#0f172a !important;
+}
+
+header h1::after,.hero h1::after,.top h1::after,.app-header h1::after{
+  content:"";
+  display:block;
+  width:72px;
+  height:4px;
+  margin-top:10px;
+  border-radius:999px;
+  background:linear-gradient(90deg,var(--primary),var(--accent));
+}
+
+.card,.panel,.quiz-card,.question-card,section{
+  border-color:#dbeafe !important;
+}
+
+.controls,.filters,.toolbar,.actions,.quiz-controls{
+  background:rgba(255,255,255,.92) !important;
+  border-color:#dbeafe !important;
+}
+
+button,.btn{
+  background:#ffffff !important;
+  border-color:#dbeafe !important;
+}
+
+button:hover,.btn:hover{
+  background:var(--primary-soft) !important;
+  border-color:var(--primary-border) !important;
+}
+
+button.primary,.btn.primary,
+button[data-action="start"],
+#startBtn,#startQuiz,#startWrongPracticeBtn{
+  background:linear-gradient(135deg,#2563eb,#1d4ed8) !important;
+  color:white !important;
+  border-color:#1d4ed8 !important;
+}
+
+select,input{
+  border-color:#dbeafe !important;
+}
+
+.question,.question-text,#question,.q{
+  color:#0f172a !important;
+}
+
+.answers button,#answers button,.answer,.option{
+  border-color:#dbeafe !important;
+  background:#ffffff !important;
+}
+
+.answers button:hover,#answers button:hover,.answer:hover,.option:hover{
+  background:#eff6ff !important;
+  border-color:#93c5fd !important;
+}
+
+.answer.good,.option.good,.answers button.good,#answers button.good,
+.good{
+  background:var(--green-soft) !important;
+  border-color:var(--green-border) !important;
+  color:#14532d !important;
+}
+
+.answer.bad,.option.bad,.answers button.bad,#answers button.bad,
+.bad{
+  background:var(--red-soft) !important;
+  border-color:var(--red-border) !important;
+  color:#7f1d1d !important;
+}
+
+.feedback,.result,.explanation,#feedback{
+  background:linear-gradient(135deg,#ffffff,#f8fafc) !important;
+  border-color:#dbeafe !important;
+}
+
+.feedback.good,#feedback.good,.result.good,.explanation.good{
+  background:var(--green-soft) !important;
+  border-color:var(--green-border) !important;
+  color:#14532d !important;
+}
+
+.feedback.bad,#feedback.bad,.result.bad,.explanation.bad{
+  background:var(--red-soft) !important;
+  border-color:var(--red-border) !important;
+  color:#7f1d1d !important;
+}
+
+.wrong-review-box{
+  background:linear-gradient(135deg,#ffffff 0%,#fff7ed 52%,#eff6ff 100%) !important;
+  border-color:#fed7aa !important;
+}
+
+.wrong-review-title{
+  color:#0f172a !important;
+}
+
+.wrong-review-title::after{
+  content:"";
+  display:block;
+  width:56px;
+  height:3px;
+  margin-top:7px;
+  border-radius:999px;
+  background:linear-gradient(90deg,#f59e0b,#2563eb);
+}
+
+.wrong-badge{
+  background:#fff7ed !important;
+  border-color:#fed7aa !important;
+  color:#9a3412 !important;
+}
+
+.wrong-actions button:first-child{
+  background:linear-gradient(135deg,#ea580c,#f59e0b) !important;
+  color:white !important;
+  border-color:#fb923c !important;
+}
+
+.wrong-actions button.secondary{
+  background:#ffffff !important;
+  color:#334155 !important;
+  border-color:#dbeafe !important;
+}
+
+.wrong-list li{
+  background:rgba(255,255,255,.82) !important;
+  border-color:#fde68a !important;
+}
+
+.wrong-list li em{
+  color:#b45309 !important;
+}
+
+.wrong-practice-card{
+  border-color:#dbeafe !important;
+  background:#ffffff !important;
+}
+
+.wrong-question{
+  color:#0f172a !important;
+}
+
+.wrong-answer-btn{
+  border-color:#dbeafe !important;
+  background:#ffffff !important;
+}
+
+.wrong-answer-btn:hover:not(:disabled){
+  background:#eff6ff !important;
+  border-color:#93c5fd !important;
+}
+
+.wrong-answer-btn.good{
+  background:var(--green-soft) !important;
+  border-color:var(--green-border) !important;
+  color:#14532d !important;
+}
+
+.wrong-answer-btn.bad{
+  background:var(--red-soft) !important;
+  border-color:var(--red-border) !important;
+  color:#7f1d1d !important;
+}
+
+.wrong-feedback.good{
+  background:var(--green-soft) !important;
+  border-color:var(--green-border) !important;
+  color:#14532d !important;
+}
+
+.wrong-feedback.bad{
+  background:var(--red-soft) !important;
+  border-color:var(--red-border) !important;
+  color:#7f1d1d !important;
+}
+
+/* delikatne paski postępu / wyniku, jeśli występują w quizie */
+progress{
+  width:100%;
+  height:10px;
+  overflow:hidden;
+  border-radius:999px;
+  accent-color:var(--primary);
+}
+
+.score,.score-box,.stats,.summary,.progress{
+  color:#0f172a !important;
+}
+
+@media (max-width:760px){
+  body{
+    background:
+      linear-gradient(180deg,#eff6ff 0,#f8fafc 240px,var(--bg) 100%) !important;
+  }
+
+  header,.hero,.top,.app-header{
+    background:#ffffff !important;
+  }
+
+  header h1::after,.hero h1::after,.top h1::after,.app-header h1::after{
+    width:52px;
+    height:3px;
+  }
+
+  .wrong-review-box{
+    background:#ffffff !important;
+    border-color:#fde68a !important;
+  }
+
+  .wrong-badge{
+    background:#fffbeb !important;
+  }
+
+  .controls,.filters,.toolbar,.actions,.quiz-controls{
+    background:#ffffff !important;
+  }
+}
+</style>
+
+
+<style id="next-button-gradient-polish">
+/* Ładny gradient na przyciskach dalej/następne */
+#nextBtn,
+#nextQuestion,
+#next,
+button.next,
+.btn.next,
+.next-btn,
+.wrong-next,
+button[onclick*="next"],
+button[onclick*="Next"]{
+  background:linear-gradient(135deg,#2563eb 0%,#7c3aed 52%,#db2777 100%) !important;
+  color:#ffffff !important;
+  border:0 !important;
+  box-shadow:0 10px 22px rgba(124,58,237,.24) !important;
+  font-weight:800 !important;
+}
+
+#nextBtn:hover,
+#nextQuestion:hover,
+#next:hover,
+button.next:hover,
+.btn.next:hover,
+.next-btn:hover,
+.wrong-next:hover,
+button[onclick*="next"]:hover,
+button[onclick*="Next"]:hover{
+  background:linear-gradient(135deg,#1d4ed8 0%,#6d28d9 52%,#be185d 100%) !important;
+  transform:translateY(-1px);
+}
+
+#nextBtn:active,
+#nextQuestion:active,
+#next:active,
+button.next:active,
+.btn.next:active,
+.next-btn:active,
+.wrong-next:active,
+button[onclick*="next"]:active,
+button[onclick*="Next"]:active{
+  transform:translateY(0) scale(.99);
+  box-shadow:0 6px 14px rgba(124,58,237,.20) !important;
+}
+
+/* Gdy przycisk dalej jest tworzony bez klasy, łapiemy go po tekście JS-em i dajemy klasę */
+button.quiz-next-gradient{
+  background:linear-gradient(135deg,#2563eb 0%,#7c3aed 52%,#db2777 100%) !important;
+  color:#ffffff !important;
+  border:0 !important;
+  box-shadow:0 10px 22px rgba(124,58,237,.24) !important;
+  font-weight:800 !important;
+}
+button.quiz-next-gradient:hover{
+  background:linear-gradient(135deg,#1d4ed8 0%,#6d28d9 52%,#be185d 100%) !important;
+}
+</style>
+
+
+<style id="progress-memory-styles">
+.progress-memory{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin:10px 0;
+  padding:12px 14px;
+  background:linear-gradient(135deg,#ffffff,#eff6ff);
+  border:1px solid #dbeafe;
+  border-radius:14px;
+}
+.progress-memory strong{
+  display:block;
+  margin-bottom:3px;
+  color:#0f172a;
+}
+.progress-memory span{
+  color:#475569;
+  font-size:14px;
+}
+.progress-memory button{
+  min-height:38px !important;
+  padding:8px 12px !important;
+  border-radius:10px !important;
+  background:#fff !important;
+  border:1px solid #dbeafe !important;
+  color:#334155 !important;
+  white-space:nowrap;
+}
+.math sup{
+  font-size:.72em;
+  vertical-align:super;
+  line-height:0;
+  margin-left:1px;
+}
+.math sub{
+  font-size:.72em;
+  vertical-align:sub;
+  line-height:0;
+  margin-left:1px;
+}
+.integral sup{
+  margin-left:0;
+}
+.integral sub{
+  margin-right:1px;
+}
+@media(max-width:760px){
+  .progress-memory{
+    display:block;
+    padding:10px 12px;
+  }
+  .progress-memory span{
+    display:block;
+    font-size:13px;
+  }
+  .progress-memory button{
+    margin-top:8px;
+    width:100%;
+  }
+  #unansweredAllBtn{
+    display:none !important;
+  }
+}
+</style>
+
+
+<style id="study-mode-cleanup">
+#unansweredBtn,#unansweredAllBtn{display:none !important;}
+#studyUnansweredBtn{
+  background:#fff7ed !important;
+  border-color:#fed7aa !important;
+  color:#9a3412 !important;
+}
+#studyUnansweredBtn:hover{
+  background:#ffedd5 !important;
+  border-color:#fdba74 !important;
+}
+@media(max-width:760px){
+  #studyUnansweredBtn{
+    display:block !important;
+  }
+}
+</style>
+
+
+<style id="md-clean-math-style">
+.math sup{font-size:.72em;vertical-align:super;line-height:0;margin-left:1px}
+.math sub{font-size:.72em;vertical-align:sub;line-height:0;margin-left:1px}
+.integral sup,.sum sup{margin-left:0}
+.integral sub,.sum sub{margin-right:1px}
+.answer,.question,.q,.wrong-answer-btn,.wrong-question{font-variant-numeric:lining-nums;}
+</style>
+
+
+<style id="math-power-fix-final">
+.math{
+  white-space:nowrap;
+  font-variant-numeric:lining-nums;
+}
+.math sup{
+  font-size:.68em !important;
+  vertical-align:super !important;
+  line-height:0 !important;
+  margin-left:1px !important;
+}
+.math sub{
+  font-size:.68em !important;
+  vertical-align:sub !important;
+  line-height:0 !important;
+  margin-left:1px !important;
+}
+.integral sup,.sum sup{
+  margin-left:0 !important;
+}
+.integral sub,.sum sub{
+  margin-right:1px !important;
+}
+</style>
+
+
+<style id="dark-mode-night-study">
+:root{
+  color-scheme: light dark;
+}
+
+.dark-mode,
+html.dark-mode body{
+  --bg:#0b1120 !important;
+  --card:#111827 !important;
+  --text:#e5e7eb !important;
+  --muted:#94a3b8 !important;
+  --border:#263244 !important;
+  --primary:#60a5fa !important;
+  --primary-soft:#10223f !important;
+  --primary-border:#1d4ed8 !important;
+  background:#0b1120 !important;
+  color:#e5e7eb !important;
+}
+
+html.dark-mode body{
+  background:
+    radial-gradient(circle at 15% 0%, rgba(37,99,235,.20), transparent 25rem),
+    radial-gradient(circle at 85% 8%, rgba(124,58,237,.16), transparent 22rem),
+    #0b1120 !important;
+}
+
+html.dark-mode header,
+html.dark-mode .hero,
+html.dark-mode .top,
+html.dark-mode .app-header,
+html.dark-mode .card,
+html.dark-mode .panel,
+html.dark-mode .quiz-card,
+html.dark-mode .question-card,
+html.dark-mode section,
+html.dark-mode .quiz,
+html.dark-mode .side,
+html.dark-mode .qcard,
+html.dark-mode .result,
+html.dark-mode .toolbar,
+html.dark-mode .controls,
+html.dark-mode .filters,
+html.dark-mode .actions,
+html.dark-mode .quiz-controls,
+html.dark-mode .progress-memory,
+html.dark-mode .wrong-review-box,
+html.dark-mode .wrong-practice-card,
+html.dark-mode .reviewItem{
+  background:#111827 !important;
+  color:#e5e7eb !important;
+  border-color:#263244 !important;
+  box-shadow:none !important;
+}
+
+html.dark-mode header,
+html.dark-mode .hero,
+html.dark-mode .top,
+html.dark-mode .app-header{
+  background:linear-gradient(135deg,#111827 0%,#0f172a 60%,#111c38 100%) !important;
+}
+
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode .question,
+html.dark-mode .question-text,
+html.dark-mode #question,
+html.dark-mode .q,
+html.dark-mode .wrong-question,
+html.dark-mode .wrong-review-title,
+html.dark-mode .formula-sheet-title-wrap h2{
+  color:#f8fafc !important;
+}
+
+html.dark-mode p,
+html.dark-mode .small,
+html.dark-mode .meta,
+html.dark-mode .muted,
+html.dark-mode .wrong-review-desc,
+html.dark-mode .progress-memory span,
+html.dark-mode header p,
+html.dark-mode .hero p,
+html.dark-mode .top p,
+html.dark-mode .app-header p{
+  color:#94a3b8 !important;
+}
+
+html.dark-mode button,
+html.dark-mode .btn,
+html.dark-mode select,
+html.dark-mode input{
+  background:#0f172a !important;
+  color:#e5e7eb !important;
+  border-color:#334155 !important;
+}
+
+html.dark-mode button:hover,
+html.dark-mode .btn:hover{
+  background:#172554 !important;
+  border-color:#3b82f6 !important;
+}
+
+html.dark-mode .btn.primary,
+html.dark-mode button.primary,
+html.dark-mode #startBtn,
+html.dark-mode #startQuiz,
+html.dark-mode button[data-action="start"]{
+  background:linear-gradient(135deg,#2563eb,#7c3aed) !important;
+  color:#ffffff !important;
+  border-color:#3b82f6 !important;
+}
+
+html.dark-mode #studyUnansweredBtn{
+  background:#27170a !important;
+  color:#fed7aa !important;
+  border-color:#9a3412 !important;
+}
+
+html.dark-mode #studyUnansweredBtn:hover{
+  background:#431407 !important;
+  border-color:#fb923c !important;
+}
+
+html.dark-mode .answer,
+html.dark-mode .option,
+html.dark-mode .answers button,
+html.dark-mode #answers button,
+html.dark-mode .wrong-answer-btn{
+  background:#0f172a !important;
+  color:#e5e7eb !important;
+  border-color:#334155 !important;
+}
+
+html.dark-mode .answer:hover,
+html.dark-mode .option:hover,
+html.dark-mode .answers button:hover,
+html.dark-mode #answers button:hover,
+html.dark-mode .wrong-answer-btn:hover:not(:disabled){
+  background:#172554 !important;
+  border-color:#3b82f6 !important;
+}
+
+html.dark-mode .answer.correct,
+html.dark-mode .option.correct,
+html.dark-mode .answers button.correct,
+html.dark-mode #answers button.correct,
+html.dark-mode .answer.good,
+html.dark-mode .option.good,
+html.dark-mode .answers button.good,
+html.dark-mode #answers button.good,
+html.dark-mode .wrong-answer-btn.good,
+html.dark-mode .reviewItem.ok,
+html.dark-mode .good{
+  background:#052e1b !important;
+  border-color:#15803d !important;
+  color:#bbf7d0 !important;
+}
+
+html.dark-mode .answer.wrong,
+html.dark-mode .option.wrong,
+html.dark-mode .answers button.wrong,
+html.dark-mode #answers button.wrong,
+html.dark-mode .answer.bad,
+html.dark-mode .option.bad,
+html.dark-mode .answers button.bad,
+html.dark-mode #answers button.bad,
+html.dark-mode .wrong-answer-btn.bad,
+html.dark-mode .reviewItem.no,
+html.dark-mode .bad{
+  background:#450a0a !important;
+  border-color:#b91c1c !important;
+  color:#fecaca !important;
+}
+
+html.dark-mode .feedback,
+html.dark-mode .result,
+html.dark-mode .explanation,
+html.dark-mode #feedback,
+html.dark-mode .explain,
+html.dark-mode .wrong-feedback{
+  background:#0f172a !important;
+  border-color:#334155 !important;
+  color:#e5e7eb !important;
+}
+
+html.dark-mode .feedback.good,
+html.dark-mode #feedback.good,
+html.dark-mode .result.good,
+html.dark-mode .explanation.good,
+html.dark-mode .explain.good,
+html.dark-mode .wrong-feedback.good{
+  background:#052e1b !important;
+  border-color:#15803d !important;
+  color:#bbf7d0 !important;
+}
+
+html.dark-mode .feedback.bad,
+html.dark-mode #feedback.bad,
+html.dark-mode .result.bad,
+html.dark-mode .explanation.bad,
+html.dark-mode .explain.bad,
+html.dark-mode .wrong-feedback.bad{
+  background:#450a0a !important;
+  border-color:#b91c1c !important;
+  color:#fecaca !important;
+}
+
+html.dark-mode .pill,
+html.dark-mode .badge,
+html.dark-mode .tag,
+html.dark-mode .cat,
+html.dark-mode .wrong-badge,
+html.dark-mode .note,
+html.dark-mode .formula-chip{
+  background:#0f172a !important;
+  color:#cbd5e1 !important;
+  border-color:#334155 !important;
+}
+
+html.dark-mode .pill.active{
+  background:#1d4ed8 !important;
+  color:#ffffff !important;
+  border-color:#3b82f6 !important;
+}
+
+html.dark-mode .progress{
+  background:#1e293b !important;
+}
+
+html.dark-mode .bar{
+  background:linear-gradient(90deg,#60a5fa,#a78bfa) !important;
+}
+
+html.dark-mode .scorebig{
+  color:#f8fafc !important;
+}
+
+html.dark-mode a{
+  color:#93c5fd !important;
+}
+
+html.dark-mode table,
+html.dark-mode tr,
+html.dark-mode td,
+html.dark-mode th{
+  border-color:#334155 !important;
+  color:#e5e7eb !important;
+}
+
+html.dark-mode pre,
+html.dark-mode code,
+html.dark-mode .math{
+  color:#f8fafc !important;
+}
+
+.theme-toggle-wrap{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+#themeToggle{
+  min-height:42px !important;
+  padding:9px 13px !important;
+  border-radius:999px !important;
+  font-weight:800 !important;
+  white-space:nowrap;
+}
+
+html.dark-mode #themeToggle{
+  background:linear-gradient(135deg,#1e293b,#312e81) !important;
+  border-color:#6366f1 !important;
+  color:#ffffff !important;
+}
+
+@media(max-width:760px){
+  .theme-toggle-wrap{
+    grid-column:1/-1;
+  }
+  #themeToggle{
+    width:100% !important;
+  }
+}
+</style>
+
+
+<style id="wrong-dark-accordion-fix">
+/* Sekcja błędnych pytań - zwijana lista */
+.wrong-review-box{
+  overflow:hidden !important;
+}
+
+.wrong-list-wrap{
+  margin-top:12px;
+  border:1px solid #e5e7eb;
+  border-radius:14px;
+  background:#ffffff;
+  overflow:hidden;
+}
+
+.wrong-list-toggle{
+  width:100%;
+  min-height:44px !important;
+  padding:11px 14px !important;
+  border:0 !important;
+  border-radius:0 !important;
+  background:#f8fafc !important;
+  color:#0f172a !important;
+  font-weight:800 !important;
+  display:flex !important;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  cursor:pointer;
+  box-shadow:none !important;
+}
+
+.wrong-list-toggle span:last-child{
+  font-size:18px;
+  line-height:1;
+}
+
+.wrong-list-wrap.collapsed .wrong-list{
+  display:none !important;
+}
+
+.wrong-list-wrap.expanded .wrong-list{
+  display:grid !important;
+}
+
+.wrong-list{
+  margin:0 !important;
+  padding:10px !important;
+  display:grid;
+  gap:8px;
+  max-height:360px;
+  overflow:auto;
+  background:#ffffff;
+}
+
+.wrong-list li{
+  border:1px solid #e5e7eb !important;
+  background:#ffffff !important;
+  color:#111827 !important;
+  border-radius:10px !important;
+  padding:10px 11px !important;
+}
+
+.wrong-list li span{
+  color:#111827 !important;
+  font-weight:700 !important;
+}
+
+.wrong-list li em{
+  color:#64748b !important;
+}
+
+/* Dark mode dla błędnych pytań */
+html.dark-mode .wrong-review-box{
+  background:linear-gradient(135deg,#111827 0%,#0f172a 60%,#1e1b4b 100%) !important;
+  border-color:#334155 !important;
+  color:#e5e7eb !important;
+}
+
+html.dark-mode .wrong-review-title{
+  color:#f8fafc !important;
+}
+
+html.dark-mode .wrong-review-desc{
+  color:#94a3b8 !important;
+}
+
+html.dark-mode .wrong-badge{
+  background:#1e293b !important;
+  color:#fecaca !important;
+  border:1px solid #7f1d1d !important;
+}
+
+html.dark-mode .wrong-actions button{
+  background:linear-gradient(135deg,#2563eb,#7c3aed) !important;
+  color:#ffffff !important;
+  border:0 !important;
+}
+
+html.dark-mode .wrong-actions button.secondary{
+  background:#0f172a !important;
+  color:#cbd5e1 !important;
+  border:1px solid #334155 !important;
+}
+
+html.dark-mode .wrong-list-wrap{
+  background:#0f172a !important;
+  border-color:#334155 !important;
+}
+
+html.dark-mode .wrong-list-toggle{
+  background:#111827 !important;
+  color:#e5e7eb !important;
+  border-bottom:1px solid #334155 !important;
+}
+
+html.dark-mode .wrong-list-toggle:hover{
+  background:#172554 !important;
+}
+
+html.dark-mode .wrong-list{
+  background:#0f172a !important;
+  scrollbar-color:#475569 #0f172a;
+}
+
+html.dark-mode .wrong-list li{
+  background:#111827 !important;
+  border-color:#334155 !important;
+  color:#e5e7eb !important;
+}
+
+html.dark-mode .wrong-list li span{
+  color:#f8fafc !important;
+}
+
+html.dark-mode .wrong-list li em{
+  color:#94a3b8 !important;
+}
+
+html.dark-mode .wrong-practice-card{
+  background:#111827 !important;
+  border-color:#334155 !important;
+  color:#e5e7eb !important;
+}
+
+html.dark-mode .wrong-question{
+  color:#f8fafc !important;
+}
+
+html.dark-mode .wrong-answer-btn{
+  background:#0f172a !important;
+  color:#e5e7eb !important;
+  border-color:#334155 !important;
+}
+
+html.dark-mode .wrong-answer-btn:hover:not(:disabled){
+  background:#172554 !important;
+  border-color:#3b82f6 !important;
+}
+
+html.dark-mode .wrong-answer-btn.good{
+  background:#052e1b !important;
+  color:#bbf7d0 !important;
+  border-color:#15803d !important;
+}
+
+html.dark-mode .wrong-answer-btn.bad{
+  background:#450a0a !important;
+  color:#fecaca !important;
+  border-color:#b91c1c !important;
+}
+
+html.dark-mode .wrong-feedback.good{
+  background:#052e1b !important;
+  color:#bbf7d0 !important;
+  border-color:#15803d !important;
+}
+
+html.dark-mode .wrong-feedback.bad{
+  background:#450a0a !important;
+  color:#fecaca !important;
+  border-color:#b91c1c !important;
+}
+
+@media(max-width:760px){
+  .wrong-list{
+    max-height:260px;
+  }
+  .wrong-list-toggle{
+    font-size:14px !important;
+  }
+}
+</style>
+
+</head>
+<body>
+<header><div class="wrap"><h1>Quiz z matematyki do egzaminu</h1><p class="lead">Pytania teoretyczne i praktyczne z logiki, zbiorów, macierzy, ciągów, funkcji, granic, pochodnych, całek i funkcji dwóch zmiennych. Klikasz odpowiedź i od razu widzisz, co jest dobrze albo źle.</p><div class="topgrid"><div class="panel"><b>Jak używać?</b><br>Najpierw wybierz zakres albo zostaw „wszystko”, potem kliknij „Losuj quiz 421 pytań”. Po każdej odpowiedzi dostajesz wyjaśnienie. Na końcu masz wynik i listę błędów.</div><div class="stats"><div class="stat"><b id="totalQ">0</b><span>pytań w bazie</span></div><div class="stat"><b>10</b><span>pytań w quizie</span></div><div class="stat"><b id="doneQ">0</b><span>rozwiązanych</span></div></div></div></div></header>
+<main class="main"><div class="toolbar"><button class="btn" id="startBtn">Losuj quiz 10 pytań</button><button class="btn secondary" id="studyBtn">Nauka - cała baza</button><button class="btn secondary" id="studyUnansweredBtn">Nauka - nieodpowiedziane</button><select id="categorySelect"><option value="all">Wszystkie działy</option></select><select id="typeSelect"><option value="all">Teoria i praktyka</option><option value="teoria">Tylko teoria</option><option value="praktyka">Tylko praktyka</option></select><button class="btn secondary" id="resetBtn">Reset</button></div><section class="progress-memory" id="progressMemory">
+  <div>
+    <strong>Postęp nauki</strong>
+    <span id="progressSummary">Wczytywanie...</span>
+  </div>
+  <button type="button" id="clearProgressBtn">Wyczyść postęp</button>
+</section><div class="layout"><aside class="side"><h2>Działy</h2><p class="small">Liczby pokazują, ile pytań jest w danym dziale. Możesz ćwiczyć wszystko albo wybrany temat.</p><div class="category-list" id="catList"></div><div class="note"><b>Tip:</b> Jak odpowiedź jest zła, nie przeklikuj od razu dalej. Przeczytaj wyjaśnienie i spróbuj powiedzieć definicję własnymi słowami.</div></aside><section class="quiz"><div id="quizArea"><h2>Start</h2><p class="small">Kliknij „Losuj quiz 10 pytań” albo wybierz jeden z trybów nauki. Szybki quiz losuje 10 pytań tak jak wcześniej.</p></div><div class="result" id="resultBox"></div></section></div></main>
+<script>
+const QUESTIONS = [{"category": "Logika zdań", "type": "teoria", "question": "Które zdanie jest zdaniem logicznym?", "answers": ["Zamknij okno!", "Czy pada deszcz?", "Liczba 7 jest liczbą pierwszą.", "Niech x będzie liczbą rzeczywistą."], "correct": 2, "explain": "Zdanie logiczne to zdanie oznajmujące, któremu można przypisać dokładnie jedną wartość: prawda albo fałsz."}, {"category": "Logika zdań", "type": "teoria", "question": "Alternatywa p ∨ q jest fałszywa wtedy i tylko wtedy, gdy:", "answers": ["p i q są prawdziwe", "p i q są fałszywe", "p jest prawdziwe, q fałszywe", "p jest fałszywe, q prawdziwe"], "correct": 1, "explain": "Alternatywa jest fałszywa tylko wtedy, gdy oba zdania składowe są fałszywe."}, {"category": "Logika zdań", "type": "teoria", "question": "Koniunkcja p ∧ q jest prawdziwa wtedy i tylko wtedy, gdy:", "answers": ["przynajmniej jedno zdanie jest prawdziwe", "oba zdania są prawdziwe", "oba zdania są fałszywe", "prawdziwe jest tylko p"], "correct": 1, "explain": "Koniunkcja oznacza „i”, więc wymaga prawdziwości obu zdań."}, {"category": "Logika zdań", "type": "praktyka", "question": "Dla p = 0 i q = 1 wartość p ⇒ q wynosi:", "answers": ["0", "1", "p", "q"], "correct": 1, "explain": "Implikacja jest fałszywa tylko w przypadku 1 ⇒ 0. Tu poprzednik jest fałszywy, więc całość jest prawdziwa."}, {"category": "Logika zdań", "type": "praktyka", "question": "Dla p = 1 i q = 0 wartość p ⇒ q wynosi:", "answers": ["0", "1", "nie da się ustalić", "zależy od treści"], "correct": 0, "explain": "To jedyny przypadek fałszywej implikacji: z prawdy wynika fałsz."}, {"category": "Logika zdań", "type": "teoria", "question": "Równoważność p ⇔ q jest prawdziwa, gdy:", "answers": ["p i q mają tę samą wartość logiczną", "p jest prawdziwe", "q jest fałszywe", "p i q mają różne wartości"], "correct": 0, "explain": "Równoważność oznacza „wtedy i tylko wtedy”, więc jest prawdziwa, gdy oba zdania mają tę samą wartość."}, {"category": "Logika zdań", "type": "teoria", "question": "Prawo de Morgana: ¬(p ∧ q) jest równoważne:", "answers": ["¬p ∧ ¬q", "¬p ∨ ¬q", "p ∨ q", "p ∧ ¬q"], "correct": 1, "explain": "Negacja koniunkcji zamienia „i” na „lub”: ¬(p ∧ q) ⇔ ¬p ∨ ¬q."}, {"category": "Logika zdań", "type": "teoria", "question": "Prawo de Morgana: ¬(p ∨ q) jest równoważne:", "answers": ["¬p ∨ ¬q", "¬p ∧ ¬q", "p ∧ q", "p ∨ ¬q"], "correct": 1, "explain": "Negacja alternatywy zamienia „lub” na „i”: ¬(p ∨ q) ⇔ ¬p ∧ ¬q."}, {"category": "Logika zdań", "type": "teoria", "question": "Prawo kontrapozycji ma postać:", "answers": ["(p ⇒ q) ⇔ (q ⇒ p)", "(p ⇒ q) ⇔ (¬q ⇒ ¬p)", "(p ⇒ q) ⇔ (¬p ⇒ ¬q)", "(p ⇒ q) ⇔ (p ∧ q)"], "correct": 1, "explain": "Implikacja jest równoważna kontrapozycji: p ⇒ q ⇔ ¬q ⇒ ¬p."}, {"category": "Logika zdań", "type": "praktyka", "question": "Negacją zdania „Jeśli pada deszcz, to ulica jest mokra” jest:", "answers": ["Jeśli nie pada, to ulica nie jest mokra", "Pada deszcz i ulica nie jest mokra", "Nie pada lub ulica jest mokra", "Ulica jest mokra i pada"], "correct": 1, "explain": "Negacja implikacji p ⇒ q to p ∧ ¬q."}, {"category": "Logika zdań", "type": "teoria", "question": "Metoda zero-jedynkowa polega na:", "answers": ["podstawianiu tylko liczb naturalnych", "sprawdzaniu wszystkich kombinacji 0 i 1", "liczeniu granicy", "rysowaniu wykresu"], "correct": 1, "explain": "Metoda zero-jedynkowa sprawdza wartości logiczne dla wszystkich możliwych układów zdań prostych."}, {"category": "Kwantyfikatory", "type": "teoria", "question": "Symbol ∀ oznacza:", "answers": ["istnieje", "dla każdego", "nie istnieje", "wynika z"], "correct": 1, "explain": "∀ to kwantyfikator ogólny: „dla każdego”."}, {"category": "Kwantyfikatory", "type": "teoria", "question": "Symbol ∃ oznacza:", "answers": ["dla każdego", "istnieje", "jest równoważne", "należy do"], "correct": 1, "explain": "∃ to kwantyfikator szczegółowy: „istnieje przynajmniej jeden”."}, {"category": "Kwantyfikatory", "type": "teoria", "question": "Negacja zdania ∀x P(x) ma postać:", "answers": ["∀x ¬P(x)", "∃x ¬P(x)", "∃x P(x)", "¬∃x ¬P(x)"], "correct": 1, "explain": "Negując „dla każdego”, dostajemy „istnieje taki, że nie”: ¬∀xP(x) ⇔ ∃x¬P(x)."}, {"category": "Kwantyfikatory", "type": "teoria", "question": "Negacja zdania ∃x P(x) ma postać:", "answers": ["∀x ¬P(x)", "∃x ¬P(x)", "∀x P(x)", "¬∀x ¬P(x)"], "correct": 0, "explain": "Negując „istnieje”, dostajemy „dla każdego nie”: ¬∃xP(x) ⇔ ∀x¬P(x)."}, {"category": "Kwantyfikatory", "type": "praktyka", "question": "Formalną negacją zdania „Każda liczba naturalna jest dodatnia” jest:", "answers": ["Każda liczba naturalna nie jest dodatnia", "Istnieje liczba naturalna, która nie jest dodatnia", "Istnieje liczba naturalna dodatnia", "Nie istnieje liczba naturalna"], "correct": 1, "explain": "Negacja zdania z „każda” to „istnieje przynajmniej jedna, która nie spełnia warunku”. Uwaga: prawdziwość pierwotnego zdania zależy od konwencji, czy 0 należy do N, ale sama negacja ma właśnie tę postać."}, {"category": "Kwantyfikatory", "type": "praktyka", "question": "Negacja zdania „Istnieje student, który zdał egzamin” to:", "answers": ["Każdy student zdał egzamin", "Istnieje student, który nie zdał", "Żaden student nie zdał egzaminu", "Nie każdy student zdał"], "correct": 2, "explain": "¬∃xP(x) ⇔ ∀x¬P(x), czyli każdy student nie zdał / żaden nie zdał."}, {"category": "Zbiory", "type": "teoria", "question": "Zbiór liczb rzeczywistych oznaczamy:", "answers": ["N", "Z", "Q", "R"], "correct": 3, "explain": "R oznacza liczby rzeczywiste."}, {"category": "Zbiory", "type": "teoria", "question": "Liczby wymierne to liczby, które można zapisać jako:", "answers": ["a/b, gdzie a,b są całkowite i b ≠ 0", "tylko liczby całkowite", "tylko pierwiastki", "tylko liczby dodatnie"], "correct": 0, "explain": "Liczby wymierne mają postać ułamka a/b, gdzie b nie może być zerem."}, {"category": "Zbiory", "type": "teoria", "question": "Suma zbiorów A ∪ B zawiera:", "answers": ["tylko elementy wspólne", "elementy należące do A lub B", "elementy z A, ale nie z B", "elementy spoza A i B"], "correct": 1, "explain": "Suma zbiorów to wszystko, co jest w A lub w B."}, {"category": "Zbiory", "type": "teoria", "question": "Iloczyn zbiorów A ∩ B zawiera:", "answers": ["elementy z A lub B", "elementy wspólne A i B", "elementy tylko z A", "elementy tylko z B"], "correct": 1, "explain": "Iloczyn zbiorów to część wspólna."}, {"category": "Zbiory", "type": "praktyka", "question": "Jeśli A={1,2,3}, B={3,4}, to A ∪ B =", "answers": ["{3}", "{1,2,3,4}", "{1,2}", "{4}"], "correct": 1, "explain": "Suma zbiera wszystkie elementy bez powtórzeń."}, {"category": "Zbiory", "type": "praktyka", "question": "Jeśli A={1,2,3}, B={3,4}, to A ∩ B =", "answers": ["{1,2,3,4}", "{1,2}", "{3}", "∅"], "correct": 2, "explain": "Wspólny dla obu zbiorów jest tylko element 3."}, {"category": "Zbiory", "type": "teoria", "question": "Iloczyn kartezjański A × B to:", "answers": ["zbiór sum elementów", "zbiór par uporządkowanych (a,b)", "część wspólna", "różnica zbiorów"], "correct": 1, "explain": "A × B składa się z par uporządkowanych, gdzie pierwszy element pochodzi z A, a drugi z B."}, {"category": "Zbiory", "type": "praktyka", "question": "Jeśli |A|=3 i |B|=4, to |A × B| =", "answers": ["7", "12", "1", "4"], "correct": 1, "explain": "Liczba par w iloczynie kartezjańskim to 3 · 4 = 12."}, {"category": "Kombinatoryka", "type": "teoria", "question": "Silnia n! oznacza:", "answers": ["sumę n+(n-1)+...+1", "iloczyn n·(n-1)·...·1", "n do potęgi n", "pierwiastek z n"], "correct": 1, "explain": "n! to iloczyn kolejnych liczb naturalnych od 1 do n."}, {"category": "Kombinatoryka", "type": "praktyka", "question": "Ile wynosi 5!?", "answers": ["25", "60", "120", "720"], "correct": 2, "explain": "5! = 5·4·3·2·1 = 120."}, {"category": "Kombinatoryka", "type": "teoria", "question": "Symbol Newtona C(n,k) liczy:", "answers": ["wariacje z powtórzeniami", "wybór k elementów z n bez kolejności", "permutacje wszystkich elementów", "liczbę funkcji liniowych"], "correct": 1, "explain": "Symbol Newtona liczy kombinacje, czyli wybory bez znaczenia kolejności."}, {"category": "Kombinatoryka", "type": "praktyka", "question": "Ile wynosi C(5,2)?", "answers": ["5", "10", "20", "25"], "correct": 1, "explain": "C(5,2)=5!/(2!3!)=10."}, {"category": "Kombinatoryka", "type": "teoria", "question": "Trójkąt Pascala służy m.in. do:", "answers": ["odczytywania współczynników dwumianu Newtona", "liczenia wyznacznika", "badania ciągłości", "rysowania stycznej"], "correct": 0, "explain": "Wiersze trójkąta Pascala dają współczynniki rozwinięcia (a+b)^{n}."}, {"category": "Kombinatoryka", "type": "praktyka", "question": "W rozwinięciu (a+b)^3 współczynniki to:", "answers": ["1,2,1", "1,3,3,1", "1,4,6,4,1", "3,3,3"], "correct": 1, "explain": "(a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3."}, {"category": "Macierze", "type": "teoria", "question": "Macierz kwadratowa ma:", "answers": ["same zera", "tyle samo wierszy i kolumn", "jeden wiersz", "jedną kolumnę"], "correct": 1, "explain": "Macierz kwadratowa ma rozmiar n×n."}, {"category": "Macierze", "type": "teoria", "question": "Macierz jednostkowa ma:", "answers": ["zera na przekątnej", "jedynki na przekątnej i zera poza nią", "same jedynki", "same zera"], "correct": 1, "explain": "Macierz jednostkowa I ma jedynki na przekątnej głównej."}, {"category": "Macierze", "type": "teoria", "question": "Dodawać można macierze:", "answers": ["dowolnych wymiarów", "o tych samych wymiarach", "tylko kwadratowe", "tylko diagonalne"], "correct": 1, "explain": "Dodawanie jest element po elemencie, więc wymiary muszą być identyczne."}, {"category": "Macierze", "type": "praktyka", "question": "Dla A=[[1,2],[3,4]], B=[[5,6],[7,8]], A+B =", "answers": ["[[6,8],[10,12]]", "[[5,12],[21,32]]", "[[1,2],[7,8]]", "[[4,4],[4,4]]"], "correct": 0, "explain": "Dodajemy odpowiadające elementy: [[1+5,2+6],[3+7,4+8]]."}, {"category": "Macierze", "type": "teoria", "question": "Iloczyn AB dla A(m×n) i B(n×p) ma wymiar:", "answers": ["m×p", "n×n", "m×n", "p×m"], "correct": 0, "explain": "Wynik ma wymiary zewnętrzne: m×p."}, {"category": "Macierze", "type": "praktyka", "question": "Wyznacznik macierzy [[a,b],[c,d]] wynosi:", "answers": ["ab-cd", "ad-bc", "ac-bd", "a+b+c+d"], "correct": 1, "explain": "Dla macierzy 2×2 det = ad-bc."}, {"category": "Macierze", "type": "praktyka", "question": "Wyznacznik macierzy [[1,2],[3,4]] wynosi:", "answers": ["-2", "2", "10", "0"], "correct": 0, "explain": "det = 1·4 - 2·3 = 4 - 6 = -2."}, {"category": "Macierze", "type": "teoria", "question": "Macierz odwrotna A^{-1} istnieje wtedy, gdy:", "answers": ["A jest prostokątna", "A jest kwadratowa i det(A) ≠ 0", "A ma same zera", "A ma rząd 0"], "correct": 1, "explain": "Macierz odwrotna istnieje dla macierzy kwadratowej nieosobliwej."}, {"category": "Macierze", "type": "teoria", "question": "Rząd macierzy to:", "answers": ["liczba elementów", "maksymalna liczba liniowo niezależnych wierszy lub kolumn", "liczba zer", "suma przekątnej"], "correct": 1, "explain": "Rząd mierzy liczbę niezależnych wierszy lub kolumn."}, {"category": "Macierze", "type": "teoria", "question": "Twierdzenie Laplace’a służy do:", "answers": ["rozwijania wyznacznika względem wiersza lub kolumny", "liczenia pochodnej", "liczenia granicy", "badania monotoniczności"], "correct": 0, "explain": "Laplace pozwala liczyć wyznacznik przez rozwinięcie względem wybranego wiersza lub kolumny."}, {"category": "Ciągi", "type": "teoria", "question": "Ciąg niemalejący spełnia warunek:", "answers": ["a_{n+1}<a_n", "a_{n+1}≥a_n", "a_n=0", "a_n jest zawsze ujemny"], "correct": 1, "explain": "Ciąg niemalejący spełnia a_{n+1}≥a_n. Jeśli wykładowca rozróżnia pojęcia ściśle, to ciąg rosnący spełnia a_{n+1}>a_n."}, {"category": "Ciągi", "type": "teoria", "question": "Ciąg ograniczony z góry spełnia:", "answers": ["istnieje M takie, że a_n≤M", "każdy wyraz jest dodatni", "jest zawsze rosnący", "ma jeden wyraz"], "correct": 0, "explain": "Ograniczenie z góry oznacza wspólną górną barierę dla wszystkich wyrazów."}, {"category": "Ciągi", "type": "teoria", "question": "Każdy ciąg monotoniczny i ograniczony jest:", "answers": ["rozbieżny", "zbieżny", "stały", "bez granicy"], "correct": 1, "explain": "To podstawowe twierdzenie o ciągach monotonicznych."}, {"category": "Ciągi", "type": "praktyka", "question": "Granica ciągu a_n = 1/n wynosi:", "answers": ["1", "0", "∞", "-1"], "correct": 1, "explain": "Gdy n→∞, wyrażenie 1/n dąży do 0."}, {"category": "Ciągi", "type": "praktyka", "question": "Granica a_n=(3n+1)/(n+2) wynosi:", "answers": ["0", "1", "3", "∞"], "correct": 2, "explain": "Dla ilorazu wielomianów tego samego stopnia bierzemy iloraz współczynników: 3/1."}, {"category": "Ciągi", "type": "teoria", "question": "Liczba e jest granicą ciągu:", "answers": ["(1+1/n)^{n}", "n^2", "1/n", "(-1)^{n}"], "correct": 0, "explain": "Klasycznie e = lim (1+1/n)^{n}."}, {"category": "Funkcje", "type": "teoria", "question": "Funkcja niemalejąca spełnia warunek:", "answers": ["x_1<x_2 ⇒ f(x_1)≤f(x_2)", "x_1<x_2 ⇒ f(x_1)≥f(x_2)", "f(x)=0", "f ma tylko wartości dodatnie"], "correct": 0, "explain": "Funkcja niemalejąca zachowuje porządek: z x_1<x_2 wynika f(x_1)≤f(x_2). Jeśli wymagane jest pojęcie ściśle rosnąca, wtedy byłoby f(x_1)<f(x_2)."}, {"category": "Funkcje", "type": "teoria", "question": "Iniekcja to funkcja, która:", "answers": ["osiąga całą przeciwdziedzinę", "różnym argumentom przypisuje różne wartości", "jest liniowa", "jest stała"], "correct": 1, "explain": "Iniekcja nie skleja dwóch różnych argumentów w jedną wartość."}, {"category": "Funkcje", "type": "teoria", "question": "Surjekcja to funkcja, która:", "answers": ["różnym argumentom daje różne wartości", "osiąga każdy element przeciwdziedziny", "nie ma miejsc zerowych", "jest malejąca"], "correct": 1, "explain": "Surjekcja jest „na” całą przeciwdziedzinę."}, {"category": "Funkcje", "type": "teoria", "question": "Bijekcja to funkcja:", "answers": ["tylko różnowartościowa", "tylko „na”", "jednocześnie iniekcja i surjekcja", "zawsze stała"], "correct": 2, "explain": "Bijekcja jest jednocześnie jeden-do-jednego i na."}, {"category": "Funkcje", "type": "teoria", "question": "Funkcja odwrotna z przeciwdziedziny na dziedzinę istnieje, gdy funkcja jest:", "answers": ["stała", "bijekcją", "parzysta", "okresowa"], "correct": 1, "explain": "Jeśli odwrotna ma działać z całej przeciwdziedziny na dziedzinę, funkcja musi być bijekcją. Sama iniekcja wystarcza tylko do odwrotności na obrazie funkcji."}, {"category": "Funkcje", "type": "teoria", "question": "Funkcja wykładnicza ma postać:", "answers": ["ax+b", "a^{x}, a>0, a≠1", "log_a x", "1/x"], "correct": 1, "explain": "W funkcji wykładniczej zmienna jest w wykładniku."}, {"category": "Funkcje", "type": "teoria", "question": "Logarytm log_a x jest określony dla:", "answers": ["x>0", "x≥0", "x≠0", "dowolnego x"], "correct": 0, "explain": "Logarytm rzeczywisty wymaga dodatniego argumentu."}, {"category": "Funkcje", "type": "teoria", "question": "Logarytm naturalny to:", "answers": ["logarytm o podstawie 10", "logarytm o podstawie e", "logarytm o podstawie 2", "dowolny logarytm"], "correct": 1, "explain": "ln x to logarytm o podstawie e."}, {"category": "Funkcje", "type": "praktyka", "question": "Jeśli f(x)=2x+3, to f^{-1}(x)=", "answers": ["(x-3)/2", "2x-3", "x/2+3", "3x+2"], "correct": 0, "explain": "Z y=2x+3 otrzymujemy x=(y-3)/2, po zamianie symboli f^{-1}(x)=(x-3)/2."}, {"category": "Granice i ciągłość", "type": "teoria", "question": "Funkcja jest ciągła w punkcie x_0, gdy:", "answers": ["ma pochodną", "lim_{x→x_0} f(x)=f(x_0)", "f(x_0)=0", "jest monotoniczna"], "correct": 1, "explain": "Ciągłość oznacza zgodność granicy z wartością funkcji."}, {"category": "Granice i ciągłość", "type": "teoria", "question": "Gdy granice jednostronne w punkcie są różne, mamy:", "answers": ["nieciągłość skokową", "nieciągłość usuwalną", "ciągłość", "ekstremum"], "correct": 0, "explain": "Różne granice jednostronne oznaczają skok."}, {"category": "Granice i ciągłość", "type": "teoria", "question": "Nieciągłość usuwalna występuje, gdy:", "answers": ["granica istnieje, ale wartość funkcji jest inna albo brak wartości", "granice są nieskończone", "funkcja nie ma dziedziny", "funkcja jest liniowa"], "correct": 0, "explain": "Można ją usunąć przez odpowiednie zdefiniowanie wartości w punkcie."}, {"category": "Granice i ciągłość", "type": "praktyka", "question": "lim_{x→2} (x^2-4)/(x-2) wynosi:", "answers": ["0", "2", "4", "nie istnieje"], "correct": 2, "explain": "Skracamy (x^2-4)=(x-2)(x+2), zostaje x+2, więc granica to 4."}, {"category": "Granice i ciągłość", "type": "praktyka", "question": "lim_{x→0} sin(x)/x wynosi:", "answers": ["0", "1", "∞", "nie istnieje"], "correct": 1, "explain": "To podstawowa granica trygonometryczna."}, {"category": "Pochodne", "type": "teoria", "question": "Pochodna w punkcie geometrycznie oznacza:", "answers": ["pole pod wykresem", "nachylenie stycznej", "miejsce zerowe", "wartość największą"], "correct": 1, "explain": "Pochodna to współczynnik kierunkowy stycznej do wykresu."}, {"category": "Pochodne", "type": "teoria", "question": "Jeśli funkcja jest różniczkowalna w punkcie, to jest tam:", "answers": ["ciągła", "nieciągła", "zawsze liniowa", "zawsze ma ekstremum"], "correct": 0, "explain": "Różniczkowalność implikuje ciągłość."}, {"category": "Pochodne", "type": "praktyka", "question": "Pochodna f(x)=x^3 wynosi:", "answers": ["x^2", "3x^2", "3x", "x^4/4"], "correct": 1, "explain": "(x^{n})’ = n x^{n-1}, więc (x^3)’=3x^2."}, {"category": "Pochodne", "type": "praktyka", "question": "Pochodna f(x)=sin x wynosi:", "answers": ["cos x", "-cos x", "sin x", "-sin x"], "correct": 0, "explain": "(sin x)’ = cos x."}, {"category": "Pochodne", "type": "praktyka", "question": "Pochodna f(x)=cos x wynosi:", "answers": ["sin x", "-sin x", "cos x", "-cos x"], "correct": 1, "explain": "(cos x)’ = -sin x."}, {"category": "Pochodne", "type": "praktyka", "question": "Pochodna f(x)=e^{x} wynosi:", "answers": ["x e^{x-1}", "e^{x}", "ln x", "1/x"], "correct": 1, "explain": "Pochodna e^{x} to e^{x}."}, {"category": "Pochodne", "type": "praktyka", "question": "Pochodna f(x)=ln x wynosi:", "answers": ["x", "1/x", "e^{x}", "ln x"], "correct": 1, "explain": "Dla x>0 mamy (ln x)’=1/x."}, {"category": "Pochodne", "type": "praktyka", "question": "Pochodna f(x)=x^2+3x-5 wynosi:", "answers": ["2x+3", "x^3+3", "2x-5", "x+3"], "correct": 0, "explain": "Pochodna sumy: 2x + 3 + 0."}, {"category": "Pochodne", "type": "teoria", "question": "Równanie stycznej w punkcie x_0 ma postać:", "answers": ["y=f’(x_0)(x-x_0)+f(x_0)", "y=f(x_0)x+f’(x_0)", "y=x_0x+f(x_0)", "y=f’(x)"], "correct": 0, "explain": "Styczna przechodzi przez (x_0, f(x_0)) i ma nachylenie f’(x_0)."}, {"category": "Twierdzenia różniczkowe", "type": "teoria", "question": "Twierdzenie Rolle’a wymaga m.in.:", "answers": ["f(a)=f(b)", "funkcja jest nieciągła", "braku pochodnej", "a=b"], "correct": 0, "explain": "Założenia: ciągłość na [a,b], różniczkowalność na (a,b), f(a)=f(b)."}, {"category": "Twierdzenia różniczkowe", "type": "teoria", "question": "Twierdzenie Lagrange’a mówi, że istnieje c takie, że:", "answers": ["f’(c)=0 zawsze", "f’(c)=(f(b)-f(a))/(b-a)", "f(c)=0", "f(a)=f(b)"], "correct": 1, "explain": "Chwilowe tempo zmian w pewnym punkcie równa się średniemu tempu zmian na przedziale."}, {"category": "Monotoniczność i wypukłość", "type": "teoria", "question": "Jeśli f’(x)>0 na przedziale, to funkcja jest:", "answers": ["malejąca", "rosnąca", "stała", "nieciągła"], "correct": 1, "explain": "Dodatnia pochodna oznacza wzrost funkcji."}, {"category": "Monotoniczność i wypukłość", "type": "teoria", "question": "Jeśli f’(x)<0 na przedziale, to funkcja jest:", "answers": ["rosnąca", "malejąca", "stała", "parzysta"], "correct": 1, "explain": "Ujemna pochodna oznacza spadek funkcji."}, {"category": "Monotoniczność i wypukłość", "type": "teoria", "question": "Jeśli f’’(x)>0 na przedziale, to funkcja jest:", "answers": ["wypukła", "wklęsła", "stała", "nieciągła"], "correct": 0, "explain": "Dodatnia druga pochodna oznacza wypukłość."}, {"category": "Ekstrema jednej zmiennej", "type": "teoria", "question": "Warunek konieczny ekstremum lokalnego funkcji różniczkowalnej to:", "answers": ["f’(x_0)=0", "f(x_0)=0", "f’’(x_0)=0 zawsze", "x_0=0"], "correct": 0, "explain": "W punkcie wewnętrznym ekstremum lokalnego pochodna musi być zerowa."}, {"category": "Ekstrema jednej zmiennej", "type": "praktyka", "question": "Dla f(x)=x^2 punkt x=0 jest:", "answers": ["minimum lokalnym", "maksimum lokalnym", "nieciągłością", "brakiem ekstremum"], "correct": 0, "explain": "f’(0)=0 i f’’(0)=2>0, więc jest minimum lokalne."}, {"category": "Całki", "type": "teoria", "question": "Funkcja pierwotna F funkcji f spełnia:", "answers": ["F’(x)=f(x)", "F(x)=f’(x)", "F(x)=0", "F’’(x)=0"], "correct": 0, "explain": "Funkcja pierwotna po zróżniczkowaniu daje funkcję podcałkową."}, {"category": "Całki", "type": "teoria", "question": "Całka nieoznaczona zawiera stałą:", "answers": ["+C", "+x", "+0", "+e"], "correct": 0, "explain": "Funkcje pierwotne różnią się o stałą, bo pochodna stałej to 0."}, {"category": "Całki", "type": "praktyka", "question": "∫ x^2 dx wynosi:", "answers": ["2x+C", "x^3/3+C", "x^2/2+C", "3x^2+C"], "correct": 1, "explain": "∫x^{n} dx = x^{n+1}/(n+1)+C dla n≠-1."}, {"category": "Całki", "type": "praktyka", "question": "∫ 1/x dx dla x>0 wynosi:", "answers": ["x^2/2+C", "ln x+C", "e^{x}+C", "1/x^2+C"], "correct": 1, "explain": "∫1/x dx = ln|x|+C, a dla x>0: ln x+C."}, {"category": "Całki", "type": "praktyka", "question": "∫ e^{x} dx wynosi:", "answers": ["e^{x}+C", "xe^{x}+C", "ln x+C", "1/e^{x}+C"], "correct": 0, "explain": "Całka z e^{x} to e^{x}+C."}, {"category": "Całki", "type": "teoria", "question": "Wzór na całkowanie przez części:", "answers": ["∫u dv = uv - ∫v du", "∫u dv = uv + ∫v du", "∫u+v = uv", "(uv)’=u’v’"], "correct": 0, "explain": "To odpowiednik wzoru na pochodną iloczynu."}, {"category": "Całki oznaczone", "type": "teoria", "question": "Całka oznaczona może geometrycznie oznaczać:", "answers": ["nachylenie stycznej", "pole zorientowane pod wykresem", "miejsce zerowe", "rząd macierzy"], "correct": 1, "explain": "Obszary nad osią liczą się dodatnio, pod osią ujemnie."}, {"category": "Całki oznaczone", "type": "teoria", "question": "Twierdzenie Newtona-Leibniza: jeśli F’=f, to:", "answers": ["∫_a^{b} f(x)dx=F(b)-F(a)", "∫_a^{b} f(x)dx=F(a)-F(b)", "∫_a^{b} f(x)dx=f’(a)", "całka zawsze 0"], "correct": 0, "explain": "Całkę oznaczoną liczymy przez podstawienie granic do funkcji pierwotnej."}, {"category": "Całki oznaczone", "type": "praktyka", "question": "∫_0^1 2x dx wynosi:", "answers": ["0", "1", "2", "4"], "correct": 1, "explain": "Funkcja pierwotna to x^2. Wynik: 1^2 - 0^2 = 1."}, {"category": "Funkcje dwóch zmiennych", "type": "teoria", "question": "Pochodna cząstkowa ∂f/∂x oznacza:", "answers": ["różniczkujemy po x, pozostałe zmienne traktując jak stałe", "różniczkujemy po wszystkich zmiennych", "całkujemy po x", "liczymy wyznacznik"], "correct": 0, "explain": "Przy pochodnej po x zmienna y jest traktowana jak stała."}, {"category": "Funkcje dwóch zmiennych", "type": "praktyka", "question": "Dla f(x,y)=x^2y+y^3 pochodna ∂f/∂x wynosi:", "answers": ["2xy", "x^2+3y^2", "2x+3y", "y^3"], "correct": 0, "explain": "Po x: (x^2y)’=2xy, a y^3 jest stałe."}, {"category": "Funkcje dwóch zmiennych", "type": "praktyka", "question": "Dla f(x,y)=x^2y+y^3 pochodna ∂f/∂y wynosi:", "answers": ["2xy", "x^2+3y^2", "2x+3y", "x^2y"], "correct": 1, "explain": "Po y: (x^2y)’=x^2, (y^3)’=3y^2."}, {"category": "Funkcje dwóch zmiennych", "type": "teoria", "question": "Twierdzenie Schwarza mówi, że:", "answers": ["pochodne mieszane są równe przy odpowiedniej ciągłości", "każda funkcja ma maksimum", "każda macierz ma odwrotną", "każda całka jest dodatnia"], "correct": 0, "explain": "Jeśli pochodne mieszane są ciągłe w otoczeniu, to f_xy = f_yx."}, {"category": "Funkcje dwóch zmiennych", "type": "teoria", "question": "Macierz Hessego zawiera:", "answers": ["pochodne pierwszego rzędu", "pochodne drugiego rzędu", "wartości funkcji", "same zera"], "correct": 1, "explain": "Hessian to macierz drugich pochodnych cząstkowych."}, {"category": "Ekstrema dwóch zmiennych", "type": "teoria", "question": "Warunek konieczny ekstremum lokalnego funkcji dwóch zmiennych to:", "answers": ["f_x=0 i f_y=0", "f=0", "f_xx=0 zawsze", "x=y"], "correct": 0, "explain": "W punkcie krytycznym gradient powinien być zerowy."}, {"category": "Ekstrema dwóch zmiennych", "type": "teoria", "question": "Jeśli D=f_xx f_yy-(f_xy)^2 > 0 i f_xx > 0, to punkt jest:", "answers": ["minimum lokalnym", "maksimum lokalnym", "siodłowym", "brak informacji"], "correct": 0, "explain": "Dodatni D i dodatnie f_xx oznaczają minimum lokalne."}, {"category": "Ekstrema dwóch zmiennych", "type": "teoria", "question": "Jeśli D=f_xx f_yy-(f_xy)^2 > 0 i f_xx < 0, to punkt jest:", "answers": ["minimum lokalnym", "maksimum lokalnym", "siodłowym", "brak informacji"], "correct": 1, "explain": "Dodatni D i ujemne f_xx oznaczają maksimum lokalne."}, {"category": "Ekstrema dwóch zmiennych", "type": "teoria", "question": "Jeśli D=f_xx f_yy-(f_xy)^2 < 0, to punkt jest:", "answers": ["minimum", "maksimum", "punktem siodłowym", "globalnym minimum"], "correct": 2, "explain": "Ujemny wyznacznik Hessianu oznacza punkt siodłowy."}, {"category": "Ekstrema dwóch zmiennych", "type": "teoria", "question": "Kryterium Sylwestera dla dodatniej określoności macierzy 2×2 wymaga:", "answers": ["pierwszy minor > 0 i wyznacznik > 0", "wyznacznik < 0", "same zera", "tylko f_x=0"], "correct": 0, "explain": "Dla macierzy 2×2 dodatnia określoność wymaga dodatnich wiodących minorów głównych."}, {"category": "Mieszane", "type": "teoria", "question": "Które zdanie jest prawdziwe?", "answers": ["Każda funkcja ciągła jest różniczkowalna", "Każda funkcja różniczkowalna jest ciągła", "Każda funkcja ma odwrotną", "Każda macierz ma wyznacznik"], "correct": 1, "explain": "Różniczkowalność implikuje ciągłość, ale ciągłość nie zawsze implikuje różniczkowalność."}, {"category": "Mieszane", "type": "teoria", "question": "Które zdanie jest fałszywe?", "answers": ["det(A)≠0 oznacza, że A ma odwrotną", "∫f’(x)dx=f(x)+C", "Jeśli f’(x)>0, funkcja rośnie", "Negacja ∀xP(x) to ∀x¬P(x)"], "correct": 3, "explain": "Negacja ∀xP(x) to ∃x¬P(x)."}, {"category": "Mieszane", "type": "praktyka", "question": "ln(e^3) =", "answers": ["e", "3", "1/3", "0"], "correct": 1, "explain": "ln i e^{x} są funkcjami odwrotnymi, więc ln(e^3)=3."}, {"category": "Mieszane", "type": "praktyka", "question": "Jeśli f’(x)=0 na całym przedziale, to funkcja jest:", "answers": ["stała", "wykładnicza", "nieciągła", "bez granicy"], "correct": 0, "explain": "Z twierdzenia Lagrange’a wynika, że zerowa pochodna na przedziale daje funkcję stałą."}, {"category": "Mieszane", "type": "praktyka", "question": "Jeśli A ma wymiar 2×3, a B ma wymiar 3×4, to AB ma wymiar:", "answers": ["2×4", "3×3", "4×2", "nie istnieje"], "correct": 0, "explain": "Wymiary wewnętrzne się zgadzają, wynik ma wymiary zewnętrzne 2×4."}, {"category": "Logika zdań", "type": "praktyka", "question": "Dla p=1, q=1 wartość zdania ¬p ∨ q wynosi:", "answers": ["0", "1", "p", "q"], "correct": 1, "explain": "¬p=0, a 0 ∨ 1 = 1. Alternatywa jest prawdziwa, gdy przynajmniej jeden składnik jest prawdziwy."}, {"category": "Logika zdań", "type": "praktyka", "question": "Dla p=0, q=0 wartość zdania p ⇔ q wynosi:", "answers": ["0", "1", "nie istnieje", "zależy od zdań"], "correct": 1, "explain": "Równoważność jest prawdziwa, gdy oba zdania mają tę samą wartość logiczną. Tutaj oba są fałszywe, więc wynik to 1."}, {"category": "Logika zdań", "type": "praktyka", "question": "Która formuła jest tautologią?", "answers": ["p ∧ ¬p", "p ∨ ¬p", "p ∧ q", "p ⇒ ¬p"], "correct": 1, "explain": "p ∨ ¬p jest zawsze prawdziwe, niezależnie od wartości p. To prawo wyłączonego środka."}, {"category": "Logika zdań", "type": "teoria", "question": "Sprzeczność logiczna to formuła, która:", "answers": ["jest zawsze prawdziwa", "jest zawsze fałszywa", "czasem jest prawdziwa, czasem fałszywa", "nie ma wartości logicznej"], "correct": 1, "explain": "Sprzeczność jest fałszywa dla każdego podstawienia wartości logicznych, np. p ∧ ¬p."}, {"category": "Logika zdań", "type": "teoria", "question": "Formuła spełnialna to taka, która:", "answers": ["jest prawdziwa dla przynajmniej jednego podstawienia", "jest zawsze fałszywa", "jest zawsze prawdziwa", "nie zawiera negacji"], "correct": 0, "explain": "Spełnialność oznacza, że istnieje przynajmniej jedno podstawienie wartości 0/1, dla którego formuła jest prawdziwa."}, {"category": "Logika zdań", "type": "praktyka", "question": "Negacja zdania 'p lub q' to:", "answers": ["nie p lub nie q", "nie p i nie q", "p i nie q", "nie p implikuje q"], "correct": 1, "explain": "Z prawa de Morgana: ¬(p ∨ q) ⇔ ¬p ∧ ¬q."}, {"category": "Logika zdań", "type": "praktyka", "question": "Zdanie p ⇒ q można zapisać równoważnie jako:", "answers": ["¬p ∨ q", "p ∨ ¬q", "p ∧ q", "¬p ∧ q"], "correct": 0, "explain": "Implikacja p ⇒ q jest równoważna alternatywie ¬p ∨ q."}, {"category": "Logika zdań", "type": "praktyka", "question": "Dla p=1, q=0 wartość zdania ¬(p ∧ q) wynosi:", "answers": ["0", "1", "p", "q"], "correct": 1, "explain": "p ∧ q = 1 ∧ 0 = 0, więc negacja daje 1."}, {"category": "Kwantyfikatory", "type": "praktyka", "question": "Negacja zdania 'Istnieje student, który zdał egzamin' brzmi:", "answers": ["Każdy student zdał egzamin", "Żaden student nie zdał egzaminu", "Istnieje student, który nie zdał egzaminu", "Nie każdy student zdał egzamin"], "correct": 1, "explain": "Negacja 'istnieje taki, że P' to 'dla każdego nie P'. Czyli żaden student nie zdał egzaminu."}, {"category": "Kwantyfikatory", "type": "praktyka", "question": "Zdanie ∀x∈R: x^2 ≥ 0 jest:", "answers": ["prawdziwe", "fałszywe", "prawdziwe tylko dla x<0", "bez wartości logicznej"], "correct": 0, "explain": "Kwadrat liczby rzeczywistej nigdy nie jest ujemny, więc zdanie jest prawdziwe."}, {"category": "Kwantyfikatory", "type": "praktyka", "question": "Zdanie ∃x∈R: x^2 = -1 jest:", "answers": ["prawdziwe", "fałszywe", "prawdziwe dla x=1", "prawdziwe dla x=-1"], "correct": 1, "explain": "W liczbach rzeczywistych kwadrat nie może być ujemny, więc nie istnieje takie x."}, {"category": "Kwantyfikatory", "type": "teoria", "question": "Kolejność kwantyfikatorów jest ważna szczególnie wtedy, gdy:", "answers": ["występują różne kwantyfikatory, np. ∀ i ∃", "występuje tylko jedna zmienna", "nie ma predykatu", "zdanie nie zawiera liczb"], "correct": 0, "explain": "Na ogół ∀x∃y P(x,y) nie znaczy tego samego co ∃y∀x P(x,y)."}, {"category": "Kwantyfikatory", "type": "praktyka", "question": "Negacja zdania ∀x∈R ∃y∈R: y>x ma postać:", "answers": ["∃x∈R ∀y∈R: y≤x", "∀x∈R ∃y∈R: y≤x", "∃x∈R ∃y∈R: y>x", "∀x∈R ∀y∈R: y>x"], "correct": 0, "explain": "Negując kwantyfikatory, zamieniamy ∀ na ∃ i ∃ na ∀ oraz negujemy warunek y>x, czyli dostajemy y≤x."}, {"category": "Kwantyfikatory", "type": "praktyka", "question": "Zdanie 'Nie każdy pracownik jest obecny' zapisujemy jako:", "answers": ["∀x Obecny(x)", "∃x ¬Obecny(x)", "∀x ¬Obecny(x)", "¬∃x ¬Obecny(x)"], "correct": 1, "explain": "'Nie każdy' znaczy 'istnieje przynajmniej jeden, który nie'."}, {"category": "Zbiory", "type": "praktyka", "question": "Jeśli A={1,2,3,4}, B={3,4,5}, to A∖B =", "answers": ["{1,2}", "{3,4}", "{5}", "{1,2,3,4,5}"], "correct": 0, "explain": "A∖B to elementy należące do A, ale nienależące do B. Zostają 1 i 2."}, {"category": "Zbiory", "type": "praktyka", "question": "Jeśli A={a,b}, B={1,2,3}, to ile elementów ma A×B?", "answers": ["2", "3", "5", "6"], "correct": 3, "explain": "|A×B| = |A|·|B| = 2·3 = 6."}, {"category": "Zbiory", "type": "teoria", "question": "Dopełnienie zbioru A względem przestrzeni U to:", "answers": ["elementy wspólne A i U", "elementy U, które nie należą do A", "elementy A, które nie należą do U", "zawsze zbiór pusty"], "correct": 1, "explain": "Dopełnienie A to wszystko z przestrzeni U poza elementami A."}, {"category": "Zbiory", "type": "praktyka", "question": "Jeśli U={1,2,3,4,5}, A={2,4}, to dopełnienie A wynosi:", "answers": ["{1,3,5}", "{2,4}", "{1,2,3,4,5}", "∅"], "correct": 0, "explain": "Usuwamy z U elementy A, więc zostają 1, 3, 5."}, {"category": "Zbiory", "type": "teoria", "question": "Zbiór pusty oznaczamy symbolem:", "answers": ["∅", "∞", "∈", "⊂"], "correct": 0, "explain": "∅ oznacza zbiór, który nie ma żadnych elementów."}, {"category": "Zbiory", "type": "teoria", "question": "Zapis x ∈ A oznacza:", "answers": ["x należy do A", "x jest podzbiorem A", "x nie należy do A", "x jest równy A"], "correct": 0, "explain": "Symbol ∈ czytamy: 'należy do'."}, {"category": "Zbiory", "type": "teoria", "question": "Zapis A ⊆ B oznacza, że:", "answers": ["A jest podzbiorem B", "A i B są rozłączne", "A jest dopełnieniem B", "A×B jest puste"], "correct": 0, "explain": "A⊆B oznacza, że każdy element A należy do B. Symbol ⊂ bywa używany różnie: czasem jako podzbiór, a czasem jako podzbiór właściwy, dlatego w quizie używamy jednoznacznego A⊆B."}, {"category": "Kombinatoryka", "type": "praktyka", "question": "Ile wynosi 0!?", "answers": ["0", "1", "nie istnieje", "∞"], "correct": 1, "explain": "Z definicji 0! = 1. Jest to potrzebne m.in. we wzorach na symbol Newtona."}, {"category": "Kombinatoryka", "type": "praktyka", "question": "Ile wynosi 6!?", "answers": ["120", "360", "720", "5040"], "correct": 2, "explain": "6! = 6·5·4·3·2·1 = 720."}, {"category": "Kombinatoryka", "type": "praktyka", "question": "Ile wynosi C(6,0)?", "answers": ["0", "1", "6", "36"], "correct": 1, "explain": "C(n,0)=1, bo istnieje dokładnie jeden sposób wyboru zera elementów: wybrać nic."}, {"category": "Kombinatoryka", "type": "praktyka", "question": "Ile wynosi C(6,6)?", "answers": ["0", "1", "6", "720"], "correct": 1, "explain": "C(n,n)=1, bo jest jeden sposób wyboru wszystkich elementów."}, {"category": "Kombinatoryka", "type": "praktyka", "question": "Ile wynosi C(7,2)?", "answers": ["14", "21", "28", "35"], "correct": 1, "explain": "C(7,2)=7·6/2=21."}, {"category": "Kombinatoryka", "type": "teoria", "question": "W symbolu Newtona C(n,k) zawsze zachodzi:", "answers": ["C(n,k)=C(n,n-k)", "C(n,k)=n+k", "C(n,k)=n-k", "C(n,k)=k!"], "correct": 0, "explain": "Wybór k elementów jest równoważny wyborowi n-k elementów, które zostawiamy poza wyborem."}, {"category": "Kombinatoryka", "type": "praktyka", "question": "W rozwinięciu (a+b)^4 współczynniki to:", "answers": ["1,4,6,4,1", "1,3,3,1", "1,5,10,10,5,1", "4,6,4"], "correct": 0, "explain": "Czwarty wiersz trójkąta Pascala daje 1,4,6,4,1."}, {"category": "Macierze", "type": "teoria", "question": "Macierz diagonalna to macierz kwadratowa, w której:", "answers": ["poza przekątną główną są zera", "na przekątnej są same zera", "każdy element jest jedynką", "liczba wierszy jest inna niż liczba kolumn"], "correct": 0, "explain": "W macierzy diagonalnej elementy poza przekątną główną są równe zero."}, {"category": "Macierze", "type": "teoria", "question": "Macierz zerowa to macierz, która:", "answers": ["ma wszystkie elementy równe 0", "ma wyznacznik 1", "jest zawsze jednostkowa", "ma tylko jeden wiersz"], "correct": 0, "explain": "Macierz zerowa składa się wyłącznie z zer."}, {"category": "Macierze", "type": "teoria", "question": "Macierz transponowana A^{T} powstaje przez:", "answers": ["zamianę wierszy z kolumnami", "pomnożenie wszystkich elementów przez -1", "odwrócenie kolejności przekątnej", "dodanie macierzy jednostkowej"], "correct": 0, "explain": "Transpozycja zamienia wiersze na kolumny."}, {"category": "Macierze", "type": "praktyka", "question": "Jeśli A ma wymiar 3×2, to A^{T} ma wymiar:", "answers": ["3×2", "2×3", "3×3", "2×2"], "correct": 1, "explain": "Po transpozycji wymiary zamieniają się miejscami: 3×2 przechodzi w 2×3."}, {"category": "Macierze", "type": "praktyka", "question": "Dla A=[[2,0],[0,3]] wyznacznik det(A) wynosi:", "answers": ["0", "5", "6", "-6"], "correct": 2, "explain": "Dla macierzy diagonalnej wyznacznik to iloczyn elementów na przekątnej: 2·3=6."}, {"category": "Macierze", "type": "praktyka", "question": "Dla A=[[1,2],[2,4]] wyznacznik det(A) wynosi:", "answers": ["0", "2", "4", "8"], "correct": 0, "explain": "det(A)=1·4-2·2=4-4=0, więc macierz nie ma odwrotnej."}, {"category": "Macierze", "type": "teoria", "question": "Jeśli det(A)=0 dla macierzy kwadratowej A, to A:", "answers": ["nie ma macierzy odwrotnej", "ma zawsze macierz odwrotną", "jest zawsze jednostkowa", "ma rząd 0"], "correct": 0, "explain": "Wyznacznik równy 0 oznacza macierz osobliwą, czyli bez macierzy odwrotnej."}, {"category": "Macierze", "type": "teoria", "question": "Iloczyn macierzy zwykle:", "answers": ["jest przemienny, czyli AB=BA zawsze", "nie jest przemienny, czyli AB może być różne od BA", "zawsze jest zerowy", "istnieje tylko dla macierzy 1×1"], "correct": 1, "explain": "Mnożenie macierzy nie jest na ogół przemienne. Często AB i BA różnią się albo jedno z nich nie istnieje."}, {"category": "Macierze", "type": "praktyka", "question": "Rząd macierzy zerowej 3×3 wynosi:", "answers": ["0", "1", "3", "9"], "correct": 0, "explain": "Macierz zerowa nie ma żadnego niezerowego niezależnego wiersza lub kolumny, więc jej rząd to 0."}, {"category": "Macierze", "type": "praktyka", "question": "Rząd macierzy jednostkowej 3×3 wynosi:", "answers": ["0", "1", "2", "3"], "correct": 3, "explain": "Macierz jednostkowa 3×3 ma trzy liniowo niezależne wiersze i kolumny, więc rząd wynosi 3."}, {"category": "Macierze", "type": "teoria", "question": "Wyznacznik macierzy trójkątnej jest równy:", "answers": ["sumie elementów na przekątnej", "iloczynowi elementów na przekątnej", "zawsze 0", "zawsze 1"], "correct": 1, "explain": "Dla macierzy trójkątnej wyznacznik to iloczyn elementów z przekątnej głównej."}, {"category": "Ciągi", "type": "praktyka", "question": "Ciąg a_n=n jest:", "answers": ["rosnący i nieograniczony z góry", "malejący i ograniczony", "stały", "zbieżny do 0"], "correct": 0, "explain": "Wyrazy n rosną bez ograniczenia, więc ciąg jest rosnący i nieograniczony z góry."}, {"category": "Ciągi", "type": "praktyka", "question": "Ciąg a_n=1/n jest:", "answers": ["rosnący", "malejący i ograniczony", "nieograniczony z dołu", "stały"], "correct": 1, "explain": "Dla n≥1 wyrazy 1/n maleją do 0 i są ograniczone: 0<a_n≤1."}, {"category": "Ciągi", "type": "praktyka", "question": "Granica ciągu a_n=(2n^2+1)/(n^2+5) wynosi:", "answers": ["0", "1", "2", "∞"], "correct": 2, "explain": "Stopnie licznika i mianownika są takie same, więc granica to iloraz współczynników przy n^2: 2/1=2."}, {"category": "Ciągi", "type": "praktyka", "question": "Granica ciągu a_n=(n+4)/(n^2+1) wynosi:", "answers": ["0", "1", "4", "∞"], "correct": 0, "explain": "Stopień mianownika jest większy niż licznika, więc iloraz dąży do 0."}, {"category": "Ciągi", "type": "praktyka", "question": "Ciąg a_n=(-1)^{n} jest:", "answers": ["zbieżny do 1", "zbieżny do -1", "rozbieżny", "zbieżny do 0"], "correct": 2, "explain": "Wyrazy skaczą między 1 i -1, więc nie mają jednej granicy."}, {"category": "Ciągi", "type": "teoria", "question": "Ciąg zbieżny to ciąg, który:", "answers": ["ma skończoną granicę właściwą", "jest zawsze rosnący", "ma wszystkie wyrazy dodatnie", "jest zawsze stały"], "correct": 0, "explain": "Zbieżność oznacza istnienie skończonej granicy."}, {"category": "Ciągi", "type": "teoria", "question": "Jeśli ciąg ma granicę 5, to dla dużych n jego wyrazy:", "answers": ["zbliżają się do 5", "są równe 5 od początku", "muszą być większe od 5", "muszą być całkowite"], "correct": 0, "explain": "Granica 5 oznacza, że wyrazy ciągu można zrobić dowolnie bliskie liczbie 5 dla dostatecznie dużych n."}, {"category": "Funkcje", "type": "teoria", "question": "Dziedzina funkcji to:", "answers": ["zbiór dopuszczalnych argumentów", "zbiór wartości pochodnej", "największa wartość funkcji", "miejsce zerowe"], "correct": 0, "explain": "Dziedzina mówi, dla jakich argumentów funkcja jest określona."}, {"category": "Funkcje", "type": "teoria", "question": "Zbiór wartości funkcji to:", "answers": ["zbiór argumentów", "zbiór wszystkich wartości przyjmowanych przez funkcję", "tylko miejsca zerowe", "tylko liczby dodatnie"], "correct": 1, "explain": "Zbiór wartości to wszystkie wyniki f(x), jakie funkcja przyjmuje dla argumentów z dziedziny."}, {"category": "Funkcje", "type": "praktyka", "question": "Dziedziną funkcji f(x)=1/(x-2) jest:", "answers": ["R", "R ∖ {2}", "R ∖ {0}", "(2,∞)"], "correct": 1, "explain": "Mianownik nie może być zerem, więc x-2≠0, czyli x≠2. Dziedzina to R ∖ {2}."}, {"category": "Funkcje", "type": "praktyka", "question": "Dziedziną funkcji f(x)=√(x-3) jest:", "answers": ["R", "(-∞,3)", "[3,∞)", "R{3}"], "correct": 2, "explain": "Pod pierwiastkiem parzystego stopnia musi być liczba nieujemna: x-3≥0, więc x≥3."}, {"category": "Funkcje", "type": "praktyka", "question": "Dziedziną funkcji f(x)=ln(x+1) jest:", "answers": ["(-1,∞)", "[-1,∞)", "R", "(0,∞)"], "correct": 0, "explain": "Argument logarytmu musi być dodatni: x+1>0, więc x>-1."}, {"category": "Funkcje", "type": "teoria", "question": "Funkcja parzysta spełnia warunek:", "answers": ["f(-x)=f(x)", "f(-x)=-f(x)", "f(x)>0", "f'(x)=0"], "correct": 0, "explain": "Funkcja parzysta jest symetryczna względem osi OY i spełnia f(-x)=f(x)."}, {"category": "Funkcje", "type": "teoria", "question": "Funkcja nieparzysta spełnia warunek:", "answers": ["f(-x)=f(x)", "f(-x)=-f(x)", "f(x)=1", "f(x)=x^2"], "correct": 1, "explain": "Funkcja nieparzysta jest symetryczna względem początku układu i spełnia f(-x)=-f(x)."}, {"category": "Funkcje", "type": "praktyka", "question": "Funkcja f(x)=x^2 jest:", "answers": ["parzysta", "nieparzysta", "ani parzysta, ani nieparzysta", "malejąca na całej R"], "correct": 0, "explain": "f(-x)=(-x)^2=x^2=f(x), więc funkcja jest parzysta."}, {"category": "Funkcje", "type": "praktyka", "question": "Funkcja f(x)=x^3 jest:", "answers": ["parzysta", "nieparzysta", "stała", "ograniczona"], "correct": 1, "explain": "f(-x)=(-x)^3=-x^3=-f(x), więc funkcja jest nieparzysta."}, {"category": "Funkcje", "type": "praktyka", "question": "log_2 8 wynosi:", "answers": ["2", "3", "4", "8"], "correct": 1, "explain": "log_2 8 to pytanie: do jakiej potęgi podnieść 2, aby dostać 8. Odpowiedź: 3."}, {"category": "Funkcje", "type": "praktyka", "question": "Jeśli 2^{x}=16, to x wynosi:", "answers": ["2", "3", "4", "8"], "correct": 2, "explain": "16=2^4, więc x=4."}, {"category": "Granice i ciągłość", "type": "praktyka", "question": "lim_{x→3} (2x+1) wynosi:", "answers": ["3", "6", "7", "nie istnieje"], "correct": 2, "explain": "Funkcja liniowa jest ciągła, więc podstawiamy x=3: 2·3+1=7."}, {"category": "Granice i ciągłość", "type": "praktyka", "question": "lim_{x→1} (x^2-1)/(x-1) wynosi:", "answers": ["0", "1", "2", "nie istnieje"], "correct": 2, "explain": "Rozkładamy x^2-1=(x-1)(x+1), skracamy x-1 i dostajemy granicę x+1 przy x→1, czyli 2."}, {"category": "Granice i ciągłość", "type": "praktyka", "question": "lim_{x→0} (e^{x}-1)/x wynosi:", "answers": ["0", "1", "e", "∞"], "correct": 1, "explain": "To podstawowa granica związana z pochodną e^{x} w punkcie 0: wynik wynosi 1."}, {"category": "Granice i ciągłość", "type": "teoria", "question": "Jeśli funkcja jest wielomianem, to jest:", "answers": ["ciągła na całej R", "ciągła tylko dla x>0", "nieciągła w zerze", "ciągła tylko punktowo"], "correct": 0, "explain": "Wielomiany są funkcjami elementarnymi ciągłymi na całej prostej rzeczywistej."}, {"category": "Granice i ciągłość", "type": "teoria", "question": "Funkcja wymierna jest ciągła:", "answers": ["tam, gdzie mianownik jest różny od zera", "tylko w zerze", "zawsze na całej R", "nigdy"], "correct": 0, "explain": "Iloraz funkcji ciągłych jest ciągły w punktach, w których mianownik nie jest zerem."}, {"category": "Granice i ciągłość", "type": "praktyka", "question": "Funkcja f(x)=1/x jest nieciągła w:", "answers": ["x=0", "x=1", "x=-1", "każdym punkcie"], "correct": 0, "explain": "Funkcja 1/x nie jest określona w zerze i ma tam asymptotę pionową."}, {"category": "Granice i ciągłość", "type": "teoria", "question": "Asymptota pionowa x=a często pojawia się, gdy:", "answers": ["funkcja dąży do ±∞ przy x→a", "funkcja ma wartość 0", "funkcja jest stała", "funkcja jest parzysta"], "correct": 0, "explain": "Asymptota pionowa oznacza, że wartości funkcji uciekają do nieskończoności przy zbliżaniu się do danego x."}, {"category": "Pochodne", "type": "praktyka", "question": "Pochodna funkcji f(x)=5 wynosi:", "answers": ["0", "1", "5", "x"], "correct": 0, "explain": "Pochodna stałej jest równa 0."}, {"category": "Pochodne", "type": "praktyka", "question": "Pochodna funkcji f(x)=7x wynosi:", "answers": ["7", "x", "7x", "0"], "correct": 0, "explain": "Pochodna ax wynosi a, więc (7x)'=7."}, {"category": "Pochodne", "type": "praktyka", "question": "Pochodna funkcji f(x)=x^5 wynosi:", "answers": ["5x^4", "x^4", "x^6/6", "4x^5"], "correct": 0, "explain": "Ze wzoru (x^{n})'=n x^{n-1}: (x^5)'=5x^4."}, {"category": "Pochodne", "type": "praktyka", "question": "Pochodna funkcji f(x)=3x^2-4x+1 wynosi:", "answers": ["6x-4", "3x-4", "6x+1", "x^3-2x^2+x"], "correct": 0, "explain": "(3x^2)'=6x, (-4x)'=-4, a stała ma pochodną 0."}, {"category": "Pochodne", "type": "praktyka", "question": "Pochodna funkcji f(x)=1/x wynosi:", "answers": ["1/x^2", "-1/x^2", "ln x", "x"], "correct": 1, "explain": "1/x = x^{-1}, więc pochodna to -x^{-2} = -1/x^2."}, {"category": "Pochodne", "type": "praktyka", "question": "Pochodna funkcji f(x)=√x dla x>0 wynosi:", "answers": ["1/(2√x)", "2√x", "√x/2", "1/x"], "correct": 0, "explain": "√x=x^{1/2}, więc pochodna to (1/2)x^{-1/2}=1/(2√x)."}, {"category": "Pochodne", "type": "teoria", "question": "Wzór na pochodną iloczynu funkcji to:", "answers": ["(uv)'=u'v+uv'", "(uv)'=u'v'", "(uv)'=u'+v'", "(uv)'=u/v"], "correct": 0, "explain": "Pochodna iloczynu wymaga dwóch składników: pochodna pierwszej razy druga plus pierwsza razy pochodna drugiej."}, {"category": "Pochodne", "type": "teoria", "question": "Wzór na pochodną ilorazu funkcji u/v to:", "answers": ["(u'v-uv')/v^2", "u'/v'", "(u'v+uv')/v^2", "u/v^2"], "correct": 0, "explain": "Dla v≠0 mamy (u/v)' = (u'v - uv')/v^2."}, {"category": "Pochodne", "type": "teoria", "question": "Wzór na pochodną funkcji złożonej mówi, że:", "answers": ["(f(g(x)))'=f'(g(x))·g'(x)", "(f(g(x)))'=f'(x)+g'(x)", "(f(g(x)))'=f'(x)g(x)", "(f(g(x)))'=g'(f(x))"], "correct": 0, "explain": "To reguła łańcuchowa: różniczkujemy funkcję zewnętrzną w funkcji wewnętrznej i mnożymy przez pochodną wewnętrznej."}, {"category": "Pochodne", "type": "praktyka", "question": "Pochodna funkcji f(x)=sin(2x) wynosi:", "answers": ["cos(2x)", "2cos(2x)", "-2sin(2x)", "2sin(2x)"], "correct": 1, "explain": "Z reguły łańcuchowej: (sin(2x))'=cos(2x)·2=2cos(2x)."}, {"category": "Pochodne", "type": "praktyka", "question": "Pochodna funkcji f(x)=e^{3x} wynosi:", "answers": ["e^{3x}", "3e^{3x}", "x e^{3x}", "ln(3x)"], "correct": 1, "explain": "Z reguły łańcuchowej: (e^{3x})'=e^{3x}·3."}, {"category": "Pochodne", "type": "praktyka", "question": "Pochodna funkcji f(x)=ln(5x) dla x>0 wynosi:", "answers": ["1/x", "5/x", "1/(5x)", "5ln x"], "correct": 0, "explain": "ln(5x)=ln5+lnx, więc pochodna to 1/x. Z łańcuchowego też: 5/(5x)=1/x."}, {"category": "Monotoniczność i wypukłość", "type": "praktyka", "question": "Dla f(x)=x^3 mamy f'(x)=3x^2. Funkcja jest:", "answers": ["rosnąca na R", "malejąca na R", "stała na R", "nieciągła w 0"], "correct": 0, "explain": "3x^2≥0 dla każdego x, a funkcja x^3 jest rosnąca na całej R."}, {"category": "Monotoniczność i wypukłość", "type": "praktyka", "question": "Dla f(x)=-x^2 punkt x=0 jest:", "answers": ["minimum lokalnym", "maksimum lokalnym", "punktem siodłowym", "punktem nieciągłości"], "correct": 1, "explain": "Parabola jest skierowana ramionami w dół. f'(0)=0 i f''=-2<0, więc jest maksimum lokalne."}, {"category": "Monotoniczność i wypukłość", "type": "praktyka", "question": "Dla f(x)=x^3 punkt x=0 jest:", "answers": ["minimum lokalnym", "maksimum lokalnym", "punktem krytycznym bez ekstremum", "nie należy do dziedziny"], "correct": 2, "explain": "f'(0)=0, ale funkcja przechodzi przez 0 rosnąc, więc nie ma tam ekstremum."}, {"category": "Monotoniczność i wypukłość", "type": "teoria", "question": "Jeśli f''(x)<0 na przedziale, funkcja jest tam:", "answers": ["wklęsła", "wypukła", "stała", "nieokreślona"], "correct": 0, "explain": "Ujemna druga pochodna oznacza wklęsłość funkcji."}, {"category": "Monotoniczność i wypukłość", "type": "teoria", "question": "Punkt przegięcia to punkt, w którym zwykle:", "answers": ["zmienia się wypukłość funkcji", "funkcja zawsze ma maksimum", "funkcja zawsze ma minimum", "funkcja nie ma dziedziny"], "correct": 0, "explain": "Punkt przegięcia wiąże się ze zmianą wypukłości na wklęsłość lub odwrotnie."}, {"category": "Twierdzenia rachunku różniczkowego", "type": "teoria", "question": "W twierdzeniu Rolle'a wniosek mówi, że istnieje c∈(a,b), dla którego:", "answers": ["f'(c)=0", "f(c)=0", "f(c)=f(a)+f(b)", "f''(c)=1"], "correct": 0, "explain": "Jeśli spełnione są założenia Rolle'a, w pewnym punkcie styczna jest pozioma, czyli f'(c)=0."}, {"category": "Twierdzenia rachunku różniczkowego", "type": "teoria", "question": "Twierdzenie Lagrange'a wymaga, aby funkcja była:", "answers": ["ciągła na [a,b] i różniczkowalna na (a,b)", "ciągła tylko w a", "nieciągła na [a,b]", "zawsze wielomianem"], "correct": 0, "explain": "To standardowe założenia twierdzenia o wartości średniej."}, {"category": "Całki", "type": "praktyka", "question": "∫ 3x^2 dx wynosi:", "answers": ["x^3+C", "3x^3+C", "6x+C", "x^2+C"], "correct": 0, "explain": "Pochodna x^3 to 3x^2, więc całka to x^3+C."}, {"category": "Całki", "type": "praktyka", "question": "∫ cos x dx wynosi:", "answers": ["sin x+C", "-sin x+C", "cos x+C", "-cos x+C"], "correct": 0, "explain": "Pochodna sin x to cos x, więc całka z cos x to sin x+C."}, {"category": "Całki", "type": "praktyka", "question": "∫ sin x dx wynosi:", "answers": ["cos x+C", "-cos x+C", "sin x+C", "-sin x+C"], "correct": 1, "explain": "Pochodna -cos x to sin x, więc całka z sin x to -cos x+C."}, {"category": "Całki", "type": "praktyka", "question": "∫ (2x+3) dx wynosi:", "answers": ["x^2+3x+C", "2x^2+3+C", "2+3x+C", "x^2+3+C"], "correct": 0, "explain": "Całkujemy składnikami: ∫2x dx=x^2, ∫3 dx=3x."}, {"category": "Całki oznaczone", "type": "praktyka", "question": "∫_0^2 x dx wynosi:", "answers": ["1", "2", "4", "0"], "correct": 1, "explain": "Funkcja pierwotna to x^2/2. Wynik: 2^2/2 - 0 = 2."}, {"category": "Całki oznaczone", "type": "praktyka", "question": "∫_1^2 1/x dx wynosi:", "answers": ["ln 2", "1", "2ln2", "0"], "correct": 0, "explain": "Funkcja pierwotna to ln x. Wynik: ln2 - ln1 = ln2."}, {"category": "Całki oznaczone", "type": "teoria", "question": "Jeśli f(x)≥0 na [a,b], to ∫_a^{b} f(x)dx oznacza:", "answers": ["pole pod wykresem funkcji na tym przedziale", "nachylenie stycznej", "rząd macierzy", "wartość pochodnej"], "correct": 0, "explain": "Dla funkcji nieujemnej całka oznaczona jest zwykłym polem obszaru pod wykresem."}, {"category": "Całki", "type": "teoria", "question": "Całkowanie jest działaniem odwrotnym do:", "answers": ["różniczkowania", "mnożenia macierzy", "dodawania zbiorów", "liczenia silni"], "correct": 0, "explain": "Szukanie funkcji pierwotnej odwraca operację brania pochodnej."}, {"category": "Funkcje dwóch zmiennych", "type": "praktyka", "question": "Dla f(x,y)=x^2+y^2 pochodna f_x wynosi:", "answers": ["2x", "2y", "2x+2y", "x+y"], "correct": 0, "explain": "Różniczkujemy po x, traktując y jako stałą: (x^2)'=2x, (y^2)'=0."}, {"category": "Funkcje dwóch zmiennych", "type": "praktyka", "question": "Dla f(x,y)=x^2+y^2 pochodna f_y wynosi:", "answers": ["2x", "2y", "2x+2y", "0"], "correct": 1, "explain": "Różniczkujemy po y, traktując x jako stałą: (y^2)'=2y."}, {"category": "Funkcje dwóch zmiennych", "type": "praktyka", "question": "Dla f(x,y)=xy pochodna f_x wynosi:", "answers": ["x", "y", "xy", "1"], "correct": 1, "explain": "Po x zmienna y jest stałą, więc (xy)' po x = y."}, {"category": "Funkcje dwóch zmiennych", "type": "praktyka", "question": "Dla f(x,y)=xy pochodna f_y wynosi:", "answers": ["x", "y", "xy", "1"], "correct": 0, "explain": "Po y zmienna x jest stałą, więc (xy)' po y = x."}, {"category": "Funkcje dwóch zmiennych", "type": "praktyka", "question": "Dla f(x,y)=x^2+xy+y^2 pochodna f_x wynosi:", "answers": ["2x+y", "x+2y", "2x+2y", "y"], "correct": 0, "explain": "Po x: (x^2)'=2x, (xy)'=y, (y^2)'=0."}, {"category": "Funkcje dwóch zmiennych", "type": "praktyka", "question": "Dla f(x,y)=x^2+xy+y^2 pochodna f_y wynosi:", "answers": ["2x+y", "x+2y", "2x+2y", "x"], "correct": 1, "explain": "Po y: (x^2)'=0, (xy)'=x, (y^2)'=2y."}, {"category": "Funkcje dwóch zmiennych", "type": "praktyka", "question": "Dla f(x,y)=x^2+xy+y^2 pochodna mieszana f_xy wynosi:", "answers": ["0", "1", "2", "x+y"], "correct": 1, "explain": "f_x=2x+y, a pochodna tego po y wynosi 1."}, {"category": "Ekstrema dwóch zmiennych", "type": "praktyka", "question": "Dla f(x,y)=x^2+y^2 punkt (0,0) jest:", "answers": ["minimum lokalnym", "maksimum lokalnym", "punktem siodłowym", "brakiem punktu krytycznego"], "correct": 0, "explain": "Funkcja jest sumą kwadratów, więc ma najmniejszą wartość 0 w punkcie (0,0)."}, {"category": "Ekstrema dwóch zmiennych", "type": "praktyka", "question": "Dla f(x,y)=-(x^2+y^2) punkt (0,0) jest:", "answers": ["minimum lokalnym", "maksimum lokalnym", "punktem siodłowym", "punktem nieciągłości"], "correct": 1, "explain": "Funkcja jest niedodatnia i największą wartość 0 ma w punkcie (0,0)."}, {"category": "Wzory - Logika matematyczna", "type": "wzory", "question": "Który zapis jest prawem de Morgana dla negacji alternatywy?", "answers": ["¬(p ∨ q) ⇔ ¬p ∧ ¬q", "¬(p ∧ q) ⇔ ¬p ∧ ¬q", "p ∨ q ⇔ p ∧ q", "p ⇒ q ⇔ q ⇒ p"], "correct": 0, "explain": "Negując alternatywę, zmieniasz ∨ na ∧ i negujesz oba zdania: ¬(p ∨ q) ⇔ ¬p ∧ ¬q."}, {"category": "Wzory - Logika matematyczna", "type": "wzory", "question": "Który zapis jest prawem de Morgana dla negacji koniunkcji?", "answers": ["¬(p ∧ q) ⇔ ¬p ∨ ¬q", "¬(p ∧ q) ⇔ ¬p ∧ ¬q", "¬(p ∨ q) ⇔ ¬p ∨ ¬q", "p ∧ q ⇔ p ∨ q"], "correct": 0, "explain": "Negując koniunkcję, zmieniasz ∧ na ∨ i negujesz oba zdania: ¬(p ∧ q) ⇔ ¬p ∨ ¬q."}, {"category": "Wzory - Logika matematyczna", "type": "wzory", "question": "Kiedy koniunkcja p ∧ q jest prawdziwa?", "answers": ["Tylko gdy p i q są prawdziwe", "Gdy przynajmniej jedno jest prawdziwe", "Tylko gdy p jest fałszywe", "Zawsze"], "correct": 0, "explain": "Koniunkcja, czyli 'i', jest prawdziwa tylko wtedy, gdy oba zdania są prawdziwe."}, {"category": "Wzory - Logika matematyczna", "type": "wzory", "question": "Kiedy alternatywa p ∨ q jest fałszywa?", "answers": ["Tylko gdy oba zdania są fałszywe", "Tylko gdy oba zdania są prawdziwe", "Gdy p jest prawdziwe", "Nigdy"], "correct": 0, "explain": "Alternatywa 'lub' jest fałszywa wyłącznie w przypadku: p = 0 i q = 0."}, {"category": "Wzory - Logika matematyczna", "type": "wzory", "question": "Kiedy implikacja p ⇒ q jest fałszywa?", "answers": ["Tylko gdy p jest prawdziwe, a q fałszywe", "Tylko gdy p i q są fałszywe", "Tylko gdy p jest fałszywe, a q prawdziwe", "Zawsze gdy q jest prawdziwe"], "correct": 0, "explain": "Implikacja jest fałszywa tylko w jednym przypadku: z prawdy wynika fałsz."}, {"category": "Wzory - Logika matematyczna", "type": "wzory", "question": "Który zapis jest zaprzeczeniem kwantyfikatora: ¬(∃n : W(n))?", "answers": ["∀n : ¬W(n)", "∃n : ¬W(n)", "∀n : W(n)", "¬∀n : ¬W(n)"], "correct": 0, "explain": "Negacja 'istnieje n takie, że W(n)' to 'dla każdego n nie zachodzi W(n)'."}, {"category": "Wzory - Logika matematyczna", "type": "wzory", "question": "Który zapis jest zaprzeczeniem kwantyfikatora: ¬(∀n : W(n))?", "answers": ["∃n : ¬W(n)", "∀n : ¬W(n)", "∃n : W(n)", "¬∃n : ¬W(n)"], "correct": 0, "explain": "Negacja 'dla każdego n zachodzi W(n)' to 'istnieje n takie, że nie zachodzi W(n)'."}, {"category": "Wzory - Logika matematyczna", "type": "wzory", "question": "W logice matematycznej wartość 0 oznacza:", "answers": ["fałsz", "prawdę", "tautologię", "sprzeczność zawsze prawdziwą"], "correct": 0, "explain": "W zapisie zero-jedynkowym 0 oznacza fałsz, a 1 oznacza prawdę."}, {"category": "Wzory - Teoria mnogości", "type": "wzory", "question": "Wzór na liczbę elementów iloczynu kartezjańskiego A × B to:", "answers": ["|A × B| = |A| · |B|", "|A × B| = |A| + |B|", "|A × B| = |A| - |B|", "|A × B| = |A ∩ B|"], "correct": 0, "explain": "Każdy element A można połączyć z każdym elementem B, więc mnożysz liczby elementów."}, {"category": "Wzory - Teoria mnogości", "type": "wzory", "question": "Jeśli A ma 4 elementy, a B ma 8 elementów, to |A × B| wynosi:", "answers": ["32", "12", "4", "8"], "correct": 0, "explain": "|A × B| = |A| · |B| = 4 · 8 = 32."}, {"category": "Wzory - Teoria mnogości", "type": "wzory", "question": "Który zapis jest prawem de Morgana dla zbiorów?", "answers": ["(A ∪ B)' = A' ∩ B'", "(A ∪ B)' = A' ∪ B'", "(A ∩ B)' = A' ∩ B'", "A ∖ B = B ∖ A"], "correct": 0, "explain": "Dopełnienie sumy to część wspólna dopełnień: (A ∪ B)' = A' ∩ B'."}, {"category": "Wzory - Teoria mnogości", "type": "wzory", "question": "Różnica zbiorów A ∖ B oznacza:", "answers": ["elementy należące do A, ale nienależące do B", "elementy wspólne A i B", "wszystkie elementy A i B", "elementy tylko z B"], "correct": 0, "explain": "A ∖ B to ta część A, która nie wpada do B."}, {"category": "Wzory - Teoria mnogości", "type": "wzory", "question": "Iloczyn kartezjański A × B jest przemienny?", "answers": ["Nie, zwykle A × B ≠ B × A", "Tak, zawsze A × B = B × A", "Tak, ale tylko dla liczb naturalnych", "Nie istnieje takie działanie"], "correct": 0, "explain": "Pary są uporządkowane: (a,b) to nie to samo co (b,a), więc zwykle A × B ≠ B × A."}, {"category": "Wzory - Teoria mnogości", "type": "wzory", "question": "Który ciąg zawiera poprawne zawierania zbiorów liczbowych?", "answers": ["N ⊂ Z ⊂ Q ⊂ R", "R ⊂ Q ⊂ Z ⊂ N", "N ⊂ R ⊂ Q", "Z ⊂ N ⊂ Q"], "correct": 0, "explain": "Naturalne są w całkowitych, całkowite w wymiernych, a wymierne w rzeczywistych."}, {"category": "Wzory - Kombinatoryka", "type": "wzory", "question": "Symbol Newtona C(n,k) jest równy:", "answers": ["n! / (k!(n-k)!)", "k! / (n!(k-n)!)", "n! / k!", "k! / n!"], "correct": 0, "explain": "To podstawowy wzór: C(n,k) = n! / (k!(n-k)!)."}, {"category": "Wzory - Kombinatoryka", "type": "wzory", "question": "Silnia n! oznacza:", "answers": ["1 · 2 · 3 · ... · n", "1 + 2 + 3 + ... + n", "n^2", "2^{n}"], "correct": 0, "explain": "Silnia to iloczyn kolejnych liczb naturalnych od 1 do n."}, {"category": "Wzory - Kombinatoryka", "type": "wzory", "question": "Ile wynosi 4!?", "answers": ["24", "16", "4", "8"], "correct": 0, "explain": "4! = 1 · 2 · 3 · 4 = 24."}, {"category": "Wzory - Kombinatoryka", "type": "wzory", "question": "Liczba podzbiorów zbioru n-elementowego wynosi:", "answers": ["2^{n}", "n!", "n^2", "C(n,2)"], "correct": 0, "explain": "Każdy element albo bierzesz, albo nie bierzesz, więc masz 2 możliwości dla każdego z n elementów: 2^{n}."}, {"category": "Wzory - Kombinatoryka", "type": "wzory", "question": "Ile podzbiorów ma zbiór 5-elementowy?", "answers": ["32", "25", "10", "120"], "correct": 0, "explain": "Liczba podzbiorów to 2^5 = 32."}, {"category": "Wzory - Kombinatoryka", "type": "wzory", "question": "Liczba permutacji zbioru n-elementowego wynosi:", "answers": ["n!", "2^{n}", "C(n,k)", "n^2"], "correct": 0, "explain": "Permutacja to ustawienie wszystkich n elementów w kolejności, a takich ustawień jest n!."}, {"category": "Wzory - Kombinatoryka", "type": "wzory", "question": "W rozwinięciu dwumianu Newtona (a+b)^{n} współczynnik przy składniku a^{n-k}b^{k} to:", "answers": ["C(n,k)", "n!", "2^{n}", "k!"], "correct": 0, "explain": "Dwumian Newtona: (a+b)^{n} = ∑_{k=0}^{n} C(n,k)a^{n-k}b^{k}."}, {"category": "Wzory - Kombinatoryka", "type": "wzory", "question": "Który zapis jest przykładem poprawnego obliczenia C(8,2)?", "answers": ["8 · 7 / 2 = 28", "8 · 2 = 16", "8 + 2 = 10", "8! / 2! = 20160"], "correct": 0, "explain": "C(8,2) = 8!/(2!6!) = 8 · 7 / 2 = 28."}, {"category": "Wzory - Macierze", "type": "wzory", "question": "Wyznacznik macierzy 2×2 [[a,b],[c,d]] wynosi:", "answers": ["ad - bc", "ab - cd", "ac - bd", "a + d - b - c"], "correct": 0, "explain": "Dla macierzy 2×2: det [[a,b],[c,d]] = ad - bc. Uważaj na znaki."}, {"category": "Wzory - Macierze", "type": "wzory", "question": "Wyznacznik macierzy [[2,-3],[4,5]] wynosi:", "answers": ["22", "-22", "2", "-2"], "correct": 0, "explain": "det = 2·5 - (-3)·4 = 10 + 12 = 22."}, {"category": "Wzory - Macierze", "type": "wzory", "question": "Macierz jednostkowa I spełnia:", "answers": ["A · I = A", "A · I = 0", "A · I = I", "A · I = A^{-1}"], "correct": 0, "explain": "Macierz jednostkowa działa jak liczba 1 w mnożeniu: A · I = A."}, {"category": "Wzory - Macierze", "type": "wzory", "question": "Macierz osobliwa to macierz, dla której:", "answers": ["det A = 0", "det A ≠ 0", "A = I", "A ma same jedynki"], "correct": 0, "explain": "Macierz osobliwa ma wyznacznik równy 0 i nie ma macierzy odwrotnej."}, {"category": "Wzory - Macierze", "type": "wzory", "question": "Macierz nieosobliwa to macierz, dla której:", "answers": ["det A ≠ 0", "det A = 0", "A = 0", "rz(A)=0"], "correct": 0, "explain": "Macierz nieosobliwa ma wyznacznik różny od 0 i posiada macierz odwrotną."}, {"category": "Wzory - Macierze", "type": "wzory", "question": "Jeśli cała kolumna albo cały wiersz macierzy to zera, to wyznacznik:", "answers": ["jest równy 0", "jest równy 1", "nie istnieje", "jest zawsze dodatni"], "correct": 0, "explain": "Wiersz lub kolumna z samych zer powoduje, że det A = 0."}, {"category": "Wzory - Macierze", "type": "wzory", "question": "Mnożenie macierzy jest przemienne?", "answers": ["Nie, zwykle A · B ≠ B · A", "Tak, zawsze A · B = B · A", "Tak, ale tylko dla macierzy prostokątnych", "Nie można mnożyć macierzy"], "correct": 0, "explain": "W mnożeniu macierzy kolejność ma znaczenie. Zwykle A · B ≠ B · A."}, {"category": "Wzory - Macierze", "type": "wzory", "question": "Jeśli dwa wiersze macierzy są proporcjonalne, to rząd macierzy:", "answers": ["może spaść, bo wiersze są liniowo zależne", "zawsze wynosi 2", "zawsze wynosi 0", "zawsze jest równy liczbie kolumn"], "correct": 0, "explain": "Proporcjonalne wiersze nie dają nowej niezależnej informacji, więc obniżają rząd."}, {"category": "Wzory - Macierze", "type": "wzory", "question": "Jeśli wiersze [8,4] i [2,1] są proporcjonalne, to rząd macierzy [[8,4],[2,1]] wynosi:", "answers": ["1", "2", "0", "4"], "correct": 0, "explain": "[8,4] = 4 · [2,1], więc jest tylko jeden niezależny wiersz. Rząd = 1."}, {"category": "Wzory - Układy równań liniowych", "type": "wzory", "question": "Układ Cramera ma macierz główną:", "answers": ["kwadratową i nieosobliwą", "kwadratową i osobliwą", "prostokątną", "zawsze zerową"], "correct": 0, "explain": "Układ Cramera ma macierz główną kwadratową oraz det A ≠ 0."}, {"category": "Wzory - Układy równań liniowych", "type": "wzory", "question": "Układ Cramera ma dokładnie:", "answers": ["1 rozwiązanie", "0 rozwiązań", "nieskończenie wiele rozwiązań", "2 rozwiązania"], "correct": 0, "explain": "Jeśli det A ≠ 0, układ ma dokładnie jedno rozwiązanie."}, {"category": "Wzory - Układy równań liniowych", "type": "wzory", "question": "Układ liniowy ma rozwiązanie wtedy i tylko wtedy, gdy:", "answers": ["rz(A) = rz(U)", "rz(A) < rz(U)", "rz(A) > rz(U)", "det U = 0 zawsze"], "correct": 0, "explain": "Twierdzenie Kroneckera-Capellego: układ ma rozwiązanie ⇔ rz(A) = rz(U)."}, {"category": "Wzory - Układy równań liniowych", "type": "wzory", "question": "Macierz główna układu zawiera:", "answers": ["współczynniki przy niewiadomych", "współczynniki i kolumnę wyrazów wolnych", "tylko wyrazy wolne", "same zera"], "correct": 0, "explain": "Macierz główna składa się tylko ze współczynników przy niewiadomych."}, {"category": "Wzory - Układy równań liniowych", "type": "wzory", "question": "Macierz uzupełniona układu to:", "answers": ["macierz główna + kolumna wyrazów wolnych", "sama macierz główna", "sama kolumna wyrazów wolnych", "macierz odwrotna"], "correct": 0, "explain": "Macierz uzupełniona ma współczynniki przy niewiadomych oraz dodatkową kolumnę wyrazów wolnych."}, {"category": "Wzory - Układy równań liniowych", "type": "wzory", "question": "Wiersz [0 0 9] w macierzy uzupełnionej oznacza:", "answers": ["sprzeczność 0 = 9", "równanie prawdziwe 0 = 0", "układ Cramera", "macierz odwrotną"], "correct": 0, "explain": "Wiersz [0 0 9] odpowiada równaniu 0x + 0y = 9, czyli 0 = 9. To sprzeczność."}, {"category": "Wzory - Układy równań liniowych", "type": "wzory", "question": "Która operacja na wierszach jest elementarna?", "answers": ["zamiana dwóch wierszy", "dodanie do wiersza liczby różnej od zera", "usunięcie niewiadomej z układu", "zmiana tylko jednej liczby w macierzy bez reguły"], "correct": 0, "explain": "Operacje elementarne to m.in. zamiana wierszy, mnożenie wiersza przez liczbę różną od 0 i dodanie wielokrotności innego wiersza."}, {"category": "Wzory - Ciągi liczbowe", "type": "wzory", "question": "Granica lim_{n→∞} (1 + 1/n)^{n} jest równa:", "answers": ["e ≈ 2,71", "π ≈ 3,14", "0", "+∞"], "correct": 0, "explain": "To klasyczny wzór definiujący liczbę e."}, {"category": "Wzory - Ciągi liczbowe", "type": "wzory", "question": "Granica lim_{n→∞} n^{k} dla k > 0 wynosi:", "answers": ["+∞", "0", "1", "e"], "correct": 0, "explain": "Dodatnia potęga n rośnie bez ograniczeń, więc granica to +∞."}, {"category": "Wzory - Ciągi liczbowe", "type": "wzory", "question": "Ciąg jest ograniczony z dołu, gdy:", "answers": ["istnieje M ∈ R takie, że dla każdego n: a_n ≥ M", "dla każdego M istnieje n: a_n < M", "a_n → +∞", "a_n jest rosnący"], "correct": 0, "explain": "Ograniczenie z dołu oznacza istnienie dolnej bariery M dla wszystkich wyrazów ciągu."}, {"category": "Wzory - Ciągi liczbowe", "type": "wzory", "question": "Ciąg ograniczony to ciąg:", "answers": ["ograniczony z góry i z dołu", "tylko ograniczony z góry", "tylko rosnący", "zawsze zbieżny do 0"], "correct": 0, "explain": "Ciąg ograniczony ma jednocześnie dolną i górną barierę."}, {"category": "Wzory - Ciągi liczbowe", "type": "wzory", "question": "Ciąg rosnący w ścisłym sensie spełnia:", "answers": ["a_{n+1} > a_n", "a_{n+1} < a_n", "a_{n+1} = a_n", "a_n = 0"], "correct": 0, "explain": "Ściśle rosnący ciąg ma każdy następny wyraz większy od poprzedniego."}, {"category": "Wzory - Ciągi liczbowe", "type": "wzory", "question": "Ciąg malejący w ścisłym sensie spełnia:", "answers": ["a_{n+1} < a_n", "a_{n+1} > a_n", "a_{n+1} = a_n", "a_n = n"], "correct": 0, "explain": "Ściśle malejący ciąg ma każdy następny wyraz mniejszy od poprzedniego."}, {"category": "Wzory - Ciągi liczbowe", "type": "wzory", "question": "Jeśli ciąg jest monotoniczny i ograniczony, to jest:", "answers": ["zbieżny", "rozbieżny zawsze", "nieograniczony", "stały zawsze"], "correct": 0, "explain": "To ważne twierdzenie: ciąg monotoniczny i ograniczony jest zbieżny."}, {"category": "Wzory - Ciągi liczbowe", "type": "wzory", "question": "Ciąg a_n = (-1)^{n} jest:", "answers": ["ograniczony", "nieograniczony", "rosnący", "malejący"], "correct": 0, "explain": "Ten ciąg przyjmuje tylko wartości -1 i 1, więc jest ograniczony."}, {"category": "Wzory - Funkcje jednej zmiennej", "type": "wzory", "question": "Dziedzina funkcji f(x) = √(x + a) wynika z warunku:", "answers": ["x + a ≥ 0", "x + a < 0", "x + a = 0 tylko", "x ≠ a"], "correct": 0, "explain": "Pod pierwiastkiem kwadratowym musi być liczba nieujemna, więc x + a ≥ 0."}, {"category": "Wzory - Funkcje jednej zmiennej", "type": "wzory", "question": "Dziedzina funkcji f(x) = √(x + 5) to:", "answers": ["[-5, ∞)", "[5, ∞)", "(-∞, -5]", "R"], "correct": 0, "explain": "Warunek: x + 5 ≥ 0, czyli x ≥ -5. Dziedzina: [-5, ∞)."}, {"category": "Wzory - Funkcje jednej zmiennej", "type": "wzory", "question": "Funkcja odwrotna do e^{x} to:", "answers": ["ln x", "10^{x}", "1/x", "x^2"], "correct": 0, "explain": "Funkcja e^{x} i ln x są wzajemnie odwrotne."}, {"category": "Wzory - Funkcje jednej zmiennej", "type": "wzory", "question": "Funkcja odwrotna do 10^{x} to:", "answers": ["log x", "ln x", "e^{x}", "1/x"], "correct": 0, "explain": "Dla podstawy 10 funkcją odwrotną jest logarytm dziesiętny log x."}, {"category": "Wzory - Funkcje jednej zmiennej", "type": "wzory", "question": "Funkcja f(x)=1/x jest swoją odwrotnością?", "answers": ["Tak, f^{-1}(x)=1/x dla x≠0", "Nie, odwrotna to x^2", "Nie, odwrotna to ln x", "Nie ma odwrotnej na R{0}"], "correct": 0, "explain": "Jeśli y=1/x, to po zamianie x i y dostajesz y=1/x."}, {"category": "Wzory - Funkcje jednej zmiennej", "type": "wzory", "question": "Podstawą logarytmu naturalnego jest:", "answers": ["e", "10", "2", "π"], "correct": 0, "explain": "Logarytm naturalny ln x ma podstawę e."}, {"category": "Wzory - Funkcje jednej zmiennej", "type": "wzory", "question": "Funkcja f jest bijekcją, gdy jest:", "answers": ["surjekcją i iniekcją", "tylko iniekcją", "tylko surjekcją", "funkcją stałą"], "correct": 0, "explain": "Bijekcja łączy oba warunki: jest '1 do 1' i 'na'."}, {"category": "Wzory - Funkcje jednej zmiennej", "type": "wzory", "question": "Funkcja ograniczona to funkcja:", "answers": ["ograniczona z góry i z dołu", "tylko dodatnia", "tylko malejąca", "zawsze ciągła"], "correct": 0, "explain": "Ograniczona funkcja ma zarówno górną, jak i dolną barierę wartości."}, {"category": "Wzory - Ciągłość funkcji", "type": "wzory", "question": "Dla funkcji ciągłej w punkcie x_0 zachodzi:", "answers": ["lim_{x→x_0} f(x) = f(x_0)", "lim_{x→x_0} f(x) = 0 zawsze", "f'(x_0)=0", "f(x_0) nie istnieje"], "correct": 0, "explain": "Ciągłość w punkcie oznacza, że granica funkcji w punkcie jest równa wartości funkcji w tym punkcie."}, {"category": "Wzory - Ciągłość funkcji", "type": "wzory", "question": "Jeśli funkcja jest ciągła, to przy liczeniu granicy w punkcie można:", "answers": ["podstawić x_0 do wzoru funkcji", "zawsze wpisać 0", "zawsze wpisać ∞", "nie można liczyć granicy"], "correct": 0, "explain": "Dla funkcji ciągłej lim_{x→x_0} f(x) = f(x_0), więc podstawiasz x_0."}, {"category": "Wzory - Ciągłość funkcji", "type": "wzory", "question": "Granica lim_{x→0} 2^{x+3} - 4 wynosi:", "answers": ["4", "0", "8", "-4"], "correct": 0, "explain": "Podstawiasz x=0: 2^{0+3} - 4 = 8 - 4 = 4."}, {"category": "Wzory - Ciągłość funkcji", "type": "wzory", "question": "Granica lim_{x→3} 2x^3 - 4 wynosi:", "answers": ["50", "4", "54", "0"], "correct": 0, "explain": "Podstawiasz x=3: 2·27 - 4 = 54 - 4 = 50."}, {"category": "Wzory - Ciągłość funkcji", "type": "wzory", "question": "Funkcje sgn x oraz [x] są przykładami funkcji z nieciągłościami typu:", "answers": ["skok", "dziura", "oscylacja", "brak dziedziny"], "correct": 0, "explain": "Funkcja signum i część całkowita mają nieciągłości skokowe."}, {"category": "Wzory - Ciągłość funkcji", "type": "wzory", "question": "Własność Darboux dotyczy funkcji:", "answers": ["ciągłych na przedziale", "dowolnych nieciągłych", "tylko stałych", "tylko macierzy"], "correct": 0, "explain": "Funkcja ciągła na [a,b] przyjmuje wszystkie wartości pośrednie między f(a) i f(b)."}, {"category": "Wzory - Ciągłość funkcji", "type": "wzory", "question": "Jeżeli f(a) · f(b) < 0 i f jest ciągła na [a,b], to:", "answers": ["równanie f(x)=0 ma rozwiązanie w [a,b]", "funkcja nie ma miejsc zerowych", "funkcja jest stała", "funkcja jest nieograniczona"], "correct": 0, "explain": "Zmiana znaku przy ciągłości gwarantuje istnienie miejsca zerowego w przedziale."}, {"category": "Wzory - Ciągłość funkcji", "type": "wzory", "question": "Jeśli f i g są ciągłe, to f+g oraz f·g są:", "answers": ["ciągłe", "zawsze nieciągłe", "ciągłe tylko dla x=0", "nieokreślone"], "correct": 0, "explain": "Suma i iloczyn funkcji ciągłych są ciągłe."}, {"category": "Wzory - Różniczkowalność funkcji", "type": "wzory", "question": "Reguła potęgowa dla pochodnej mówi, że (x^{n})' =", "answers": ["n x^{n-1}", "x^{n+1}/(n+1)", "n x^{n+1}", "x^{n}"], "correct": 0, "explain": "Najważniejszy wzór na pochodną: (x^{n})' = n x^{n-1}."}, {"category": "Wzory - Różniczkowalność funkcji", "type": "wzory", "question": "Pochodna funkcji f(x)=x^5 to:", "answers": ["5x^4", "x^6/6", "5x^5", "x^4"], "correct": 0, "explain": "Z reguły potęgowej: (x^5)' = 5x^4."}, {"category": "Wzory - Różniczkowalność funkcji", "type": "wzory", "question": "Pochodna funkcji f(x)=x^5 w punkcie x_0=-2 wynosi:", "answers": ["80", "-80", "16", "-16"], "correct": 0, "explain": "f'(x)=5x^4, więc f'(-2)=5·(-2)^4=5·16=80. Potęga parzysta daje plus."}, {"category": "Wzory - Różniczkowalność funkcji", "type": "wzory", "question": "Pochodna funkcji e^{x} wynosi:", "answers": ["e^{x}", "1/x", "ln x", "x e^{x-1}"], "correct": 0, "explain": "Funkcja e^{x} ma pochodną równą samej sobie."}, {"category": "Wzory - Różniczkowalność funkcji", "type": "wzory", "question": "Pochodna iloczynu f · g to:", "answers": ["f' · g + f · g'", "f' · g'", "f' + g'", "f · g"], "correct": 0, "explain": "W iloczynie nie mnożysz samych pochodnych. Wzór: (f·g)' = f'g + fg'."}, {"category": "Wzory - Różniczkowalność funkcji", "type": "wzory", "question": "Definicja pochodnej w punkcie x_0 ma postać:", "answers": ["f'(x_0)=lim_{x→x_0}(f(x)-f(x_0))/(x-x_0)", "f'(x_0)=f(x_0)", "f'(x_0)=lim f(x)", "f'(x_0)=∫f(x)dx"], "correct": 0, "explain": "Pochodna to granica ilorazu różnicowego."}, {"category": "Wzory - Różniczkowalność funkcji", "type": "wzory", "question": "Pochodna geometrycznie oznacza:", "answers": ["współczynnik kierunkowy stycznej", "pole pod wykresem", "objętość bryły", "rząd macierzy"], "correct": 0, "explain": "Pochodna w punkcie to nachylenie stycznej do wykresu funkcji."}, {"category": "Wzory - Różniczkowalność funkcji", "type": "wzory", "question": "Jeżeli funkcja jest różniczkowalna w punkcie, to jest tam:", "answers": ["ciągła", "nieciągła", "zawsze stała", "zawsze ma ekstremum"], "correct": 0, "explain": "Różniczkowalność implikuje ciągłość, ale ciągłość nie musi implikować różniczkowalności."}, {"category": "Wzory - Monotoniczność i ekstrema", "type": "wzory", "question": "Jeśli f'(x) > 0 na przedziale, to funkcja jest:", "answers": ["rosnąca", "malejąca", "stała", "nieciągła"], "correct": 0, "explain": "Dodatnia pochodna oznacza wzrost funkcji."}, {"category": "Wzory - Monotoniczność i ekstrema", "type": "wzory", "question": "Jeśli f'(x) < 0 na przedziale, to funkcja jest:", "answers": ["malejąca", "rosnąca", "stała", "parzysta"], "correct": 0, "explain": "Ujemna pochodna oznacza spadek funkcji."}, {"category": "Wzory - Monotoniczność i ekstrema", "type": "wzory", "question": "Jeśli f''(x) > 0, to funkcja jest:", "answers": ["wypukła", "wklęsła", "malejąca zawsze", "stała"], "correct": 0, "explain": "Dodatnia druga pochodna oznacza wypukłość."}, {"category": "Wzory - Monotoniczność i ekstrema", "type": "wzory", "question": "Jeśli f''(x) < 0, to funkcja jest:", "answers": ["wklęsła", "wypukła", "rosnąca zawsze", "nieciągła"], "correct": 0, "explain": "Ujemna druga pochodna oznacza wklęsłość."}, {"category": "Wzory - Monotoniczność i ekstrema", "type": "wzory", "question": "Druga pochodna funkcji f(x)=4x^3 wynosi:", "answers": ["24x", "12x^2", "4x", "24x^2"], "correct": 0, "explain": "f'(x)=12x^2, więc f''(x)=24x."}, {"category": "Wzory - Monotoniczność i ekstrema", "type": "wzory", "question": "Dla f(x)=100-10x-x^5 mamy f'(x)=", "answers": ["-10 - 5x^4", "10 - 5x^4", "-10 - x^4", "100 - 5x^4"], "correct": 0, "explain": "Pochodna 100 to 0, pochodna -10x to -10, pochodna -x^5 to -5x^4."}, {"category": "Wzory - Monotoniczność i ekstrema", "type": "wzory", "question": "Jeśli f'(x)=-10-5x^4, to funkcja jest:", "answers": ["malejąca", "rosnąca", "stała", "wypukła zawsze"], "correct": 0, "explain": "-10-5x^4 jest zawsze < 0, więc funkcja jest malejąca."}, {"category": "Wzory - Monotoniczność i ekstrema", "type": "wzory", "question": "Warunek konieczny ekstremum lokalnego funkcji jednej zmiennej to:", "answers": ["f'(x_0)=0", "f(x_0)=0", "f''(x_0)>0", "x_0=0"], "correct": 0, "explain": "W punkcie ekstremum lokalnego, jeśli funkcja jest różniczkowalna, musi być f'(x_0)=0. Ale to nie wystarcza."}, {"category": "Wzory - Monotoniczność i ekstrema", "type": "wzory", "question": "Twierdzenie Rolle'a mówi, że jeśli f jest ciągła na [a,b], różniczkowalna na (a,b) i f(a)=f(b), to istnieje c takie, że:", "answers": ["f'(c)=0", "f(c)=0", "f''(c)=0", "f'(c)=1"], "correct": 0, "explain": "To standardowa teza twierdzenia Rolle'a."}, {"category": "Wzory - Monotoniczność i ekstrema", "type": "wzory", "question": "Twierdzenie Lagrange'a daje wzór:", "answers": ["f'(c)=(f(b)-f(a))/(b-a)", "f'(c)=0 zawsze", "f(c)=f(a)+f(b)", "f''(c)=f'(c)"], "correct": 0, "explain": "Twierdzenie Lagrange'a mówi, że chwilowe tempo zmian gdzieś w środku równa się średniemu tempu zmian na całym przedziale."}, {"category": "Wzory - Całki", "type": "wzory", "question": "Całka z potęgi ∫x^{n} dx dla n≠-1 wynosi:", "answers": ["x^{n+1}/(n+1) + C", "n x^{n-1} + C", "x^{n} + C", "ln x + C zawsze"], "correct": 0, "explain": "To podstawowy wzór na całkowanie potęg."}, {"category": "Wzory - Całki", "type": "wzory", "question": "∫x^99 dx wynosi:", "answers": ["x^100/100 + C", "99x^98 + C", "x^99/99 + C", "100x^99 + C"], "correct": 0, "explain": "Zwiększasz wykładnik o 1 i dzielisz przez nowy wykładnik."}, {"category": "Wzory - Całki", "type": "wzory", "question": "∫_0^1 x^99 dx wynosi:", "answers": ["0,01", "1", "0", "100"], "correct": 0, "explain": "F(x)=x^100/100. Po podstawieniu: 1/100 - 0 = 0,01."}, {"category": "Wzory - Całki", "type": "wzory", "question": "∫e^{x} dx wynosi:", "answers": ["e^{x} + C", "1/x + C", "ln x + C", "x e^{x-1} + C"], "correct": 0, "explain": "Całka z e^{x} to e^{x} + C."}, {"category": "Wzory - Całki", "type": "wzory", "question": "∫sin x dx wynosi:", "answers": ["-cos x + C", "cos x + C", "-sin x + C", "tan x + C"], "correct": 0, "explain": "Pochodna -cos x to sin x, więc ∫sin x dx = -cos x + C."}, {"category": "Wzory - Całki", "type": "wzory", "question": "∫cos x dx wynosi:", "answers": ["sin x + C", "-sin x + C", "cos x + C", "-cos x + C"], "correct": 0, "explain": "Pochodna sin x to cos x."}, {"category": "Wzory - Całki", "type": "wzory", "question": "Funkcja pierwotna F funkcji f spełnia:", "answers": ["F'(x)=f(x)", "F(x)=f'(x)", "F''(x)=f(x)", "F(x)=0"], "correct": 0, "explain": "Funkcja pierwotna po zróżniczkowaniu daje funkcję podcałkową."}, {"category": "Wzory - Całki", "type": "wzory", "question": "Twierdzenie Newtona-Leibniza ma postać:", "answers": ["∫_a^{b} f(x)dx = F(b)-F(a)", "∫_a^{b} f(x)dx = F(a)-F(b)", "∫_a^{b} f(x)dx = f'(b)-f'(a)", "∫_a^{b} f(x)dx = 0 zawsze"], "correct": 0, "explain": "Całkę oznaczoną liczysz z funkcji pierwotnej: górna granica minus dolna."}, {"category": "Wzory - Całki", "type": "wzory", "question": "Całka oznaczona jest całką:", "answers": ["Riemanna", "Newtona wyłącznie", "macierzową", "logiczną"], "correct": 0, "explain": "W tym zakresie całka oznaczona jest rozumiana jako całka Riemanna."}, {"category": "Wzory - Całki", "type": "wzory", "question": "Geometryczna interpretacja całki oznaczonej ∫_a^b f(x)dx to:", "answers": ["pole zorientowane; gdy f(x)≥0, zwykłe pole pod wykresem nad osią OX", "nachylenie stycznej do wykresu", "rząd macierzy funkcji", "liczba rozwiązań równania f(x)=0"], "correct": 0, "explain": "Całka oznaczona daje pole zorientowane. Jeśli f(x)≥0 na [a,b], jest to zwykłe pole figury pod wykresem i nad osią OX."}, {"category": "Wzory - Pochodne cząstkowe i ekstrema wielu zmiennych", "type": "wzory", "question": "Przy liczeniu pochodnej cząstkowej po jednej zmiennej pozostałe zmienne traktujesz jak:", "answers": ["stałe", "zera", "nieskończoności", "zmienne zależne zawsze"], "correct": 0, "explain": "To najważniejsza zasada pochodnych cząstkowych."}, {"category": "Wzory - Pochodne cząstkowe i ekstrema wielu zmiennych", "type": "wzory", "question": "Dla f(x,y,z)=x^2y^3z^{-2} pochodna ∂f/∂x wynosi:", "answers": ["2xy^3z^{-2}", "3x^2y^2z^{-2}", "-2x^2y^3z^{-3}", "x^2y^3z^{-2}"], "correct": 0, "explain": "Różniczkujesz po x, a y i z są stałe: (x^2)' = 2x."}, {"category": "Wzory - Pochodne cząstkowe i ekstrema wielu zmiennych", "type": "wzory", "question": "Dla f(x,y,z)=x^2y^3z^{-2} pochodna ∂f/∂y wynosi:", "answers": ["3x^2y^2z^{-2}", "2xy^3z^{-2}", "-2x^2y^3z^{-3}", "x^2y^3z^{-2}"], "correct": 0, "explain": "Różniczkujesz po y: (y^3)' = 3y^2."}, {"category": "Wzory - Pochodne cząstkowe i ekstrema wielu zmiennych", "type": "wzory", "question": "Dla f(x,y,z)=x^2y^3z^{-2} pochodna ∂f/∂z wynosi:", "answers": ["-2x^2y^3z^{-3}", "2xy^3z^{-2}", "3x^2y^2z^{-2}", "x^2y^3z^{-1}"], "correct": 0, "explain": "Różniczkujesz po z: (z^{-2})' = -2z^{-3}."}, {"category": "Wzory - Pochodne cząstkowe i ekstrema wielu zmiennych", "type": "wzory", "question": "Warunek konieczny ekstremum funkcji dwóch zmiennych w punkcie stacjonarnym to:", "answers": ["f'_x=0 i f'_y=0", "f'_x=1 i f'_y=1", "f=0", "f''=0 zawsze"], "correct": 0, "explain": "Gradient musi być zerowy: obie pochodne cząstkowe pierwszego rzędu są równe 0."}, {"category": "Wzory - Pochodne cząstkowe i ekstrema wielu zmiennych", "type": "wzory", "question": "Wyrażenie f''_{xx} · f''_{yy} - (f''_{xy})^2 służy do:", "answers": ["badania ekstremum lokalnego funkcji dwóch zmiennych", "liczenia całki oznaczonej", "liczenia silni", "sprawdzania tautologii"], "correct": 0, "explain": "To wyznacznik macierzy Hessego dla funkcji dwóch zmiennych."}, {"category": "Wzory - Pochodne cząstkowe i ekstrema wielu zmiennych", "type": "wzory", "question": "Jeśli D=f''_{xx}f''_{yy}-(f''_{xy})^2 > 0 oraz f''_{xx}>0, to punkt krytyczny jest:", "answers": ["minimum lokalnym", "maksimum lokalnym", "punktem siodłowym", "brak informacji"], "correct": 0, "explain": "Dodatni wyznacznik Hessianu i f_xx > 0 oznacza minimum lokalne."}, {"category": "Wzory - Pochodne cząstkowe i ekstrema wielu zmiennych", "type": "wzory", "question": "Jeśli D=f''_{xx}f''_{yy}-(f''_{xy})^2 > 0 oraz f''_{xx}<0, to punkt krytyczny jest:", "answers": ["maksimum lokalnym", "minimum lokalnym", "punktem siodłowym", "brak informacji"], "correct": 0, "explain": "Dodatni wyznacznik Hessianu i f_xx < 0 oznacza maksimum lokalne."}, {"category": "Wzory - Pochodne cząstkowe i ekstrema wielu zmiennych", "type": "wzory", "question": "Twierdzenie Schwarza mówi, że przy odpowiedniej ciągłości:", "answers": ["f''_{xy}=f''_{yx}", "f'_x=f'_y zawsze", "f=0", "f''_{xx}=f''_{yy} zawsze"], "correct": 0, "explain": "Jeśli pochodne mieszane są ciągłe, to kolejność różniczkowania nie ma znaczenia."}, {"category": "Wzory - Pochodne cząstkowe i ekstrema wielu zmiennych", "type": "wzory", "question": "Funkcja f(x,y)=x^2+y^2 ma w punkcie (0,0):", "answers": ["minimum lokalne", "maksimum lokalne", "punkt siodłowy", "brak punktu krytycznego"], "correct": 0, "explain": "f(x,y)=x^2+y^2 ≥ 0 i w (0,0) przyjmuje 0, więc jest tam minimum lokalne."}, {"category": "Kulpa MD Wykład 01 - Elementy logiki matematycznej", "type": "quiz wykładowy MD", "question": "Wskaż zdanie prawdziwe", "answers": ["dla każdej liczby rzeczywistej x zachodzi x^2 ≥ 10", "dla każdej liczby rzeczywistej x zachodzi x^2 ≥ 0", "istnieje liczba rzeczywista x taka, dla której zachodzi x^2 ≤ -10", "istnieje liczba rzeczywista x taka, dla której zachodzi x^2 < 0"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: dla każdej liczby rzeczywistej x zachodzi x^2 ≥ 0."}, {"category": "Kulpa MD Wykład 01 - Elementy logiki matematycznej", "type": "quiz wykładowy MD", "question": "Alternatywa zdań p oraz q to zdanie:", "answers": ["p lub q", "p wtedy i tylko wtedy, gdy q", "jeżeli p, to q", "p i q"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: p lub q."}, {"category": "Kulpa MD Wykład 01 - Elementy logiki matematycznej", "type": "quiz wykładowy MD", "question": "Wyrażenie logiczne [¬ (p ∨ q)] ⇔ [(¬ p) ∧ (¬ q)] to:", "answers": ["prawo przemienności koniunkcji", "prawo przemienności alternatywy", "prawo kontrapozycji", "prawo de Morgana"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: prawo de Morgana."}, {"category": "Kulpa MD Wykład 01 - Elementy logiki matematycznej", "type": "quiz wykładowy MD", "question": "Zdanie p ∧ q jest prawdziwe tylko w przypadku, gdy", "answers": ["zdanie p jest fałszywe, a zdanie q jest prawdziwe", "zdanie p jest prawdziwe, a zdanie q jest fałszywe", "obydwa zdania p oraz q są prawdziwe", "obydwa zdania p oraz q są fałszywe"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: obydwa zdania p oraz q są prawdziwe."}, {"category": "Kulpa MD Wykład 01 - Elementy logiki matematycznej", "type": "quiz wykładowy MD", "question": "W logice matematycznej liczba 0 określa:", "answers": ["prawdę", "fałsz"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: fałsz."}, {"category": "Kulpa MD Wykład 01 - Elementy logiki matematycznej", "type": "quiz wykładowy MD", "question": "Zdanie p → q jest fałszywe tylko w przypadku, gdy", "answers": ["zdanie p jest fałszywe i zdanie q jest prawdziwe", "obydwa zdania p i q są fałszywe", "zdanie p jest prawdziwe i zdanie q jest fałszywe", "obydwa zdania p i q są prawdziwe"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: zdanie p jest prawdziwe i zdanie q jest fałszywe."}, {"category": "Kulpa MD Wykład 01 - Elementy logiki matematycznej", "type": "quiz wykładowy MD", "question": "Zdanie: istnieje liczba rzeczywista x taka, że dla każdej liczby rzeczywistej y zachodzi równość xy = 0", "answers": ["jest prawdziwe", "jest fałszywe"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: jest prawdziwe."}, {"category": "Kulpa MD Wykład 01 - Elementy logiki matematycznej", "type": "quiz wykładowy MD", "question": "Zaprzeczeniem zdania: istnieje liczba naturalna n taka, że n^2 ≥ 10; jest zdanie:", "answers": ["dla każdej liczby naturalnej n zachodzi n^2 ≥ 10", "istnieje liczba naturalna n taka, że n^2 ≥ 10", "istnieje liczba naturalna n taka, że n^2 < 10", "dla każdej liczby naturalnej n zachodzi n^2 < 10"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: dla każdej liczby naturalnej n zachodzi n^2 < 10."}, {"category": "Kulpa MD Wykład 01 - Elementy logiki matematycznej", "type": "quiz wykładowy MD", "question": "Wskaż zdanie, które nie jest zdaniem logicznym:", "answers": ["Liczba 21 dzieli się przez 5", "Czy liczba 6 jest dzielnikiem liczby 18?", "Iloczyn liczb 4 i 8 wynosi 32", "Suma liczb 7 i 13 wynosi 20"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Czy liczba 6 jest dzielnikiem liczby 18?."}, {"category": "Kulpa MD Wykład 01 - Elementy logiki matematycznej", "type": "quiz wykładowy MD", "question": "Wskaż tautologię:", "answers": ["p ∧ ¬ p", "p ⇒ ¬ p", "p ⇔ ¬ p", "p ∨ ¬ p"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: p ∨ ¬ p."}, {"category": "Kulpa MD Wykład 02 - Elementy teorii mnogości", "type": "quiz wykładowy MD", "question": "Która z poniższych relacji nie zachodzi?", "answers": ["ℕ ⊂ ℤ", "ℝ ⊂ ℕ", "ℚ ⊂ ℝ", "ℕ ⊂ ℚ"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: ℝ ⊂ ℕ."}, {"category": "Kulpa MD Wykład 02 - Elementy teorii mnogości", "type": "quiz wykładowy MD", "question": "Iloczyn kartezjański zbiorów jest działaniem przemiennym.", "answers": ["Prawda", "Fałsz"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Fałsz."}, {"category": "Kulpa MD Wykład 02 - Elementy teorii mnogości", "type": "quiz wykładowy MD", "question": "Niech A = {2} i B = {3}. Wówczas zbiór A × B to:", "answers": ["{(3, 2)}", "{(2, 3)}", "{6}", "{5}"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: {(2, 3)}."}, {"category": "Kulpa MD Wykład 02 - Elementy teorii mnogości", "type": "quiz wykładowy MD", "question": "Niech A = (-4, 5) i B = [0, 9]. Wówczas zbiór A ∖ B to:", "answers": ["(-4, 9]", "[0, 5)", "[5, 9]", "(-4, 0)"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: (-4, 0)."}, {"category": "Kulpa MD Wykład 02 - Elementy teorii mnogości", "type": "quiz wykładowy MD", "question": "(A ∪ B)' = A' ∩ B' Powyższa równość to:", "answers": ["prawo de Morgana", "prawo rozdzielności dopełnienia względem sumy zbiorów", "prawo łączności sumy zbiorów", "prawo łączności mnożenia zbiorów", "prawo podwójnego dopełnienia"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: prawo de Morgana."}, {"category": "Kulpa MD Wykład 02 - Elementy teorii mnogości", "type": "quiz wykładowy MD", "question": "Sumę zbiorów A i B oznaczamy symbolem:", "answers": ["A ⊕ B", "A ∩ B", "A ⊂ B", "A ∪ B"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: A ∪ B."}, {"category": "Kulpa MD Wykład 02 - Elementy teorii mnogości", "type": "quiz wykładowy MD", "question": "Jeżeli zbiór A ma 4 elementy, a zbiór B ma 8 elementów, to ilość elementów zbioru A × B wynosi:", "answers": ["4", "15", "32", "12"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 32."}, {"category": "Kulpa MD Wykład 02 - Elementy teorii mnogości", "type": "quiz wykładowy MD", "question": "Zbiór liczb naturalnych oznaczamy literą:", "answers": ["ℝ", "ℚ", "ℤ", "ℕ"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: ℕ."}, {"category": "Kulpa MD Wykład 02 - Elementy teorii mnogości", "type": "quiz wykładowy MD", "question": "Jeżeli A = (-∞, 0] i B = [8, ∞), to A ∩ B to:", "answers": ["(-∞, ∞)", "[0, 8]", "∅", "(0, 8)"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: ∅."}, {"category": "Kulpa MD Wykład 02 - Elementy teorii mnogości", "type": "quiz wykładowy MD", "question": "Interpretacją geometryczną zbioru ℝ^2 jest:", "answers": ["kwadrat jednostkowy", "przestrzeń", "płaszczyzna", "prosta"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: płaszczyzna."}, {"category": "Kulpa MD Wykład 03 - Elementy kombinatoryki", "type": "quiz wykładowy MD", "question": "Załóżmy, że k, n ∈ N_0 oraz k ≤ n. Symbol Newtona definiujemy wzorem:", "answers": ["C(n,k) = (k!)/(n!(k-n)!)", "C(n,k) = (k!)/(n!)", "C(n,k) = (n!)/((n-k)!)", "C(n,k) = (k!)/((k-n)!)", "C(n,k) = (n!)/(k!)", "C(n,k) = (n!)/(k!(n-k)!)"], "correct": 5, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: C(n,k) = (n!)/(k!(n-k)!)."}, {"category": "Kulpa MD Wykład 03 - Elementy kombinatoryki", "type": "quiz wykładowy MD", "question": "Symbol C(6,0) to:", "answers": ["5", "6", "0", "15", "1", "20", "12"], "correct": 4, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 1."}, {"category": "Kulpa MD Wykład 03 - Elementy kombinatoryki", "type": "quiz wykładowy MD", "question": "W trójkącie Pascala każdy wiersz zaczyna się i kończy liczbą:", "answers": ["1", "0", "2", "n"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 1."}, {"category": "Kulpa MD Wykład 03 - Elementy kombinatoryki", "type": "quiz wykładowy MD", "question": "Ilość wszystkich permutacji zbioru n-elementowego wynosi:", "answers": ["2^{n}", "C(2n,n)", "n!", "n", "n^2"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: n!."}, {"category": "Kulpa MD Wykład 03 - Elementy kombinatoryki", "type": "quiz wykładowy MD", "question": "W trójkącie Pascala suma dwóch kolejnych liczb w wierszu jest równa:", "answers": ["sumie trzech liczb znajdujących się wiersz wyżej nad nimi", "liczbie stojącej wiersz niżej pomiędzy nimi", "sumie trzech liczb znajdujących się wiersz niżej pod nimi", "liczbie stojącej wiersz wyżej pomiędzy nimi"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: liczbie stojącej wiersz niżej pomiędzy nimi."}, {"category": "Kulpa MD Wykład 03 - Elementy kombinatoryki", "type": "quiz wykładowy MD", "question": "Ilość wszystkich podzbiorów zbioru B = {1, 2, 3, 4, 5} wynosi:", "answers": ["25", "36", "64", "32"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 32."}, {"category": "Kulpa MD Wykład 03 - Elementy kombinatoryki", "type": "quiz wykładowy MD", "question": "Symbol ∑_{n=-1}^{3} n^3 to:", "answers": ["15", "14", "35", "36"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 35."}, {"category": "Kulpa MD Wykład 03 - Elementy kombinatoryki", "type": "quiz wykładowy MD", "question": "Silnia liczby 4 to:", "answers": ["16", "2", "24", "4"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 24."}, {"category": "Kulpa MD Wykład 03 - Elementy kombinatoryki", "type": "quiz wykładowy MD", "question": "(a+b)^{n} = ∑_{k=0}^{n} C(n,k) a^{n-k} b^{k} Powyższe równanie to:", "answers": ["dwumian de Morgana", "dwumian Newtona", "dwumian Pitagorasa", "dwumian Gaussa", "dwumian Pascala"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: dwumian Newtona."}, {"category": "Kulpa MD Wykład 03 - Elementy kombinatoryki", "type": "quiz wykładowy MD", "question": "Symbol C(8,2) to:", "answers": ["32", "4", "28", "70"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 28."}, {"category": "Kulpa MD Wykład 04 - Macierze", "type": "quiz wykładowy MD", "question": "Wskaż macierz jednostkową:", "answers": ["[[1, 0], [0, 0]]", "[[1, 1], [1, 1]]", "[[1, 0], [0, 1]]", "[[0, 0], [0, 1]]"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: [[1, 0], [0, 1]]."}, {"category": "Kulpa MD Wykład 04 - Macierze", "type": "quiz wykładowy MD", "question": "Macierz kwadratowa A jest macierzą osobliwą wtedy i tylko wtedy, gdy:", "answers": ["det A = 0", "A = A^{-1}", "A = A^{T}", "det A ≠ 0"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: det A = 0."}, {"category": "Kulpa MD Wykład 04 - Macierze", "type": "quiz wykładowy MD", "question": "Która z poniższych macierzy nie jest macierzą diagonalną?", "answers": ["[[0, 0], [0, 5]]", "[[4, 0], [0, 5]]", "[[4, 0], [0, 0]]", "[[0, 4], [5, 0]]"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: [[0, 4], [5, 0]]."}, {"category": "Kulpa MD Wykład 04 - Macierze", "type": "quiz wykładowy MD", "question": "Dane są macierze: A = [[4, 0], [7, -1]], B = [[6, 1]]. Którego z poniższych działań nie można wykonać?", "answers": ["A · B^{T}", "B · A^{T}", "A - B", "B · A"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: A - B."}, {"category": "Kulpa MD Wykład 04 - Macierze", "type": "quiz wykładowy MD", "question": "Wyznacznik macierzy A = det [[8, 0, 4], [9, 0, 7], [3, 0, 5]] wynosi:", "answers": ["100", "24", "412", "0"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 0."}, {"category": "Kulpa MD Wykład 04 - Macierze", "type": "quiz wykładowy MD", "question": "Jeżeli A = [[2, 5]] i B = [[5, 2]], to A · B^{T} wynosi:", "answers": ["[[20]]", "[[2, 5]]", "[[2, 5], [5, 2]]", "[[5, 2]]"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: [[20]]."}, {"category": "Kulpa MD Wykład 04 - Macierze", "type": "quiz wykładowy MD", "question": "Rząd macierzy A = [[8, 4], [2, 1]] wynosi:", "answers": ["1", "2", "0", "3"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 1."}, {"category": "Kulpa MD Wykład 04 - Macierze", "type": "quiz wykładowy MD", "question": "Która z poniższych własności nie przysługuje działaniom na macierzach?", "answers": ["A · (B + C) = A · B + A · C", "A · B = B · A", "A · I = A", "A + B = B + A"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: A · B = B · A."}, {"category": "Kulpa MD Wykład 04 - Macierze", "type": "quiz wykładowy MD", "question": "Macierz odwrotna do macierzy A = [[10]] to:", "answers": ["A^{-1} = [[10]]", "A^{-1} = [[0,1]]", "A^{-1} = [[-0,1]]", "A^{-1} = [[-10]]"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: A^{-1} = [[0,1]]."}, {"category": "Kulpa MD Wykład 04 - Macierze", "type": "quiz wykładowy MD", "question": "Wyznacznik macierzy A = det [[2, -3], [4, 5]] wynosi:", "answers": ["-2", "2", "-22", "22"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 22."}, {"category": "Kulpa MD Wykład 05 - Układy równań liniowych", "type": "quiz wykładowy MD", "question": "Układ równań liniowych jest układem Cramera wtedy i tylko wtedy, gdy:", "answers": ["macierz uzupełniona układu jest kwadratowa osobliwa", "macierz uzupełniona układu jest kwadratowa nieosobliwa", "macierz główna układu jest kwadratowa osobliwa", "macierz główna układu jest kwadratowa nieosobliwa"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: macierz główna układu jest kwadratowa nieosobliwa."}, {"category": "Kulpa MD Wykład 05 - Układy równań liniowych", "type": "quiz wykładowy MD", "question": "Układ równań liniowych { 2x - 6y = -4; x + 3y = 5 } jest układem Cramera.", "answers": ["Prawda", "Fałsz"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Prawda."}, {"category": "Kulpa MD Wykład 05 - Układy równań liniowych", "type": "quiz wykładowy MD", "question": "Ilość wszystkich rozwiązań układu równań Cramera wynosi:", "answers": ["2", "∞", "co najmniej 3", "3", "1", "0"], "correct": 4, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 1."}, {"category": "Kulpa MD Wykład 05 - Układy równań liniowych", "type": "quiz wykładowy MD", "question": "Ilość wszystkich rozwiązań układu równań liniowych nie może wynosić:", "answers": ["1", "2", "∞", "0"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 2."}, {"category": "Kulpa MD Wykład 05 - Układy równań liniowych", "type": "quiz wykładowy MD", "question": "Jeżeli A jest macierzą główną, a U macierzą uzupełnioną układu równań liniowych, to układ ten ma rozwiązania wtedy i tylko wtedy, gdy:", "answers": ["rz(A) < rz(U)", "rz(A) > rz(U)", "rz(A) = rz(U)"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: rz(A) = rz(U)."}, {"category": "Kulpa MD Wykład 05 - Układy równań liniowych", "type": "quiz wykładowy MD", "question": "Dla układu równań liniowych { 2x - 6y = -4; -x + 8y = 5 } macierz główna układu to:", "answers": ["[[-1, 8], [2, -6]]", "[[2, -6, -4], [-1, 8, 5]]", "[[2, -6], [-1, 8]]", "[[2, 6, 4], [1, 8, 5]]", "[[2, 6], [1, 8]]", "[[-1, 8, 5], [2, -6, -4]]"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: [[2, -6], [-1, 8]]."}, {"category": "Kulpa MD Wykład 05 - Układy równań liniowych", "type": "quiz wykładowy MD", "question": "Układ równań liniowych { 2x - 6y = -4; -x + 3y = 5 } jest układem Cramera.", "answers": ["Prawda", "Fałsz"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Fałsz."}, {"category": "Kulpa MD Wykład 05 - Układy równań liniowych", "type": "quiz wykładowy MD", "question": "Która z poniższych operacji na wierszach macierzy nie jest operacją elementarną?", "answers": ["przestawienie dwóch wierszy", "pomnożenie wiersza przez liczbę różną od zera", "dodanie do wiersza liczby różnej od zera", "dodanie do wiersza innego wiersza"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: dodanie do wiersza liczby różnej od zera."}, {"category": "Kulpa MD Wykład 05 - Układy równań liniowych", "type": "quiz wykładowy MD", "question": "Dla układu równań liniowych { 2x - 6y = -4; -x + 8y = 5 } macierz uzupełniona układu to:", "answers": ["[[2, 6, 4], [1, 8, 5]]", "[[2, 6], [1, 8]]", "[[2, -6, -4], [-1, 8, 5]]", "[[2, -6], [-1, 8]]", "[[-1, 8, 5], [2, -6, -4]]", "[[-1, 8], [2, -6]]"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: [[2, -6, -4], [-1, 8, 5]]."}, {"category": "Kulpa MD Wykład 05 - Układy równań liniowych", "type": "quiz wykładowy MD", "question": "U = [[2, -6, -4], [-1, 8, 5], [0, 0, 9]] Jeżeli U jest macierzą uzupełnioną układu równań liniowych, to układ ten jest:", "answers": ["oznaczony", "Gaussa", "nieoznaczony", "sprzeczny", "Cramera"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: sprzeczny."}, {"category": "Kulpa MD Wykład 06 - Ciągi liczbowe", "type": "quiz wykładowy MD", "question": "Jeżeli a_n=n^3, n∈ℕ, to lim_{n→∞} a_n=", "answers": ["e", "0", "+∞", "-∞", "1", "π", "e^{-π}"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: +∞."}, {"category": "Kulpa MD Wykład 06 - Ciągi liczbowe", "type": "quiz wykładowy MD", "question": "Każdy ciąg stały posiada granicę:", "answers": ["Prawda", "Fałsz"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Prawda."}, {"category": "Kulpa MD Wykład 06 - Ciągi liczbowe", "type": "quiz wykładowy MD", "question": "Ciąg (a_n)_{n∈ℕ} jest ograniczony z dołu, jeżeli:", "answers": ["istnieje M∈ℝ takie, że dla każdego n∈ℕ zachodzi warunek a_n≥ M", "istnieje M∈ℝ takie, że dla każdego n∈ℕ zachodzi warunek a_n<M", "dla każdego M∈ℝ istnieje n∈ℕ takie, że zachodzi warunek a_n≥ M", "dla każdego M∈ℝ istnieje n∈ℕ takie, że zachodzi warunek a_n≤ M"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: istnieje M∈ℝ takie, że dla każdego n∈ℕ zachodzi warunek a_n≥ M."}, {"category": "Kulpa MD Wykład 06 - Ciągi liczbowe", "type": "quiz wykładowy MD", "question": "Ciąg c_n=n^4, n∈ℕ jest:", "answers": ["rosnący", "malejący", "stały", "naprzemienny"], "correct": 0, "explain": "Dla n∈ℕ ciąg c_n=n^4 rośnie, bo kolejne potęgi czwarte są coraz większe."}, {"category": "Kulpa MD Wykład 06 - Ciągi liczbowe", "type": "quiz wykładowy MD", "question": "Ciąg (a_n)_{n∈ℕ} jest ograniczony, jeżeli jest:", "answers": ["ograniczony z góry", "ograniczony z góry lub ograniczony z dołu", "ograniczony z góry i ograniczony z dołu", "ograniczony z dołu"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: ograniczony z góry i ograniczony z dołu."}, {"category": "Kulpa MD Wykład 06 - Ciągi liczbowe", "type": "quiz wykładowy MD", "question": "Granica ciągu a_n=(1+(1)/(n))^{n}, n∈ℕ wynosi:", "answers": ["e", "∞", "1", "0"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: e."}, {"category": "Kulpa MD Wykład 06 - Ciągi liczbowe", "type": "quiz wykładowy MD", "question": "Jeżeli ciąg (a_n)_{n∈ℕ} jest monotoniczny i ograniczony, to jest:", "answers": ["zbieżny", "rozbieżny zawsze", "nieograniczony", "stały zawsze"], "correct": 0, "explain": "Każdy ciąg monotoniczny i ograniczony jest zbieżny."}, {"category": "Kulpa MD Wykład 06 - Ciągi liczbowe", "type": "quiz wykładowy MD", "question": "Ciąg (a_n)_{n∈ℕ} jest rosnący, jeżeli dla każdego n∈ℕ spełnia warunek:", "answers": ["a_{n+1}=a_n", "a_{n+1}>a_n", "a_{n+1}<a_n"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: a_{n+1}>a_n."}, {"category": "Kulpa MD Wykład 06 - Ciągi liczbowe", "type": "quiz wykładowy MD", "question": "Ciąg a_n=(-1)^{n}, n∈ℕ jest:", "answers": ["ograniczony", "zbieżny", "rosnący", "nieograniczony"], "correct": 0, "explain": "Ciąg (-1)^n przyjmuje tylko wartości -1 i 1, więc jest ograniczony, ale nie jest zbieżny."}, {"category": "Kulpa MD Wykład 06 - Ciągi liczbowe", "type": "quiz wykładowy MD", "question": "Dobrym przybliżeniem liczby e jest:", "answers": ["3,14", "2,71", "1,72", "0,33"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 2,71."}, {"category": "Kulpa MD Wykład 07 - Funkcje jednej zmiennej rzeczywistej", "type": "quiz wykładowy MD", "question": "Funkcja f: D → ℝ jest malejąca, jeżeli spełnia warunek:", "answers": ["dla każdego x_1, x_2 ∈ D takiego, że x_1 < x_2 zachodzi warunek f(x_1) < f(x_2)", "dla każdego x_1, x_2 ∈ D takiego, że x_1 < x_2 zachodzi warunek f(x_1) > f(x_2)", "istnieją x_1, x_2 ∈ D takie, że jeżeli x_1 < x_2, to zachodzi warunek f(x_1) < f(x_2)", "istnieją x_1, x_2 ∈ D takie, że jeżeli x_1 < x_2, to zachodzi warunek f(x_1) > f(x_2)"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: dla każdego x_1, x_2 ∈ D takiego, że x_1 < x_2 zachodzi warunek f(x_1) > f(x_2)."}, {"category": "Kulpa MD Wykład 07 - Funkcje jednej zmiennej rzeczywistej", "type": "quiz wykładowy MD", "question": "Funkcją odwrotną do funkcji f(x)=(1)/(x), x ∈ ℝ∖{0}, jest funkcja:", "answers": ["f^{-1}(x)=(1)/(x), x ∈ ℝ∖{0}", "f^{-1}(x)=x^0, x ∈ ℝ∖{0}", "f^{-1}(x)=x^1, x ∈ ℝ∖{0}", "f^{-1}(x)=x^2, x ∈ ℝ∖{0}", "f^{-1}(x)=(x)/(1), x ∈ ℝ∖{0}"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f^{-1}(x)=(1)/(x), x ∈ ℝ∖{0}."}, {"category": "Kulpa MD Wykład 07 - Funkcje jednej zmiennej rzeczywistej", "type": "quiz wykładowy MD", "question": "Dziedziną naturalną funkcji f(x)=√(x+5) jest zbiór:", "answers": ["(-5,∞)", "(-∞,5)", "(5,∞)", "(-∞,5]", "[-5,∞)", "[5,∞)", "(-∞,-5)", "(-∞,-5]"], "correct": 4, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: [-5,∞)."}, {"category": "Kulpa MD Wykład 07 - Funkcje jednej zmiennej rzeczywistej", "type": "quiz wykładowy MD", "question": "Funkcją odwrotną do funkcji f(x)=ln x jest funkcja:", "answers": ["f^{-1}(x)=(1)/(x)", "f^{-1}(x)=ln x", "f^{-1}(x)=e^{x}", "f^{-1}(x)=log x", "f^{-1}(x)=10^{x}"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f^{-1}(x)=e^{x}."}, {"category": "Kulpa MD Wykład 07 - Funkcje jednej zmiennej rzeczywistej", "type": "quiz wykładowy MD", "question": "Podstawą logarytmu naturalnego jest liczba:", "answers": ["0", "10", "e", "1"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: e."}, {"category": "Kulpa MD Wykład 07 - Funkcje jednej zmiennej rzeczywistej", "type": "quiz wykładowy MD", "question": "Funkcjami elementarnymi nazywamy wszystkie funkcje, które można otrzymać z podstawowych funkcji elementarnych za pomocą skończonej liczby działań arytmetycznych oraz operacji składania i odwracania funkcji.", "answers": ["Prawda", "Fałsz"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Prawda."}, {"category": "Kulpa MD Wykład 07 - Funkcje jednej zmiennej rzeczywistej", "type": "quiz wykładowy MD", "question": "Do zbioru podstawowych funkcji elementarnych należy funkcja:", "answers": ["f(x)=10^{x}", "f(x)=x^2", "f(x)=log x", "f(x)=x", "f(x)=ln x"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f(x)=x."}, {"category": "Kulpa MD Wykład 07 - Funkcje jednej zmiennej rzeczywistej", "type": "quiz wykładowy MD", "question": "Funkcją odwrotną do funkcji f(x)=10^{x} jest funkcja:", "answers": ["f^{-1}(x)=e^{x}", "f^{-1}(x)=10^{x}", "f^{-1}(x)=ln x", "f^{-1}(x)=log x", "f^{-1}(x)=e^{-x}"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f^{-1}(x)=log x."}, {"category": "Kulpa MD Wykład 07 - Funkcje jednej zmiennej rzeczywistej", "type": "quiz wykładowy MD", "question": "Funkcja f: X → Y jest bijekcją, jeżeli jest:", "answers": ["surjekcją i iniekcją", "surjekcją lub iniekcją", "różnowartościowa, ale niekoniecznie na Y", "na zbiór Y, ale niekoniecznie różnowartościowa"], "correct": 0, "explain": "Bijekcja to funkcja jednocześnie surjektywna i iniektywna."}, {"category": "Kulpa MD Wykład 07 - Funkcje jednej zmiennej rzeczywistej", "type": "quiz wykładowy MD", "question": "Funkcja f: (a,b) → ℝ jest ograniczona, jeżeli jest:", "answers": ["ograniczona z góry", "ograniczona z góry i ograniczona z dołu", "ograniczona z dołu", "ograniczona z góry lub ograniczona z dołu"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: ograniczona z góry i ograniczona z dołu."}, {"category": "Kulpa MD Wykład 08 - Ciągłość funkcji i granice", "type": "quiz wykładowy MD", "question": "Wszystkie funkcje elementarne są ciągłe w swoich dziedzinach naturalnych. Powyższe zdanie jest:", "answers": ["fałszywe", "prawdziwe"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: prawdziwe."}, {"category": "Kulpa MD Wykład 08 - Ciągłość funkcji i granice", "type": "quiz wykładowy MD", "question": "Jeżeli funkcje f i g są ciągłe w punkcie x_0, to również funkcje f+g, f-g, f· g oraz (f)/(g), o ile g(x_0)≠ 0, są ciągłe w punkcie x_0. Powyższe zdanie jest:", "answers": ["prawdziwe", "fałszywe"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: prawdziwe."}, {"category": "Kulpa MD Wykład 08 - Ciągłość funkcji i granice", "type": "quiz wykładowy MD", "question": "lim_{x→ 0} 2^{x+3}-4=", "answers": ["4", "0", "8", "-4"], "correct": 0, "explain": "Podstawiamy x=0: 2^{0+3}-4 = 8-4 = 4."}, {"category": "Kulpa MD Wykład 08 - Ciągłość funkcji i granice", "type": "quiz wykładowy MD", "question": "Funkcja f(x)=sgnx ma punkt nieciągłości typu:", "answers": ["skok", "nieciągłość usuwalna", "asymptota pionowa", "brak punktu nieciągłości"], "correct": 0, "explain": "Funkcja signum ma w 0 nieciągłość skokową."}, {"category": "Kulpa MD Wykład 08 - Ciągłość funkcji i granice", "type": "quiz wykładowy MD", "question": "Definicja Heinego: funkcja f:D→R ma w punkcie x_0 granicę g, jeżeli:", "answers": ["istnieje jeden ciąg x_n∈D∖{x_0}, x_n→x_0, dla którego f(x_n)→g", "dla każdego ciągu x_n∈D∖{x_0}, bez warunku x_n→x_0, zachodzi f(x_n)→g", "dla każdego ciągu x_n∈D∖{x_0}, x_n→x_0, zachodzi f(x_n)=g dla każdego n", "dla każdego ciągu x_n∈D∖{x_0}, x_n→x_0, zachodzi f(x_n)→g"], "correct": 3, "explain": "W definicji Heinego trzeba wymagać, żeby x_n dążył do x_0. Wtedy dla każdego takiego ciągu wartości f(x_n) muszą dążyć do g."}, {"category": "Kulpa MD Wykład 08 - Ciągłość funkcji i granice", "type": "quiz wykładowy MD", "question": "Jeżeli funkcja f jest ciągła w przedziale [a,b] oraz f(a)≠ f(b) i c leży pomiędzy f(a) i f(b), to istnieje taki punkt pośredni ξ∈(a,b), że f(ξ)=c. Powyższy tekst to:", "answers": ["własność Riemanna funkcji ciągłej", "własność Laplace’a funkcji ciągłej", "własność Darboux funkcji ciągłej", "własność Lebesgue’a funkcji ciągłej", "własność Weierstrassa funkcji ciągłej"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: własność Darboux funkcji ciągłej."}, {"category": "Kulpa MD Wykład 08 - Ciągłość funkcji i granice", "type": "quiz wykładowy MD", "question": "lim_{x→ 3} 2x^3-4=", "answers": ["50", "54", "4", "0"], "correct": 0, "explain": "Podstawiamy x=3: 2·3^3-4 = 2·27-4 = 50."}, {"category": "Kulpa MD Wykład 08 - Ciągłość funkcji i granice", "type": "quiz wykładowy MD", "question": "Funkcja f(x)=[x], x∈ℝ:", "answers": ["jest ciągła", "ma nieskończenie wiele punktów nieciągłości", "ma dwa punkty nieciągłości", "ma jeden punkt nieciągłości", "nie ma punktów nieciągłości"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: ma nieskończenie wiele punktów nieciągłości."}, {"category": "Kulpa MD Wykład 08 - Ciągłość funkcji i granice", "type": "quiz wykładowy MD", "question": "Funkcja f:(a,b)→ℝ jest ciągła, jeżeli jest ciągła w każdym punkcie przedziału (a,b).", "answers": ["Prawda", "Fałsz"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Prawda."}, {"category": "Kulpa MD Wykład 08 - Ciągłość funkcji i granice", "type": "quiz wykładowy MD", "question": "Załóżmy, że funkcja f:[a,b]→ℝ jest ciągła. Który z poniższych warunków gwarantuje, że równanie f(x)=0 ma rozwiązanie w przedziale [a,b]?", "answers": ["f(a)+f(b)>0", "f(a)+f(b)<0", "f(a)f(b)<0", "f(a)-f(b)>0", "f(a)-f(b)<0", "f(a)f(b)>0"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f(a)f(b)<0."}, {"category": "Kulpa MD Wykład 09 - Różniczkowalność funkcji", "type": "quiz wykładowy MD", "question": "Funkcja f jest różniczkowalna w punkcie x_0, jeżeli:", "answers": ["wartość funkcji f w punkcie x_0 jest różna od x_0", "istnieje granica funkcji f w punkcie x_0", "istnieje pochodna funkcji f w punkcie x_0", "funkcja f ma różnicę w punkcie x_0"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: istnieje pochodna funkcji f w punkcie x_0."}, {"category": "Kulpa MD Wykład 09 - Różniczkowalność funkcji", "type": "quiz wykładowy MD", "question": "Każda funkcja ciągła jest różniczkowalna.", "answers": ["Prawda", "Fałsz"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Fałsz."}, {"category": "Kulpa MD Wykład 09 - Różniczkowalność funkcji", "type": "quiz wykładowy MD", "question": "Jeżeli funkcja f jest różniczkowalna, to jest też:", "answers": ["ciągła", "monotoniczna", "ograniczona", "stała"], "correct": 0, "explain": "Różniczkowalność w punkcie implikuje ciągłość w tym punkcie."}, {"category": "Kulpa MD Wykład 09 - Różniczkowalność funkcji", "type": "quiz wykładowy MD", "question": "Pochodna funkcji f(x)=x^5 w punkcie x_0=2 wynosi:", "answers": ["80", "10", "32", "160"], "correct": 0, "explain": "f'(x)=5x^4, więc f'(2)=5·2^4=5·16=80."}, {"category": "Kulpa MD Wykład 09 - Różniczkowalność funkcji", "type": "quiz wykładowy MD", "question": "Jeżeli funkcje f,g:(a,b)→ℝ są różniczkowalne oraz h(x)=f(x)g(x), to:", "answers": ["h'(x)=f'(x)g(x)+f(x)g'(x)", "h'(x)=f'(x)g(x)-f(x)g'(x)", "h'(x)=f(x)/g(x)", "h'(x)=f'(x)g'(x)"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: h'(x)=f'(x)g(x)+f(x)g'(x)."}, {"category": "Kulpa MD Wykład 09 - Różniczkowalność funkcji", "type": "quiz wykładowy MD", "question": "Pochodna funkcji f:(a,b)→ℝ w punkcie x_0 to liczba f'(x_0) określona wzorem:", "answers": ["f'(x_0)=lim_{x→ x_0}(f(x)+f(x_0))/(x+x_0)", "f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0)", "f'(x_0)=lim_{x→ x_0}f(x)/x", "f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))", "f'(x_0)=lim_{x→ x_0}f(x)"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f'(x_0)=lim_{x→ x_0}(f(x)-f(x_0))/(x-x_0)."}, {"category": "Kulpa MD Wykład 09 - Różniczkowalność funkcji", "type": "quiz wykładowy MD", "question": "Pochodna funkcji f w punkcie x_0 jest równa:", "answers": ["prędkości punktu x_0 na wykresie", "współczynnikowi kierunkowemu stycznej", "kątowi nachylenia stycznej do osi OX", "długości stycznej"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: współczynnikowi kierunkowemu stycznej."}, {"category": "Kulpa MD Wykład 09 - Różniczkowalność funkcji", "type": "quiz wykładowy MD", "question": "Jeżeli pochodna funkcji elementarnej istnieje, to jest ona funkcją elementarną.", "answers": ["Prawda", "Fałsz"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Prawda."}, {"category": "Kulpa MD Wykład 09 - Różniczkowalność funkcji", "type": "quiz wykładowy MD", "question": "Pochodna funkcji f(x)=e^{x} to:", "answers": ["f'(x)=log x", "f'(x)=ln x", "f'(x)=e^{x}", "f'(x)=xe^{x-1}", "f'(x)=x^{e}"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f'(x)=e^{x}."}, {"category": "Kulpa MD Wykład 09 - Różniczkowalność funkcji", "type": "quiz wykładowy MD", "question": "Naukowcy, którzy stworzyli rachunek różniczkowy, to:", "answers": ["Gottfried Wilhelm Leibniz i Izaak Newton", "Gottfried Wilhelm Leibniz", "Izaak Newton", "Joseph Louis Lagrange i Blaise Pascal"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Gottfried Wilhelm Leibniz i Izaak Newton."}, {"category": "Kulpa MD Wykład 10 - Monotoniczność i ekstrema lokalne funkcji", "type": "quiz wykładowy MD", "question": "Jeżeli f'(x) < 0 dla każdego x ∈ (a,b), to funkcja f(x) w przedziale (a,b) jest:", "answers": ["wklęsła", "wypukła", "malejąca", "rosnąca"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: malejąca."}, {"category": "Kulpa MD Wykład 10 - Monotoniczność i ekstrema lokalne funkcji", "type": "quiz wykładowy MD", "question": "Funkcja f(x) = 100 - 10x - x^5, x ∈ ℝ, jest:", "answers": ["wklęsła", "rosnąca", "malejąca", "wypukła"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: malejąca."}, {"category": "Kulpa MD Wykład 10 - Monotoniczność i ekstrema lokalne funkcji", "type": "quiz wykładowy MD", "question": "Jeżeli funkcja f:[a,b] → ℝ jest ciągła na przedziale [a,b] i różniczkowalna na przedziale (a,b) oraz f(a)=f(b), to istnieje liczba c ∈ (a,b) taka, że f'(c)=0. Powyższy fakt to:", "answers": ["Twierdzenie Laplace'a", "Twierdzenie Newtona-Leibniza", "Twierdzenie Rolle'a", "Twierdzenie Lagrange'a"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Twierdzenie Rolle'a."}, {"category": "Kulpa MD Wykład 10 - Monotoniczność i ekstrema lokalne funkcji", "type": "quiz wykładowy MD", "question": "Funkcja f(x)=x^3 w punkcie x_0=0:", "answers": ["nie ma ekstremum lokalnego", "ma minimum lokalne", "ma maksimum lokalne"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: nie ma ekstremum lokalnego."}, {"category": "Kulpa MD Wykład 10 - Monotoniczność i ekstrema lokalne funkcji", "type": "quiz wykładowy MD", "question": "Jeżeli funkcja f jest różniczkowalna w punkcie x_0 i ma w tym punkcie ekstremum lokalne, to:", "answers": ["f(x_0)=0", "f'(x_0)>0", "f'(x_0)=0", "f'(x_0)<0"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f'(x_0)=0."}, {"category": "Kulpa MD Wykład 10 - Monotoniczność i ekstrema lokalne funkcji", "type": "quiz wykładowy MD", "question": "Druga pochodna funkcji f(x)=4x^3 wynosi:", "answers": ["24x", "12x^2", "84x^3", "60x^4"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 24x."}, {"category": "Kulpa MD Wykład 10 - Monotoniczność i ekstrema lokalne funkcji", "type": "quiz wykładowy MD", "question": "Jeżeli f'(x_0)=0, to funkcja f ma w punkcie x_0 ekstremum lokalne. Powyższe twierdzenie jest:", "answers": ["fałszywe", "prawdziwe"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: fałszywe."}, {"category": "Kulpa MD Wykład 10 - Monotoniczność i ekstrema lokalne funkcji", "type": "quiz wykładowy MD", "question": "Jeżeli funkcja f:[a,b] → ℝ jest ciągła na przedziale [a,b] i różniczkowalna na przedziale (a,b), to istnieje liczba c ∈ (a,b) taka, że: f'(c)=(f(b)-f(a))/(b-a). Powyższy fakt to:", "answers": ["Twierdzenie Newtona-Leibniza", "Twierdzenie Rolle'a", "Twierdzenie Lagrange'a", "Twierdzenie Laplace'a"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Twierdzenie Lagrange'a."}, {"category": "Kulpa MD Wykład 10 - Monotoniczność i ekstrema lokalne funkcji", "type": "quiz wykładowy MD", "question": "Jeżeli f''(x) > 0 dla każdego x ∈ (a,b), to funkcja f(x) w przedziale (a,b) jest:", "answers": ["rosnąca", "wklęsła", "malejąca", "wypukła"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: wypukła."}, {"category": "Kulpa MD Wykład 10 - Monotoniczność i ekstrema lokalne funkcji", "type": "quiz wykładowy MD", "question": "Funkcja f(x)=x^{10}+x^2-6x-12, x ∈ ℝ, jest:", "answers": ["malejąca", "wklęsła", "rosnąca", "wypukła"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: wypukła."}, {"category": "Kulpa MD Wykład 11 - Całka nieoznaczona i całka oznaczona", "type": "quiz wykładowy MD", "question": "Funkcją pierwotną dla funkcji f(x)=e^{x} jest:", "answers": ["ln x", "e^{x+1}/(x+1)", "xe^{x^2-1}", "e^{x}-1"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: e^{x}-1."}, {"category": "Kulpa MD Wykład 11 - Całka nieoznaczona i całka oznaczona", "type": "quiz wykładowy MD", "question": "Całka nieoznaczona z funkcji f:(a,b)→ℝ to:", "answers": ["ciąg normalny podziałów odcinka (a,b)", "granica ciągu sum całkowych Riemanna", "dowolna funkcja pierwotna dla f", "zbiór wszystkich funkcji pierwotnych dla f"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: zbiór wszystkich funkcji pierwotnych dla f."}, {"category": "Kulpa MD Wykład 11 - Całka nieoznaczona i całka oznaczona", "type": "quiz wykładowy MD", "question": "Interpretacją geometryczną całki oznaczonej z nieujemnej funkcji f jest:", "answers": ["długość wykresu funkcji f", "pole powierzchni powstałej z obrotu wykresu funkcji f względem osi OX", "pole figury ograniczonej wykresem funkcji f i osią OX", "wartość średnia funkcji f w przedziale"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: pole figury ograniczonej wykresem funkcji f i osią OX."}, {"category": "Kulpa MD Wykład 11 - Całka nieoznaczona i całka oznaczona", "type": "quiz wykładowy MD", "question": "Całka oznaczona to inaczej:", "answers": ["całka Riemanna", "całka Newtona-Leibniza", "całka Newtona", "całka Leibniza"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: całka Riemanna."}, {"category": "Kulpa MD Wykład 11 - Całka nieoznaczona i całka oznaczona", "type": "quiz wykładowy MD", "question": "Niech f:[a,b]→ℝ będzie funkcją ciągłą na [a,b] i niech φ(x) będzie dowolnie ustaloną całką nieoznaczoną z funkcji f. Wówczas ∫_a^{b} f(x) dx=φ(b)-φ(a). Powyższy tekst to:", "answers": ["twierdzenie o wartości średniej dla całek", "wzór na całkowanie przez podstawienie", "wzór na całkowanie przez części", "twierdzenie Newtona-Leibniza"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: twierdzenie Newtona-Leibniza."}, {"category": "Kulpa MD Wykład 11 - Całka nieoznaczona i całka oznaczona", "type": "quiz wykładowy MD", "question": "∫ sin x dx=", "answers": ["cos x+C", "sin x+C", "-sin x+C", "-cos x+C"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: -cos x+C."}, {"category": "Kulpa MD Wykład 11 - Całka nieoznaczona i całka oznaczona", "type": "quiz wykładowy MD", "question": "Czy każda funkcja ciągła posiada całkę nieoznaczoną?", "answers": ["tak", "nie"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: tak."}, {"category": "Kulpa MD Wykład 11 - Całka nieoznaczona i całka oznaczona", "type": "quiz wykładowy MD", "question": "Załóżmy, że funkcje F,f:(a,b)→ℝ spełniają warunek F'(x)=f(x) dla wszystkich x∈(a,b). Wówczas:", "answers": ["F(x) jest funkcją pierwotną dla f(x)", "f(x) jest funkcją pierwotną dla F(x)", "F(x) jest funkcją pochodną dla f(x)", "F(x) jest funkcją odwrotną dla f(x)"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: F(x) jest funkcją pierwotną dla f(x)."}, {"category": "Kulpa MD Wykład 11 - Całka nieoznaczona i całka oznaczona", "type": "quiz wykładowy MD", "question": "Pojęcie całki oznaczonej zostało po raz pierwszy zdefiniowane pod koniec XVII wieku przez:", "answers": ["Bernharda Riemanna", "niezależnie przez Isaaka Newtona i Gottfrieda Wilhelma Leibniza", "Gottfrieda Wilhelma Leibniza", "Isaaka Newtona"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: niezależnie przez Isaaka Newtona i Gottfrieda Wilhelma Leibniza."}, {"category": "Kulpa MD Wykład 11 - Całka nieoznaczona i całka oznaczona", "type": "quiz wykładowy MD", "question": "∫_0^1 x^{99} dx=", "answers": ["1,00", "0,01", "0,00", "0,99"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 0,01."}, {"category": "Kulpa MD Wykład 12 - Pochodne cząstkowe. Ekstrema lokalne funkcji wielu zmiennych", "type": "quiz wykładowy MD", "question": "Jeżeli pochodne mieszane funkcji f(x,y) są funkcjami ciągłymi, to są sobie równe, czyli: f''_{xy}=f''_{yx}. Powyższy tekst to:", "answers": ["Twierdzenie Newtona-Leibniza", "Twierdzenie Newtona", "Twierdzenie Schwarza", "Twierdzenie Sylvestera"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: Twierdzenie Schwarza."}, {"category": "Kulpa MD Wykład 12 - Pochodne cząstkowe. Ekstrema lokalne funkcji wielu zmiennych", "type": "quiz wykładowy MD", "question": "Przy obliczaniu pochodnych cząstkowych funkcji f(x,y) stosuje się takie same reguły jak przy obliczaniu pochodnej jednej zmiennej z tym, że jeśli obliczamy pochodną cząstkową funkcji f względem zmiennej y, to:", "answers": ["obie zmienne x,y traktujemy jak stałe", "zmienną x traktujemy jak zmienną, a zmienną y jak stałą", "zmienną y traktujemy jak zmienną, a zmienną x jak stałą"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: zmienną y traktujemy jak zmienną, a zmienną x jak stałą."}, {"category": "Kulpa MD Wykład 12 - Pochodne cząstkowe. Ekstrema lokalne funkcji wielu zmiennych", "type": "quiz wykładowy MD", "question": "Pochodna cząstkowa funkcji f(x,y,z)=x^7y^3z^{-2} względem zmiennej x wynosi:", "answers": ["-2x^7y^3z^{-1}", "3x^7y^2z^{-2}", "-2x^7y^3z^{-3}", "7x^6y^3z^{-2}"], "correct": 3, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 7x^6y^3z^{-2}."}, {"category": "Kulpa MD Wykład 12 - Pochodne cząstkowe. Ekstrema lokalne funkcji wielu zmiennych", "type": "quiz wykładowy MD", "question": "Funkcja f(x,y)=x^4+y^2 ma w punkcie A(0,0):", "answers": ["punkt przegięcia", "minimum lokalne", "maksimum globalne", "maksimum lokalne"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: minimum lokalne."}, {"category": "Kulpa MD Wykład 12 - Pochodne cząstkowe. Ekstrema lokalne funkcji wielu zmiennych", "type": "quiz wykładowy MD", "question": "Warunek konieczny istnienia ekstremum lokalnego funkcji f(x,y) to:", "answers": ["f'_x=0 i f'_y=0", "f'_x=0 lub f'_y=0", "f'_x=0", "f'_x-f'_y=0", "f'_y=0"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f'_x=0 i f'_y=0."}, {"category": "Kulpa MD Wykład 12 - Pochodne cząstkowe. Ekstrema lokalne funkcji wielu zmiennych", "type": "quiz wykładowy MD", "question": "Warunek wystarczający istnienia ekstremum lokalnego funkcji f(x,y) w punkcie P to f'_x(P)=0, f'_y(P)=0 oraz:", "answers": ["f''_{xx}(P)f''_{yy}(P)<0", "f''_{xx}(P)f''_{yy}(P)>0", "f''_{xx}(P)f''_{yy}(P)-(f''_{xy}(P))^2>0", "f''_{xx}(P)f''_{yy}(P)-(f''_{xy}(P))^2<0"], "correct": 2, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f''_{xx}(P)f''_{yy}(P)-(f''_{xy}(P))^2>0."}, {"category": "Kulpa MD Wykład 12 - Pochodne cząstkowe. Ekstrema lokalne funkcji wielu zmiennych", "type": "quiz wykładowy MD", "question": "Punkt stacjonarny funkcji f(x,y) to punkt P, który spełnia warunek:", "answers": ["f'_x(P)=0 lub f'_y(P)=0", "f'_x(P)>0 i f'_y(P)>0", "f'_x(P)<0 i f'_y(P)<0", "f'_x(P)· f'_y(P)<0", "f'_x(P)=0 i f'_y(P)=0"], "correct": 4, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: f'_x(P)=0 i f'_y(P)=0."}, {"category": "Kulpa MD Wykład 12 - Pochodne cząstkowe. Ekstrema lokalne funkcji wielu zmiennych", "type": "quiz wykładowy MD", "question": "Pochodna cząstkowa funkcji f(x,y,z)=x^7y^3z^{-2} względem zmiennej y wynosi:", "answers": ["3x^7y^2z^{-2}", "-2x^7y^3z^{-1}", "-2x^7y^3z^{-3}", "7x^6y^3z^{-2}"], "correct": 0, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: 3x^7y^2z^{-2}."}, {"category": "Kulpa MD Wykład 12 - Pochodne cząstkowe. Ekstrema lokalne funkcji wielu zmiennych", "type": "quiz wykładowy MD", "question": "Pochodna cząstkowa funkcji f(x,y,z)=x^7y^3z^{-2} względem zmiennej z wynosi:", "answers": ["7x^6y^3z^{-2}", "-2x^7y^3z^{-3}", "3x^7y^2z^{-2}", "-2x^7y^3z^{-1}"], "correct": 1, "explain": "Poprawna odpowiedź z pliku MD T. Kulpy: -2x^7y^3z^{-3}."}, {"category": "Kulpa MD Wykład 12 - Pochodne cząstkowe. Ekstrema lokalne funkcji wielu zmiennych", "type": "quiz wykładowy MD", "question": "Funkcja f(P) ma w punkcie P_0 jakie ekstremum, jeżeli istnieje sąsiedztwo S punktu P_0 takie, że dla każdego P∈S, P≠P_0 zachodzi f(P)>f(P_0)?", "answers": ["minimum lokalne", "maksimum lokalne", "punkt siodłowy", "brak ekstremum"], "correct": 0, "explain": "Jeśli w otoczeniu punktu P_0 wszystkie inne wartości funkcji są większe od f(P_0), to w P_0 jest ścisłe minimum lokalne."}];
+let quiz=[], index=0, score=0, answered=false, answersLog=[];
+const el=id=>document.getElementById(id);
+const htmlEscape=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+function fmt(input){
+  let s=htmlEscape(input);
+
+  // Granice przy całkach i sumach: ∫_0^1, ∫_{0}^{1}, ∑_{k=0}^{n}
+  s=s.replace(/∫_\{([^}]+)\}\^\{([^}]+)\}/g,'<span class="math integral">∫<sub>$1</sub><sup>$2</sup></span>');
+  s=s.replace(/∫_([A-Za-z0-9+\-=]+)\^([A-Za-z0-9+\-=]+)/g,'<span class="math integral">∫<sub>$1</sub><sup>$2</sup></span>');
+  s=s.replace(/∑_\{([^}]+)\}\^\{([^}]+)\}/g,'<span class="math sum">∑<sub>$1</sub><sup>$2</sup></span>');
+  s=s.replace(/∑_([A-Za-z0-9+\-=]+)\^([A-Za-z0-9+\-=]+)/g,'<span class="math sum">∑<sub>$1</sub><sup>$2</sup></span>');
+
+  // Granice: lim_{x→0}, lim_x→0
+  s=s.replace(/lim_\{([^}]+)\}/g,'<span class="math">lim<sub>$1</sub></span>');
+  s=s.replace(/lim_([A-Za-z0-9_→+\-=]+)/g,'<span class="math">lim<sub>$1</sub></span>');
+
+  // Pochodne z indeksami: f'_x, f''_{xy}
+  s=s.replace(/f''_\{([^}]+)\}/g,'<span class="math">f&apos;&apos;<sub>$1</sub></span>');
+  s=s.replace(/f''_([A-Za-z0-9]+)/g,'<span class="math">f&apos;&apos;<sub>$1</sub></span>');
+  s=s.replace(/f'_\{([^}]+)\}/g,'<span class="math">f&apos;<sub>$1</sub></span>');
+  s=s.replace(/f'_([A-Za-z0-9]+)/g,'<span class="math">f&apos;<sub>$1</sub></span>');
+
+  // Potęgi.
+  // Ważne: dla 3x^2 potęgę dostaje tylko x, nie całe 3x.
+  // Obsługuje: x^2, y^3, z^{-2}, 10^x, 2^{x+3}, (a+b)^n, (-2)^4.
+  s=s.replace(/(\([^)]+\)|\b\d+(?:[,.]\d+)?|[A-Za-z])\^\{([^}]+)\}/g,'<span class="math">$1<sup>$2</sup></span>');
+  s=s.replace(/(\([^)]+\)|\b\d+(?:[,.]\d+)?|[A-Za-z])\^(-?\d+|[A-Za-z])/g,'<span class="math">$1<sup>$2</sup></span>');
+
+  // Indeksy: a_n, x_0, a_{n+1}
+  s=s.replace(/([A-Za-z])_\{([^}]+)\}/g,'<span class="math">$1<sub>$2</sub></span>');
+  s=s.replace(/([A-Za-z])_([A-Za-z0-9]+)/g,'<span class="math">$1<sub>$2</sub></span>');
+
+  // Prosty zapis symbolu Newtona
+  s=s.replace(/\bC\(([^,]+),([^\)]+)\)/g,'<span class="math">C($1,$2)</span>');
+
+  return s;
+}
+
+function shuffle(arr){return [...arr].sort(()=>Math.random()-0.5)}
+function unique(arr){return [...new Set(arr)]}
+function init(){el('totalQ').textContent=QUESTIONS.length; const cats=unique(QUESTIONS.map(q=>q.category)).sort(); cats.forEach(c=>{let opt=document.createElement('option'); opt.value=c; opt.textContent=c; el('categorySelect').appendChild(opt)}); renderCats(); bind();}
+function bind(){
+  el('startBtn').onclick=()=>start(false);
+  el('studyBtn').onclick=()=>start(true);
+  if(el('studyUnansweredBtn')) el('studyUnansweredBtn').onclick=()=>startStudyUnanswered();
+  if(el('clearProgressBtn')) el('clearProgressBtn').onclick=clearAllProgress;
+  el('resetBtn').onclick=reset;
+  updateProgressMemory();
+}
+function filtered(){let c=el('categorySelect').value, t=el('typeSelect').value; return QUESTIONS.filter(q=>(c==='all'||q.category===c)&&(t==='all'||q.type===t));}
+function renderCats(){const counts={}; QUESTIONS.forEach(q=>counts[q.category]=(counts[q.category]||0)+1); el('catList').innerHTML=Object.entries(counts).sort().map(([c,n])=>`<div class="cat"><span>${c}</span><b>${n}</b></div>`).join('')}
+function start(study){let pool=filtered(); if(pool.length===0){alert('Brak pytań dla tego filtra.'); return;} quiz=study?shuffle(pool):shuffle(pool).slice(0,Math.min(10,pool.length)); index=0; score=0; answersLog=[]; answered=false; el('resultBox').className='result'; showQuestion();}
+function reset(){quiz=[]; index=0; score=0; answered=false; answersLog=[]; el('doneQ').textContent='0'; el('quizArea').innerHTML='<h2>Start</h2><p class="small">Kliknij „Losuj quiz 10 pytań” albo wybierz jeden z trybów nauki. Szybki quiz losuje 10 pytań tak jak wcześniej.</p>'; el('resultBox').className='result';}
+function showQuestion(){answered=false; el('doneQ').textContent=answersLog.length; let q=quiz[index]; let pct=(index/quiz.length)*100; el('quizArea').innerHTML=`<div class="modebox"><span class="pill active">Pytanie ${index+1}/${quiz.length}</span><span class="pill">${q.category}</span><span class="pill">${q.type}</span><span class="pill">${hasAnsweredQuestion(q)?'już odpowiadane':'nowe'}</span></div><div class="progress"><div class="bar" style="width:${pct}%"></div></div><div class="qcard"><div class="badge">${q.type.toUpperCase()} · ${q.category}</div><div class="qtext">${fmt(q.question)}</div><div class="answers">${q.answers.map((a,i)=>`<button class="answer" data-i="${i}"><b>${String.fromCharCode(65+i)}.</b> ${fmt(a)}</button>`).join('')}</div><div id="explain" class="explain"></div><div class="navrow"><button class="btn secondary" onclick="prevQ()" ${index===0?'disabled':''}>Wstecz</button><button class="btn" id="nextBtn" onclick="nextQ()" disabled>Dalej</button></div></div>`; document.querySelectorAll('.answer').forEach(btn=>btn.onclick=()=>choose(Number(btn.dataset.i)));}
+
+const WRONG_STORAGE_KEY='woodica_math_quiz_wrong_v4_md';
+const WRONG_STATS_KEY='woodica_math_quiz_stats_v4_md';
+
+function wrongLoad(key,fallback){
+  try{return JSON.parse(localStorage.getItem(key))||fallback;}catch(e){return fallback;}
+}
+
+function startStudyUnanswered(){
+  let pool=unansweredPool();
+  if(pool.length===0){
+    alert('Nie masz już nieodpowiedzianych pytań dla tego filtra. Możesz zmienić dział albo wyczyścić postęp.');
+    return;
+  }
+  quiz=shuffle(pool);
+  index=0;
+  score=0;
+  answersLog=[];
+  answered=false;
+  el('resultBox').className='result';
+  showQuestion();
+}
+
+function wrongSave(key,value){
+  localStorage.setItem(key,JSON.stringify(value));
+}
+function wrongQuestionId(q){
+  const idx=QUESTIONS.indexOf(q);
+  const raw=[q.category||'',q.type||'',q.question||'',(q.answers||[]).join('|')].join('::');
+  let h=0;
+  for(let i=0;i<raw.length;i++) h=((h<<5)-h+raw.charCodeAt(i))|0;
+  return 'q_'+idx+'_'+Math.abs(h);
+}
+
+function getProgressStats(){
+  return wrongLoad(WRONG_STATS_KEY,{});
+}
+function hasAnsweredQuestion(q){
+  const s=getProgressStats()[wrongQuestionId(q)];
+  return !!(s && ((s.totalCorrect||0)>0 || (s.totalWrong||0)>0));
+}
+function unansweredPool(){
+  return filtered().filter(q=>!hasAnsweredQuestion(q));
+}
+function updateProgressMemory(){
+  const stats=getProgressStats();
+  let answered=0, correct=0, wrong=0;
+  QUESTIONS.forEach(q=>{
+    const s=stats[wrongQuestionId(q)];
+    if(s && ((s.totalCorrect||0)>0 || (s.totalWrong||0)>0)){
+      answered++;
+      if((s.totalCorrect||0)>0) correct++;
+      if((s.totalWrong||0)>0) wrong++;
+    }
+  });
+  const total=QUESTIONS.length;
+  const unanswered=total-answered;
+  const elSummary=document.getElementById('progressSummary');
+  if(elSummary){
+    elSummary.innerHTML=`Odpowiedziane: <b>${answered}/${total}</b> · poprawne kiedyś: <b>${correct}</b> · błędne kiedyś: <b>${wrong}</b> · zostało: <b>${unanswered}</b>`;
+  }
+}
+function clearAllProgress(){
+  if(confirm('Wyczyścić cały postęp, czyli poprawne, błędne i listę powtórek?')){
+    localStorage.removeItem(WRONG_STORAGE_KEY);
+    localStorage.removeItem(WRONG_STATS_KEY);
+    if(typeof updateWrongPanel==='function') updateWrongPanel();
+    updateProgressMemory();
+    alert('Postęp wyczyszczony.');
+  }
+}
+
+function saveWrongQuestion(q,chosenIndex){
+  const id=wrongQuestionId(q);
+  const map=wrongLoad(WRONG_STORAGE_KEY,{});
+  const stats=wrongLoad(WRONG_STATS_KEY,{});
+  map[id]={
+    id:id,
+    question:q.question,
+    category:q.category||'Bez kategorii',
+    type:q.type||'',
+    correct:q.correct,
+    answers:q.answers||[],
+    explain:q.explain||'',
+    lastWrong:new Date().toISOString(),
+    wrongCount:(map[id]?.wrongCount||0)+1,
+    lastChosen:chosenIndex
+  };
+  stats[id]=stats[id]||{correctStreak:0,totalWrong:0,totalCorrect:0};
+  stats[id].totalWrong++;
+  stats[id].correctStreak=0;
+  stats[id].lastAnswer='wrong';
+  stats[id].lastCorrect=false;
+  stats[id].lastChosen=chosenIndex;
+  stats[id].lastAnsweredAt=new Date().toISOString();
+  wrongSave(WRONG_STORAGE_KEY,map);
+  wrongSave(WRONG_STATS_KEY,stats);
+  if(typeof updateWrongPanel==='function') updateWrongPanel();
+  if(typeof updateProgressMemory==='function') updateProgressMemory();
+}
+function saveCorrectQuestion(q){
+  const id=wrongQuestionId(q);
+  const map=wrongLoad(WRONG_STORAGE_KEY,{});
+  const stats=wrongLoad(WRONG_STATS_KEY,{correctStreak:0,totalWrong:0,totalCorrect:0});
+  stats[id]=stats[id]||{correctStreak:0,totalWrong:0,totalCorrect:0};
+  stats[id].totalCorrect++;
+  stats[id].correctStreak++;
+  stats[id].lastAnswer='correct';
+  stats[id].lastCorrect=true;
+  stats[id].lastChosen=q.correct;
+  stats[id].lastAnsweredAt=new Date().toISOString();
+  if(map[id] && stats[id].correctStreak>=3){
+    delete map[id];
+    wrongSave(WRONG_STORAGE_KEY,map);
+  }
+  wrongSave(WRONG_STATS_KEY,stats);
+  if(typeof updateWrongPanel==='function') updateWrongPanel();
+  if(typeof updateProgressMemory==='function') updateProgressMemory();
+}
+
+function choose(i){if(answered)return; answered=true; let q=quiz[index]; let ok=i===q.correct; if(ok){ score++; saveCorrectQuestion(q); } else { saveWrongQuestion(q,i); } answersLog.push({q,index,chosen:i,ok}); document.querySelectorAll('.answer').forEach((b,bi)=>{ if(bi===q.correct)b.classList.add('correct'); if(bi===i && !ok)b.classList.add('wrong'); b.disabled=true; }); let ex=el('explain'); ex.className='explain '+(ok?'good':'bad'); ex.innerHTML=(ok?'<b>Dobrze.</b> ':'<b>Źle.</b> ') + fmt(q.explain) + (!ok?`<br><br><b>Poprawna odpowiedź:</b> ${String.fromCharCode(65+q.correct)}. ${fmt(q.answers[q.correct])}`:''); el('nextBtn').disabled=false; el('doneQ').textContent=answersLog.length;}
+function nextQ(){ if(!answered)return; if(index<quiz.length-1){index++; showQuestion();} else finish();}
+function prevQ(){ if(index>0){index--; showQuestion();}}
+function finish(){let pct=Math.round(score/quiz.length*100); let msg=pct>=80?'Bardzo dobrze.':pct>=60?'Nieźle, ale powtórz błędy.':'Trzeba jeszcze powtórzyć teorię i wzory.'; el('quizArea').innerHTML='<h2>Koniec quizu</h2><p class="small">Poniżej masz wynik i podsumowanie odpowiedzi.</p>'; el('resultBox').className='result show'; el('resultBox').innerHTML=`<h2>Wynik</h2><div class="scorebig">${score}/${quiz.length} (${pct}%)</div><p>${msg}</p><button class="btn green" onclick="start(false)">Losuj kolejny quiz 10 pytań</button><button class="btn secondary" onclick="start(true)">Nauka - cała baza</button><button class="btn secondary" onclick="startStudyUnanswered()">Nauka - nieodpowiedziane</button><div class="review">${answersLog.map((r,n)=>`<div class="reviewItem ${r.ok?'ok':'no'}"><b>${n+1}. ${fmt(r.q.question)}</b><br><span class="small">Twoja odpowiedź: ${String.fromCharCode(65+r.chosen)}. ${fmt(r.q.answers[r.chosen])}<br>Poprawna: ${String.fromCharCode(65+r.q.correct)}. ${fmt(r.q.answers[r.q.correct])}<br>${fmt(r.q.explain)}</span></div>`).join('')}</div>`;}
+init();
+</script>
+
+
+<script>
+function wrongRenderMath(text){
+  const esc=String(text).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  return esc
+    .replace(/\^(\{([^}]+)\}|([A-Za-z0-9+\-]+))/g,'<sup>$2$3</sup>')
+    .replace(/_(\{([^}]+)\}|([A-Za-z0-9+\-]+))/g,'<sub>$2$3</sub>')
+    .replace(/∫<sub>([^<]+)<\/sub><sup>([^<]+)<\/sup>/g,'∫<sub>$1</sub><sup>$2</sup>');
+}
+function getWrongMapV3(){
+  try{return JSON.parse(localStorage.getItem('woodica_math_quiz_wrong_v4_md'))||{};}catch(e){return {};}
+}
+function getWrongStatsV3(){
+  try{return JSON.parse(localStorage.getItem('woodica_math_quiz_stats_v4_md'))||{};}catch(e){return {};}
+}
+function saveWrongMapV3(map){
+  localStorage.setItem('woodica_math_quiz_wrong_v4_md',JSON.stringify(map));
+}
+function saveWrongStatsV3(stats){
+  localStorage.setItem('woodica_math_quiz_stats_v4_md',JSON.stringify(stats));
+}
+function getWrongQuestionItems(){
+  const map=getWrongMapV3();
+  const byId=new Map(QUESTIONS.map(q=>[wrongQuestionId(q),q]));
+  return Object.keys(map).map(id=>byId.get(id)||map[id]).filter(Boolean);
+}
+function shuffleWrong(arr){
+  const a=arr.slice();
+  for(let i=a.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]];
+  }
+  return a;
+}
+function updateWrongPanel(){
+  const map=getWrongMapV3();
+  const count=Object.keys(map).length;
+  const badge=document.getElementById('wrongCountBadge');
+  const list=document.getElementById('wrongListPreview');
+  if(badge) badge.textContent=count;
+  if(!list) return;
+  const items=Object.values(map).sort((a,b)=>(b.wrongCount||0)-(a.wrongCount||0)).slice(0,12);
+  if(!items.length){
+    list.innerHTML='<li>Brak zapisanych błędów. Jak klikniesz złą odpowiedź w zwykłym quizie, pytanie trafi tutaj automatycznie.</li>';
+    return;
+  }
+  list.innerHTML=items.map(item=>`<li><span>${wrongRenderMath(item.question||'')}</span><em>${item.category||''} • błędów: ${item.wrongCount||1}</em></li>`).join('');
+}
+function startWrongPractice(){
+  const area=document.getElementById('wrongPracticeArea');
+  if(!area) return;
+  const items=shuffleWrong(getWrongQuestionItems());
+  if(!items.length){
+    area.innerHTML='<div class="wrong-empty">Nie masz teraz zapisanych błędów. Zrób zwykły quiz i kliknij jakąś złą odpowiedź - wtedy pojawi się tutaj.</div>';
+    updateWrongPanel();
+    return;
+  }
+  let pos=0;
+  function render(){
+    if(pos>=items.length){
+      area.innerHTML='<div class="wrong-finished"><strong>Koniec rundy.</strong><br>Możesz kliknąć "Powtarzaj błędne" jeszcze raz. Pytanie znika z listy po 3 poprawnych odpowiedziach z rzędu.</div>';
+      updateWrongPanel();
+      return;
+    }
+    const q=items[pos];
+    const correct=Number(q.correct);
+    area.innerHTML=`
+      <div class="wrong-practice-card">
+        <div class="wrong-meta">Pytanie ${pos+1}/${items.length} • ${q.category||'Bez kategorii'}${q.type?' • '+q.type:''}</div>
+        <div class="wrong-question">${wrongRenderMath(q.question||'')}</div>
+        <div class="wrong-answers">
+          ${(q.answers||[]).map((a,i)=>`<button class="wrong-answer-btn" data-i="${i}"><b>${String.fromCharCode(65+i)}.</b> ${wrongRenderMath(a)}</button>`).join('')}
+        </div>
+        <div id="wrongFeedback" class="wrong-feedback" style="display:none"></div>
+        <button id="wrongNextBtn" class="wrong-next" style="display:none">${pos+1>=items.length?'Zakończ powtórkę':'Następne pytanie'}</button>
+      </div>
+    `;
+    area.querySelectorAll('.wrong-answer-btn').forEach(btn=>{
+      btn.onclick=()=>{
+        const chosen=Number(btn.dataset.i);
+        const buttons=area.querySelectorAll('.wrong-answer-btn');
+        buttons.forEach(b=>b.disabled=true);
+        const fb=document.getElementById('wrongFeedback');
+        if(chosen===correct){
+          btn.classList.add('good');
+          saveCorrectQuestion(q);
+          fb.className='wrong-feedback good';
+          fb.innerHTML='<strong>Dobrze.</strong> '+wrongRenderMath(q.explain||'')+'<br><small>Pytanie zniknie z listy po 3 poprawnych odpowiedziach z rzędu.</small>';
+        }else{
+          btn.classList.add('bad');
+          const good=area.querySelector(`.wrong-answer-btn[data-i="${correct}"]`);
+          if(good) good.classList.add('good');
+          saveWrongQuestion(q,chosen);
+          fb.className='wrong-feedback bad';
+          fb.innerHTML='<strong>Źle.</strong> Poprawna odpowiedź: <b>'+wrongRenderMath((q.answers||[])[correct]||'')+'</b><br>'+wrongRenderMath(q.explain||'');
+        }
+        fb.style.display='block';
+        document.getElementById('wrongNextBtn').style.display='inline-flex';
+      };
+    });
+    document.getElementById('wrongNextBtn').onclick=()=>{pos++; render();};
+  }
+  render();
+}
+function clearWrongPractice(){
+  if(confirm('Na pewno wyczyścić całą listę błędnych pytań?')){
+    localStorage.removeItem('woodica_math_quiz_wrong_v4_md');
+    localStorage.removeItem('woodica_math_quiz_stats_v4_md');
+    updateWrongPanel();
+    const area=document.getElementById('wrongPracticeArea');
+    if(area) area.innerHTML='<div class="wrong-empty">Lista błędów została wyczyszczona.</div>';
+  }
+}
+function injectWrongPanel(){
+  if(document.getElementById('wrongReviewBox')) return;
+  const style=document.createElement('style');
+  style.textContent=`
+    .wrong-review-box{margin:0 0 18px;border:1px solid rgba(148,163,184,.35);background:linear-gradient(135deg,#fff7ed,#eff6ff);border-radius:22px;padding:22px;box-shadow:0 14px 35px rgba(15,23,42,.08)}
+    .wrong-review-head{display:flex;gap:16px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+    .wrong-review-title{font-size:24px;font-weight:800;color:#0f172a;margin:0 0 6px}
+    .wrong-review-desc{color:#475569;margin:0;line-height:1.5}
+    .wrong-badge{display:inline-flex;align-items:center;gap:8px;background:#0f172a;color:white;border-radius:999px;padding:10px 14px;font-weight:800}
+    .wrong-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .wrong-actions button,.wrong-next{border:0;border-radius:14px;padding:12px 16px;font-weight:800;cursor:pointer;background:#2563eb;color:white;box-shadow:0 8px 16px rgba(37,99,235,.18)}
+    .wrong-actions button.secondary{background:#f1f5f9;color:#0f172a;box-shadow:none;border:1px solid #cbd5e1}
+    .wrong-list{margin:16px 0 0;padding:0;display:grid;gap:8px}
+    .wrong-list li{list-style:none;background:rgba(255,255,255,.75);border:1px solid rgba(148,163,184,.35);border-radius:14px;padding:10px 12px;color:#0f172a}
+    .wrong-list li span{display:block;font-weight:700}.wrong-list li em{display:block;font-style:normal;color:#64748b;font-size:13px;margin-top:4px}
+    .wrong-practice-area{margin-top:18px}.wrong-practice-card{background:white;border-radius:20px;border:1px solid #dbeafe;padding:20px;box-shadow:0 12px 28px rgba(15,23,42,.08)}
+    .wrong-meta{font-size:13px;font-weight:800;color:#2563eb;text-transform:uppercase;letter-spacing:.04em;margin-bottom:10px}
+    .wrong-question{font-size:22px;font-weight:850;color:#0f172a;line-height:1.35;margin-bottom:16px}
+    .wrong-answers{display:grid;gap:10px}.wrong-answer-btn{width:100%;text-align:left;border:1px solid #cbd5e1;background:#f8fafc;color:#0f172a;border-radius:14px;padding:13px 14px;font-size:16px;cursor:pointer}
+    .wrong-answer-btn:hover:not(:disabled){background:#eff6ff;border-color:#93c5fd}.wrong-answer-btn.good{background:#dcfce7;border-color:#22c55e}.wrong-answer-btn.bad{background:#fee2e2;border-color:#ef4444}
+    .wrong-feedback{margin-top:14px;border-radius:14px;padding:13px 14px;line-height:1.5}.wrong-feedback.good{background:#dcfce7;color:#14532d;border:1px solid #86efac}.wrong-feedback.bad{background:#fee2e2;color:#7f1d1d;border:1px solid #fecaca}
+    .wrong-next{margin-top:14px;display:inline-flex}.wrong-empty,.wrong-finished{background:white;border:1px dashed #94a3b8;border-radius:16px;padding:16px;color:#334155;line-height:1.5}
+  `;
+  document.head.appendChild(style);
+  const box=document.createElement('section');
+  box.id='wrongReviewBox';
+  box.className='wrong-review-box';
+  box.innerHTML=`
+    <div class="wrong-review-head">
+      <div>
+        <h2 class="wrong-review-title">Powtórka błędnych pytań</h2>
+        <p class="wrong-review-desc">Błędne odpowiedzi zapisują się automatycznie w pamięci przeglądarki. Możesz je powtarzać bez końca. Pytanie znika dopiero po 3 poprawnych odpowiedziach z rzędu.</p>
+      </div>
+      <div class="wrong-badge">Błędne pytania: <span id="wrongCountBadge">0</span></div>
+    </div>
+    <div class="wrong-actions">
+      <button id="startWrongPracticeBtn" type="button">Powtarzaj błędne</button>
+      <button id="clearWrongBtn" type="button" class="secondary">Wyczyść błędne</button>
+    </div>
+    <ul id="wrongListPreview" class="wrong-list"></ul>
+    <div id="wrongPracticeArea" class="wrong-practice-area"></div>
+  `;
+  const main=document.querySelector('main.main');
+  if(main) main.insertBefore(box, main.firstChild);
+  else document.body.appendChild(box);
+  document.getElementById('startWrongPracticeBtn').onclick=startWrongPractice;
+  document.getElementById('clearWrongBtn').onclick=clearWrongPractice;
+  updateWrongPanel();
+}
+if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',injectWrongPanel);
+else injectWrongPanel();
+</script>
+
+
+<script id="minimal-mobile-cleanup">
+(function(){
+  if(!document.querySelector('meta[name="viewport"]')){
+    const meta=document.createElement('meta');
+    meta.name='viewport';
+    meta.content='width=device-width, initial-scale=1, viewport-fit=cover';
+    document.head.appendChild(meta);
+  }
+
+  function cleanupMobileCategories(){
+    if(window.innerWidth > 760) return;
+
+    const textHints=['kategoria','category','kulpa wykład','wykład','quiz wykładowy'];
+    document.querySelectorAll('small, .meta, .badge, .tag, .category, .cat, .wrong-meta').forEach(el=>{
+      const t=(el.textContent||'').toLowerCase();
+      if(textHints.some(h=>t.includes(h))) el.style.display='none';
+    });
+
+    document.querySelectorAll('select').forEach(sel=>{
+      const id=((sel.id||'')+' '+(sel.name||'')+' '+(sel.getAttribute('aria-label')||'')).toLowerCase();
+      const first=(sel.options && sel.options[0] ? sel.options[0].textContent : '').toLowerCase();
+      if(id.includes('category') || id.includes('kategoria') || first.includes('kategoria') || first.includes('category')){
+        sel.style.display='none';
+        if(sel.parentElement && sel.parentElement.tagName.toLowerCase()==='label') sel.parentElement.style.display='none';
+      }
+    });
+  }
+
+  cleanupMobileCategories();
+  window.addEventListener('resize', cleanupMobileCategories);
+  document.addEventListener('click', ()=>setTimeout(cleanupMobileCategories,50), true);
+})();
+</script>
+
+
+<script id="next-button-gradient-helper">
+(function(){
+  function markNextButtons(){
+    document.querySelectorAll("button").forEach(function(btn){
+      const t=(btn.textContent||"").trim().toLowerCase();
+      if(
+        t === "dalej" ||
+        t === "następne" ||
+        t === "nastepne" ||
+        t === "następne pytanie" ||
+        t === "nastepne pytanie" ||
+        t === "zakończ" ||
+        t === "zakoncz" ||
+        t === "zakończ powtórkę" ||
+        t === "zakoncz powtorke"
+      ){
+        btn.classList.add("quiz-next-gradient");
+      }
+    });
+  }
+  markNextButtons();
+  document.addEventListener("click", function(){ setTimeout(markNextButtons, 60); }, true);
+  document.addEventListener("DOMContentLoaded", markNextButtons);
+})();
+</script>
+
+
+<script id="progress-startup-helper">
+(function(){
+  function bootProgress(){
+    if(typeof updateProgressMemory==='function') updateProgressMemory();
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',bootProgress);
+  else bootProgress();
+})();
+</script>
+
+
+<script id="dark-mode-night-study-script">
+(function(){
+  const KEY='woodica_math_quiz_theme_v1';
+
+  function applyTheme(mode){
+    const dark = mode === 'dark';
+    document.documentElement.classList.toggle('dark-mode', dark);
+    document.body.classList.toggle('dark-mode', dark);
+    const btn=document.getElementById('themeToggle');
+    if(btn){
+      btn.textContent = dark ? '☀️ Jasny tryb' : '🌙 Dark mode';
+      btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+    }
+  }
+
+  function getInitialTheme(){
+    try{
+      const saved=localStorage.getItem(KEY);
+      if(saved === 'dark' || saved === 'light') return saved;
+    }catch(e){}
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function injectToggle(){
+    if(document.getElementById('themeToggle')) return;
+
+    const toolbar=document.querySelector('.toolbar') || document.querySelector('.quiz-controls') || document.querySelector('.actions');
+    if(!toolbar) return;
+
+    const wrap=document.createElement('div');
+    wrap.className='theme-toggle-wrap';
+
+    const btn=document.createElement('button');
+    btn.type='button';
+    btn.id='themeToggle';
+    btn.className='btn secondary';
+    btn.setAttribute('aria-label','Przełącz jasny lub ciemny tryb');
+    btn.onclick=function(){
+      const next=document.documentElement.classList.contains('dark-mode') ? 'light' : 'dark';
+      try{localStorage.setItem(KEY,next);}catch(e){}
+      applyTheme(next);
+    };
+
+    wrap.appendChild(btn);
+    toolbar.appendChild(wrap);
+    applyTheme(getInitialTheme());
+  }
+
+  applyTheme(getInitialTheme());
+
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded', injectToggle);
+  }else{
+    injectToggle();
+  }
+})();
+</script>
+
+
+<script id="wrong-accordion-script">
+(function(){
+  const KEY='woodica_math_quiz_wrong_list_collapsed_v1';
+
+  function isCollapsed(){
+    try{
+      const saved=localStorage.getItem(KEY);
+      return saved === null ? true : saved === '1';
+    }catch(e){
+      return true;
+    }
+  }
+
+  function setCollapsed(value){
+    try{localStorage.setItem(KEY, value ? '1' : '0');}catch(e){}
+  }
+
+  function enhanceWrongList(){
+    const box=document.getElementById('wrongReviewBox') || document.querySelector('.wrong-review-box');
+    if(!box) return;
+
+    const list=box.querySelector('.wrong-list');
+    if(!list) return;
+
+    let wrap=box.querySelector('.wrong-list-wrap');
+
+    if(!wrap){
+      wrap=document.createElement('div');
+      wrap.className='wrong-list-wrap';
+
+      const toggle=document.createElement('button');
+      toggle.type='button';
+      toggle.className='wrong-list-toggle';
+      toggle.setAttribute('aria-expanded','false');
+      toggle.innerHTML='<span>Lista błędnych pytań</span><span>▾</span>';
+
+      list.parentNode.insertBefore(wrap,list);
+      wrap.appendChild(toggle);
+      wrap.appendChild(list);
+
+      toggle.addEventListener('click',function(){
+        const collapsed=wrap.classList.contains('collapsed');
+        applyState(!collapsed);
+        setCollapsed(!collapsed);
+      });
+    }
+
+    function applyState(collapsed){
+      const toggle=wrap.querySelector('.wrong-list-toggle');
+      wrap.classList.toggle('collapsed',collapsed);
+      wrap.classList.toggle('expanded',!collapsed);
+      if(toggle){
+        toggle.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+        const count=list.querySelectorAll('li').length;
+        toggle.innerHTML='<span>Lista błędnych pytań ('+count+')</span><span>'+(collapsed?'▾':'▴')+'</span>';
+      }
+    }
+
+    applyState(isCollapsed());
+  }
+
+  // Podepnij się pod updateWrongPanel, jeśli istnieje.
+  function hookUpdateWrongPanel(){
+    if(typeof window.updateWrongPanel === 'function' && !window.updateWrongPanel.__accordionHooked){
+      const original=window.updateWrongPanel;
+      window.updateWrongPanel=function(){
+        const result=original.apply(this,arguments);
+        setTimeout(enhanceWrongList,30);
+        return result;
+      };
+      window.updateWrongPanel.__accordionHooked=true;
+    }
+  }
+
+  function boot(){
+    hookUpdateWrongPanel();
+    enhanceWrongList();
+    setTimeout(enhanceWrongList,200);
+    setTimeout(enhanceWrongList,800);
+  }
+
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',boot);
+  }else{
+    boot();
+  }
+
+  document.addEventListener('click',function(){
+    setTimeout(function(){
+      hookUpdateWrongPanel();
+      enhanceWrongList();
+    },60);
+  },true);
+})();
+</script>
+
+</body></html>
