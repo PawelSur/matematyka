@@ -2239,8 +2239,6 @@ function renderAnswerBreakdown(q, chosenIndex){
   const explanations = Array.isArray(q.answerExplanations) ? q.answerExplanations : [];
   if(!q.answers || !q.answers.length) return '';
 
-  const rows = [];
-
   function row(i, forcedLabel){
     const isCorrect = i === q.correct;
     const cls = isCorrect ? 'correct' : 'chosen-wrong';
@@ -2248,7 +2246,7 @@ function renderAnswerBreakdown(q, chosenIndex){
     const label = forcedLabel || (isCorrect ? 'poprawna' : 'twoja odpowiedź');
     const fallback = isCorrect
       ? (q.explain || 'To jest poprawna odpowiedź.')
-      : ('Ta odpowiedź jest błędna. Poprawna jest ' + String.fromCharCode(65+q.correct) + ': ' + q.answers[q.correct] + '.');
+      : ('Ta odpowiedź jest błędna. Poprawna odpowiedź to: ' + q.answers[q.correct] + '.');
     const explanation = explanations[i] || fallback;
 
     return `<div class="answer-explain-row ${cls}">
@@ -2257,6 +2255,7 @@ function renderAnswerBreakdown(q, chosenIndex){
     </div>`;
   }
 
+  const rows = [];
   if(chosenIndex === q.correct){
     rows.push(row(q.correct, 'poprawna'));
   }else{
