@@ -1524,6 +1524,21 @@ html.dark-mode .local-progress-info b{color:#f8fafc !important}
 }
 </style>
 
+
+<style id="compact-answer-explanations">
+.answer-breakdown summary{
+  padding:10px 13px !important;
+}
+.answer-breakdown-list{
+  gap:8px !important;
+  padding:10px !important;
+}
+.answer-explain-text{
+  font-size:14px !important;
+  line-height:1.45 !important;
+}
+</style>
+
 </head>
 <body>
 <header><div class="wrap"><h1>Quiz z matematyki do egzaminu</h1><p class="lead">Pytania teoretyczne i praktyczne z logiki, zbiorów, macierzy, ciągów, funkcji, granic, pochodnych, całek i funkcji dwóch zmiennych. Klikasz odpowiedź i od razu widzisz, co jest dobrze albo źle.</p><div class="topgrid"><div class="panel"><b>Jak używać?</b><br>Najpierw wybierz zakres albo zostaw „wszystko”, potem kliknij „Losuj quiz 421 pytań”. Po każdej odpowiedzi dostajesz wyjaśnienie. Na końcu masz wynik i listę błędów.</div><div class="stats"><div class="stat"><b id="totalQ">0</b><span>pytań w bazie</span></div><div class="stat"><b>10</b><span>pytań w quizie</span></div><div class="stat"><b id="doneQ">0</b><span>rozwiązanych</span></div></div></div></div></header>
@@ -1546,6 +1561,7 @@ async function loadQuestionsAndInit(){
     const res = await fetch('questions.json', {cache:'no-store'});
     if(!res.ok) throw new Error('Nie mogę wczytać questions.json. Uruchom przez serwer lokalny albo wrzuć na hosting.');
     QUESTIONS = await res.json();
+    window.QUESTIONS = QUESTIONS;
 
     if(!Array.isArray(QUESTIONS)){
       throw new Error('questions.json musi zawierać tablicę pytań.');
@@ -1604,20 +1620,34 @@ function renderAnswerBreakdown(q, chosenIndex){
   const explanations = Array.isArray(q.answerExplanations) ? q.answerExplanations : [];
   if(!q.answers || !q.answers.length) return '';
 
-  const rows = q.answers.map((ans, i)=>{
-    const cls = i === q.correct ? 'correct' : (i === chosenIndex ? 'chosen-wrong' : '');
+  const rows = [];
+
+  function row(i, forcedLabel){
+    const isCorrect = i === q.correct;
+    const cls = isCorrect ? 'correct' : 'chosen-wrong';
     const letter = String.fromCharCode(65+i);
-    const label = i === q.correct ? 'poprawna' : (i === chosenIndex ? 'twoja odpowiedź' : 'błędna');
-    const explanation = explanations[i] || (i === q.correct ? q.explain : 'Ta odpowiedź nie pasuje do warunku z pytania.');
+    const label = forcedLabel || (isCorrect ? 'poprawna' : 'twoja odpowiedź');
+    const fallback = isCorrect
+      ? (q.explain || 'To jest poprawna odpowiedź.')
+      : ('Ta odpowiedź jest błędna. Poprawna jest ' + String.fromCharCode(65+q.correct) + ': ' + q.answers[q.correct] + '.');
+    const explanation = explanations[i] || fallback;
+
     return `<div class="answer-explain-row ${cls}">
-      <div class="answer-explain-head"><b>${letter}. ${fmt(ans)}</b><span>${label}</span></div>
+      <div class="answer-explain-head"><b>${letter}. ${fmt(q.answers[i])}</b><span>${label}</span></div>
       <div class="answer-explain-text">${fmt(explanation)}</div>
     </div>`;
-  }).join('');
+  }
+
+  if(chosenIndex === q.correct){
+    rows.push(row(q.correct, 'poprawna'));
+  }else{
+    rows.push(row(chosenIndex, 'twoja błędna'));
+    rows.push(row(q.correct, 'poprawna'));
+  }
 
   return `<details class="answer-breakdown" open>
-    <summary>Wyjaśnienie każdej odpowiedzi</summary>
-    <div class="answer-breakdown-list">${rows}</div>
+    <summary>Wyjaśnienie</summary>
+    <div class="answer-breakdown-list">${rows.join('')}</div>
   </details>`;
 }
 
@@ -1759,7 +1789,7 @@ function saveCorrectQuestion(q){
   if(typeof updateProgressMemory==='function') updateProgressMemory();
 }
 
-function choose(i){if(answered)return; answered=true; let q=quiz[index]; let ok=i===q.correct; if(ok){ score++; saveCorrectQuestion(q); } else { saveWrongQuestion(q,i); } answersLog.push({q,index,chosen:i,ok}); document.querySelectorAll('.answer').forEach((b,bi)=>{ if(bi===q.correct)b.classList.add('correct'); if(bi===i && !ok)b.classList.add('wrong'); b.disabled=true; }); let ex=el('explain'); ex.className='explain '+(ok?'good':'bad'); ex.innerHTML=(ok?'<b>Dobrze.</b> ':'<b>Źle.</b> ') + fmt(q.explain) + (!ok?`<br><br><b>Poprawna odpowiedź:</b> ${String.fromCharCode(65+q.correct)}. ${fmt(q.answers[q.correct])}`:'') + renderAnswerBreakdown(q,i); el('nextBtn').disabled=false; el('doneQ').textContent=answersLog.length;}
+function choose(i){if(answered)return; answered=true; let q=quiz[index]; let ok=i===q.correct; if(ok){ score++; saveCorrectQuestion(q); } else { saveWrongQuestion(q,i); } if(typeof updateProgressMemory==='function') updateProgressMemory(); answersLog.push({q,index,chosen:i,ok}); document.querySelectorAll('.answer').forEach((b,bi)=>{ if(bi===q.correct)b.classList.add('correct'); if(bi===i && !ok)b.classList.add('wrong'); b.disabled=true; }); let ex=el('explain'); ex.className='explain '+(ok?'good':'bad'); ex.innerHTML=(ok?'<b>Dobrze.</b> ':'<b>Źle.</b> ') + fmt(q.explain) + (!ok?`<br><br><b>Poprawna odpowiedź:</b> ${String.fromCharCode(65+q.correct)}. ${fmt(q.answers[q.correct])}`:'') + renderAnswerBreakdown(q,i); el('nextBtn').disabled=false; el('doneQ').textContent=answersLog.length;}
 function nextQ(){ if(!answered)return; if(index<quiz.length-1){index++; showQuestion();} else finish();}
 function prevQ(){ if(index>0){index--; showQuestion();}}
 function finish(){let pct=Math.round(score/quiz.length*100); let msg=pct>=80?'Bardzo dobrze.':pct>=60?'Nieźle, ale powtórz błędy.':'Trzeba jeszcze powtórzyć teorię i wzory.'; el('quizArea').innerHTML='<h2>Koniec quizu</h2><p class="small">Poniżej masz wynik i podsumowanie odpowiedzi.</p>'; el('resultBox').className='result show'; el('resultBox').innerHTML=`<h2>Wynik</h2><div class="scorebig">${score}/${quiz.length} (${pct}%)</div><p>${msg}</p><button class="btn green" onclick="start(false)">Losuj kolejny quiz 10 pytań</button><button class="btn secondary" onclick="start(true)">Nauka - cała baza</button><button class="btn secondary" onclick="startStudyUnanswered()">Nauka - nieodpowiedziane</button><div class="review">${answersLog.map((r,n)=>`<div class="reviewItem ${r.ok?'ok':'no'}"><b>${n+1}. ${fmt(r.q.question)}</b><br><span class="small">Twoja odpowiedź: ${String.fromCharCode(65+r.chosen)}. ${fmt(r.q.answers[r.chosen])}<br>Poprawna: ${String.fromCharCode(65+r.q.correct)}. ${fmt(r.q.answers[r.q.correct])}<br>${fmt(r.q.explain)}</span></div>`).join('')}</div>`;}
@@ -2252,8 +2282,8 @@ else injectWrongPanel();
     const stats=loadJson(WRONG_STATS_KEY,{});
     let answered=0, correct=0, wrong=0;
 
-    if(Array.isArray(window.QUESTIONS)){
-      QUESTIONS.forEach(q=>{
+    if((typeof QUESTIONS !== 'undefined' && Array.isArray(QUESTIONS)) || Array.isArray(window.QUESTIONS)){
+      ((typeof QUESTIONS !== 'undefined' && Array.isArray(QUESTIONS)) ? QUESTIONS : window.QUESTIONS).forEach(q=>{
         const s=stats[qid(q)];
         if(s && ((s.totalCorrect||0)>0 || (s.totalWrong||0)>0)){
           answered++;
@@ -2263,7 +2293,7 @@ else injectWrongPanel();
       });
     }
 
-    const total=Array.isArray(window.QUESTIONS) ? QUESTIONS.length : 0;
+    const total=(typeof QUESTIONS !== 'undefined' && Array.isArray(QUESTIONS)) ? QUESTIONS.length : (Array.isArray(window.QUESTIONS) ? window.QUESTIONS.length : 0);
     const box=document.getElementById('localProgressInfo');
     if(box){
       box.innerHTML='<b>Postęp lokalny:</b> odpowiedziane <b>'+answered+'/'+total+'</b>, poprawne kiedyś <b>'+correct+'</b>, błędne kiedyś <b>'+wrong+'</b>. Zapis tylko w tej przeglądarce.';
@@ -2353,6 +2383,97 @@ else injectWrongPanel();
 
   setTimeout(bootLocalProgress,300);
   setTimeout(bootLocalProgress,1000);
+})();
+</script>
+
+
+<script id="local-progress-counter-fix">
+(function(){
+  const WRONG_STORAGE_KEY='woodica_math_quiz_wrong_v3';
+  const WRONG_STATS_KEY='woodica_math_quiz_stats_v3';
+
+  function loadJson(key,fallback){
+    try{return JSON.parse(localStorage.getItem(key)) || fallback;}catch(e){return fallback;}
+  }
+
+  function getQuestions(){
+    if(typeof QUESTIONS !== 'undefined' && Array.isArray(QUESTIONS)) return QUESTIONS;
+    if(Array.isArray(window.QUESTIONS)) return window.QUESTIONS;
+    return [];
+  }
+
+  function qid(q){
+    const raw=[q.category||'',q.type||'',q.question||'',(q.answers||[]).join('|')].join('::');
+    let h=0;
+    for(let i=0;i<raw.length;i++) h=((h<<5)-h+raw.charCodeAt(i))|0;
+    return 'q_'+Math.abs(h);
+  }
+
+  function hasAnswered(q,stats){
+    const s=stats[qid(q)];
+    return !!(s && ((s.totalCorrect||0)>0 || (s.totalWrong||0)>0));
+  }
+
+  window.updateProgressMemory = function(){
+    const qs=getQuestions();
+    const stats=loadJson(WRONG_STATS_KEY,{});
+    const wrongObj=loadJson(WRONG_STORAGE_KEY,{});
+
+    let answered=0;
+    let onlyCorrect=0;
+    let hadWrong=0;
+
+    qs.forEach(q=>{
+      const s=stats[qid(q)];
+      if(s && ((s.totalCorrect||0)>0 || (s.totalWrong||0)>0)){
+        answered++;
+        if((s.totalCorrect||0)>0) onlyCorrect++;
+        if((s.totalWrong||0)>0) hadWrong++;
+      }
+    });
+
+    const total=qs.length;
+    const unanswered=Math.max(total-answered,0);
+    const activeWrong=Object.keys(wrongObj).length;
+
+    const box=document.getElementById('localProgressInfo');
+    if(box){
+      box.innerHTML='<b>Postęp lokalny:</b> odpowiedziane <b>'+answered+'/'+total+'</b>, nieodpowiedziane <b>'+unanswered+'</b>, błędne do powtórki <b>'+activeWrong+'</b>. Zapis tylko w tej przeglądarce.';
+    }
+
+    const pm=document.getElementById('progressMemory');
+    if(pm){
+      pm.innerHTML='<div><b>Postęp lokalny</b><br><span>Odpowiedziane: '+answered+'/'+total+' | Nieodpowiedziane: '+unanswered+' | Błędne do powtórki: '+activeWrong+'</span></div><button class="btn secondary" onclick="clearAllProgress()">Wyczyść postęp</button>';
+    }
+  };
+
+  window.hasAnsweredQuestion = function(q){
+    return hasAnswered(q,loadJson(WRONG_STATS_KEY,{}));
+  };
+
+  window.unansweredPool = function(){
+    if(typeof filtered !== 'function') return [];
+    const stats=loadJson(WRONG_STATS_KEY,{});
+    return filtered().filter(q=>!hasAnswered(q,stats));
+  };
+
+  function refresh(){
+    if(typeof window.updateProgressMemory === 'function') window.updateProgressMemory();
+    if(typeof window.updateWrongPanel === 'function') window.updateWrongPanel();
+  }
+
+  // Po starcie i po kliknięciach w quizie przelicz licznik.
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',refresh);
+  else refresh();
+
+  document.addEventListener('click',function(){
+    setTimeout(refresh,60);
+    setTimeout(refresh,250);
+  },true);
+
+  setTimeout(refresh,300);
+  setTimeout(refresh,1000);
+  setTimeout(refresh,1800);
 })();
 </script>
 
