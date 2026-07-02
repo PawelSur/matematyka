@@ -2810,292 +2810,6 @@ else injectWrongPanel();
 </script>
 
 
-<script id="local-progress-layer">
-(function(){
-  const WRONG_STORAGE_KEY='woodica_math_quiz_wrong_v3';
-  const WRONG_STATS_KEY='woodica_math_quiz_stats_v3';
-
-  function loadJson(key,fallback){
-    try{return JSON.parse(localStorage.getItem(key)) || fallback;}catch(e){return fallback;}
-  }
-
-  function saveJson(key,value){
-    try{localStorage.setItem(key,JSON.stringify(value));}catch(e){}
-  }
-
-  function qid(q){
-    const raw=[q.category||'',q.type||'',q.question||'',(q.answers||[]).join('|')].join('::');
-    let h=0;
-    for(let i=0;i<raw.length;i++) h=((h<<5)-h+raw.charCodeAt(i))|0;
-    return 'q_'+Math.abs(h);
-  }
-
-  window.hasAnsweredQuestion = function(q){
-    const s=loadJson(WRONG_STATS_KEY,{})[qid(q)];
-    return !!(s && ((s.totalCorrect||0)>0 || (s.totalWrong||0)>0));
-  };
-
-  window.unansweredPool = function(){
-    if(typeof filtered !== 'function') return [];
-    return filtered().filter(q=>!window.hasAnsweredQuestion(q));
-  };
-
-  window.saveWrongQuestion = function(q,chosenIndex){
-    const id=qid(q);
-    const wrong=loadJson(WRONG_STORAGE_KEY,{});
-    const stats=loadJson(WRONG_STATS_KEY,{});
-
-    wrong[id]={
-      id:id,
-      question:q.question,
-      category:q.category||'Bez kategorii',
-      type:q.type||'',
-      correct:q.correct,
-      answers:q.answers||[],
-      explain:q.explain||'',
-      answerExplanations:q.answerExplanations||[],
-      lastWrong:new Date().toISOString(),
-      wrongCount:(wrong[id]?.wrongCount||0)+1,
-      chosenIndex:chosenIndex
-    };
-
-    stats[id]=stats[id]||{correctStreak:0,totalWrong:0,totalCorrect:0};
-    stats[id].totalWrong++;
-    stats[id].correctStreak=0;
-    stats[id].lastAnswer='wrong';
-    stats[id].lastCorrect=false;
-    stats[id].lastChosen=chosenIndex;
-    stats[id].lastAnsweredAt=new Date().toISOString();
-
-    saveJson(WRONG_STORAGE_KEY,wrong);
-    saveJson(WRONG_STATS_KEY,stats);
-    if(typeof updateWrongPanel==='function') updateWrongPanel();
-    if(typeof updateProgressMemory==='function') updateProgressMemory();
-  };
-
-  window.saveCorrectQuestion = function(q){
-    const id=qid(q);
-    const wrong=loadJson(WRONG_STORAGE_KEY,{});
-    const stats=loadJson(WRONG_STATS_KEY,{});
-
-    stats[id]=stats[id]||{correctStreak:0,totalWrong:0,totalCorrect:0};
-    stats[id].totalCorrect++;
-    stats[id].correctStreak++;
-    stats[id].lastAnswer='correct';
-    stats[id].lastCorrect=true;
-    stats[id].lastChosen=q.correct;
-    stats[id].lastAnsweredAt=new Date().toISOString();
-
-    if(wrong[id] && stats[id].correctStreak>=3){
-      delete wrong[id];
-      saveJson(WRONG_STORAGE_KEY,wrong);
-    }
-
-    saveJson(WRONG_STATS_KEY,stats);
-    if(typeof updateWrongPanel==='function') updateWrongPanel();
-    if(typeof updateProgressMemory==='function') updateProgressMemory();
-  };
-
-  window.updateProgressMemory = function(){
-    const stats=loadJson(WRONG_STATS_KEY,{});
-    let answered=0, correct=0, wrong=0;
-
-    if((typeof QUESTIONS !== 'undefined' && Array.isArray(QUESTIONS)) || Array.isArray(window.QUESTIONS)){
-      ((typeof QUESTIONS !== 'undefined' && Array.isArray(QUESTIONS)) ? QUESTIONS : window.QUESTIONS).forEach(q=>{
-        const s=stats[qid(q)];
-        if(s && ((s.totalCorrect||0)>0 || (s.totalWrong||0)>0)){
-          answered++;
-          if((s.totalCorrect||0)>0) correct++;
-          if((s.totalWrong||0)>0) wrong++;
-        }
-      });
-    }
-
-    const total=(typeof QUESTIONS !== 'undefined' && Array.isArray(QUESTIONS)) ? QUESTIONS.length : (Array.isArray(window.QUESTIONS) ? window.QUESTIONS.length : 0);
-    const box=document.getElementById('localProgressInfo');
-    if(box){
-      box.innerHTML='<b>Postęp lokalny:</b> odpowiedziane <b>'+answered+'/'+total+'</b>, poprawne kiedyś <b>'+correct+'</b>, błędne kiedyś <b>'+wrong+'</b>. Zapis tylko w tej przeglądarce.';
-    }
-  };
-
-  window.clearAllProgress = function(){
-    if(confirm('Wyczyścić lokalny postęp w tej przeglądarce?')){
-      localStorage.removeItem(WRONG_STORAGE_KEY);
-      localStorage.removeItem(WRONG_STATS_KEY);
-      if(typeof updateWrongPanel==='function') updateWrongPanel();
-      if(typeof updateProgressMemory==='function') updateProgressMemory();
-    }
-  };
-
-  window.startStudyUnanswered = function(){
-    const pool=window.unansweredPool();
-    if(pool.length===0){
-      alert('Nie masz już nieodpowiedzianych pytań dla tego filtra. Możesz zmienić dział albo wyczyścić postęp.');
-      return;
-    }
-    quiz=shuffle(pool);
-    index=0;
-    score=0;
-    answersLog=[];
-    answered=false;
-    el('resultBox').className='result';
-    showQuestion();
-  };
-
-  window.updateWrongPanel = window.updateWrongPanel || function(){
-    const wrong=loadJson(WRONG_STORAGE_KEY,{});
-    const items=Object.values(wrong);
-    let box=document.getElementById('wrongReviewBox');
-    const main=document.querySelector('main');
-    if(!main) return;
-
-    if(!box){
-      box=document.createElement('section');
-      box.id='wrongReviewBox';
-      box.className='wrong-review-box';
-      main.prepend(box);
-    }
-
-    if(items.length===0){
-      box.innerHTML='<div class="wrong-review-head"><div><div class="wrong-review-title">Błędne pytania</div><p class="wrong-review-desc">Na razie nie ma błędnych pytań do powtórki.</p></div><span class="wrong-badge">0</span></div>';
-      return;
-    }
-
-    box.innerHTML='<div class="wrong-review-head"><div><div class="wrong-review-title">Błędne pytania</div><p class="wrong-review-desc">Lista pytań, które warto powtórzyć.</p></div><span class="wrong-badge">'+items.length+'</span></div><div class="wrong-actions"><button type="button" onclick="startWrongPractice()">Powtórz błędne</button><button type="button" class="secondary" onclick="clearAllProgress()">Wyczyść postęp</button></div><ul class="wrong-list">'+items.map(x=>'<li><span>'+escapeHtml(x.question||'')+'</span><em>'+escapeHtml(x.category||'')+' · błędów: '+(x.wrongCount||1)+'</em></li>').join('')+'</ul>';
-  };
-
-  window.startWrongPractice = window.startWrongPractice || function(){
-    const wrong=Object.values(loadJson(WRONG_STORAGE_KEY,{}));
-    if(wrong.length===0){
-      alert('Brak błędnych pytań do powtórki.');
-      return;
-    }
-    quiz=shuffle(wrong.map(w=>({
-      question:w.question,
-      category:w.category||'Błędne pytania',
-      type:w.type||'powtórka',
-      answers:w.answers||[],
-      correct:w.correct,
-      explain:w.explain||'',
-      answerExplanations:w.answerExplanations||[]
-    })));
-    index=0;
-    score=0;
-    answersLog=[];
-    answered=false;
-    el('resultBox').className='result';
-    showQuestion();
-  };
-
-  function escapeHtml(s){
-    return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c];});
-  }
-
-  function bootLocalProgress(){
-    if(typeof updateWrongPanel==='function') updateWrongPanel();
-    if(typeof updateProgressMemory==='function') updateProgressMemory();
-  }
-
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',bootLocalProgress);
-  else bootLocalProgress();
-
-  setTimeout(bootLocalProgress,300);
-  setTimeout(bootLocalProgress,1000);
-})();
-</script>
-
-
-<script id="local-progress-counter-fix">
-(function(){
-  const WRONG_STORAGE_KEY='woodica_math_quiz_wrong_v3';
-  const WRONG_STATS_KEY='woodica_math_quiz_stats_v3';
-
-  function loadJson(key,fallback){
-    try{return JSON.parse(localStorage.getItem(key)) || fallback;}catch(e){return fallback;}
-  }
-
-  function getQuestions(){
-    if(typeof QUESTIONS !== 'undefined' && Array.isArray(QUESTIONS)) return QUESTIONS;
-    if(Array.isArray(window.QUESTIONS)) return window.QUESTIONS;
-    return [];
-  }
-
-  function qid(q){
-    const raw=[q.category||'',q.type||'',q.question||'',(q.answers||[]).join('|')].join('::');
-    let h=0;
-    for(let i=0;i<raw.length;i++) h=((h<<5)-h+raw.charCodeAt(i))|0;
-    return 'q_'+Math.abs(h);
-  }
-
-  function hasAnswered(q,stats){
-    const s=stats[qid(q)];
-    return !!(s && ((s.totalCorrect||0)>0 || (s.totalWrong||0)>0));
-  }
-
-  window.updateProgressMemory = function(){
-    const qs=getQuestions();
-    const stats=loadJson(WRONG_STATS_KEY,{});
-    const wrongObj=loadJson(WRONG_STORAGE_KEY,{});
-
-    let answered=0;
-    let onlyCorrect=0;
-    let hadWrong=0;
-
-    qs.forEach(q=>{
-      const s=stats[qid(q)];
-      if(s && ((s.totalCorrect||0)>0 || (s.totalWrong||0)>0)){
-        answered++;
-        if((s.totalCorrect||0)>0) onlyCorrect++;
-        if((s.totalWrong||0)>0) hadWrong++;
-      }
-    });
-
-    const total=qs.length;
-    const unanswered=Math.max(total-answered,0);
-    const activeWrong=Object.keys(wrongObj).length;
-
-    const box=document.getElementById('localProgressInfo');
-    if(box){
-      box.innerHTML='<b>Postęp lokalny:</b> odpowiedziane <b>'+answered+'/'+total+'</b>, nieodpowiedziane <b>'+unanswered+'</b>, błędne do powtórki <b>'+activeWrong+'</b>. Zapis tylko w tej przeglądarce.';
-    }
-
-    const pm=document.getElementById('progressMemory');
-    if(pm){
-      pm.innerHTML='<div><b>Postęp lokalny</b><br><span>Odpowiedziane: '+answered+'/'+total+' | Nieodpowiedziane: '+unanswered+' | Błędne do powtórki: '+activeWrong+'</span></div><button class="btn secondary" onclick="clearAllProgress()">Wyczyść postęp</button>';
-    }
-  };
-
-  window.hasAnsweredQuestion = function(q){
-    return hasAnswered(q,loadJson(WRONG_STATS_KEY,{}));
-  };
-
-  window.unansweredPool = function(){
-    if(typeof filtered !== 'function') return [];
-    const stats=loadJson(WRONG_STATS_KEY,{});
-    return filtered().filter(q=>!hasAnswered(q,stats));
-  };
-
-  function refresh(){
-    if(typeof window.updateProgressMemory === 'function') window.updateProgressMemory();
-    if(typeof window.updateWrongPanel === 'function') window.updateWrongPanel();
-  }
-
-  // Po starcie i po kliknięciach w quizie przelicz licznik.
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',refresh);
-  else refresh();
-
-  document.addEventListener('click',function(){
-    setTimeout(refresh,60);
-    setTimeout(refresh,250);
-  },true);
-
-  setTimeout(refresh,300);
-  setTimeout(refresh,1000);
-  setTimeout(refresh,1800);
-})();
-</script>
-
-
 <script id="layout-counter-refresh-fix">
 (function(){
   function refresh(){
@@ -3108,6 +2822,212 @@ else injectWrongPanel();
   setTimeout(refresh,250);
   setTimeout(refresh,900);
   setTimeout(refresh,1600);
+})();
+</script>
+
+
+<script id="wrong-answers-hard-fix">
+(function(){
+  const WRONG_STORAGE_KEY='woodica_math_quiz_wrong_v3';
+  const WRONG_STATS_KEY='woodica_math_quiz_stats_v3';
+
+  function loadJson(key,fallback){
+    try{return JSON.parse(localStorage.getItem(key)) || fallback;}catch(e){return fallback;}
+  }
+
+  function saveJson(key,value){
+    try{localStorage.setItem(key,JSON.stringify(value));}catch(e){}
+  }
+
+  function getQuestions(){
+    if(typeof QUESTIONS !== 'undefined' && Array.isArray(QUESTIONS)) return QUESTIONS;
+    if(Array.isArray(window.QUESTIONS)) return window.QUESTIONS;
+    return [];
+  }
+
+  function qid(q){
+    const raw=[q.category||'',q.type||'',q.question||''].join('::');
+    let h=0;
+    for(let i=0;i<raw.length;i++) h=((h<<5)-h+raw.charCodeAt(i))|0;
+    return 'q_'+Math.abs(h);
+  }
+
+  function findQuestionById(id){
+    return getQuestions().find(q=>qid(q)===id) || null;
+  }
+
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g,function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c];
+    });
+  }
+
+  window.hasAnsweredQuestion = function(q){
+    const s=loadJson(WRONG_STATS_KEY,{})[qid(q)];
+    return !!(s && ((s.totalCorrect||0)>0 || (s.totalWrong||0)>0));
+  };
+
+  window.unansweredPool = function(){
+    if(typeof filtered !== 'function') return [];
+    const stats=loadJson(WRONG_STATS_KEY,{});
+    return filtered().filter(q=>{
+      const s=stats[qid(q)];
+      return !(s && ((s.totalCorrect||0)>0 || (s.totalWrong||0)>0));
+    });
+  };
+
+  window.saveWrongQuestion = function(q,chosenIndex){
+    const id=qid(q);
+    const wrong=loadJson(WRONG_STORAGE_KEY,{});
+    const stats=loadJson(WRONG_STATS_KEY,{});
+
+    wrong[id]={
+      id:id,
+      question:q.question,
+      category:q.category||'Bez kategorii',
+      type:q.type||'',
+      chosenIndex:chosenIndex,
+      lastWrong:new Date().toISOString(),
+      wrongCount:(wrong[id]?.wrongCount||0)+1
+    };
+
+    stats[id]=stats[id]||{correctStreak:0,totalWrong:0,totalCorrect:0};
+    stats[id].totalWrong=(stats[id].totalWrong||0)+1;
+    stats[id].correctStreak=0;
+    stats[id].lastAnswer='wrong';
+    stats[id].lastCorrect=false;
+    stats[id].lastChosen=chosenIndex;
+    stats[id].lastAnsweredAt=new Date().toISOString();
+
+    saveJson(WRONG_STORAGE_KEY,wrong);
+    saveJson(WRONG_STATS_KEY,stats);
+    refreshLocalPanels();
+  };
+
+  window.saveCorrectQuestion = function(q){
+    const id=qid(q);
+    const wrong=loadJson(WRONG_STORAGE_KEY,{});
+    const stats=loadJson(WRONG_STATS_KEY,{});
+
+    stats[id]=stats[id]||{correctStreak:0,totalWrong:0,totalCorrect:0};
+    stats[id].totalCorrect=(stats[id].totalCorrect||0)+1;
+    stats[id].correctStreak=(stats[id].correctStreak||0)+1;
+    stats[id].lastAnswer='correct';
+    stats[id].lastCorrect=true;
+    stats[id].lastChosen=q.correct;
+    stats[id].lastAnsweredAt=new Date().toISOString();
+
+    if(wrong[id]){
+      delete wrong[id];
+      saveJson(WRONG_STORAGE_KEY,wrong);
+    }
+
+    saveJson(WRONG_STATS_KEY,stats);
+    refreshLocalPanels();
+  };
+
+  window.updateProgressMemory = function(){
+    const qs=getQuestions();
+    const stats=loadJson(WRONG_STATS_KEY,{});
+    const wrongObj=loadJson(WRONG_STORAGE_KEY,{});
+
+    let answered=0;
+    qs.forEach(q=>{
+      const s=stats[qid(q)];
+      if(s && ((s.totalCorrect||0)>0 || (s.totalWrong||0)>0)) answered++;
+    });
+
+    const total=qs.length;
+    const unanswered=Math.max(total-answered,0);
+    const activeWrong=Object.keys(wrongObj).filter(id=>!!findQuestionById(id)).length;
+
+    const box=document.getElementById('localProgressInfo');
+    if(box){
+      box.innerHTML='<b>Postęp lokalny:</b> odpowiedziane <b>'+answered+'/'+total+'</b>, nieodpowiedziane <b>'+unanswered+'</b>, błędne do powtórki <b>'+activeWrong+'</b>. Zapis tylko w tej przeglądarce.';
+    }
+
+    const pm=document.getElementById('progressMemory');
+    if(pm){
+      pm.innerHTML='<div><b>Postęp lokalny</b><br><span>Odpowiedziane: '+answered+'/'+total+' | Nieodpowiedziane: '+unanswered+' | Błędne do powtórki: '+activeWrong+'</span></div><button class="btn secondary" onclick="clearAllProgress()">Wyczyść postęp</button>';
+    }
+  };
+
+  window.updateWrongPanel = function(){
+    const wrong=loadJson(WRONG_STORAGE_KEY,{});
+    const entries=Object.values(wrong)
+      .map(w=>({saved:w,current:findQuestionById(w.id)}))
+      .filter(x=>!!x.current);
+
+    let box=document.getElementById('wrongReviewBox');
+    const main=document.querySelector('main');
+    if(!main) return;
+
+    if(!box){
+      box=document.createElement('section');
+      box.id='wrongReviewBox';
+      box.className='wrong-review-box';
+      main.prepend(box);
+    }
+
+    if(entries.length===0){
+      box.innerHTML='<div class="wrong-review-head"><div><div class="wrong-review-title">Błędne pytania</div><p class="wrong-review-desc">Na razie nie ma błędnych pytań do powtórki.</p></div><span class="wrong-badge">0</span></div>';
+      return;
+    }
+
+    box.innerHTML=
+      '<div class="wrong-review-head"><div><div class="wrong-review-title">Błędne pytania</div><p class="wrong-review-desc">Pytania, które zaznaczyłeś źle. Po poprawnej odpowiedzi znikną z listy.</p></div><span class="wrong-badge">'+entries.length+'</span></div>'+
+      '<div class="wrong-actions"><button type="button" onclick="startWrongPractice()">Powtórz błędne</button><button type="button" class="secondary" onclick="clearAllProgress()">Wyczyść postęp</button></div>'+
+      '<div class="wrong-list-wrap collapsed"><button type="button" class="wrong-list-toggle" onclick="this.parentNode.classList.toggle(\'collapsed\');this.parentNode.classList.toggle(\'expanded\')"><span>Lista błędnych pytań ('+entries.length+')</span><span>▾</span></button>'+
+      '<ul class="wrong-list">'+entries.map(x=>'<li><span>'+escapeHtml(x.current.question||'')+'</span><em>'+escapeHtml(x.current.category||'')+' · błędów: '+(x.saved.wrongCount||1)+'</em></li>').join('')+'</ul></div>';
+  };
+
+  window.startWrongPractice = function(){
+    const wrong=loadJson(WRONG_STORAGE_KEY,{});
+    const pool=Object.keys(wrong).map(id=>findQuestionById(id)).filter(Boolean);
+
+    if(pool.length===0){
+      alert('Brak błędnych pytań do powtórki.');
+      refreshLocalPanels();
+      return;
+    }
+
+    quiz=shuffle(pool);
+    index=0;
+    score=0;
+    answersLog=[];
+    answered=false;
+    el('resultBox').className='result';
+    showQuestion();
+  };
+
+  window.clearAllProgress = function(){
+    if(confirm('Wyczyścić lokalny postęp w tej przeglądarce?')){
+      localStorage.removeItem(WRONG_STORAGE_KEY);
+      localStorage.removeItem(WRONG_STATS_KEY);
+      refreshLocalPanels();
+    }
+  };
+
+  function refreshLocalPanels(){
+    try{ window.updateProgressMemory(); }catch(e){}
+    try{ window.updateWrongPanel(); }catch(e){}
+  }
+
+  function boot(){
+    refreshLocalPanels();
+  }
+
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',boot);
+  else boot();
+
+  document.addEventListener('click',function(){
+    setTimeout(boot,80);
+    setTimeout(boot,250);
+  },true);
+
+  setTimeout(boot,300);
+  setTimeout(boot,1000);
+  setTimeout(boot,1800);
 })();
 </script>
 
