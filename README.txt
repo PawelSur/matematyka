@@ -1,12 +1,13 @@
-QUIZ - MULTISELECT DZIAŁÓW DZIAŁA NA TELEFONIE
+QUIZ - DZIAŁY WIDOCZNE NA MOBILE
 
 Poprawione:
-- natywny multiple-select został zastąpiony checkboxami,
-- na telefonie klikasz "Wybierz działy" i zaznaczasz kilka kategorii,
-- działa "Wszystkie" i "Wyczyść",
-- filtr działa dla quizu, nauki i nieodpowiedzianych.
+- działy są normalnie widoczne jako checkboxy,
+- na telefonie blok Działy jest rozwinięty i widoczny,
+- możesz zaznaczyć kilka działów palcem,
+- przyciski Wszystkie/Wyczyść działają,
+- stary select kategorii jest tylko technicznym fallbackiem.
 
 Liczba pytań: 421
 
-Uruchomienie lokalnie:
+Uruchomienie:
 python3 -m http.server 8000
