@@ -1,18 +1,10 @@
-QUIZ - MULTI-SELECT DZIAŁÓW
+QUIZ - MULTISELECT DZIAŁÓW DZIAŁA NA TELEFONIE
 
-Dodane:
-- wielokrotny wybór działów w selekcie,
-- można zaznaczyć kilka kategorii naraz,
-- przyciski "Wszystkie" i "Wyczyść",
-- quiz i tryb nauki filtrują pytania po wybranych działach,
-- typ pytania dalej działa osobno: teoria/praktyka/wszystko.
-
-Zostaje:
-- lokalny postęp w przeglądarce,
-- błędne pytania,
-- dark mode,
-- równe ułożenie desktopu,
-- mobile bez specjalnego ruszania.
+Poprawione:
+- natywny multiple-select został zastąpiony checkboxami,
+- na telefonie klikasz "Wybierz działy" i zaznaczasz kilka kategorii,
+- działa "Wszystkie" i "Wyczyść",
+- filtr działa dla quizu, nauki i nieodpowiedzianych.
 
 Liczba pytań: 421
 

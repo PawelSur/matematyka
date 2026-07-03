@@ -2278,6 +2278,175 @@ html.dark-mode #categorySelect[multiple] option:checked{
 }
 </style>
 
+
+<style id="mobile-category-picker-fix-css">
+/* Checkboxowy wybór działów - działa normalnie na telefonie */
+.category-picker{
+  display:grid !important;
+  gap:8px !important;
+  width:100% !important;
+  min-width:260px !important;
+  max-width:420px !important;
+}
+
+.category-picker-toggle{
+  width:100% !important;
+  min-height:42px !important;
+  padding:9px 12px !important;
+  border-radius:12px !important;
+  border:1px solid #dbeafe !important;
+  background:#ffffff !important;
+  color:#0f172a !important;
+  font-weight:900 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  gap:10px !important;
+  cursor:pointer !important;
+}
+
+.category-picker-panel{
+  display:none !important;
+  border:1px solid #dbeafe !important;
+  border-radius:14px !important;
+  background:#ffffff !important;
+  padding:10px !important;
+  box-shadow:0 12px 30px rgba(15,23,42,.10) !important;
+}
+
+.category-picker.open .category-picker-panel{
+  display:grid !important;
+  gap:8px !important;
+}
+
+.category-picker-actions{
+  display:grid !important;
+  grid-template-columns:1fr 1fr !important;
+  gap:8px !important;
+  margin-bottom:4px !important;
+}
+
+.category-picker-actions button{
+  min-height:36px !important;
+  padding:7px 10px !important;
+  border-radius:10px !important;
+  border:1px solid #dbeafe !important;
+  background:#f8fafc !important;
+  color:#334155 !important;
+  font-size:12px !important;
+  font-weight:900 !important;
+  cursor:pointer !important;
+}
+
+.category-picker-list{
+  display:grid !important;
+  gap:6px !important;
+  max-height:260px !important;
+  overflow:auto !important;
+  padding-right:2px !important;
+}
+
+.category-picker-item{
+  display:grid !important;
+  grid-template-columns:22px minmax(0,1fr) auto !important;
+  align-items:center !important;
+  gap:8px !important;
+  padding:8px 9px !important;
+  border:1px solid #e5e7eb !important;
+  border-radius:10px !important;
+  background:#ffffff !important;
+  color:#0f172a !important;
+  cursor:pointer !important;
+  user-select:none !important;
+}
+
+.category-picker-item input{
+  width:18px !important;
+  height:18px !important;
+  min-width:18px !important;
+  margin:0 !important;
+}
+
+.category-picker-item span.cat-name{
+  min-width:0 !important;
+  overflow-wrap:anywhere !important;
+  line-height:1.25 !important;
+  font-size:13px !important;
+}
+
+.category-picker-item span.cat-count{
+  font-size:12px !important;
+  color:#64748b !important;
+  font-weight:900 !important;
+}
+
+.category-picker-item:has(input:checked){
+  border-color:#3b82f6 !important;
+  background:#eff6ff !important;
+}
+
+/* Ukryj natywny multiple-select, zostawiamy go tylko jako techniczny fallback */
+.category-multi #categorySelect,
+.category-multi .category-multi-actions,
+.category-multi .category-multi-head{
+  display:none !important;
+}
+
+.category-multi{
+  min-width:280px !important;
+  max-width:420px !important;
+}
+
+html.dark-mode .category-picker-toggle,
+html.dark-mode .category-picker-panel,
+html.dark-mode .category-picker-item{
+  background:#0f172a !important;
+  color:#e5e7eb !important;
+  border-color:#334155 !important;
+}
+
+html.dark-mode .category-picker-actions button{
+  background:#111827 !important;
+  color:#cbd5e1 !important;
+  border-color:#334155 !important;
+}
+
+html.dark-mode .category-picker-item:has(input:checked){
+  background:#172554 !important;
+  border-color:#3b82f6 !important;
+}
+
+html.dark-mode .category-picker-item span.cat-count{
+  color:#94a3b8 !important;
+}
+
+@media(max-width:760px){
+  .category-multi,
+  .category-picker{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+  }
+
+  .category-picker-panel{
+    position:relative !important;
+    z-index:20 !important;
+  }
+
+  .category-picker-list{
+    max-height:45vh !important;
+  }
+
+  .category-picker-item{
+    padding:10px !important;
+  }
+
+  .category-picker-item span.cat-name{
+    font-size:14px !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <header><div class="wrap"><h1>Quiz z matematyki do egzaminu</h1><p class="lead">Pytania teoretyczne i praktyczne z logiki, zbiorów, macierzy, ciągów, funkcji, granic, pochodnych, całek i funkcji dwóch zmiennych. Klikasz odpowiedź i od razu widzisz, co jest dobrze albo źle.</p><div class="topgrid"><div class="panel"><b>Jak używać?</b><br>Najpierw wybierz zakres albo zostaw „wszystko”, potem kliknij „Losuj quiz 421 pytań”. Po każdej odpowiedzi dostajesz wyjaśnienie. Na końcu masz wynik i listę błędów.</div><div class="stats"><div class="stat"><b id="totalQ">0</b><span>pytań w bazie</span></div><div class="stat"><b>10</b><span>pytań w quizie</span></div><div class="stat"><b id="doneQ">0</b><span>rozwiązanych</span></div></div></div></div></header>
@@ -2412,6 +2581,12 @@ function bind(){
   updateProgressMemory();
 }
 function selectedCategories(){
+  if(document.getElementById('categoryPicker')){
+    const boxes=Array.from(document.querySelectorAll('.category-picker-check'));
+    const selected=boxes.filter(b=>b.checked).map(b=>b.value);
+    if(selected.length===0 || selected.includes('all')) return ['all'];
+    return selected;
+  }
   const sel=el('categorySelect');
   if(!sel) return ['all'];
   const vals=Array.from(sel.selectedOptions||[]).map(o=>o.value);
@@ -3271,6 +3446,173 @@ else injectWrongPanel();
 
   setTimeout(boot,300);
   setTimeout(boot,1000);
+})();
+</script>
+
+
+<script id="mobile-category-picker-fix-js">
+(function(){
+  function el(id){return document.getElementById(id);}
+
+  function getSelect(){
+    return el('categorySelect');
+  }
+
+  function getCounts(){
+    const counts={};
+    if(typeof QUESTIONS !== 'undefined' && Array.isArray(QUESTIONS)){
+      QUESTIONS.forEach(q=>counts[q.category]=(counts[q.category]||0)+1);
+    }else if(Array.isArray(window.QUESTIONS)){
+      window.QUESTIONS.forEach(q=>counts[q.category]=(counts[q.category]||0)+1);
+    }
+    return counts;
+  }
+
+  function selectedFromCheckboxes(){
+    const boxes=Array.from(document.querySelectorAll('.category-picker-check'));
+    const selected=boxes.filter(b=>b.checked).map(b=>b.value);
+    if(selected.length===0 || selected.includes('all')) return ['all'];
+    return selected;
+  }
+
+  function syncHiddenSelect(){
+    const sel=getSelect();
+    if(!sel) return;
+
+    const selected=selectedFromCheckboxes();
+    Array.from(sel.options).forEach(opt=>{
+      opt.selected = selected.includes('all') ? opt.value==='all' : selected.includes(opt.value);
+    });
+
+    updateLabel();
+  }
+
+  function updateLabel(){
+    const label=el('categoryPickerLabel');
+    if(!label) return;
+
+    const selected=selectedFromCheckboxes();
+    if(selected.includes('all')){
+      label.textContent='Wszystkie działy';
+    }else if(selected.length===1){
+      label.textContent='1 dział wybrany';
+    }else{
+      label.textContent=selected.length+' działy wybrane';
+    }
+
+    const info=el('selectedCatInfo');
+    if(info){
+      info.textContent=selected.includes('all') ? 'Wszystkie' : selected.length+' wybrane';
+    }
+  }
+
+  function selectAll(){
+    document.querySelectorAll('.category-picker-check').forEach(ch=>{
+      ch.checked = ch.value === 'all';
+    });
+    syncHiddenSelect();
+  }
+
+  function clearAll(){
+    document.querySelectorAll('.category-picker-check').forEach(ch=>ch.checked=false);
+    syncHiddenSelect();
+  }
+
+  function buildPicker(){
+    const sel=getSelect();
+    const wrap=document.querySelector('.category-multi');
+    if(!sel || !wrap || document.getElementById('categoryPicker')) return;
+
+    const counts=getCounts();
+    const options=Array.from(sel.options).map(o=>({value:o.value,text:o.textContent}));
+
+    const picker=document.createElement('div');
+    picker.id='categoryPicker';
+    picker.className='category-picker';
+
+    picker.innerHTML =
+      '<button type="button" class="category-picker-toggle" id="categoryPickerToggle">'+
+        '<span id="categoryPickerLabel">Wszystkie działy</span><span>▾</span>'+
+      '</button>'+
+      '<div class="category-picker-panel">'+
+        '<div class="category-picker-actions">'+
+          '<button type="button" id="categoryPickerAll">Wszystkie</button>'+
+          '<button type="button" id="categoryPickerClear">Wyczyść</button>'+
+        '</div>'+
+        '<div class="category-picker-list">'+
+          options.map(o=>{
+            const checked=o.value==='all' ? 'checked' : '';
+            const count=o.value==='all' ? '' : (counts[o.value] || '');
+            return '<label class="category-picker-item">'+
+              '<input class="category-picker-check" type="checkbox" value="'+escapeHtml(o.value)+'" '+checked+'>'+
+              '<span class="cat-name">'+escapeHtml(o.text)+'</span>'+
+              '<span class="cat-count">'+escapeHtml(count)+'</span>'+
+            '</label>';
+          }).join('')+
+        '</div>'+
+      '</div>';
+
+    wrap.appendChild(picker);
+
+    el('categoryPickerToggle').onclick=function(){
+      picker.classList.toggle('open');
+    };
+
+    el('categoryPickerAll').onclick=selectAll;
+    el('categoryPickerClear').onclick=clearAll;
+
+    picker.querySelectorAll('.category-picker-check').forEach(ch=>{
+      ch.addEventListener('change',function(){
+        const boxes=Array.from(document.querySelectorAll('.category-picker-check'));
+        const allBox=boxes.find(b=>b.value==='all');
+
+        if(ch.value==='all' && ch.checked){
+          boxes.forEach(b=>b.checked=(b.value==='all'));
+        }else if(ch.value!=='all' && ch.checked){
+          if(allBox) allBox.checked=false;
+        }
+
+        if(boxes.every(b=>!b.checked) && allBox){
+          allBox.checked=true;
+        }
+
+        syncHiddenSelect();
+      });
+    });
+
+    syncHiddenSelect();
+  }
+
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g,function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c];
+    });
+  }
+
+  // Nadpisanie funkcji filtra, żeby działała z checkboxami na mobile i desktop.
+  window.selectedCategories = function(){
+    if(document.getElementById('categoryPicker')){
+      return selectedFromCheckboxes();
+    }
+
+    const sel=getSelect();
+    if(!sel) return ['all'];
+    const vals=Array.from(sel.selectedOptions||[]).map(o=>o.value);
+    if(vals.length===0 || vals.includes('all')) return ['all'];
+    return vals;
+  };
+
+  function boot(){
+    buildPicker();
+    updateLabel();
+  }
+
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',boot);
+  else boot();
+
+  setTimeout(boot,300);
+  setTimeout(boot,1000);
+  setTimeout(boot,1800);
 })();
 </script>
 
